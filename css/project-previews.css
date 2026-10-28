@@ -1,0 +1,4 @@
+.ce-project-image .ce-hover-preview{position:absolute;inset:0;width:100%;height:100%!important;object-fit:cover;opacity:0;pointer-events:none;transition:opacity .18s ease;transform:none!important}
+.ce-project:hover .ce-hover-preview,.ce-project:focus-visible .ce-hover-preview{opacity:1}
+.ce-project-image .ce-index{z-index:1}
+@media(prefers-reduced-motion:reduce){.ce-project .ce-hover-preview{display:none}}

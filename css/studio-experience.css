@@ -1,0 +1,45 @@
+#resume.experience-studio{padding-top:40px;padding-bottom:40px;scroll-margin-top:110px}
+#resume.experience-studio>h2{font-size:32px;letter-spacing:-.8px;margin:12px 0 25px;color:var(--page-text)}
+.es-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.es-card{padding:23px;background:var(--fs-glass);border:1px solid var(--fs-edge);border-radius:20px;box-shadow:var(--fs-shadow);backdrop-filter:blur(var(--fs-blur));min-width:0}
+.es-featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.55fr);gap:35px;align-items:center}
+#resume.experience-studio .es-card h3{font-size:21px;line-height:1.3;margin:0;color:var(--page-text);letter-spacing:-.4px}
+#resume.experience-studio a{color:inherit}#resume.experience-studio a:hover{color:var(--flag-red)}
+#resume.experience-studio p{color:var(--body-text)}
+#resume.experience-studio .es-date,#resume.experience-studio .es-meta{font-size:11px;line-height:1.6;margin:0 0 8px}
+#resume.experience-studio .es-role{font-size:13px;line-height:1.6;margin:10px 0 0}
+#resume.experience-studio .es-focus{font-size:12px;margin:18px 0 0}
+.es-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+#resume.experience-studio .es-heading .es-date{margin:0}
+#resume.experience-studio .es-card ul{padding-left:17px;margin:16px 0 0}
+#resume.experience-studio .es-featured ul{margin:0}
+#resume.experience-studio .es-card li{list-style:disc;font-size:13px;line-height:1.8;color:var(--body-text);padding-left:2px;margin:5px 0}
+#resume.experience-studio li::marker{color:var(--flag-red)}
+.es-categories{margin-top:28px}
+.es-category{display:grid;grid-template-columns:140px minmax(0,1fr);gap:24px;padding:21px 0;border-top:1px solid var(--divider)}
+#resume.experience-studio .es-category>h3{font-size:12px;line-height:1.6;text-transform:uppercase;letter-spacing:1.1px;margin:0;color:var(--body-text)}
+.es-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+#resume.experience-studio .es-items h4{font-size:15px;line-height:1.4;margin:0 0 5px;color:var(--page-text)}
+#resume.experience-studio .es-items p{font-size:12px;line-height:1.7;margin:0}
+#resume.experience-studio .es-items .es-meta{font-size:11px;margin-bottom:5px}
+@media(max-width:767px){.es-featured{grid-template-columns:1fr;gap:20px}.es-board{grid-template-columns:1fr}.es-card{padding:20px}.es-category{grid-template-columns:1fr;gap:14px}.es-items{gap:20px}#resume.experience-studio>h2{font-size:28px}}
+@media(max-width:480px){.es-items{grid-template-columns:1fr;gap:22px}#resume.experience-studio .es-card h3{font-size:20px}#resume.experience-studio{padding-top:28px;padding-bottom:28px}}
+
+#resume.experience-studio h3 a,#resume.experience-studio h4 a{color:var(--page-text);font-weight:inherit}
+
+/* Short supporting entries, with dates on the title row. */
+#resume.experience-studio .es-category>h3{font-size:14px;line-height:21px;text-align:center;letter-spacing:.7px}
+#resume.experience-studio .es-activity-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:7px}
+#resume.experience-studio .es-activity-heading h4{font-size:14px;line-height:21px;margin:0}
+#resume.experience-studio .es-activity-heading .es-meta{margin:0;white-space:nowrap;font-size:11px;line-height:21px}
+#resume.experience-studio .es-items p{font-size:12px;line-height:1.7}
+@media(max-width:767px){#resume.experience-studio .es-category>h3{text-align:left}}
+
+/* Category labels sit midway down each row; activity columns have breathing room. */
+#resume.experience-studio .es-category>h3{text-align:left;align-self:center}
+#resume.experience-studio .es-items{column-gap:44px}
+@media(max-width:767px){#resume.experience-studio .es-category>h3{align-self:start}}
+
+/* Give the featured role's bullet list a little more horizontal room. */
+@media(min-width:992px){#resume.experience-studio .es-featured{grid-template-columns:minmax(0,.68fr) minmax(0,1.87fr);gap:26px}}
+

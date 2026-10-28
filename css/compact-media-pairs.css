@@ -1,0 +1,15 @@
+.frosted-studio .ce-projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.frosted-studio .ce-project{padding:8px 8px 15px;border-radius:22px}
+.frosted-studio .ce-project-image.ce-media-pair{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:7px;border-radius:14px;background:transparent;position:relative}
+.frosted-studio .ce-project-image.ce-media-pair img{position:static;display:block;width:100%;height:175px;object-fit:cover;border-radius:12px;opacity:1;transform:none;transition:none;min-width:0}
+.ce-live-label{position:absolute;top:9px;left:9px;font-size:10px;line-height:1.5;background:#061123cf;border:1px solid #ffffff40;color:#fff;border-radius:20px;padding:5px 9px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);pointer-events:none}
+.ce-live-label:before{content:'';display:inline-block;width:5px;height:5px;background:var(--flag-red);border-radius:50%;margin-right:6px;vertical-align:middle}
+.frosted-studio .ce-project h3{font-size:21px;margin:14px 8px 6px}
+.frosted-studio .ce-project p{font-size:13px;line-height:1.6;margin:0 8px}
+.frosted-studio .ce-project .ce-tags{display:none}
+@media(max-width:991px){.frosted-studio .ce-project-image.ce-media-pair img{height:145px}.frosted-studio .ce-project h3{font-size:19px}}
+@media(max-width:575px){.frosted-studio .ce-projects{grid-template-columns:1fr;gap:16px}.frosted-studio .ce-project-image.ce-media-pair img{height:175px;aspect-ratio:auto}.frosted-studio .ce-project h3{font-size:21px}}
+/* Large static cover left, playing demo right. */
+.ce-media-pair .ce-project-still{grid-column:1;grid-row:1}
+.ce-media-pair .ce-live-demo{grid-column:2;grid-row:1}
+.ce-media-pair .ce-live-label{left:auto;right:9px}

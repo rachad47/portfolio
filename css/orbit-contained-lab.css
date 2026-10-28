@@ -1,0 +1,44 @@
+#project.tp-ready .orbit-build .orbit-gimbal.orbit-lab{display:block;padding:23px}
+.orbit-lab-overview{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:25px;align-items:start}
+#project.tp-ready .orbit-lab-story .orbit-eyebrow{margin:0 0 10px}
+#project.tp-ready .orbit-build .orbit-lab #orbit-lab-title{font-size:27px;line-height:1.15;letter-spacing:-.8px;margin:0 0 21px}
+#project.tp-ready .orbit-lab h5{font-size:19px;font-weight:500;line-height:1.3;color:var(--page-text);letter-spacing:-.4px;margin:0 0 11px}
+#project.tp-ready .orbit-lab-story h5:not(:first-child){margin-top:18px}
+#project.tp-ready .orbit-lab p{font-size:14px;line-height:1.75;margin:0;color:var(--body-text)}
+#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-demo{display:block;width:100%;height:auto;max-height:280px;object-fit:contain;object-position:left top}
+.orbit-lab-evidence{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.6fr) minmax(0,1fr);gap:18px;align-items:center;border-top:1px solid var(--divider);padding-top:23px;margin-top:23px}
+.orbit-figure-zoom{display:block;width:100%;padding:0;border:0;background:transparent;border-radius:14px;cursor:zoom-in}
+#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-setup{width:100%;height:auto;max-height:230px;object-fit:contain;background:#061123;padding:10px;border:1px solid #ffffff30;border-radius:14px!important}
+#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-plot{width:100%;height:210px;max-height:none;object-fit:contain;padding:5px;background:#fff;border-radius:12px!important}
+#project.tp-ready .orbit-lab-evidence .orbit-eyebrow{font-size:10px;margin-bottom:10px}
+#project.tp-ready .orbit-lab-calibration p:not(.orbit-eyebrow){font-size:13px}
+.orbit-lab-outcome{display:flex;gap:15px;align-items:baseline;border-top:1px solid var(--divider);padding-top:16px;margin-top:21px}
+.orbit-lab-outcome strong{font-size:13px;font-weight:500;color:var(--page-text);white-space:nowrap}
+#project.tp-ready .orbit-lab-outcome p{font-size:13px}
+.orbit-figure-dialog{padding:18px;max-width:94vw;max-height:92vh;border:1px solid #ffffff40;border-radius:20px;background:#061123;color:#fff}
+.orbit-figure-dialog::backdrop{background:#000b;backdrop-filter:blur(6px)}
+.orbit-figure-dialog img{display:block;max-width:85vw;max-height:75vh;width:auto;height:auto;margin:15px auto 0}
+.orbit-figure-dialog button{display:block;margin-left:auto;background:#123451;color:#fff;border:1px solid #ffffff40;border-radius:25px;padding:8px 14px;font-size:13px}
+@media(max-width:767px){.orbit-lab-overview{grid-template-columns:1fr;gap:20px}.orbit-lab-evidence{grid-template-columns:140px minmax(0,1fr);gap:16px}.orbit-lab-evidence>figure:first-child{grid-column:1/-1}#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-setup{max-height:260px}#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-demo{max-height:250px}.orbit-lab-outcome{display:block}.orbit-lab-outcome p{margin-top:7px!important}}
+@media(max-width:575px){#project.tp-ready .orbit-build .orbit-gimbal.orbit-lab{padding:16px}#project.tp-ready .orbit-build .orbit-lab #orbit-lab-title{font-size:24px}.orbit-lab-evidence{grid-template-columns:110px minmax(0,1fr)}#project.tp-ready .orbit-lab p{font-size:13px}#project.tp-ready .orbit-lab h5{font-size:18px}#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-plot{height:180px}}
+
+/* One shared column boundary across both rows. */
+.orbit-lab-evidence{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:25px;align-items:start}
+.orbit-lab-calibration-group{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1fr);gap:18px;align-items:start;min-width:0}
+#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-setup,#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-plot{height:230px;max-height:230px}
+#project.tp-ready .orbit-lab-calibration .orbit-eyebrow{margin-top:0}
+@media(max-width:991px) and (min-width:768px){.orbit-lab-calibration-group{grid-template-columns:110px minmax(0,1fr);gap:14px}#project.tp-ready .orbit-lab-calibration h5{font-size:17px}#project.tp-ready .orbit-lab-calibration p:not(.orbit-eyebrow){font-size:12px}}
+@media(max-width:767px){.orbit-lab-evidence{grid-template-columns:1fr;gap:22px}.orbit-lab-calibration-group{grid-template-columns:140px minmax(0,1fr);gap:20px}.orbit-lab-evidence>figure:first-child{grid-column:1}#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-setup{height:auto;max-height:260px}}
+@media(max-width:575px){.orbit-lab-calibration-group{grid-template-columns:110px minmax(0,1fr);gap:15px}#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-plot{height:180px;max-height:180px}}
+
+/* Let the transparent setup illustration sit directly on the panel. */
+#project.tp-ready .orbit-gimbal.orbit-lab img.orbit-lab-setup.programmingLA{background:transparent;border:0;padding:0;filter:drop-shadow(0 3px 6px #00214738) drop-shadow(0 0 8px #0a316120)}
+.dark-mode #project.tp-ready .orbit-gimbal.orbit-lab img.orbit-lab-setup.programmingLA{filter:drop-shadow(0 0 4px #d6eaff55) drop-shadow(0 0 10px #6cbaff40)}
+
+/* Magnetorquer illustration and the experimental approach. */
+.orbit-lab-evidence.orbit-lab-approach{grid-template-columns:minmax(0,1fr) minmax(0,1.65fr);gap:28px;align-items:center}
+#project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-mtq{width:100%;height:auto;max-height:230px;object-fit:contain;background:transparent;border:0;padding:0}
+#project.tp-ready .orbit-lab-method .orbit-eyebrow{font-size:10px;margin-bottom:10px}
+#project.tp-ready .orbit-lab-method h5{margin:0 0 13px}
+#project.tp-ready .orbit-lab-method li{font-size:14px;line-height:1.75}
+@media(max-width:767px){.orbit-lab-evidence.orbit-lab-approach{grid-template-columns:1fr;gap:22px}.orbit-lab-approach>figure{max-width:350px;width:100%;margin:0 auto}#project.tp-ready .orbit-lab-method li{font-size:13px}}

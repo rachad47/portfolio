@@ -1,0 +1,74 @@
+.he-hero{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:46px;align-items:center;padding-top:38px;padding-bottom:40px}
+.he-intro{min-width:0}.he-identity{display:grid;grid-template-columns:185px minmax(0,1fr);gap:26px;align-items:center}
+.he-portrait{margin:0}.he-portrait img{display:block;width:100%;height:auto;border-radius:22px;box-shadow:var(--fs-shadow);border:1px solid var(--fs-edge)}
+.he-hero h1{font-size:clamp(36px,4vw,49px);line-height:1.07;letter-spacing:-2px;font-weight:500;margin:12px 0 0}
+.he-introduction{font-size:16px;line-height:1.7;margin:23px 0 14px;color:var(--body-text)}
+.he-role{font-size:13px;line-height:1.8;border-left:2px solid var(--flag-red);padding-left:13px;margin:0;color:var(--body-text)}
+.he-hero .ce-actions{margin-top:23px;gap:20px}
+.he-outside{display:block;border-left:1px solid var(--divider);padding-left:25px;color:var(--page-text)}
+.he-postcards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.he-postcards img{width:100%;height:112px;object-fit:cover;display:block;border-radius:12px}
+.he-outside h2{font-size:25px;line-height:1.13;letter-spacing:-.7px;font-weight:500;margin:9px 0 11px;color:var(--page-text)}
+.he-outside-copy>p:not(.ce-eyebrow){font-size:12px;line-height:1.6;color:var(--body-text);margin:0 0 15px}.he-outside-copy>span{font-size:13px;color:var(--page-text)}
+.he-outside:hover .he-outside-copy>span{color:var(--flag-red)}
+@media(max-width:1199px){.he-hero{gap:30px;grid-template-columns:minmax(0,1fr) 220px}.he-identity{grid-template-columns:155px minmax(0,1fr);gap:21px}.he-hero h1{font-size:42px}.he-hero .ce-eyebrow{letter-spacing:1px}.he-outside{padding-left:22px}}
+@media(max-width:991px){.he-hero{grid-template-columns:minmax(0,1fr) 190px;gap:24px}.he-identity{grid-template-columns:125px minmax(0,1fr);gap:18px}.he-hero h1{font-size:33px;letter-spacing:-1.4px}.he-postcards img{height:92px}.he-outside{padding-left:20px}.he-outside h2{font-size:23px}.he-role{font-size:12px}.he-hero .ce-eyebrow{letter-spacing:.5px}}
+@media(max-width:767px){.he-hero{grid-template-columns:1fr;gap:26px;padding-top:30px;padding-bottom:30px}.he-identity{grid-template-columns:140px minmax(0,1fr)}.he-hero h1{font-size:37px}.he-outside{display:grid;grid-template-columns:155px minmax(0,1fr);align-items:center;gap:20px;border-left:0;border-top:1px solid var(--divider);padding:20px 0 0}.he-postcards{margin:0}.he-postcards img{height:105px}.he-outside h2{font-size:23px}.he-outside h2 br{display:none}.he-outside-copy>p:not(.ce-eyebrow){margin-bottom:8px}.he-introduction{margin-top:19px}}
+@media(max-width:390px){.he-identity{grid-template-columns:110px minmax(0,1fr);gap:14px}.he-hero h1{font-size:30px}.he-outside{grid-template-columns:110px minmax(0,1fr);gap:15px}.he-postcards img{height:88px}.he-outside h2{font-size:21px}.he-hero .ce-eyebrow{font-size:10px!important}.he-introduction{font-size:15px}}
+/* Portrait with a compact journal note. */
+.he-hero.he-portrait-note{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:center}
+.he-portrait-note h1{font-size:clamp(38px,4.3vw,55px);line-height:1.07;margin-top:16px}
+.he-portrait-note .he-personal{min-width:0}
+.he-portrait-note .he-portrait img{width:100%;height:auto;object-fit:contain}
+.he-portrait-note .he-outside{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:12px;padding:14px 15px;border:1px solid var(--fs-edge);border-radius:20px;background:var(--fs-glass);box-shadow:var(--fs-shadow);backdrop-filter:blur(var(--fs-blur)) saturate(145%);-webkit-backdrop-filter:blur(var(--fs-blur)) saturate(145%)}
+.he-portrait-note .he-outside h2{font-size:19px;line-height:1.25;margin:0 0 6px;letter-spacing:-.4px}
+.he-portrait-note .he-outside-copy>p{margin:0;font-size:12px}
+.he-portrait-note .he-postcards{display:flex;gap:6px;margin:0;flex-shrink:0}
+.he-portrait-note .he-postcards img{width:48px;height:60px;border-radius:9px}
+.he-portrait-note .he-outside:hover h2{color:var(--flag-red)}
+@media(max-width:991px){.he-hero.he-portrait-note{gap:28px}.he-portrait-note h1{font-size:39px}.he-portrait-note .he-outside{padding:12px;gap:10px}.he-portrait-note .he-outside h2{font-size:17px}.he-portrait-note .he-postcards img{width:36px;height:52px}}
+@media(max-width:767px){.he-hero.he-portrait-note{grid-template-columns:1fr;gap:26px}.he-portrait-note .he-personal{max-width:450px;width:100%}.he-portrait-note h1{font-size:42px}.he-portrait-note .he-postcards img{width:48px;height:60px}.he-portrait-note .he-outside h2{font-size:19px}}
+@media(max-width:390px){.he-portrait-note h1{font-size:37px}.he-portrait-note .he-postcards img{width:38px;height:53px}.he-portrait-note .he-outside h2{font-size:17px}}
+/* A smaller full-frame portrait above the journal note. */
+.he-portrait-note .he-portrait{width:80%;margin:0 auto}
+/* Portrait and journal share one right-aligned width. */
+.he-portrait-note .he-personal{width:80%;max-width:100%;justify-self:end}
+.he-portrait-note .he-portrait{width:100%;margin:0}
+.he-portrait-note .he-outside{width:100%}
+@media(max-width:991px) and (min-width:768px){.he-portrait-note .he-personal{width:100%}}
+@media(max-width:767px){.he-portrait-note .he-personal{width:100%;max-width:360px;justify-self:center}}
+
+/* Matched-height portrait and readable three-photo strip. */
+.he-hero.he-portrait-note{grid-template-columns:minmax(0,1fr) 250px;gap:50px;align-items:center}
+.he-portrait-note .he-personal{width:250px;max-width:100%;justify-self:end}
+.he-portrait-note .he-portrait{width:100%;margin:0}
+.he-portrait-note .he-outside{display:block;padding:10px;margin-top:9px;border-radius:17px}
+.he-portrait-note .he-outside h2{font-size:16px;line-height:1.2;margin:0 0 4px;letter-spacing:-.3px}
+.he-portrait-note .he-outside-copy>p{font-size:11px;line-height:1.4;margin:0}
+.he-portrait-note .he-postcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:8px}
+.he-portrait-note .he-postcards img{display:block;width:100%;height:49px;object-fit:cover;border-radius:8px}
+@media(max-width:991px) and (min-width:768px){.he-hero.he-portrait-note{gap:30px;grid-template-columns:minmax(0,1fr) 240px}.he-portrait-note .he-personal{width:240px}}
+@media(max-width:767px){.he-hero.he-portrait-note{grid-template-columns:1fr;gap:26px}.he-portrait-note .he-personal{width:250px;justify-self:center}}
+
+/* Slim aligned ribbon: full portrait above a compact journal invitation. */
+.he-hero.he-slim-ribbon{display:block}
+.he-slim-ribbon .he-top{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:35px;align-items:center}
+.he-slim-ribbon .he-portrait{width:100%;margin:0}
+.he-slim-ribbon .he-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:15px}
+.he-slim-ribbon .ce-actions{margin:0;flex-shrink:0}
+.he-slim-ribbon .he-outside{display:grid;grid-template-columns:minmax(0,1fr) 228px;gap:13px;width:480px;max-width:100%;margin:0;padding:8px 10px;align-items:center;border-radius:17px}
+.he-slim-ribbon .he-outside h2{font-size:18px;line-height:1.2;margin:0 0 4px}
+.he-slim-ribbon .he-outside-copy>p{font-size:11px;line-height:1.4;margin:0}
+.he-slim-ribbon .he-postcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:0}
+.he-slim-ribbon .he-postcards img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+@media(max-width:991px){.he-slim-ribbon .he-top{grid-template-columns:minmax(0,1fr) 250px;gap:26px}.he-slim-ribbon .he-bottom{gap:18px}.he-slim-ribbon .he-outside{grid-template-columns:1fr 150px;width:370px;gap:10px}.he-slim-ribbon .he-outside h2{font-size:16px}.he-slim-ribbon .ce-actions{gap:10px}}
+@media(max-width:767px){.he-slim-ribbon .he-top{grid-template-columns:1fr;gap:24px}.he-slim-ribbon .he-portrait{width:280px;max-width:100%;justify-self:center}.he-slim-ribbon .he-bottom{flex-direction:column;align-items:stretch;gap:22px;margin-top:24px}.he-slim-ribbon .he-outside{width:100%;grid-template-columns:minmax(0,1fr) 150px}.he-slim-ribbon .ce-actions{justify-content:flex-start}}
+@media(max-width:360px){.he-slim-ribbon .he-outside{grid-template-columns:minmax(0,1fr) 126px;gap:8px}.he-slim-ribbon .he-outside h2{font-size:14px}.he-slim-ribbon .he-outside-copy>p{font-size:10px}}
+
+/* Slightly roomier postcard ribbon, with an inline title arrow. */
+.he-slim-ribbon .he-outside{width:530px;grid-template-columns:minmax(0,1fr) 246px;padding:10px 12px;gap:14px}
+.he-slim-ribbon .he-outside h2{white-space:nowrap;font-size:18px}
+.he-slim-ribbon .he-outside h2 span{display:inline-block;white-space:nowrap}
+@media(max-width:991px) and (min-width:768px){.he-slim-ribbon .he-outside{width:390px;grid-template-columns:minmax(0,1fr) 150px;gap:10px}.he-slim-ribbon .he-outside h2{font-size:15px}}
+@media(max-width:767px){.he-slim-ribbon .he-outside{width:100%;grid-template-columns:minmax(0,1fr) 126px;gap:10px}.he-slim-ribbon .he-outside h2{font-size:14px}}
+@media(max-width:360px){.he-slim-ribbon .he-outside{grid-template-columns:1fr;gap:10px}.he-slim-ribbon .he-outside h2{font-size:16px}.he-slim-ribbon .he-postcards{width:100%}}
