@@ -66,3 +66,9 @@ body.project-glass #project-details :is(img,video){border-radius:14px}
 /* Keep legacy spacing outside the rounded photograph. */
 body.project-glass .project-image-spacing{display:inline-block;max-width:100%;box-sizing:border-box;vertical-align:top}
 body.project-glass #project-details :is(img,video).project-image-rounded{padding:0!important;border-radius:14px;max-width:100%}
+
+/* Smaller media spacing on phones, including the rounded-media wrapper. */
+@media(max-width:575px){
+  body.project-glass .project-image-spacing{padding:7px!important}
+  body.project-glass #project-details :is(img,video).programmingLA:not(.project-image-rounded){padding:10px}
+}

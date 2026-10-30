@@ -6,9 +6,9 @@
   if (carousel.data('owl.carousel')) carousel.trigger('destroy.owl.carousel');
   var originals = carousel.children('.item').toArray();
   var definitions = [
-    { label: 'Flying probes', title: '', entries: [0] },
-    { label: 'Engineering design team', title: '', entries: [8] },
-    { label: 'Flight & racing', title: 'Real controls. Virtual worlds.', intro: 'Two hands-on builds connecting physical controls to driving and flight simulators.', entries: [1, 2] },
+    { label: 'Flying probes 🎯', title: '', entries: [0] },
+    { label: 'Satellite design team 🛰️', title: '', entries: [8] },
+    { label: 'Flight & racing ✈️', title: 'Real controls. Virtual worlds.', intro: 'Two hands-on builds connecting physical controls to driving and flight simulators.', entries: [1, 2] },
     { label: 'Hackathons', title: 'Hackathon projects', intro: 'Canada Welcomes and Better Delivery: two team projects built at hackathons.', entries: [4, 5] },
     { label: 'High-school DIY', title: 'Where the tinkering started.', intro: 'Early hands-on projects in robotics and automation.', entries: [7, 6] },
     { label: 'Job scripts', title: '', entries: [3] }
