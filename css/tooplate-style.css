@@ -861,8 +861,8 @@ img { max-width: 100%; }
 
 /* Edit these three brand colors to retheme the original portfolio. */
 :root {
-  --flag-blue: #002147;
-  --flag-red: #BB133E;
+  --flag-blue: #0A3161;
+  --flag-red: #B31942;
   --flag-white: #FFFFFF;
   --page-bg: var(--flag-white);
   --page-text: var(--flag-blue);
@@ -937,3 +937,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Mouse/touch clicks keep the theme control clean; keyboard focus stays visible. */
 button.color-mode:focus:not(:focus-visible){outline:none;box-shadow:none}
+
+/* Readable content links; navigation and button components keep their styles. */
+body :is(p, li, figcaption) a[href]:not(.navbar a):not(.btn):not(.custom-btn),
+body.project-glass .project-glass-panel a[href]:not(.navbar a):not(.btn):not(.custom-btn) {
+  color: var(--flag-red, #B31942) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body :is(p, li, figcaption) a[href]:not(.navbar a):not(.btn):not(.custom-btn):is(:hover, :focus-visible),
+body.project-glass .project-glass-panel a[href]:not(.navbar a):not(.btn):not(.custom-btn):is(:hover, :focus-visible) {
+  color: #114c88 !important;
+}
+body.dark-mode :is(p, li, figcaption) a[href]:not(.navbar a):not(.btn):not(.custom-btn),
+body.dark-mode.project-glass .project-glass-panel a[href]:not(.navbar a):not(.btn):not(.custom-btn) {
+  color: #d12844 !important;
+}
+body.dark-mode :is(p, li, figcaption) a[href]:not(.navbar a):not(.btn):not(.custom-btn):is(:hover, :focus-visible),
+body.dark-mode.project-glass .project-glass-panel a[href]:not(.navbar a):not(.btn):not(.custom-btn):is(:hover, :focus-visible) {
+  color: #4082c0 !important;
+}

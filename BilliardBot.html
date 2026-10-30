@@ -29,10 +29,14 @@ https://www.tooplate.com/view/2115-marvel
 -->
   <link rel="stylesheet" href="css/site-shell.css?v=2">
   <link rel="stylesheet" href="css/navbar-glass.css?v=2">
+  <link rel="stylesheet" href="css/glass-dividers.css?v=2">
+  <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
+  <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
+  <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
 </head>
 
 
-<body class="dark-mode site-shell">
+<body class="dark-mode site-shell project-glass navy-editorial">
   <script>
     // Apply the saved theme before rendering the page content.
     try {
@@ -116,13 +120,11 @@ https://www.tooplate.com/view/2115-marvel
 
 
             <hr class="rounded">
-            <br>
-
-            <div class="row align-items-center">
+<section class="project-glass-panel" aria-label="Introduction"><div class="row align-items-center">
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <!-- <img src="assets/projects/billiardbot/favicon.ico" alt="" style="width:80%" id="programingLA"> -->
                     <!-- <iframe width="95%" height="300px" src="https://www.youtube.com/embed/HVFhAbJPW8Y?autoplay=1" allow="autoplay"> -->
-                        <video src="assets/projects/billiardbot/playing-demo.mp4" style="width: 100%;height: auto;" controls class="programmingLA" preload="none" playsinline poster="assets/projects/billiardbot/playing-demo-poster.webp" width="1080" height="1238">
+                        <video src="assets/projects/billiardbot/playing-demo.mp4" style="width: 100%;height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/billiardbot/playing-demo-poster.webp" width="1080" height="1238">
                     </video>
                     
                 </div>
@@ -133,12 +135,12 @@ https://www.tooplate.com/view/2115-marvel
                     <br>
                     <h3 style="text-align: center;">Introduction</h3>
                     <br>
-                    <li style="text-align: left;">
+                    <ul class="project-point-list"><li style="text-align: left;">
 
                         <b>
                             BilliardBot</b> is a pool-playing robot that uses computer vision for ball detection
                         and navigation. when properly positioned, it strikes the cue ball with a solenoid powered
-                        kicker.</p> </li>
+                        kicker.<p></p> </li></ul>
                         
 
                         <!-- <img src="assets/projects/billiardbot/robot-logo.png" alt="" style="width:50%; text-align: right;" id="programmingLA"> -->
@@ -152,12 +154,13 @@ https://www.tooplate.com/view/2115-marvel
                     BilliardBot</b> is an autonomous pool-playing robot that uses computer vision for ball identification
                     and classification. It performs calculations, sends Wi-Fi commands for self-alignment, and employs a
                     solenoid to strike the cue ball.</p> -->
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="High level overview"><div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <h3 style="text-align: left;">High level overview</h3>
                     <br>
 
-                    <li style="text-align: left;">
+                    <ul class="project-point-list"><li style="text-align: left;">
 
                         OpenCV analyses overhead camera feed for tracking the ball and robot, as well as for calculating
                         distances and trajectories on the pool table. </li>
@@ -167,11 +170,11 @@ https://www.tooplate.com/view/2115-marvel
                     <li style="text-align: left;">Upon reaching the target position and orientation, the robot charges
                         and discharges its capacitors powering a solenoid to strike the cue ball along the intended
                         path.
-                    </li>
+                    </li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <!-- <img src="assets/projects/billiardbot/high-level-overview-01.png" alt="" style="width:80%" id="programingLA"> -->
-                    <img src="assets/projects/billiardbot/system-overview.webp" alt="High level overview — project illustration" style="width:78%" class="programingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/system-overview.webp" alt="High level overview — project illustration" style="width:85%" class="programmingLA" decoding="async" loading="lazy">
 
                 </div>
             </div>
@@ -182,69 +185,47 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
             </div>
 
-            <div class="row align-items-center">
-
-
-                <div class="col-sm-12 col-md-7 col-lg-8">
-                    <h4>Highlights</h4>
-                    <br>
-                    <p>Work is still in progress, and I'll continue to update the page as I move forward. However, here
-                        are some highlights:</p>
-
-                </div>
-
-                <div class="col-sm-12 col-md-5 col-lg-4">
-                    <img src="assets/projects/billiardbot/prototype-in-progress.webp" alt="Highlights — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                </div>
-            </div>
-
-
-
-
+            
 
             <div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/robot-motion-side-view-optimized.webp" alt="Highlights — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>side view (speed x2) </p>
+                    <figcaption>side view (speed x2) </figcaption>
 
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/robot-motion-top-view-optimized.webp" alt="Highlights — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>top view (speed x2) </p>
+                    <figcaption>top view (speed x2) </figcaption>
                 </div>
-            </div>
-
-
-            <hr class="rounded">
-
-            <h2>Mechanical</h2>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Mechanical"><h2>Mechanical</h2>
 
             <br>
 
-            <div class="row">
+            
+<section class="project-glass-subsection" aria-label="Omniwheels"><div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-7">
                     <h4>Omniwheels</h4>
-
-                    <p>The omnidirectional wheel, as the name suggests, can move in any direction, at any angle, and in
+<ul>
+                    <li>The omnidirectional wheel, as the name suggests, can move in any direction, at any angle, and in
                         any direction. Therefore, compared to the traditional
                         differential drive method, the omnidirectional wheel can complete the rotation while
-                        translating, <a href="https://youtu.be/OIdMkZyhx7E?si=dfeYYCNPFXWvryhR&t=43">more info</a></p>
-                    <p>We also decided after reading some papers comparing 3 based / 4 wheel based structres we decided
-                        on 3 wheels mainly due to costs</p>
+                        translating, <a href="https://youtu.be/OIdMkZyhx7E?si=dfeYYCNPFXWvryhR&amp;t=43">more info</a></li>
+                    <li>We also decided after reading some papers comparing 3 based / 4 wheel based structres we decided
+                        on 3 wheels mainly due to costs</li></ul>
 
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-5">
                     <img src="assets/projects/billiardbot/omniwheel-detail.webp" alt="Omniwheels — project illustration" style="width: 70%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
-            </div>
-            <br>
+            </div></section>
 
-
-
-            <h4> Structure</h4>
+<section class="project-glass-subsection" aria-label="Structure"><h4> Structure</h4>
 
 
             <div class="row">
@@ -252,36 +233,32 @@ https://www.tooplate.com/view/2115-marvel
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
 
                         <img src="assets/projects/billiardbot/robot-frame-cad.webp" alt="Structure — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                        <p> <a
-                                href="https://cad.onshape.com/documents/23793d84011317cf4a6b9b74/w/362c07afd509d5f44f6e3bc9/e/1b476d1a2f6541f4adf1682c">3D
-                                model</a> </p>
+                        <figcaption> <a href="https://cad.onshape.com/documents/23793d84011317cf4a6b9b74/w/362c07afd509d5f44f6e3bc9/e/1b476d1a2f6541f4adf1682c">3D
+                                model</a> </figcaption>
                     </div>
 
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
                         <!-- <img src="assets/projects/coilgun/future-improvements-02.png" alt="Paris" style="width: 100%;height: auto;"
                             id="programmingLA"> -->
                         <img src="assets/projects/billiardbot/laser-cut-frame.webp" alt="Structure — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                        <p>Laser cut</p>
+                        <figcaption>Laser cut</figcaption>
                     </div>
 
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
                         <img src="assets/projects/billiardbot/frame-prototype.webp" alt="Structure — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                        <p>First look.</p>
+                        <figcaption>First look.</figcaption>
 
                     </div>
 
                 </div>
-            </div>
-
-
-
-
-            <hr class="rounded">
-
-            <h2>Electrical</h2>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Electrical"><h2>Electrical</h2>
             <br>
 
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="Motors"><div class="row align-items-center">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <img src="assets/projects/billiardbot/stepper-and-cnc-shield.webp" alt="Electrical — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
@@ -289,29 +266,27 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <h4>Motors</h4>
-                    <p>We chose stepper motors over other types for their precision, prioritizing accuracy over speed or
+                    <ul><li>We chose stepper motors over other types for their precision, prioritizing accuracy over speed or
                         torque. Despite the manual cable connection required due to our use of
                         an ESP32 instead of an Arduino Uno, the CNC shield facilitated wiring and enabled microstepping
                         (increasing the resolution from 200 to 1600 steps per revolution),
-                        enhancing the robot's precision. </p>
+                        enhancing the robot's precision. </li></ul>
                 </div>
 
-            </div>
+            </div></section>
 
-            <br>
-
-            <div class="row">
+<section class="project-glass-subsection" aria-label="Ball puncher"><div class="row">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
                     <h4>Ball puncher</h4>
                     <br>
-                    <p>Essentially, we utilize a voltage booster to elevate the voltage from 14V to 200V for charging
+                    <ul><li>Essentially, we utilize a voltage booster to elevate the voltage from 14V to 200V for charging
                         the capacitors, and subsequently discharge the stored energy, leading to
                         the impact on the ball.
-                    </p>
+                    </li></ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 align-self-center">
-                    <video src="assets/projects/billiardbot/first-strike-demo.mp4" style="width: 100%;height: auto;" controls class="programmingLA" preload="none" playsinline poster="assets/projects/billiardbot/first-strike-demo-poster.webp" width="718" height="480">
+                    <video src="assets/projects/billiardbot/first-strike-demo.mp4" style="width: 100%;height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/billiardbot/first-strike-demo-poster.webp" width="718" height="480">
                     </video>
                 </div>
 
@@ -323,77 +298,73 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                     <img src="assets/projects/billiardbot/high-voltage-boost-converter.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>14V->200V <a
-                            href="https://www.amazon.com/Regulator-Converter-%C2%B145V-390V-Capacitor-Charging/dp/B07SM89NJ4/ref=psdc_10967761_t3_B07T6L61D9">
-                            votage booster</a> </p>
+                    <figcaption>14V-&gt;200V <a href="https://www.amazon.com/Regulator-Converter-%C2%B145V-390V-Capacitor-Charging/dp/B07SM89NJ4/ref=psdc_10967761_t3_B07T6L61D9">
+                            votage booster</a> </figcaption>
                 </div>
 
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/billiardbot/striker-capacitor.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>2*1000uF 200V capacitors</p>
+                    <figcaption>2*1000uF 200V capacitors</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/billiardbot/striker-thyristor.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>Thyristor BTW69-1200</p>
+                    <figcaption>Thyristor BTW69-1200</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/billiardbot/striking-solenoid.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>Solenoid</p>
+                    <figcaption>Solenoid</figcaption>
                 </div>
 
-            </div>
-            <br>
+            </div></section>
 
-
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="Customizing the force"><div class="row align-items-center">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                     <img src="assets/projects/billiardbot/capacitor-response.webp" alt="Ball puncher — project illustration" style="width:90%" class="programmingLA" decoding="async" loading="lazy">
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                    <h4>Customizing the force</h4>
+                    
+                    <h4>Customizing the force</h4><ul>
                     <br>
-                    <p>
+                    <li>
                         Increasing the voltage equates to increasing the power output. The concept is to create three
                         distinct levels of power for the shots: a weak shot,
                         a medium shot, and a strong shot. This is achieved by timing the charging process and
                         interrupting the current flow to the capacitors when they reach
-                        a certain percentage of charge.</p>
+                        a certain percentage of charge.</li></ul>
                 </div>
 
-            </div>
-            <br>
+            </div></section>
 
-            <h4>Power distribution</h4>
-            <p>The full diagram includes components such as optocouplers, thyristors explained in detail in my <a
-                    href="CoilGun.html">CoilGun project</a> a 4s LiPo battery, a buck converter
+<section class="project-glass-subsection" aria-label="Power distribution"><h4>Power distribution</h4>
+            <p>The full diagram includes components such as optocouplers, thyristors explained in detail in my <a href="CoilGun.html">CoilGun project</a> a 4s LiPo battery, a buck converter
                 for voltage stability, and a 7-segment voltage reader. </p>
-            <img src="assets/projects/billiardbot/power-distribution-diagram.webp" alt="Power distribution — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-            <br>
-            <hr class="dotted">
-            <h3>Full circuit and integration</h3>
+            <img src="assets/projects/billiardbot/power-distribution-diagram.webp" alt="Power distribution — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy"></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Full circuit and integration"><h3>Full circuit and integration</h3>
             <img src="assets/projects/billiardbot/full-circuit.webp" alt="Full circuit and integration — project illustration" style="width:80%" class="programingLA" decoding="async" loading="lazy">
-            <p>I intend to make a more comprehensive circuit with a professional software later on</p>
+            <figcaption>Rough sketch on iPad</figcaption>
 
 
             <div class="row">
 
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/motor-control-circuit.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>Signals circuit</p>
+                    <figcaption>Signals circuit</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/high-voltage-assembly.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>High voltage caps + thyristor</p>
+                    <figcaption>High voltage caps + thyristor</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/integrated-striker-demo-optimized.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
 
-                    <p>Puncher test</p>
+                    <figcaption>Puncher test</figcaption>
                 </div>
 
             </div>
@@ -401,46 +372,46 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
                     <img src="assets/projects/billiardbot/circuit-detail-01.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>First layer circuit</p>
+                    <figcaption>First layer circuit</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
                     <img src="assets/projects/billiardbot/circuit-detail-02.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <p>Second layer circuit</p>
+                    <figcaption>Second layer circuit</figcaption>
                 </div>
 
             </div>
 
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="Circuit &amp; PCB"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-7 col-lg-7">
-                    <h4 style="text-align: center;">Circuit & PCB</h4>
-                    <li>We are still in the process of testing to ensure that our prototype functions correctly. Once we
+                    <h4 style="text-align: center;">Circuit &amp; PCB</h4>
+                    <ul class="project-point-list"><li>We are still in the process of testing to ensure that our prototype functions correctly. Once we
                         have successfully completed the testing phase, our next step will be to design the circuit on a
-                        PCB</li>
+                        PCB</li></ul>
 
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-5 col-lg-5">
-                    <img src="assets/projects/billiardbot/prototype-in-progress.webp" alt="Circuit & PCB — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/prototype-in-progress.webp" alt="Circuit &amp; PCB — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
                 </div>
 
-            </div>
-
-            <hr class="rounded">
-
-            <h2>Software</h2>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Software"><h2>Software</h2>
             <br>
             <p>You can find the source code here: <a href="https://github.com/rachad47/BilliardBot">GitHub</a></p>
-            <br>
 
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="Overview"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-7 col-lg-8">
                     <h3 style="text-align: center;">Overview</h3>
-                    <p> The camera is positioned on top, and we use computer vision with OpenCV to handle ball
+                    <ul><li> The camera is positioned on top, and we use computer vision with OpenCV to handle ball
                         detection, measurements, and path decisions. Afterward, Python sends a command to the ESP32 via
                         WiFi to maneuver the robot to specific coordinates. Once it reaches the designated position and
                         orientation, we charge the capacitors to 200V and then discharge them through the solenoid,
-                        resulting in striking the ball. </p>
+                        resulting in striking the ball. </li></ul>
 
                 </div>
 
@@ -459,62 +430,54 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
 
 
-            </div>
-            <br>
-
-            <hr class="dotted">
-
-            <h3>Computer vision</h3>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Computer vision"><h3>Computer vision</h3>
 
             <br>
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="HSV Model"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-8 col-lg-9">
-                    <h5 style="text-align: left;">HSV Model</h5>
-                    <li>In computer vision, the HSV model is often preferred over RGB for color detection. HSV allows
+                    <h4 style="text-align: left;">HSV Model</h4>
+                    <ul class="project-point-list"><li>In computer vision, the HSV model is often preferred over RGB for color detection. HSV allows
                         for easy selection of thresholds that work well under various lighting conditions, unlike RGB,
                         which makes threshold variation challenging. In my project, I'm using HSV, and I'm also creating
-                        masks. First, I detect the table, and then I only consider objects within that boundary</li>
+                        masks. First, I detect the table, and then I only consider objects within that boundary</li></ul>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-4 col-lg-3">
-                    <img src="assets/projects/billiardbot/hsv-color-model.webp" alt="HSV Model — project illustration"
-                        style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/hsv-color-model.webp" alt="HSV Model — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
             </div>
 
 
-            <!-- <h5 style="text-align: left;">Robot detection & orientation</h5> -->
+            <!-- <h5 style="text-align: left;">Robot detection & orientation</h5> --></section>
 
-            <br>
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="Robot detection"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
-                    <h5 style="text-align: left;">Robot detection</h5>
-                    <img src="assets/projects/billiardbot/robot-marker-detection.webp" alt="Robot detection — project illustration"
-                        style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <li>Detect the boundary table (yellow counter)</li>
+                    <h4 style="text-align: center;">Robot detection</h4>
+                    <img src="assets/projects/billiardbot/robot-marker-detection.webp" alt="Robot detection — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <ul class="project-point-list"><li>Detect the boundary table (yellow counter)</li>
                     <li>Detect the robot <b>within</b> the table (pink counter) </li>
-                    <li>We can use <code>cv2.bitwise_and</code> for such maskings </li>
+                    <li>We can use <code>cv2.bitwise_and</code> for such maskings </li></ul>
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
-                    <h5 style="text-align: left;">Robot orientation</h5>
-                    <img src="assets/projects/billiardbot/robot-orientation.webp" alt="Robot orientation — project illustration"
-                        style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <li>Considers a black spot as the center of the robot</li>
+                    <h4 style="text-align: center;">Robot orientation</h4>
+                    <img src="assets/projects/billiardbot/robot-orientation.webp" alt="Robot orientation — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <ul class="project-point-list"><li>Considers a black spot as the center of the robot</li>
                     <li>The Y-axis to be from the black spot to the red spot</li>
-                    <li>The X-axis to be 90* to the right of the Y-axis</li>
+                    <li>The X-axis to be 90* to the right of the Y-axis</li></ul>
                 </div>
 
 
-            </div>
+            </div></section>
 
-            <br>
-
-
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="Calculating distances"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">Calculating distances</h5>
-                    <li>At that point I simply used color detections to look for balls for a certain size</li>
+                    <h4 style="text-align: center;">Calculating distances</h4>
+                    <ul class="project-point-list"><li>At that point I simply used color detections to look for balls for a certain size</li>
                     <li>
 
                         In OpenCV, images are considered as pixel grids. To measure distances and angles, I use a 2D
@@ -522,45 +485,39 @@ https://www.tooplate.com/view/2115-marvel
                         the ball's size. All
                         calculations are based on the robot being at the origin (0,0), with projections used to find X
                         and Y coordinates.
-                    </li>
+                    </li></ul>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
                     <br>
-                    <img src="assets/projects/billiardbot/distance-calibration.webp" alt="Calculating distances — project illustration"
-                        style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/distance-calibration.webp" alt="Calculating distances — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                     <!-- <p>HERE PUT A VIDEO</p> -->
                 </div>
-            </div>
+            </div></section>
 
-            <br>
-
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="detection &amp; classification of balls"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">detection & classification of balls</h5>
+                    <h4 style="text-align: center;">detection &amp; classification of balls</h4>
                     <p>We can only do much with computer vision even if we carefully tuned the paramters of
                         cv2.HoughCirle ML required to detect the ball, we also have to classify them into 4 categories:
                     </p>
-                    <li>Cue ball: white one</li>
+                    <ul class="project-point-list"><li>Cue ball: white one</li>
                     <li>black ball: 8 ball</li>
                     <li>solid balls: (our balls)</li>
-                    <li>stripe balls: (opponent balls)</li>
+                    <li>stripe balls: (opponent balls)</li></ul>
                     <p>There is no need to get to detect the exact number or color of each ball our strategy is to
                         consider all solid balls as valid target and opponent balls as no go </p>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/billiardbot/ball-detection.webp" alt="detection & classification of balls — project illustration"
-                        style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/ball-detection.webp" alt="detection &amp; classification of balls — project illustration" style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
-            </div>
+            </div></section>
 
-            <br>
-
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="Strategy to hit the ball"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">Strategy to hit the ball</h5>
-                    <li><b>Strike position:</b> Provided we know the position of the cue ball, the target ball, and the
+                    <h4 style="text-align: center;">Strategy to hit the ball</h4>
+                    <ul class="project-point-list"><li><b>Strike position:</b> Provided we know the position of the cue ball, the target ball, and the
                         pocket, currently we
                         are
                         just calculating the distance from the center of the robot to the center of the ball (so it will
@@ -568,48 +525,39 @@ https://www.tooplate.com/view/2115-marvel
                         where the robot should go to strike the ball at the desired angle without colliding anything on
                         its
                         path. I also made a physics simulation of the pool table to ease the testing process. (more info below)
-                    </li>
+                    </li></ul>
                 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/billiardbot/shot-planning-geometry.webp" alt="Strategy to hit the ball — project illustration"
-                        style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/shot-planning-geometry.webp" alt="Strategy to hit the ball — project illustration" style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
-            </div>
+            </div></section>
 
-
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="Error mitigation"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">Error mitigation</h5>
+                    <h4 style="text-align: center;">Error mitigation</h4>
                     
-                    <li>When dealing with long distances, errors can add up. To fix this, I made a self-adjusting loop that keeps readjusting until the error is negilible.</li>
-                    <li>Note that stepper motors are much more accurate. Here, I intentionally altered the math to test the self-adjusting loop. </li>
+                    <ul class="project-point-list"><li>When dealing with long distances, errors can add up. To fix this, I made a self-adjusting loop that keeps readjusting until the error is negilible.</li>
+                    <li>Note that stepper motors are much more accurate. Here, I intentionally altered the math to test the self-adjusting loop. </li></ul>
 
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
                     <video src="assets/projects/billiardbot/error-correction-demo.mp4" style="width: 100%;
-                    height: auto;" controls class="programmingLA" preload="none" playsinline poster="assets/projects/billiardbot/error-correction-demo-poster.webp" width="832" height="480">
+                    height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/billiardbot/error-correction-demo-poster.webp" width="832" height="480">
                     </video>
                 </div>
-            </div>
-
-
-
-            <br>
-            <hr class="dotted">
-
-            <h3>Physics calculations</h3>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Physics calculations"><h3>Physics calculations</h3>
 
             <br>
 
 
-            <h4 style="text-align: left;">Robot mouvement</h4>
-            <p style="text-align: left;">Assuming we have to move from A to B and we have both their coordinates, the
-                motors don't understand
-                distances or angle to we have to do some calculations to give the robot number of steps and speed of
-                motor</p>
-            <p style="text-align: left;">We have two option:</p>
+            
+<section class="project-glass-subsection" aria-label="Robot mouvement"><h4 style="text-align: left;">Robot mouvement</h4>
+            <p style="text-align: left;">To move from point A to B given their coordinates, target distances and angles must be converted into motor step counts and speeds. There are two approaches:</p>
 
 
             <div class="row align-items-center">
@@ -617,7 +565,7 @@ https://www.tooplate.com/view/2115-marvel
                     <h5 style="text-align: center;">Polar coordinates</h5>
                     <p style="text-align: center;">First rotation then translation</p>
                     <video src="assets/projects/billiardbot/polar-motion-demo.mp4" style="width: 100%;
-                    height: auto;" controls class="programmingL" preload="none" playsinline poster="assets/projects/billiardbot/polar-motion-demo-poster.webp" width="560" height="316">
+                    height: auto;" controls="" class="programmingL" preload="none" playsinline="" poster="assets/projects/billiardbot/polar-motion-demo-poster.webp" width="560" height="316">
                     </video>
 
 
@@ -625,9 +573,9 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
                     <h5 style="text-align: center;">Carterian coordinates</h5>
-                    <p style="text-align: center;">Vector addition to move from A->B without rotating</p>
+                    <p style="text-align: center;">Vector addition to move from A-&gt;B without rotating</p>
                     <video src="assets/projects/billiardbot/cartesian-motion-demo.mp4" style="width: 100%;
-                    height: auto;" controls class="programmingL" preload="none" playsinline poster="assets/projects/billiardbot/cartesian-motion-demo-poster.webp" width="854" height="480">
+                    height: auto;" controls="" class="programmingL" preload="none" playsinline="" poster="assets/projects/billiardbot/cartesian-motion-demo-poster.webp" width="854" height="480">
                     </video>
                 </div>
             </div>
@@ -636,17 +584,16 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: left;">Polar coordinates</h5>
+                    <h4 style="text-align: left;">Polar coordinates</h4>
 
-                    <p>give the angle and the distance, we take raduis of the wheel.... to calculate the number of steps
+                    <ul><li>give the angle and the distance, we take raduis of the wheel.... to calculate the number of steps
                         required for rotation for the angle and same thing for translation
-                    </p>
+                    </li></ul>
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-5">
 
-                    <img src="assets/projects/billiardbot/polar-motion-demo.webp" alt="Polar coordinates — project illustration"
-                        style="max-height:250px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/polar-motion-demo.webp" alt="Polar coordinates — project illustration" style="max-height:250px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
                 </div>
             </div>
@@ -655,54 +602,46 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: left;">Carterian coordinates</h5>
-                    <p>This one is harder as it involves vector addition, also required to move the wheels at diffrent
+                    <h4 style="text-align: left;">Carterian coordinates</h4>
+                    <ul>
+                    <li>This one is harder as it involves vector addition, also required to move the wheels at diffrent
                         speeds to finish at the same time we will lose the vector addition calculation so dependind on
                         the distination if wheel X have 800 steps and wheel Y have 400 steps we will move wheel X at 2
                         of the speed of wheel Y in order to finish at the same time.
-                    </p>
-                    <p>A challenge arises when a small angle results in a disproportionate step count between wheels,
-                        such as wheel Y at 200 steps and wheel Z at 3000 steps. To synchronize their finish times, Z
-                        must rotate 15 times faster than Y. However, setting Y to an extremely slow speed leads to
-                        vibrations, as stepper motors struggle with very slow speeds, even with microstepping.
-                        Conversely, setting X to a moderate speed that avoids vibrations still poses a problem, as Z's
-                        required 15x faster rotation could destabilize the robot and cause missteps. </p>
+                    </li>
+                    <li>Small angles can cause disproportionate step counts between wheels (e.g., 200 steps on Y vs. 3,000 on Z). Synchronizing arrival times requires a 15× speed differential. However, running the slower wheel too slow induces low-speed stepper resonance, while speeding it up forces the faster wheel to spin fast enough to destabilize the chassis and skip steps. </li></ul>
 
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/billiardbot/cartesian-kinematics.webp" alt="Carterian coordinates — project illustration"
-                        style="max-height:700px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/cartesian-kinematics.webp" alt="Carterian coordinates — project illustration" style="max-height:700px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
                 </div>
-            </div>
-            <br>
-            <h4 style="text-align: left;">Pool table physics</h4>
+            </div></section>
+
+<section class="project-glass-subsection" aria-label="Pool table physics"><h4 style="text-align: left;">Pool table physics</h4>
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <p>To ease the testing process in the devolepment phase, I created a physics simulation of the pool table to test my code on it.
+                    <ul><li>To ease the testing process in the devolepment phase, I created a physics simulation of the pool table to test my code on it.
                         So given the position of the cue ball the target ball the pocket and the boundary of the table we can calculate the point and direction of the robot to strike the cue ball have it bounce and hit the target ball and have it go to the pocket.
-                         </p>
+                    </li></ul>
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-5">
 
-                    <img src="assets/projects/billiardbot/pool-physics-simulation-optimized.webp" alt="Pool table physics — project illustration"
-                        style="max-height:250px ;width: 100% ; height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/pool-physics-simulation-optimized.webp" alt="Pool table physics — project illustration" style="max-height:250px ;width: 100% ; height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
                 </div>
-            </div>
-
-            <hr class="dotted">
-
-
-            <h3>Firmware</h3>
+            </div></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Firmware"><h3>Firmware</h3>
             <br>
             <p style="text-align: left;">ESP32 is a microcontroller that has both WIFI capabilities, we use it to
                 control the
                 motors and the solenoid, so we have it connect to WIFI (same as computer) then we had multiple routes
             </p>
-            <li style="text-align: left;"><code>/control</code>: Accepts 6 parameters to control the motors (StepsX,
+            <ul class="project-point-list"><li style="text-align: left;"><code>/control</code>: Accepts 6 parameters to control the motors (StepsX,
                 SpeedX, StepsY, SpeedY, StepsZ, SpeedZ)</li>
             <li style="text-align: left;"><code>/status</code>: Check wether the robot is done mooving or no (returns
                 True/False)
@@ -710,12 +649,13 @@ https://www.tooplate.com/view/2115-marvel
             <li style="text-align: left;"><code>/stop</code>: Stops the robot (emergency command)</li>
             <li style="text-align: left;"><code>/strike</code>: Charges capacitors and discharges into the solenoid,
                 with an
-                adjustable charging time for customizable force. </li>
+                adjustable charging time for customizable force. </li></ul>
 
             <br>
 
 
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="/control"><div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <h5>/control</h5>
@@ -741,21 +681,21 @@ https://www.tooplate.com/view/2115-marvel
 server.on("/control", HTTP_GET, [](AsyncWebServerRequest *request){
     String stepsX, speedX, stepsY, speedY, stepsZ, speedZ;
 
-    if (request->hasParam("stepsX") && request->hasParam("speedX") &&
-        request->hasParam("stepsY") && request->hasParam("speedY") &&
-        request->hasParam("stepsZ") && request->hasParam("speedZ")) {
+    if (request-&gt;hasParam("stepsX") &amp;&amp; request-&gt;hasParam("speedX") &amp;&amp;
+        request-&gt;hasParam("stepsY") &amp;&amp; request-&gt;hasParam("speedY") &amp;&amp;
+        request-&gt;hasParam("stepsZ") &amp;&amp; request-&gt;hasParam("speedZ")) {
 
-        stepsX = request->getParam("stepsX")->value();
-        speedX = request->getParam("speedX")->value();
-        stepsY = request->getParam("stepsY")->value();
-        speedY = request->getParam("speedY")->value();
-        stepsZ = request->getParam("stepsZ")->value();
-        speedZ = request->getParam("speedZ")->value();
+        stepsX = request-&gt;getParam("stepsX")-&gt;value();
+        speedX = request-&gt;getParam("speedX")-&gt;value();
+        stepsY = request-&gt;getParam("stepsY")-&gt;value();
+        speedY = request-&gt;getParam("speedY")-&gt;value();
+        stepsZ = request-&gt;getParam("stepsZ")-&gt;value();
+        speedZ = request-&gt;getParam("speedZ")-&gt;value();
 
         controlSteppers(stepsX.toInt(), speedX.toFloat(), stepsY.toInt(), speedY.toFloat(), stepsZ.toInt(), speedZ.toFloat());
-        request->send(200, "text/plain", "Motors commanded successfully");
+        request-&gt;send(200, "text/plain", "Motors commanded successfully");
     } else {
-        request->send(400, "text/plain", "Invalid parameters");
+        request-&gt;send(400, "text/plain", "Invalid parameters");
     }
 });
 
@@ -835,20 +775,19 @@ send_command(stepsX, speedX, stepsY, speedY, stepsZ, speedZ)
             <div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <li style="text-align: left;">We can achieve both Polar and Cartesian, as we can control the speed
+                    <ul class="project-point-list"><li style="text-align: left;">We can achieve both Polar and Cartesian, as we can control the speed
                         and steps for the wheels
                         independently for cartesian
                         we only send one command, and polar we send two commands one for rotation seperated so it will
                         exceute rotation then translation, and thats where the route <code>ESP_ip_Address/status</code>
                         comes in handy.
-                    </li>
+                    </li></ul>
                 </div>
 
 
-            </div>
+            </div></section>
 
-            <br>
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="/status"><div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <h5>/status</h5>
@@ -874,16 +813,16 @@ bool movementComplete = false;
 //setting up the server route
 server.on("/status", HTTP_GET, [](AsyncWebServerRequest *request){
     if (movementComplete) {
-        request->send(200, "text/plain", "Movement complete");
+        request-&gt;send(200, "text/plain", "Movement complete");
         movementComplete = false; // Reset the flag
     } else {
-        request->send(200, "text/plain", "Movement in progress");
+        request-&gt;send(200, "text/plain", "Movement in progress");
     }
 });
 
 
 //make "movementComplete" true when the robot is done moving
-if (stepperX.distanceToGo() == 0 && stepperY.distanceToGo() == 0 && stepperZ.distanceToGo() == 0) {
+if (stepperX.distanceToGo() == 0 &amp;&amp; stepperY.distanceToGo() == 0 &amp;&amp; stepperZ.distanceToGo() == 0) {
     if (!motorsStopped) {
       delay(500);
       digitalWrite(enablePin, HIGH);
@@ -941,7 +880,7 @@ if ball_measurements is not None:
             <div class="row align-items-center">
 
                 <div style="text-align: left;" class="col-sm-12 col-md-12 col-lg-12">
-                    <li>So in this example, we first send the rotation command we wait till it finishes then we send
+                    <ul class="project-point-list"><li>So in this example, we first send the rotation command we wait till it finishes then we send
                         translation </li>
                     <li> Im using a time.delay in python to keep requesting from the server
                         periodically and
@@ -949,7 +888,7 @@ if ball_measurements is not None:
                         the UI won't
                         freeze</li>
                     <li>This also helpful in error mitigation as I devide big dsitances into samller steps then we
-                        recalculate the dsitances to avoid error propogation</li>
+                        recalculate the dsitances to avoid error propogation</li></ul>
 
 
                 </div>
@@ -958,127 +897,118 @@ if ball_measurements is not None:
             </div>
             <br>
 
-            <p>The other ones are more straight forward, for more info check my code on <a
-                    href="https://github.com/rachad47/BilliardBot">GitHub</a> under firmware.</p>
-
-
-
-            <br>
-
-            <hr class="dotted">
-
-            <h3>Graphical User Interface</h3>
+            <p>The other ones are more straight forward, for more info check my code on <a href="https://github.com/rachad47/BilliardBot">GitHub</a> under firmware.</p></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Graphical User Interface"><h2>Graphical User Interface</h2>
             <br>
             <p>the main purpose of the GUI is for testing, I used <code>Tkinter</code> with the help of
                 <code>CustomTkinter</code> fora modern UI
             </p>
 
-            <div class="row align-items-center">
+            
+<section class="project-glass-subsection" aria-label="Idea"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">Idea</h5>
-                    <p>
+                    <ul> <h4 style="text-align: center;">Idea:</h4>
+                    <br>
+                    <li>
                         I got the idea while doing ball detection with six adjustable parameters. To avoid repeatedly
                         running the program for each change, I built a UI, making the process much easier as I see the
-                        changes in real time. </p>
+                        changes in real time. </li></ul>
 
-                    <img src="assets/projects/billiardbot/hough-line-detection.webp" alt="Idea — project illustration"
-                        style="max-height:400px ; width: 100%;height: auto;" id="programmingLAn" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/hough-line-detection.webp" alt="Idea — project illustration" style="max-height:400px ; width: 100%;height: auto;" id="programmingLAn" decoding="async" loading="lazy">
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/billiardbot/ball-detection.webp" alt="Idea — project illustration"
-                        style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/ball-detection.webp" alt="Idea — project illustration" style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
-            </div>
+            </div></section>
 
-            <div class="row align-items-center">
+<section class="project-glass-subsection" aria-label="HSV-thresholds / autosave"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h5 style="text-align: center;">HSV-thresholds / autosave</h5>
-                    <li>As explained in the Compter Vision section Im using color thresholds, the issue is as I change
+                    <h4 style="text-align: center;">HSV-thresholds / autosave</h4>
+                    <ul class="project-point-list"><li>As explained in the Compter Vision section Im using color thresholds, the issue is as I change
                         the light condition some thresholds fails so having the option to change the thresholds and see
-                        the counter in real time really helped (PUT GIF HERE) </li>
+                        the counter in real time really helped</li>
                     <li>As I click close it automatically saves thresholds into a .txt file and upon launching the
-                        program again it reads and loads from that file</li>
+                        program again it reads and loads from that file</li></ul>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/billiardbot/hsv-thresholds.webp" alt="HSV-thresholds / autosave — project illustration"
-                        style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/hsv-thresholds.webp" alt="HSV-thresholds / autosave — project illustration" style="max-height:400px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
             </div>
 
             <br>
             <p>
-                I added the robot's control section to perform basic movement commands and the firing sequence.</p>
-            <img src="assets/projects/billiardbot/vision-control-interface.webp" alt="HSV-thresholds / autosave — project illustration" style=" width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-            <br>
-
-            <hr class="dotted">
-
-            <h3>Integration test & future improvements </h3>
+                I also added the robot's control section to perform basic movement commands and the firing sequence.</p>
+            <img src="assets/projects/billiardbot/vision-control-interface.webp" alt="HSV-thresholds / autosave — project illustration" style=" width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy"></section>
+</section>
+<hr class="rounded">
+<section class="project-glass-panel" aria-label="Integration test &amp; future improvements"><h2>Integration</h2>
 
 
-            <img src="assets/projects/billiardbot/prototype-in-progress.webp" alt="Integration test & future improvements — project illustration" style="width: 40%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-                <p>I will continue to update this section with additional content as it becomes available.</p>
+            
 
                 <div class="row align-items-center">
 
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <img src="assets/projects/billiardbot/robot-motion-side-view-optimized.webp" alt="Integration test & future improvements — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                        <p>side view (speed x2) </p>
+                        <img src="assets/projects/billiardbot/robot-motion-side-view-optimized.webp" alt="Integration test &amp; future improvements — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
+                        <figcaption>side view (speed x2) </figcaption>
     
                     </div>
     
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <img src="assets/projects/billiardbot/robot-motion-top-view-optimized.webp" alt="Integration test & future improvements — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                        <p>top view (speed x2) </p>
+                        <img src="assets/projects/billiardbot/robot-motion-top-view-optimized.webp" alt="Integration test &amp; future improvements — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
+                        <figcaption>top view (speed x2) </figcaption>
                     </div>
                 </div>
 
             <br>
-            <br>
-            <h3 style="text-align: left;">future improvements:</h3>
+            
+<section class="project-glass-subsection" aria-label="future improvements:"><h3 style="text-align: center;">Potential future improvements:</h3>
             <br>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/machine-learning-exploration.webp" alt="future improvements: — project illustration" style="width: 85%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h5>Ball detection & classification</h5>
+                    <ul><h4>Ball detection &amp; classification</h4>
                     <br>
-                    <p>Training an Machine learning model that accurately detects and classifies balls into four
-                        categories: black, cue, solid, and stripes </p>
+                    
+                    <li>Training an Machine learning model that accurately detects and classifies balls into four
+                        categories: black, cue, solid, and stripes </li></ul>
                 </div>
 
             </div>
 
-
+            <br>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h5>Smart game strategy</h5>
+                    <ul><h4>Smart game strategy</h4>
                     <br>
-                    <p>Compute all possibilities and determine which ball to hit in order to maximize the score in a
+                    
+                    <li>Compute all possibilities and determine which ball to hit in order to maximize the score in a
                         row. After striking using physics, we aim for the ball to finish in a position that is favorable
-                        for the robot to score again or making it more challenging for the opponent.</p>
+                        for the robot to score again or making it more challenging for the opponent.</li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/billiardbot/shot-planning-decisions.webp" alt="Smart game strategy — project illustration" style="width: 85%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/shot-planning-decisions.webp" alt="Smart game strategy — project illustration" style="width: 75%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
 
 
             </div>
-
+<br>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/billiardbot/shot-planning.webp" alt="Smart game strategy — project illustration" style="width: 85%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/billiardbot/shot-planning.webp" alt="Smart game strategy — project illustration" style="width: 75%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h5>Make autonomous</h5>
+                    <ul><h4>Make autonomous</h4>
                     <br>
-                    <p>Play the game with less human intervention, i.e., knowing when it's not its turn, so it waits for
-                        the other player to strike.</p>
+                    
+                    <li>Play the game with less human intervention, i.e., knowing when it's not its turn, so it waits for
+                        the other player to strike.</li></ul>
                 </div>
 
             </div>
@@ -1092,8 +1022,9 @@ if ball_measurements is not None:
 
 
 
-            <!-- no touch  -->
-        </div>
+            <!-- no touch  --></section>
+</section>
+</div>
     </section>
     <hr class="rounded">
 
@@ -1117,81 +1048,19 @@ if ball_measurements is not None:
 
     <!-- FOOTER -->
 
-    <section class="contact py-5" id="contact">
-        <div style="text-align: center;" class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md col-lg">
-                    <p> <i style=" color:#efc008e4;" class="fa-solid fa-envelope"></i>Rachadelmtq@gmail.com</li>
-                    </p>
-                </div>
-
-                <div class="col-4 col-sm-1 col-md-1 col-lg-1">
-                    <p> <a href="https://www.facebook.com/rachad.elmoutaouaffiq.3/" aria-label="Facebook profile"><i style=" color:#efc008e4;"
-                                class="fa-brands fa-facebook"></i></a></p>
-                </div>
-
-                <div class="col-4 col-sm-1 col-md-1 col-lg-1">
-
-                    <p> <a href="https://www.instagram.com/rachad.mtq/" aria-label="Instagram profile"><i style=" color:#efc008e4;"
-                                class="fa-brands fa-instagram"></i></a></p>
-                </div>
-
-                <div class="col-4 col-sm-1 col-md-1 col-lg-1">
-                    <p> <a href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/" aria-label="LinkedIn profile"><i
-                                style=" color:#efc008e4;" class="fa-brands fa-linkedin"></i></a></p>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md col-lg">
-                    <p> <i style=" color:#efc008e4;" class="fa-solid fa-phone"></i>+1 (438) 878-0603</li>
-                    </p>
-                </div>
-                <hr>
-                <div class="col-lg-12 col-12">
-                    <br>
-
-                    <p class=" text-center">Rachad El Moutaouaffiq</p>
-
-                </div>
-
-
-                <!-- <a href="https://www.facebook.com/rachad.elmoutaouaffiq.3/"><i style=" color:#efc008e4;" class="fa-solid fa-phone"></i></a>
-            <i style=" color:#efc008e4;" class="fa-brands fa-facebook"></i>
-            <i style=" color:#efc008e4;" class="fa-brands fa-instagram"></i>
-            <i style=" color:#efc008e4;" class="fa-brands fa-linkedin"></i> -->
-
-                <!-- <img src="images/project/email.png" alt="Paris" style="height:300px; color:red;" id="programmingLA"> -->
-
-
-
-                <!-- <div class="col-lg-12 col-12">
-              <div class="contact-form">
-                <h2 class="mb-4">Interested to work together? Let's talk</h2>
-    
-                <form action="" method="get">
-                  <div class="row">
-                    <div class="col-lg-3 col-12">
-                      <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
-                    </div>
-    
-                    <div class="col-lg-3 col-12">
-                      <input type="email" class="form-control" name="email" placeholder="Email" id="email">
-                    </div>
-    
-                    <div class="col-12">
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                    </div>
-    
-                    <div class="ml-lg-auto col-lg-2 col-12">
-                      <input type="submit" class="form-control submit-btn" value="Send">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div> -->
-
-            </div>
-        </div>
-    </section>
+    <footer id="contact" class="ce-footer">
+    <div class="container">
+      <p class="ce-eyebrow">Have a project in mind?</p>
+      <div class="ce-footer-main">
+        <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
+      </div>
+      <div class="ce-footer-bottom"><span>Rachad El Moutaouaffiq</span>
+        <div><a href="https://www.instagram.com/rachad.mtq/">Instagram ↗</a><a
+            href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/">LinkedIn ↗</a><a
+            href="tel:+14388780603">Phone ↗</a></div>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
 
@@ -1207,6 +1076,8 @@ if ball_measurements is not None:
     <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
 
   <script src="js/navbar-glass.js?v=1"></script>
+  <script src="js/widget-glass.js?v=editorial-1"></script>
+  <script src="js/project-media-corners.js?v=2"></script>
 </body>
 
 </html>

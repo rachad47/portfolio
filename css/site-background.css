@@ -1,0 +1,38 @@
+/* Navy editorial: solid page background, open content sections, red accents. */
+body.navy-editorial{--quiet-bg:#f1f5fa;--quiet-panel:#ffffff;--quiet-inner:#f5f8fc;--quiet-edge:#d5deea;background:var(--quiet-bg);background-image:none}
+body.navy-editorial.dark-mode{--quiet-bg:#030d1d;--quiet-panel:#09182c;--quiet-inner:#09182c;--quiet-edge:#29405b;background:var(--quiet-bg);background-image:none}
+body.navy-editorial:is(.home-widget-glass,.project-glass) .wg-surface{background:var(--quiet-panel)!important;border-color:var(--quiet-edge)!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body.navy-editorial:is(.home-widget-glass,.project-glass) .wg-surface::before,body.navy-editorial:is(.home-widget-glass,.project-glass) .wg-surface::after{display:none!important}
+body.navy-editorial.project-glass .project-glass-panel{border-radius:12px}
+body.navy-editorial.project-glass .project-glass-subsection{background:var(--quiet-inner)!important;border:1px solid var(--quiet-edge)!important;border-left:3px solid var(--flag-red)!important;border-radius:8px}
+body.navy-editorial:is(.home-widget-glass,.project-glass) .wg-primary{background:var(--flag-red)!important;color:#fff!important}
+body.navy-editorial:is(.home-widget-glass,.project-glass) .tp-tab.wg-surface:not([aria-selected=true]){background:transparent!important;border-color:transparent!important}
+body.navy-editorial:is(.home-widget-glass,.project-glass) .tp-tab.wg-surface[aria-selected=true]{border-color:var(--flag-red)!important}
+body.navy-editorial .cj-jump select{background:var(--quiet-panel);border-color:var(--quiet-edge);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+
+/* Keep content open; retain recognizable buttons and tabs. */
+body.navy-editorial:is(.home-widget-glass,.project-glass) .wg-surface:not(.wg-button):not(.tp-tabs){background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+body.navy-editorial.project-glass .project-glass-panel{padding:0}
+body.navy-editorial.project-glass .project-glass-subsection.wg-surface{border:0!important;border-top:1px solid var(--flag-red)!important;border-radius:0!important;padding:24px 0 0;margin-top:24px}
+body.navy-editorial .ce-footer>.container{border:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+
+/* Warm Pearl text hierarchy on the existing navy background. */
+body:is(.navy-editorial,.home-widget-glass).dark-mode {
+  --page-text: #fffaf2;
+  --body-text: #c6c1b9;
+  --caption-text: #a29e99;
+  --ce-muted: #c6c1b9;
+}
+body:is(.navy-editorial,.home-widget-glass).dark-mode :is(h1,h2,h3,h4,h5,h6) {
+  color: var(--page-text);
+}
+body:is(.navy-editorial,.home-widget-glass).dark-mode :is(p,li) {
+  color: var(--body-text);
+}
+body:is(.navy-editorial,.home-widget-glass).dark-mode figcaption,
+body:is(.navy-editorial,.home-widget-glass).dark-mode.project-glass .project-glass-panel figcaption {
+  color: var(--caption-text);
+}
+body:is(.navy-editorial,.home-widget-glass).dark-mode :is(p,li) :is(strong,b) {
+  color: var(--page-text);
+}
