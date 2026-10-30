@@ -15,16 +15,18 @@
   <link rel="stylesheet" href="css/clear-glass-journal.css">
   <link rel="stylesheet" href="css/natural-selected-journal.css">
   <link rel="icon" type="image/x-icon" href="assets/site/travel-favicon.ico">
+  <link rel="stylesheet" href="css/site-shell.css?v=2">
+  <link rel="stylesheet" href="css/navbar-glass.css?v=2">
 </head>
 
-<body class="clean-evolution frosted-studio cj-page dark-mode">
+<body class="clean-evolution frosted-studio cj-page dark-mode site-shell">
   <script>
     // Apply the saved theme before rendering the page content.
     try {
       document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
     } catch (error) { /* Keep the default navy theme if storage is unavailable. */ }
   </script><a class="ce-skip" href="#journal">Skip to the journal</a>
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
     <div class="container">
       <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
@@ -50,8 +52,7 @@
             <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
                 engineering</span></a>
           </li>
-          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span
-                data-hover="Contact">Contact</span></a>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
           </li>
         </ul>
 
@@ -232,6 +233,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/custom.js?v=theme-2"></script>
   <script src="js/natural-selected-journal.js"></script>
+  <script src="js/navbar-glass.js?v=1"></script>
 </body>
 
 </html>

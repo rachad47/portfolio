@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+/* Shared homepage-style shell; project content keeps its existing layout. */
+body.site-shell{padding-top:110px;--shell-edge:rgba(255,255,255,.88);--shell-shadow:0 12px 34px #00214710,inset 0 1px 1px #ffffffb0}
+body.site-shell.dark-mode{--shell-edge:rgba(255,255,255,.19);--shell-shadow:0 12px 34px #000b202d,inset 0 1px 1px #ffffff22}
+body.site-shell .navbar,body.site-shell .navbar[class*="headroom--not-top"]{background:transparent;border:0;padding:15px 0}
+body.site-shell .navbar>.container{padding:13px 24px;border-radius:40px}
+body.site-shell .navbar{font-family:'DM Sans',Arial,sans-serif}
+body.site-shell .navbar-brand{font-family:'Space Grotesk','DM Sans',Arial,sans-serif;font-size:28px;font-weight:700;letter-spacing:-1.4px}
+body.site-shell .ce-brand-dot{color:var(--flag-red)}
+body.site-shell .navbar .nav-link{font-size:14px;font-weight:500}
+body.site-shell .color-mode{font-size:13px}
+body.site-shell .color-mode-icon:after{font-size:24px}
+body.site-shell #lol{width:100%;max-width:1110px;margin:0 auto;padding:0;overflow:hidden;border:1px solid var(--shell-edge);border-radius:18px;background:var(--page-bg);box-shadow:var(--shell-shadow)}
+body.site-shell #lool{display:block;width:100%;height:clamp(140px,30vw,290px);object-fit:cover;object-position:center;padding:0;background:var(--page-bg)}
+@media(max-width:1199px){body.site-shell #lol{max-width:930px}}
+@media(max-width:991px){body.site-shell #lol{max-width:690px}}
+@media(max-width:767px){body.site-shell #lol{max-width:510px}body.site-shell .navbar>.container{padding-inline:18px}body.site-shell .navbar .nav-link{padding-inline:8px}}
+@media(max-width:575px){body.site-shell{padding-top:95px}body.site-shell .navbar,body.site-shell .navbar[class*="headroom--not-top"]{padding:10px 14px}body.site-shell .navbar>.container{padding:10px 18px;border-radius:28px}body.site-shell #lol{width:calc(100% - 36px);margin:0 18px;border-radius:16px}}
+
+@media(max-width:767px){body.site-shell .navbar-brand{font-size:25px}body.site-shell .navbar .nav-link{font-size:13px}}
+

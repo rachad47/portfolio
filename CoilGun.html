@@ -25,10 +25,12 @@ Tooplate 2115 Marvel
 https://www.tooplate.com/view/2115-marvel
 
 -->
+  <link rel="stylesheet" href="css/site-shell.css?v=2">
+  <link rel="stylesheet" href="css/navbar-glass.css?v=2">
 </head>
 
 
-<body class="dark-mode">
+<body class="dark-mode site-shell">
   <script>
     // Apply the saved theme before rendering the page content.
     try {
@@ -38,48 +40,53 @@ https://www.tooplate.com/view/2115-marvel
 
 
     <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Main page </a>
+    <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
+                engineering</span></a>
+          </li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-lg-auto">
+          <div class="ml-lg-4">
+            <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
+              aria-label="Toggle dark mode" aria-pressed="false">
+              <i class="color-mode-icon"></i>
+              Color mode
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                        <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center" aria-label="Toggle dark mode" aria-pressed="false">
-                            <i class="color-mode-icon"></i>
-                            Color mode
-                        </button>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <hr class="rounded">
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
         <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
-        <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
+        <!-- <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager"> -->
+                <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
+
         <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
     </section>
     <!-- ABOUT -->
@@ -913,6 +920,7 @@ https://www.tooplate.com/view/2115-marvel
 
     <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
 
+  <script src="js/navbar-glass.js?v=1"></script>
 </body>
 
 </html>

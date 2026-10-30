@@ -1,0 +1,7 @@
+/* Homepage section separators: a thin red glass filament. */
+body.home-widget-glass{--divider-glass-height:2px;--divider-glass-red:rgba(153, 14, 37, 0.62);--divider-glass-glow:rgba(187,19,62,.32)}
+body.home-widget-glass.dark-mode{--divider-glass-red:rgba(220,40,82,.74);--divider-glass-glow:rgba(187,19,62,.20)}
+body.home-widget-glass hr.ce-divider{width:calc(100% - 44px);max-width:1110px;height:var(--divider-glass-height);box-sizing:border-box;border:0;border-radius:999px;margin:0 auto;overflow:hidden;background:linear-gradient(180deg,#ffffff60,transparent 65%),linear-gradient(90deg,transparent,var(--divider-glass-red) 12%,var(--divider-glass-red) 88%,transparent);box-shadow:0 2px 9px var(--divider-glass-glow),inset 0 1px 0 #ffffff28;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+@media(max-width:575px){body.home-widget-glass hr.ce-divider{height:2px}}
+@media(prefers-reduced-transparency:reduce){body.home-widget-glass hr.ce-divider{background:var(--flag-red);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}}
+@media(forced-colors:active){body.home-widget-glass hr.ce-divider{background:CanvasText;box-shadow:none}}

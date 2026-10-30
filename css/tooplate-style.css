@@ -934,3 +934,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .navbar:has(.navbar-collapse.show),.navbar:has(.navbar-collapse.collapsing){transform:none!important}
   .navbar .navbar-toggler{min-height:44px;min-width:44px}
 }
+
+/* Mouse/touch clicks keep the theme control clean; keyboard focus stays visible. */
+button.color-mode:focus:not(:focus-visible){outline:none;box-shadow:none}
