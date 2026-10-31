@@ -1,25 +1,155 @@
-#project.tp-grouped .tp-group:has(.hack-row){display:block}
-#project.tp-grouped .tp-group:has(.hack-row)>.tp-group-heading{margin-bottom:22px;padding-bottom:20px}
-#project.tp-grouped .tp-group:has(.hack-row)>.tp-entry+.tp-entry{margin-top:23px;padding-top:23px;border-top:1px solid var(--divider)}
-.hack-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:25px;align-items:center;text-align:left}
-.hack-row figure{margin:0;min-width:0}
-#project.tp-ready .hack-row img{width:100%;height:auto;max-height:220px;display:block;object-fit:contain;border-radius:14px!important}
-.hack-row figcaption{font-size:10px;line-height:1.6;color:var(--body-text);margin-top:8px}
-.hack-row-event{font:10px/1.6 'Space Grotesk',Arial,sans-serif;letter-spacing:.8px;text-transform:uppercase;color:var(--body-text)}
-#project.tp-ready .hack-row h3{font-size:26px;font-weight:500;line-height:1.25;letter-spacing:-.6px;margin:8px 0 12px}
-#project.tp-ready .hack-row p{font-size:14px;line-height:1.75;margin:9px 0 0;color:var(--body-text)}
-.hack-row strong{font-weight:500;color:var(--page-text)}
-.hack-row a{display:inline-block;margin-top:13px;border-bottom:1px solid var(--flag-red);padding-bottom:2px;font-size:12px;color:var(--page-text)}
-@media(max-width:575px){.hack-row{gap:14px;align-items:start}#project.tp-ready .hack-row h3{font-size:22px}#project.tp-ready .hack-row p{font-size:12px;line-height:1.75}.hack-row-event{font-size:9px}#project.tp-ready .hack-row img{max-height:160px}.hack-row figcaption{font-size:9px}}
+#project.tp-grouped .tp-group:has(.hack-row) {
+  display: block
+}
+
+#project.tp-grouped .tp-group:has(.hack-row)>.tp-group-heading {
+  margin-bottom: 22px;
+  padding-bottom: 20px
+}
+
+#project.tp-grouped .tp-group:has(.hack-row)>.tp-entry+.tp-entry {
+  margin-top: 23px;
+  padding-top: 23px;
+  border-top: 1px solid var(--divider)
+}
+
+.hack-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: 25px;
+  align-items: center;
+  text-align: left
+}
+
+.hack-row figure {
+  margin: 0;
+  min-width: 0
+}
+
+#project.tp-ready .hack-row img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  display: block;
+  object-fit: contain;
+  border-radius: 14px !important
+}
+
+.hack-row figcaption {
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin-top: 8px
+}
+
+.hack-row-event {
+  font: 10px/1.6 'Space Grotesk', Arial, sans-serif;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--body-text)
+}
+
+#project.tp-ready .hack-row h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.6px;
+  margin: 8px 0 12px
+}
+
+#project.tp-ready .hack-row p {
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 9px 0 0;
+  color: var(--body-text)
+}
+
+.hack-row strong {
+  font-weight: 500;
+  color: var(--page-text)
+}
+
+.hack-row a {
+  display: inline-block;
+  margin-top: 13px;
+  border-bottom: 1px solid var(--flag-red);
+  padding-bottom: 2px;
+  font-size: 12px;
+  color: var(--page-text)
+}
+
+@media(max-width:575px) {
+  .hack-row {
+    gap: 14px;
+    align-items: start
+  }
+
+  #project.tp-ready .hack-row h3 {
+    font-size: 22px
+  }
+
+  #project.tp-ready .hack-row p {
+    font-size: 12px;
+    line-height: 1.75
+  }
+
+  .hack-row-event {
+    font-size: 9px
+  }
+
+  #project.tp-ready .hack-row img {
+    max-height: 160px
+  }
+
+  .hack-row figcaption {
+    font-size: 9px
+  }
+}
 
 /* Slightly larger hackathon photographs, same row layout. */
-.hack-row{grid-template-columns:minmax(0,29fr) minmax(0,71fr)}
-#project.tp-ready .hack-row img{max-height:250px}
-@media(max-width:575px){.hack-row{grid-template-columns:minmax(0,29fr) minmax(0,71fr)}#project.tp-ready .hack-row img{max-height:180px}}
-/* Matching photo frames, using the Canada Welcomes photograph's ratio. */
-#project.tp-ready .hack-row img.wb-media{width:100%;max-width:230px;aspect-ratio:716/779;height:auto;max-height:none;object-fit:cover;object-position:center}
-@media(max-width:575px){#project.tp-ready .hack-row img.wb-media{max-width:165px}}
-/* A small reduction in both hackathon photo sizes. */
-#project.tp-ready .hack-row img.wb-media{width:80%;max-width:100px}
-@media(max-width:575px){#project.tp-ready .hack-row img.wb-media{max-width:90px}}
+.hack-row {
+  grid-template-columns: minmax(0, 29fr) minmax(0, 71fr)
+}
 
+#project.tp-ready .hack-row img {
+  max-height: 250px
+}
+
+@media(max-width:575px) {
+  .hack-row {
+    grid-template-columns: minmax(0, 29fr) minmax(0, 71fr)
+  }
+
+  #project.tp-ready .hack-row img {
+    max-height: 180px
+  }
+}
+
+/* Matching photo frames, using the Canada Welcomes photograph's ratio. */
+#project.tp-ready .hack-row img.wb-media {
+  width: 100%;
+  max-width: 230px;
+  aspect-ratio: 716/779;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  object-position: center
+}
+
+@media(max-width:575px) {
+  #project.tp-ready .hack-row img.wb-media {
+    max-width: 165px
+  }
+}
+
+/* A small reduction in both hackathon photo sizes. */
+#project.tp-ready .hack-row img.wb-media {
+  width: 80%;
+  max-width: 100px
+}
+
+@media(max-width:575px) {
+  #project.tp-ready .hack-row img.wb-media {
+    max-width: 90px
+  }
+}

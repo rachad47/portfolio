@@ -1,50 +1,222 @@
 /* Consistent edge lighting; no extra image padding or change in card size. */
-#project.tp-ready .tp-group img.wb-media.programmingLA{padding:0;border-radius:14px!important;filter:drop-shadow(0 3px 6px #00214738) drop-shadow(0 0 8px #0a316120)}
-.dark-mode #project.tp-ready .tp-group img.wb-media.programmingLA{filter:drop-shadow(0 0 4px #d6eaff55) drop-shadow(0 0 10px #6cbaff40)}
+#project.tp-ready .tp-group img.wb-media.programmingLA {
+  padding: 0;
+  border-radius: 14px !important;
+  filter: drop-shadow(0 3px 6px #00214738) drop-shadow(0 0 8px #0a316120)
+}
+
+.dark-mode #project.tp-ready .tp-group img.wb-media.programmingLA {
+  filter: drop-shadow(0 0 4px #d6eaff55) drop-shadow(0 0 10px #6cbaff40)
+}
+
 /* Keep the full image frame and align to the content edges. */
-#project.tp-ready .orbit-gimbal>figure{display:flex;flex-direction:column;align-items:flex-start}
-#project.tp-ready .orbit-gimbal img.wb-media{width:auto;max-width:100%;height:auto;max-height:285px;object-position:left center}
-#project.tp-ready .orbit-gallery figure{display:flex;flex-direction:column;align-items:flex-start}
-#project.tp-ready .orbit-gallery figure:nth-child(2){align-items:center}
-#project.tp-ready .orbit-gallery figure:last-child{align-items:flex-end}
-#project.tp-ready .sim-card-photos figure{display:flex;flex-direction:column;align-items:flex-start}
-#project.tp-ready .sim-card-photos figure:nth-child(2){align-items:center}
-#project.tp-ready .sim-card-photos figure:last-child{align-items:flex-end}
-#project.tp-ready .sim-card img.wb-media{width:auto;max-width:100%;object-position:left center}
-#project.tp-ready .sim-card-photos figure:last-child img.wb-media{object-position:right center}
-#project.tp-ready .sim-card-photos figure:last-child figcaption{text-align:right}
-#project.tp-ready .hack-row figure{display:flex;flex-direction:column;align-items:flex-start}
-#project.tp-ready .hack-row img.wb-media{width:auto;max-width:100%;object-position:left center}
-#project.tp-ready .diy-photos figure{display:flex;flex-direction:column;align-items:flex-start}
-#project.tp-ready .tp-entry:has(.diy-note):last-child .diy-photos figure{align-items:flex-end}
-#project.tp-ready .diy-detail-photo img.wb-media{width:auto;max-width:100%;object-position:left center}
-#project.tp-ready .tp-entry:has(.diy-note):last-child .diy-detail-photo img.wb-media{object-position:right center}
-#project.tp-ready #JobS img.wb-media{display:block;margin-left:auto;margin-right:0;max-width:100%}
-@media(max-width:575px){#project.tp-ready .orbit-gimbal img.wb-media{max-height:240px}#project.tp-ready .tp-group img.wb-media.programmingLA{border-radius:12px!important}}
+#project.tp-ready .orbit-gimbal>figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+#project.tp-ready .orbit-gimbal img.wb-media {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 285px;
+  object-position: left center
+}
+
+#project.tp-ready .orbit-gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+#project.tp-ready .orbit-gallery figure:nth-child(2) {
+  align-items: center
+}
+
+#project.tp-ready .orbit-gallery figure:last-child {
+  align-items: flex-end
+}
+
+#project.tp-ready .sim-card-photos figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+#project.tp-ready .sim-card-photos figure:nth-child(2) {
+  align-items: center
+}
+
+#project.tp-ready .sim-card-photos figure:last-child {
+  align-items: flex-end
+}
+
+#project.tp-ready .sim-card img.wb-media {
+  width: auto;
+  max-width: 100%;
+  object-position: left center
+}
+
+#project.tp-ready .sim-card-photos figure:last-child img.wb-media {
+  object-position: right center
+}
+
+#project.tp-ready .sim-card-photos figure:last-child figcaption {
+  text-align: right
+}
+
+#project.tp-ready .hack-row figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+#project.tp-ready .hack-row img.wb-media {
+  width: auto;
+  max-width: 100%;
+  object-position: left center
+}
+
+#project.tp-ready .diy-photos figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+#project.tp-ready .tp-entry:has(.diy-note):last-child .diy-photos figure {
+  align-items: flex-end
+}
+
+#project.tp-ready .diy-detail-photo img.wb-media {
+  width: auto;
+  max-width: 100%;
+  object-position: left center
+}
+
+#project.tp-ready .tp-entry:has(.diy-note):last-child .diy-detail-photo img.wb-media {
+  object-position: right center
+}
+
+#project.tp-ready #JobS img.wb-media {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 100%
+}
+
+@media(max-width:575px) {
+  #project.tp-ready .orbit-gimbal img.wb-media {
+    max-height: 240px
+  }
+
+  #project.tp-ready .tp-group img.wb-media.programmingLA {
+    border-radius: 12px !important
+  }
+}
 
 /* Center each caption beneath its media column. */
 #project.tp-ready figure>figcaption,
-#project.tp-ready .sim-card-photos figure:last-child figcaption{width:100%;text-align:center}
+#project.tp-ready .sim-card-photos figure:last-child figcaption {
+  width: 100%;
+  text-align: center
+}
+
 /* Keep hackathon photos compact; this rule follows the shared media styles. */
-#project.tp-ready .hack-row{grid-template-columns:180px minmax(0,1fr);align-items:start;gap:24px}
-#project.tp-ready .hack-row img.wb-media{width:180px;max-width:100%;height:196px;max-height:none;aspect-ratio:716/779;object-fit:cover;object-position:center}
-#project.tp-ready .hack-row .hack-row-event{display:block}
-#project.tp-ready .hack-row h3{margin-top:6px}
-@media(max-width:767px){#project.tp-ready .hack-row{grid-template-columns:145px minmax(0,1fr);gap:18px}#project.tp-ready .hack-row img.wb-media{width:145px;height:158px}}
-@media(max-width:575px){#project.tp-ready .hack-row{grid-template-columns:100px minmax(0,1fr);gap:14px}#project.tp-ready .hack-row img.wb-media{width:100px;height:109px}}
+#project.tp-ready .hack-row {
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px
+}
+
+#project.tp-ready .hack-row img.wb-media {
+  width: 180px;
+  max-width: 100%;
+  height: 196px;
+  max-height: none;
+  aspect-ratio: 716/779;
+  object-fit: cover;
+  object-position: center
+}
+
+#project.tp-ready .hack-row .hack-row-event {
+  display: block
+}
+
+#project.tp-ready .hack-row h3 {
+  margin-top: 6px
+}
+
+@media(max-width:767px) {
+  #project.tp-ready .hack-row {
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 18px
+  }
+
+  #project.tp-ready .hack-row img.wb-media {
+    width: 145px;
+    height: 158px
+  }
+}
+
+@media(max-width:575px) {
+  #project.tp-ready .hack-row {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 14px
+  }
+
+  #project.tp-ready .hack-row img.wb-media {
+    width: 100px;
+    height: 109px
+  }
+}
+
 /* Align the sidestick photographs and copy along a common top edge. */
-@media(min-width:768px){
- #project.tp-ready #a320-sidestick .sim-card{grid-template-columns:minmax(0,225px) minmax(0,1fr) minmax(0,173px);gap:24px;align-items:start;padding:14px}
- #project.tp-ready #a320-sidestick .sim-card-copy{padding:0}
- #project.tp-ready #a320-sidestick .sim-card-copy h3{margin-top:0}
- #project.tp-ready #a320-sidestick .sim-card img.wb-media{height:280px;max-height:280px;object-fit:contain;object-position:top center}
+@media(min-width:768px) {
+  #project.tp-ready #a320-sidestick .sim-card {
+    grid-template-columns: minmax(0, 225px) minmax(0, 1fr) minmax(0, 173px);
+    gap: 24px;
+    align-items: start;
+    padding: 14px
+  }
+
+  #project.tp-ready #a320-sidestick .sim-card-copy {
+    padding: 0
+  }
+
+  #project.tp-ready #a320-sidestick .sim-card-copy h3 {
+    margin-top: 0
+  }
+
+  #project.tp-ready #a320-sidestick .sim-card img.wb-media {
+    height: 280px;
+    max-height: 280px;
+    object-fit: contain;
+    object-position: top center
+  }
 }
-@media(min-width:768px) and (max-width:991px){
- #project.tp-ready #a320-sidestick .sim-card{grid-template-columns:minmax(0,160px) minmax(0,1fr) minmax(0,124px);gap:18px}
- #project.tp-ready #a320-sidestick .sim-card img.wb-media{height:200px;max-height:200px}
+
+@media(min-width:768px) and (max-width:991px) {
+  #project.tp-ready #a320-sidestick .sim-card {
+    grid-template-columns: minmax(0, 160px) minmax(0, 1fr) minmax(0, 124px);
+    gap: 18px
+  }
+
+  #project.tp-ready #a320-sidestick .sim-card img.wb-media {
+    height: 200px;
+    max-height: 200px
+  }
 }
+
 /* Balance sidestick media with the height of its bullet list. */
-@media(min-width:992px){
- #project.tp-ready #a320-sidestick .sim-card{grid-template-columns:minmax(0,193px) minmax(0,1fr) minmax(0,148px);align-items:center}
- #project.tp-ready #a320-sidestick .sim-card img.wb-media{height:240px;max-height:240px}
+@media(min-width:992px) {
+  #project.tp-ready #a320-sidestick .sim-card {
+    grid-template-columns: minmax(0, 193px) minmax(0, 1fr) minmax(0, 148px);
+    align-items: center
+  }
+
+  #project.tp-ready #a320-sidestick .sim-card img.wb-media {
+    height: 240px;
+    max-height: 240px
+  }
 }

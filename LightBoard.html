@@ -1,434 +1,527 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Build, baby, build! 🛠️ | Built a lightboard and produced computer science lessons">
-  <meta name="author" content="Rachad El Moutaouaffiq">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+      content="Build, baby, build! 🛠️ | Built a lightboard and produced computer science lessons">
+    <meta name="author" content="Rachad El Moutaouaffiq">
 
-  <title>Lightboard | Rachad El Moutaouaffiq</title>
-  <!-- Project shared-link preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Build, baby, build! 🛠️ | A homemade lightboard built to make complex ideas easier to see. 💡✍️">
-  <meta property="og:description" content="Built a lightboard and produced computer science lessons.">
-  <meta property="og:url" content="https://rachad.dev/LightBoard.html">
-  <meta property="og:image" content="https://rachad.dev/assets/projects/lightboard/teaching-demo-preview.webp">
-  <meta property="og:image:alt" content="Lightboard project preview">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Build, baby, build! 🛠️ | A homemade lightboard built to make complex ideas easier to see. 💡✍️">
-  <meta name="twitter:description" content="Built a lightboard and produced computer science lessons.">
-  <meta name="twitter:image" content="https://rachad.dev/assets/projects/lightboard/teaching-demo-preview.webp">
+    <title>Lightboard | Rachad El Moutaouaffiq</title>
+    <!-- Project shared-link preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+      content="Build, baby, build! 🛠️ | A homemade lightboard built to make complex ideas easier to see. 💡✍️">
+    <meta property="og:description" content="Built a lightboard and produced computer science lessons.">
+    <meta property="og:url" content="https://rachad.dev/LightBoard.html">
+    <meta property="og:image" content="https://rachad.dev/assets/projects/lightboard/teaching-demo-preview.webp">
+    <meta property="og:image:alt" content="Lightboard project preview">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+      content="Build, baby, build! 🛠️ | A homemade lightboard built to make complex ideas easier to see. 💡✍️">
+    <meta name="twitter:description" content="Built a lightboard and produced computer science lessons.">
+    <meta name="twitter:image" content="https://rachad.dev/assets/projects/lightboard/teaching-demo-preview.webp">
 
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/unicons.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-  <!-- MAIN STYLE -->
-  <link rel="stylesheet" href="css/tooplate-style.css">
-  <link rel="icon" type="image/x-icon" href="assets/site/algorithm-icon.ico">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="icon" type="image/x-icon" href="assets/site/algorithm-icon.ico">
 
-  <!--
+    <!--
 
 Tooplate 2115 Marvel
 
 https://www.tooplate.com/view/2115-marvel
 
 -->
-  <link rel="stylesheet" href="css/site-shell.css?v=2">
-  <link rel="stylesheet" href="css/navbar-glass.css?v=2">
-  <link rel="stylesheet" href="css/glass-dividers.css?v=2">
-  <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
-  <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
-  <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
-</head>
+    <link rel="stylesheet" href="css/site-shell.css?v=2">
+    <link rel="stylesheet" href="css/navbar-glass.css?v=2">
+    <link rel="stylesheet" href="css/glass-dividers.css?v=2">
+    <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
+    <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
+    <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
+  </head>
 
 
-<body class="dark-mode site-shell project-glass navy-editorial">
-  <script>
+  <body class="dark-mode site-shell project-glass navy-editorial">
+    <script>
     // Apply the saved theme before rendering the page content.
     try {
       document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
     } catch (error) { /* Keep the default navy theme if storage is unavailable. */ }
   </script>
 
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
-                engineering</span></a>
-          </li>
-          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
+                  engineering</span></a>
+            </li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span
+                  data-hover="Contact">Contact</span></a>
+            </li>
+          </ul>
 
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
-              aria-label="Toggle dark mode" aria-pressed="false">
-              <i class="color-mode-icon"></i>
-              Color mode
-            </button>
-          </div>
-        </ul>
+          <ul class="navbar-nav ml-lg-auto">
+            <div class="ml-lg-4">
+              <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
+                aria-label="Toggle dark mode" aria-pressed="false">
+                <i class="color-mode-icon"></i>
+                Color mode
+              </button>
+            </div>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
-    <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:500px ;" alt="" class="img-fluid" id="lool"> -->
-    <img src="assets/projects/lightboard/project-cover-alternate.webp" style="max-height:560px ;" alt="Lightboard — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
-    <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
-  </section>
-  <!-- ABOUT -->
-  <section class="contact py-3" id="project-details">
+    </nav>
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
+      <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:500px ;" alt="" class="img-fluid" id="lool"> -->
+      <img src="assets/projects/lightboard/project-cover-alternate.webp" style="max-height:560px ;"
+        alt="Lightboard — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
+      <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
+    </section>
+    <!-- ABOUT -->
+    <section class="contact py-3" id="project-details">
 
-    <div class="container">
+      <div class="container">
 
-      <h1 style="text-align: center;"> Lightboard 💡✍️</h1>
-<section class="project-glass-panel" aria-label="Intro"><div class="row align-items-center">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h2 style="text-align: center;">Introduction</h2>
-          <br>
-          <ul class="project-point-list"><li>Before my 1st programming Olympiad, I thought coding was mostly simple input/output work, like my Arduino projects. I had not yet encountered  <i>Big O notation, sorting algorithms, or graphs</i>. I was eliminated early, but it became a turning point. I learned a lot afterward and placed 12th nationally the following year.</li></ul>
+        <h1 style="text-align: center;"> Lightboard 💡✍️</h1>
+        <section class="project-glass-panel" aria-label="Intro">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h2 style="text-align: center;">Introduction</h2>
+              <br>
+              <ul class="project-point-list">
+                <li>Before my 1st programming Olympiad, I thought coding was mostly simple input/output work, like my
+                  Arduino projects. I had not yet encountered <i>Big O notation, sorting algorithms, or graphs</i>. I
+                  was eliminated early, but it became a turning point. I learned a lot afterward and placed 12th
+                  nationally the following year.</li>
+              </ul>
 
-          <!-- <li>Before my 1st participation in the olympiads I used to think I'm good at coding as I was the only guy good
+              <!-- <li>Before my 1st participation in the olympiads I used to think I'm good at coding as I was the only guy good
             Arduino experience in Grade 9, I went to the Olympiads and I was very confident </li>
           <br> -->
-          <!-- <p>My participation in the olympiads was by far the biggest plot in my life as I used to think prior that that
+              <!-- <p>My participation in the olympiads was by far the biggest plot in my life as I used to think prior that that
                   programming is all about input/output (my experience was limted to arduino by then)</p> -->
-          
-          <br>
 
-        </div>
-        <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
-          <img style=" border-radius:40px ; width: 100%;height: auto; " src="assets/projects/lightboard/teaching-demo-optimized.webp" alt="Intro — project illustration" decoding="async" loading="lazy">
-          <br><br>
-
-        </div>
-
-      </div>
-      
-      <div class="row">
-        <div class="col-12">
-          <ul class="project-point-list"><li>During COVID, I had plenty of free time and wanted to give back to the community by helping Moroccan students learn computer science in a more interactive way.</li></ul>
-        </div>
-
-      </div>
-
-      <p><b>Content:</b>  I produced 12 lessons, each around 25–48 minutes long.  <i>(The videos are not in English :/) </i> The topics include:
-      </p>
-
-      <div class="row ">
-        <div class="col-sm-12 col-md-4 col-lg-4">
-
-          <ul class="project-point-list"><li> <small>Lec 1: <a href="https://www.youtube.com/watch?v=Gi3oVPW4pEE&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=2&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">introduction
-                to CS &amp; Big(O) Notation.</a></small></li>
-          <li> <small>Lec 2: <a href="https://www.youtube.com/watch?v=cgpgqQ0aDrY&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=3&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Scratch/Compiled
-                vs Interpred lang.</a></small></li>
-
-          <li> <small>Lec 3: <a href="https://www.youtube.com/watch?v=_ShodKsMJ8s&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=4&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Data
-                Types &amp; Casting &amp; Operations.</a></small></li>
-          <li> <small>Lec 4: <a href="https://www.youtube.com/watch?v=oU6o5YziU80&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=5&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Conditions
-                &amp; Loops &amp; Functions.</a></small></li></ul>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-
-          <ul class="project-point-list"><li><small>Lec 5: <a href="https://www.youtube.com/watch?v=oId-SaZLzu4&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=6&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Libraries
-                &amp; Compiling &amp; Debug.</a></small></li>
-          <li> <small>Lec 6: <a href="https://www.youtube.com/watch?v=wWJX15ShS5s&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=7&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Arrays
-                &amp; Strings &amp; Encryption.</a></small></li>
-          <li> <small>Lec 7: <a href="https://www.youtube.com/watch?v=gZHimmAeexY&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=8&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Selection
-                Sort vs Bubble sort.</a></small></li>
-          <li> <small>Lec 8: <a href="https://www.youtube.com/watch?v=QSF4DzpJFn0&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=9&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Count
-                vs Merge Sort &amp; Recursion.</a></small></li></ul>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <ul class="project-point-list"><li> <small>Lec 9: <a href="https://www.youtube.com/watch?v=xXzQVGhC5xc&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=10&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Hexadecimal
-                &amp; Pointers &amp; Strings.</a></small></li>
-          <li> <small>Lec 10: <a href="https://www.youtube.com/watch?v=uvtFOQF76Bw&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=11&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Swap
-                with Value vs Reference.</a></small></li>
-          <li> <small>Lec 11: <a href="https://www.youtube.com/watch?v=WaH6WChbb7Q&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=12&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Linked-List:
-                Add + Search + Delete.</a></small></li>
-          <li> <small>Lec 12: <a href="https://www.youtube.com/watch?v=O050JVkDtr4&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=13&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Hash-Tables
-                &amp; Trees &amp; Tries.</a></small></li></ul>
-        </div>
-      </div></section>
-</div>
-    <br>
-
-    <!-- <h2 style="text-align: center;">Steps</h2> -->
-    <br>
-
-    <div style="text-align: left;" class="container">
-      <hr class="rounded">
-<section class="project-glass-panel" aria-label="Testing"><!-- <h3>Testing</h3> -->
-      <div class="row  align-items-center">
-        <div class="col-sm-12 col-md-6 col-lg-7">
-          <h2 style="text-align: center;">Testing</h2>
-          <br>
-          <ul>
-          <li>A lightboard sends light through a transparent sheet’s edge, making fluorescent marker strokes stand out against the background.</li>
-          <li>Before building the full frame, I tested the idea on a small acrylic sheet, and it worked!</li></ul>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-5">
-          <img src="assets/projects/lightboard/testing-01.webp" alt="Testing — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-      </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Building the frame"><h2 style="text-align: center;">Building the frame</h2>
-      <br>
-      <div style="text-align: center;" class="row">
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/building-the-frame-01.webp" alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption>Cutting the wood.</figcaption>
-        </div>
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/building-the-frame-02.webp" alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption>Screwing the pieces together.</figcaption>
-        </div>
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/building-the-frame-03.webp" alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption>Poor blanket :/</figcaption>
-        </div>
-      </div>
-      <div style="text-align: center;" class="row">
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/building-the-frame-04.webp" alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption>Built everything in my student dorm :) </figcaption>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/building-the-frame-05.webp" alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption>Strengthening the frame.</figcaption>
-        </div>
-      </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Acrylic plexiglass"><h2 style="text-align: center;">Acrylic plexiglass</h2>
-      <br>
-      <p style="text-align: center;">Dimensions: 3 ft × 6 ft × 15/64 in / 91 cm × 183 cm × 0.6 cm. </p>
-      <div class="row">
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/acrylic-plexiglass-02.webp" alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/acrylic-plexiglass-03.webp" alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/acrylic-plexiglass-01.webp" alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-      </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Lights"><h2 style="text-align: center;">Lights</h2>
-      <br>
-      <figcaption style="text-align: center;">The LED strip runs along the edge of the plexiglass, facing into its thickness so the light travels through the sheet. </figcaption>
-      <div style="text-align: center;" class="row">
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/lights-01.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption style="text-align: center;">Installing the LEDs.</figcaption>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/lights-02.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <figcaption style="text-align: center;">Looking good.</figcaption>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/lightboard-assembly.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <p style="text-align: center;">Added bulbs to light my face.</p>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/lights-03.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-          <p style="text-align: center;">Added black fabric to reduce background reflections.</p>
-
-        </div>
-      </div>
-      <br>
-      <p style="text-align: center; margin-bottom: 0;">Changing the LED color changes the writing’s appearance without erasing or redrawing anything on the board.</p>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/lights-04.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/lights-05.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/lights-06-optimized.webp" alt="Lights — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-      </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Making videos"><div class="row align-items-center">
-        <div class="col-sm-12 col-md-6 col-lg-5">
-          <h2 style="text-align: center;">Making videos</h2>
-          <br>
-          <ul class="project-point-list"><li><b>Camera: </b>Huawei P30 Pro.</li>
-          <li><b>Camera app: </b>Pro mode in the built-in app.</li>
-          <li><b>Audio: </b>This part was  <b>tricky</b>  because the phone was some distance away, with the board between us. I used a  <a href="https://www.google.com/search?q=LavMicro&amp;rlz=1C1VDKB_enCA1011CA1011&amp;sxsrf=ALiCzsZYaiKEkp-1Za6ZPWeeURZ_u_Z_qw:1661575876042&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwiOku--nOb5AhXpLzQIHctTA4cQ_AUoAnoECAEQBA&amp;biw=1603&amp;bih=1214&amp;dpr=1">LavMicro</a>
-             to record audio separately, then synchronized it with the video during editing  <i>(a clap at the start gave me a reference point).</i></li></ul>
-
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-7">
-          <img src="assets/projects/lightboard/making-videos-01.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-      </div>
-
-      
-
-      <br>
-
-      <p style="text-align: center; margin-bottom: 0;">Organizing the ideas and fitting each lesson onto the lightboard.</p>
-      <div class="row">
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/making-videos-02.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/making-videos-03.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-          <img src="assets/projects/lightboard/making-videos-04.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
-        </div>
-      </div>
-
-      <br>
-      <div class="row">
-
-        <div class="col-sm-12 col-md-6 col-lg-7">
-
-<ul>
-          <li>And no,  <i><b style="color:rgb(155, 4, 4)">I AM NOT WRITING BACKWARD</b></i>. I get that question a lot! I simply flip the footage horizontally in Adobe Premiere.</li>
-         </ul>
-          <div class="row">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-
-              <img src="assets/projects/lightboard/teaching-demo-alternate-optimized.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <br>
 
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/lightboard-detail.webp" style="width: 100%;height: auto;" class="programmingLA" alt="Making videos — project illustration" decoding="async" loading="lazy">
+            <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
+              <img style=" border-radius:40px ; width: 100%;height: auto; "
+                src="assets/projects/lightboard/teaching-demo-optimized.webp" alt="Intro — project illustration"
+                decoding="async" loading="lazy">
+              <br><br>
 
             </div>
 
           </div>
-          <ul>
-          <li>Since audio and video were recorded separately, I clapped at the start to create an audio spike, then matched it to the visible clap in the footage.</li>
-</ul>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-5">
 
-          <img src="assets/projects/lightboard/making-videos-05.webp" alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+          <div class="row">
+            <div class="col-12">
+              <ul class="project-point-list">
+                <li>During COVID, I had plenty of free time and wanted to give back to the community by helping Moroccan
+                  students learn computer science in a more interactive way.</li>
+              </ul>
+            </div>
 
-        </div>
-      </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Some pics"><h2 style="text-align: center;">A few photos</h2>
+          </div>
 
+          <p><b>Content:</b> I produced 12 lessons, each around 25–48 minutes long. <i>(The videos are not in English
+              :/) </i> The topics include:
+          </p>
+
+          <div class="row ">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+              <ul class="project-point-list">
+                <li> <small>Lec 1: <a
+                      href="https://www.youtube.com/watch?v=Gi3oVPW4pEE&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=2&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">introduction
+                      to CS &amp; Big(O) Notation.</a></small></li>
+                <li> <small>Lec 2: <a
+                      href="https://www.youtube.com/watch?v=cgpgqQ0aDrY&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=3&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Scratch/Compiled
+                      vs Interpred lang.</a></small></li>
+
+                <li> <small>Lec 3: <a
+                      href="https://www.youtube.com/watch?v=_ShodKsMJ8s&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=4&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Data
+                      Types &amp; Casting &amp; Operations.</a></small></li>
+                <li> <small>Lec 4: <a
+                      href="https://www.youtube.com/watch?v=oU6o5YziU80&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=5&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Conditions
+                      &amp; Loops &amp; Functions.</a></small></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+
+              <ul class="project-point-list">
+                <li><small>Lec 5: <a
+                      href="https://www.youtube.com/watch?v=oId-SaZLzu4&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=6&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Libraries
+                      &amp; Compiling &amp; Debug.</a></small></li>
+                <li> <small>Lec 6: <a
+                      href="https://www.youtube.com/watch?v=wWJX15ShS5s&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=7&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Arrays
+                      &amp; Strings &amp; Encryption.</a></small></li>
+                <li> <small>Lec 7: <a
+                      href="https://www.youtube.com/watch?v=gZHimmAeexY&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=8&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Selection
+                      Sort vs Bubble sort.</a></small></li>
+                <li> <small>Lec 8: <a
+                      href="https://www.youtube.com/watch?v=QSF4DzpJFn0&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=9&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Count
+                      vs Merge Sort &amp; Recursion.</a></small></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <ul class="project-point-list">
+                <li> <small>Lec 9: <a
+                      href="https://www.youtube.com/watch?v=xXzQVGhC5xc&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=10&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Hexadecimal
+                      &amp; Pointers &amp; Strings.</a></small></li>
+                <li> <small>Lec 10: <a
+                      href="https://www.youtube.com/watch?v=uvtFOQF76Bw&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=11&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Swap
+                      with Value vs Reference.</a></small></li>
+                <li> <small>Lec 11: <a
+                      href="https://www.youtube.com/watch?v=WaH6WChbb7Q&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=12&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Linked-List:
+                      Add + Search + Delete.</a></small></li>
+                <li> <small>Lec 12: <a
+                      href="https://www.youtube.com/watch?v=O050JVkDtr4&amp;list=PLxSf1v1Fa0nMM7JK6csPWmot9qNG74otc&amp;index=13&amp;ab_channel=ComputerScience-%D8%B9%D9%84%D9%88%D9%85%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1">Hash-Tables
+                      &amp; Trees &amp; Tries.</a></small></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
       <br>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/some-pics-01.webp" alt="Some pics — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/some-pics-02.webp" alt="Some pics — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+      <!-- <h2 style="text-align: center;">Steps</h2> -->
+      <br>
 
-        </div>
+      <div style="text-align: left;" class="container">
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Testing"><!-- <h3>Testing</h3> -->
+          <div class="row  align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-7">
+              <h2 style="text-align: center;">Testing</h2>
+              <br>
+              <ul>
+                <li>A lightboard sends light through a transparent sheet’s edge, making fluorescent marker strokes stand
+                  out against the background.</li>
+                <li>Before building the full frame, I tested the idea on a small acrylic sheet, and it worked!</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <img src="assets/projects/lightboard/testing-01.webp" alt="Testing — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Building the frame">
+          <h2 style="text-align: center;">Building the frame</h2>
+          <br>
+          <div style="text-align: center;" class="row">
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/building-the-frame-01.webp"
+                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+              <figcaption>Cutting the wood.</figcaption>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/building-the-frame-02.webp"
+                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+              <figcaption>Screwing the pieces together.</figcaption>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/building-the-frame-03.webp"
+                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+              <figcaption>Poor blanket :/</figcaption>
+            </div>
+          </div>
+          <div style="text-align: center;" class="row">
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/building-the-frame-04.webp"
+                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+              <figcaption>Built everything in my student dorm :) </figcaption>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/building-the-frame-05.webp"
+                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+              <figcaption>Strengthening the frame.</figcaption>
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Acrylic plexiglass">
+          <h2 style="text-align: center;">Acrylic plexiglass</h2>
+          <br>
+          <p style="text-align: center;">Dimensions: 3 ft × 6 ft × 15/64 in / 91 cm × 183 cm × 0.6 cm. </p>
+          <div class="row">
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/acrylic-plexiglass-02.webp"
+                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/acrylic-plexiglass-03.webp"
+                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/acrylic-plexiglass-01.webp"
+                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Lights">
+          <h2 style="text-align: center;">Lights</h2>
+          <br>
+          <figcaption style="text-align: center;">The LED strip runs along the edge of the plexiglass, facing into its
+            thickness so the light travels through the sheet. </figcaption>
+          <div style="text-align: center;" class="row">
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/lights-01.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <figcaption style="text-align: center;">Installing the LEDs.</figcaption>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/lights-02.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <figcaption style="text-align: center;">Looking good.</figcaption>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/lightboard-assembly.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <p style="text-align: center;">Added bulbs to light my face.</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/lights-03.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <p style="text-align: center;">Added black fabric to reduce background reflections.</p>
+
+            </div>
+          </div>
+          <br>
+          <p style="text-align: center; margin-bottom: 0;">Changing the LED color changes the writing’s appearance
+            without erasing or redrawing anything on the board.</p>
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/lights-04.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/lights-05.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/lights-06-optimized.webp" alt="Lights — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Making videos">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <h2 style="text-align: center;">Making videos</h2>
+              <br>
+              <ul class="project-point-list">
+                <li><b>Camera: </b>Huawei P30 Pro.</li>
+                <li><b>Camera app: </b>Pro mode in the built-in app.</li>
+                <li><b>Audio: </b>This part was <b>tricky</b> because the phone was some distance away, with the board
+                  between us. I used a <a
+                    href="https://www.google.com/search?q=LavMicro&amp;rlz=1C1VDKB_enCA1011CA1011&amp;sxsrf=ALiCzsZYaiKEkp-1Za6ZPWeeURZ_u_Z_qw:1661575876042&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwiOku--nOb5AhXpLzQIHctTA4cQ_AUoAnoECAEQBA&amp;biw=1603&amp;bih=1214&amp;dpr=1">LavMicro</a>
+                  to record audio separately, then synchronized it with the video during editing <i>(a clap at the start
+                    gave me a reference point).</i></li>
+              </ul>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-7">
+              <img src="assets/projects/lightboard/making-videos-01.webp" alt="Making videos — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+
+
+          <br>
+
+          <p style="text-align: center; margin-bottom: 0;">Organizing the ideas and fitting each lesson onto the
+            lightboard.</p>
+          <div class="row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/making-videos-02.webp" alt="Making videos — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/making-videos-03.webp" alt="Making videos — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="assets/projects/lightboard/making-videos-04.webp" alt="Making videos — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+
+          <br>
+          <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-7">
+
+              <ul>
+                <li>And no, <i><b style="color:rgb(155, 4, 4)">I AM NOT WRITING BACKWARD</b></i>. I get that question a
+                  lot! I simply flip the footage horizontally in Adobe Premiere.</li>
+              </ul>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+
+                  <img src="assets/projects/lightboard/teaching-demo-alternate-optimized.webp"
+                    alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                    decoding="async" loading="lazy">
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                  <img src="assets/projects/lightboard/lightboard-detail.webp" style="width: 100%;height: auto;"
+                    class="programmingLA" alt="Making videos — project illustration" decoding="async" loading="lazy">
+
+                </div>
+
+              </div>
+              <ul>
+                <li>Since audio and video were recorded separately, I clapped at the start to create an audio spike,
+                  then matched it to the visible clap in the footage.</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5">
+
+              <img src="assets/projects/lightboard/making-videos-05.webp" alt="Making videos — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Some pics">
+          <h2 style="text-align: center;">A few photos</h2>
+
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/some-pics-01.webp" alt="Some pics — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/some-pics-02.webp" alt="Some pics — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/some-pics-04.webp" alt="Some pics — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/lightboard/some-pics-03.webp" alt="Some pics — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/some-pics-04.webp" alt="Some pics — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
 
+    </section>
+    <hr class="rounded">
+
+
+    <!-- work experienc ... -->
+
+
+    <!-- Big PROJECTS 1 -->
+
+
+    <!-- Big PROJECTS 2 -->
+
+
+    <!-- other project -->
+
+    <!-- asdgashdhasd -->
+
+
+    <!-- CONTACT -->
+
+    <!-- FOOTER -->
+    <footer id="contact" class="ce-footer">
+      <div class="container">
+        <p class="ce-eyebrow">Have a project in mind?</p>
+        <div class="ce-footer-main">
+          <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <img src="assets/projects/lightboard/some-pics-03.webp" alt="Some pics — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-
+        <div class="ce-footer-bottom"><span>Rachad El Moutaouaffiq</span>
+          <div><a href="https://www.instagram.com/rachad.mtq/">Instagram ↗</a><a
+              href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/">LinkedIn ↗</a><a
+              href="tel:+14388780603">Phone ↗</a></div>
         </div>
-      </div></section>
-</div>
-    
-
-
-  </section>
-  <hr class="rounded">
-
-
-  <!-- work experienc ... -->
-
-
-  <!-- Big PROJECTS 1 -->
-
-
-  <!-- Big PROJECTS 2 -->
-
-
-  <!-- other project -->
-
-  <!-- asdgashdhasd -->
-
-
-  <!-- CONTACT -->
-
-  <!-- FOOTER -->
-  <footer id="contact" class="ce-footer">
-    <div class="container">
-      <p class="ce-eyebrow">Have a project in mind?</p>
-      <div class="ce-footer-main">
-        <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
       </div>
-      <div class="ce-footer-bottom"><span>Rachad El Moutaouaffiq</span>
-        <div><a href="https://www.instagram.com/rachad.mtq/">Instagram ↗</a><a
-            href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/">LinkedIn ↗</a><a
-            href="tel:+14388780603">Phone ↗</a></div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/Headroom.js"></script>
-  <script src="js/jQuery.headroom.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/custom.js?v=theme-2"></script>
-  
-  <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js?v=theme-2"></script>
 
-  <script src="js/navbar-glass.js?v=1"></script>
-  <script src="js/widget-glass.js?v=editorial-1"></script>
-  <script src="js/project-media-corners.js?v=2"></script>
-</body>
+    <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
+
+    <script src="js/navbar-glass.js?v=1"></script>
+    <script src="js/widget-glass.js?v=editorial-1"></script>
+    <script src="js/project-media-corners.js?v=2"></script>
+  </body>
 
 </html>

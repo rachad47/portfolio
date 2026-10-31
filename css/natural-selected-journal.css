@@ -1,13 +1,158 @@
 /* Gallery size control: larger height = fewer photos per row; smaller = more.
    Natural image widths determine the exact count. */
-.nj-journal{--journal-photo-height:200px}
-.nj-intro{padding:25px 0 30px}.nj-intro h1{font-size:clamp(36px,4.5vw,55px);letter-spacing:-1.6px;line-height:1.1;margin:15px 0}.nj-intro>p{color:var(--body-text);font-size:15px}.nj-trip{border-top:1px solid var(--divider);padding:26px 0 30px;scroll-margin-top:120px;position:relative}.nj-trip:has(.nj-photo:hover),.nj-trip:has(.nj-photo:focus-visible){z-index:2}.nj-trip h2{font-size:25px;letter-spacing:-.6px;margin:0 0 8px}.nj-trip header>p{font-size:13px;line-height:1.7;margin:0 0 20px;color:var(--body-text)}.nj-photos{display:flex;flex-wrap:wrap;align-items:center;gap:12px;overflow:visible}.nj-photo{position:relative;display:block;flex:0 0 auto;border:0;padding:0;background:transparent;border-radius:12px;cursor:zoom-in;transition:transform .22s ease;z-index:0}.nj-photo img{display:block;height:var(--journal-photo-height);width:auto;max-width:100%;border-radius:12px;object-fit:contain;box-shadow:0 5px 18px #00214714;transition:box-shadow .22s ease}.nj-photo:focus-visible{outline:3px solid var(--flag-red);outline-offset:4px}
-@media(hover:hover) and (pointer:fine){.nj-photo:hover,.nj-photo:focus-visible{transform:scale(1.65);z-index:5}.nj-photo:hover img,.nj-photo:focus-visible img{box-shadow:0 15px 42px #0006}}
-.nj-lightbox>img{margin:auto}.nj-lightbox>p{margin-top:12px}
-@media(max-width:767px){.nj-photos{gap:10px}.nj-journal{--journal-photo-height:115px}.nj-trip h2{font-size:23px}}
-@media(max-width:480px){.nj-journal{--journal-photo-height:95px}.nj-photos{gap:9px}.nj-trip{padding:22px 0}.nj-intro .cj-back{margin-bottom:20px}}
-@media(prefers-reduced-motion:reduce){.nj-photo,.nj-photo img{transition:none}}
-body.cj-page.dark-mode .navbar .navbar-brand,body.cj-page.dark-mode .navbar .nav-link,body.cj-page.dark-mode .nj-intro .cj-back{color:var(--page-text)}
+.nj-journal {
+  --journal-photo-height: 200px
+}
+
+.nj-intro {
+  padding: 25px 0 30px
+}
+
+.nj-intro h1 {
+  font-size: clamp(36px, 4.5vw, 55px);
+  letter-spacing: -1.6px;
+  line-height: 1.1;
+  margin: 15px 0
+}
+
+.nj-intro>p {
+  color: var(--body-text);
+  font-size: 15px
+}
+
+.nj-trip {
+  border-top: 1px solid var(--divider);
+  padding: 26px 0 30px;
+  scroll-margin-top: 120px;
+  position: relative
+}
+
+.nj-trip:has(.nj-photo:hover),
+.nj-trip:has(.nj-photo:focus-visible) {
+  z-index: 2
+}
+
+.nj-trip h2 {
+  font-size: 25px;
+  letter-spacing: -.6px;
+  margin: 0 0 8px
+}
+
+.nj-trip header>p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+  color: var(--body-text)
+}
+
+.nj-photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  overflow: visible
+}
+
+.nj-photo {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 12px;
+  cursor: zoom-in;
+  transition: transform .22s ease;
+  z-index: 0
+}
+
+.nj-photo img {
+  display: block;
+  height: var(--journal-photo-height);
+  width: auto;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 5px 18px #00214714;
+  transition: box-shadow .22s ease
+}
+
+.nj-photo:focus-visible {
+  outline: 3px solid var(--flag-red);
+  outline-offset: 4px
+}
+
+@media(hover:hover) and (pointer:fine) {
+
+  .nj-photo:hover,
+  .nj-photo:focus-visible {
+    transform: scale(1.65);
+    z-index: 5
+  }
+
+  .nj-photo:hover img,
+  .nj-photo:focus-visible img {
+    box-shadow: 0 15px 42px #0006
+  }
+}
+
+.nj-lightbox>img {
+  margin: auto
+}
+
+.nj-lightbox>p {
+  margin-top: 12px
+}
+
+@media(max-width:767px) {
+  .nj-photos {
+    gap: 10px
+  }
+
+  .nj-journal {
+    --journal-photo-height: 115px
+  }
+
+  .nj-trip h2 {
+    font-size: 23px
+  }
+}
+
+@media(max-width:480px) {
+  .nj-journal {
+    --journal-photo-height: 95px
+  }
+
+  .nj-photos {
+    gap: 9px
+  }
+
+  .nj-trip {
+    padding: 22px 0
+  }
+
+  .nj-intro .cj-back {
+    margin-bottom: 20px
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  .nj-photo,
+  .nj-photo img {
+    transition: none
+  }
+}
+
+body.cj-page.dark-mode .navbar .navbar-brand,
+body.cj-page.dark-mode .navbar .nav-link,
+body.cj-page.dark-mode .nj-intro .cj-back {
+  color: var(--page-text)
+}
 
 /* A small height adjustment keeps Hawaii balanced in three desktop rows. */
-@media(min-width:768px){#selected-trip-7{--journal-photo-height:196px}}
+@media(min-width:768px) {
+  #selected-trip-7 {
+    --journal-photo-height: 196px
+  }
+}

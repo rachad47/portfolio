@@ -1,24 +1,29 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Build, baby, build! 🛠️ A multi-stage coilgun exploring electromagnetics, high-voltage electronics, and precise timing.">
+    <meta name="description"
+      content="Build, baby, build! 🛠️ A multi-stage coilgun exploring electromagnetics, high-voltage electronics, and precise timing.">
     <meta name="author" content="Rachad El Moutaouaffiq">
 
     <title>Multi-stage Coil Gun | Rachad El Moutaouaffiq</title>
-  <!-- Project shared-link preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Build, baby, build! 🛠️ | A multi-stage coilgun that punches through metal sheets ⚡🧲">
-  <meta property="og:description" content="High-voltage circuitry, wound coils, ISR-based stage timing, and a custom IR speedometer.">
-  <meta property="og:url" content="https://rachad.dev/CoilGun.html">
-  <meta property="og:image" content="https://rachad.dev/assets/projects/coilgun/firing-demo-preview.webp">
-  <meta property="og:image:alt" content="Multi-stage Coil Gun project preview">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Build, baby, build! 🛠️ | A multi-stage coilgun that punches through metal sheets ⚡🧲">
-  <meta name="twitter:description" content="High-voltage circuitry, wound coils, ISR-based stage timing, and a custom IR speedometer.">
-  <meta name="twitter:image" content="https://rachad.dev/assets/projects/coilgun/firing-demo-preview.webp">
+    <!-- Project shared-link preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+      content="Build, baby, build! 🛠️ | A multi-stage coilgun that punches through metal sheets ⚡🧲">
+    <meta property="og:description"
+      content="High-voltage circuitry, wound coils, ISR-based stage timing, and a custom IR speedometer.">
+    <meta property="og:url" content="https://rachad.dev/CoilGun.html">
+    <meta property="og:image" content="https://rachad.dev/assets/projects/coilgun/firing-demo-preview.webp">
+    <meta property="og:image:alt" content="Multi-stage Coil Gun project preview">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+      content="Build, baby, build! 🛠️ | A multi-stage coilgun that punches through metal sheets ⚡🧲">
+    <meta name="twitter:description"
+      content="High-voltage circuitry, wound coils, ISR-based stage timing, and a custom IR speedometer.">
+    <meta name="twitter:image" content="https://rachad.dev/assets/projects/coilgun/firing-demo-preview.webp">
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -37,17 +42,17 @@ Tooplate 2115 Marvel
 https://www.tooplate.com/view/2115-marvel
 
 -->
-  <link rel="stylesheet" href="css/site-shell.css?v=2">
-  <link rel="stylesheet" href="css/navbar-glass.css?v=2">
-  <link rel="stylesheet" href="css/glass-dividers.css?v=2">
-  <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
-  <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
-  <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
-</head>
+    <link rel="stylesheet" href="css/site-shell.css?v=2">
+    <link rel="stylesheet" href="css/navbar-glass.css?v=2">
+    <link rel="stylesheet" href="css/glass-dividers.css?v=2">
+    <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
+    <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
+    <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
+  </head>
 
 
-<body class="dark-mode site-shell project-glass navy-editorial">
-  <script>
+  <body class="dark-mode site-shell project-glass navy-editorial">
+    <script>
     // Apply the saved theme before rendering the page content.
     try {
       document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
@@ -57,329 +62,450 @@ https://www.tooplate.com/view/2115-marvel
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
-                engineering</span></a>
-          </li>
-          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="beyond-engineering.html" class="nav-link"><span data-hover="Beyond engineering">Beyond
+                  engineering</span></a>
+            </li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span
+                  data-hover="Contact">Contact</span></a>
+            </li>
+          </ul>
 
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
-              aria-label="Toggle dark mode" aria-pressed="false">
-              <i class="color-mode-icon"></i>
-              Color mode
-            </button>
-          </div>
-        </ul>
+          <ul class="navbar-nav ml-lg-auto">
+            <div class="ml-lg-4">
+              <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
+                aria-label="Toggle dark mode" aria-pressed="false">
+                <i class="color-mode-icon"></i>
+                Color mode
+              </button>
+            </div>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
-        <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
-        <!-- <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager"> -->
-                <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
+      <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
+      <!-- <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;" alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager"> -->
+      <img src="assets/projects/coilgun/project-banner.webp" style="max-height:560px ;"
+        alt="Multi-stage Coil Gun — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
 
-        <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
+      <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
     </section>
     <!-- ABOUT -->
     <section class="contact py-3" id="project-details">
 
-        <div style="text-align: center;" class="container ">
-            <h1>Multi-stage coilgun ⚡🧲</h1>
-<section class="project-glass-panel" aria-label="Idea"><div class="row align-items-center">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h2>The idea</h2>
-                    <br>
-                    <ul class="project-point-list"><li style="text-align: left;">After building my  <a href="Xylophone.html">Automatic
-                            Xylophone</a> , I wanted to take the idea further.</li>
-                    <li style="text-align: left;">This time, I wanted to explore high-voltage electronics.</li></ul>
-                    <!-- <li style="text-align: left;"> Now I hate them more and I've learned that I shouldn't get near Electrical Engineering.</li> -->
-                    <br>
-                    <!-- <H6>Software for the win!</H6> -->
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <!-- <img src="assets/projects/xylophone/assembled-instrument.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
-                    <iframe width="95%" height="300px" src="https://www.youtube.com/embed/TgsxHmQksyM" loading="lazy" title="Idea video">
-                    </iframe>
-                </div>
-            </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Alert !"><h2 style="color:rgb(189, 16, 45) ;">Safety and legal notes</h2>
-            <div class="row align-items-center">
-                <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-9">
-                    <ul class="project-point-list"><li><b>High voltage</b> : This project involves voltages up to 380 V, which can cause serious injury or death. This is a record of our experiments, not a safety-validated build guide.
-                    </li></ul>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img src="assets/projects/coilgun/high-voltage-warning.webp" alt="Alert ! — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+      <div style="text-align: center;" class="container ">
+        <h1>Multi-stage coilgun ⚡🧲</h1>
+        <section class="project-glass-panel" aria-label="Idea">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <h2>The idea</h2>
+              <br>
+              <ul class="project-point-list">
+                <li style="text-align: left;">After building my <a href="Xylophone.html">Automatic
+                    Xylophone</a> , I wanted to take the idea further.</li>
+                <li style="text-align: left;">This time, I wanted to explore high-voltage electronics.</li>
+              </ul>
+              <!-- <li style="text-align: left;"> Now I hate them more and I've learned that I shouldn't get near Electrical Engineering.</li> -->
+              <br>
+              <!-- <H6>Software for the win!</H6> -->
             </div>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6 col-lg-5">
-                    <img src="assets/projects/coilgun/project-safety-note.webp" alt="Alert ! — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                </div>
-                <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <ul class="project-point-list"><li><b>Regulations</b>: We live live in Canada, guns here are heavily resitrcted, while its fine to make
-                        Coil/Rail guns without a license, they should NOT
-                        exceed 500 feet/s or produce over 5.7 Joules of energy or else they will <a href="https://www.rcmp-grc.gc.ca/en/firearms/specific-types-firearms">fall under
-                            FireArms</a>. So It's a good idea to check
-                        the laws of your country.
-                    </li></ul>
-                </div>
-
-            </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="How it works"><h2>How it works</h2>
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <ul><li> A coilgun sends a high-current pulse through a coil of wire, creating a strong magnetic field that accelerates a metal projectile. The animation shows three stages, but our build uses two. A sensor between the stages detects the projectile as it passes and triggers the second stage.
-                    </li></ul>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/how-it-works-01-optimized.webp" alt="How it works — project illustration" style="width:100%" class="programingLA" decoding="async" loading="lazy">
-                </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <!-- <img src="assets/projects/xylophone/assembled-instrument.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
+              <iframe width="95%" height="300px" src="https://www.youtube.com/embed/TgsxHmQksyM" loading="lazy"
+                title="Idea video">
+              </iframe>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <img src="assets/projects/coilgun/how-it-works-02.webp" alt="How it works — project illustration" style="width:100%" class="programingLA" decoding="async" loading="lazy">
-                </div>
-            </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Early testing"><h2>Early testing</h2>
-
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                    <br>
-                    <ul>
-                    <li>We started by experimenting with low-voltage capacitors to get comfortable with the basic circuit before moving to the much more dangerous high-voltage setup. We tried several capacitors and different coil wiring configurations to get a rough idea of what worked best. </li>
-                    <li>In the circuit on the right, we charged the capacitor to 19 V, disconnected the power supply, and connected it to the coil. As the capacitor discharged, current flowed through the coil and generated a magnetic field that accelerated the projectile forward. </li></ul>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
-                    <video src="assets/projects/coilgun/early-coil-test.mp4" style="width: 80%;
-                    height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/coilgun/early-coil-test-poster.webp" width="480" height="480">
-                    </video>
-                </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Alert !">
+          <h2 style="color:rgb(189, 16, 45) ;">Safety and legal notes</h2>
+          <div class="row align-items-center">
+            <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-9">
+              <ul class="project-point-list">
+                <li><b>High voltage</b> : This project involves voltages up to 380 V, which can cause serious injury or
+                  death. This is a record of our experiments, not a safety-validated build guide.
+                </li>
+              </ul>
             </div>
-            <br>
-            <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img src="assets/projects/coilgun/high-voltage-warning.webp" alt="Alert ! — project illustration"
+                style="width:100%" class="programmingLA" decoding="async" loading="lazy">
+            </div>
+          </div>
+          <br>
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <img src="assets/projects/coilgun/project-safety-note.webp" alt="Alert ! — project illustration"
+                style="width:100%" class="programmingLA" decoding="async" loading="lazy">
+            </div>
+            <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
+              <ul class="project-point-list">
+                <li><b>Regulations</b>: We live live in Canada, guns here are heavily resitrcted, while its fine to make
+                  Coil/Rail guns without a license, they should NOT
+                  exceed 500 feet/s or produce over 5.7 Joules of energy or else they will <a
+                    href="https://www.rcmp-grc.gc.ca/en/firearms/specific-types-firearms">fall under
+                    FireArms</a>. So It's a good idea to check
+                  the laws of your country.
+                </li>
+              </ul>
+            </div>
 
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/early-testing-01-optimized.webp" alt="Early testing — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="How it works">
+          <h2>How it works</h2>
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <ul>
+                <li> A coilgun sends a high-current pulse through a coil of wire, creating a strong magnetic field that
+                  accelerates a metal projectile. The animation shows three stages, but our build uses two. A sensor
+                  between the stages detects the projectile as it passes and triggers the second stage.
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/coilgun/how-it-works-01-optimized.webp"
+                alt="How it works — project illustration" style="width:100%" class="programingLA" decoding="async"
+                loading="lazy">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="assets/projects/coilgun/how-it-works-02.webp" alt="How it works — project illustration"
+                style="width:100%" class="programingLA" decoding="async" loading="lazy">
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Early testing">
+          <h2>Early testing</h2>
 
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <ul>
-                    <li><b>Idea:</b>   Compare different triggering mechanisms and determine which configuration would work best for the second stage of our coilgun.</li>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+              <br>
+              <ul>
+                <li>We started by experimenting with low-voltage capacitors to get comfortable with the basic circuit
+                  before moving to the much more dangerous high-voltage setup. We tried several capacitors and different
+                  coil wiring configurations to get a rough idea of what worked best. </li>
+                <li>In the circuit on the right, we charged the capacitor to 19 V, disconnected the power supply, and
+                  connected it to the coil. As the capacitor discharged, current flowed through the coil and generated a
+                  magnetic field that accelerated the projectile forward. </li>
+              </ul>
+            </div>
 
-                    <li>The transistors we tried drew too much current, so we tested a mechanical relay as a switch instead. We also tried multiple capacitors to increase the stored energy. However, we abandoned that configuration because the projectile sometimes oscillated and lost speed.</li></ul>
-                </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+              <video src="assets/projects/coilgun/early-coil-test.mp4" style="width: 80%;
+                    height: auto;" controls="" class="programmingLA" preload="none" playsinline=""
+                poster="assets/projects/coilgun/early-coil-test-poster.webp" width="480" height="480">
+              </video>
+            </div>
+          </div>
+          <br>
+          <div class="row">
 
-                <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/coilgun/early-testing-01-optimized.webp"
+                alt="Early testing — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                decoding="async" loading="lazy">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <ul>
+                <li><b>Idea:</b> Compare different triggering mechanisms and determine which configuration would work
+                  best for the second stage of our coilgun.</li>
+
+                <li>The transistors we tried drew too much current, so we tested a mechanical relay as a switch instead.
+                  We also tried multiple capacitors to increase the stored energy. However, we abandoned that
+                  configuration because the projectile sometimes oscillated and lost speed.</li>
+              </ul>
+            </div>
+
+            <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-4">
                     <img src="assets/projects/xylophone/solenoid-experiment-03-optimized.webp" alt="Paris" style="width: 100%;height: auto;"
                         id="rogrammingLA">
                 </div> -->
-                <!-- <div class="col">
+            <!-- <div class="col">
                     <img src="assets/projects/xylophone/solenoid-experiment-04.gif" alt="Paris" style="height:300px" id="programmingLA">
                 </div> -->
-            </div>
-            <!-- <div class="row">
+          </div>
+          <!-- <div class="row">
                 <div class="col">
                     <p>Afer trying many desings and nail sizes, I was satisfied with sounds made by a
                         2 ohm solenoid
                         28mm length , 26 AWG.</p>
                 </div>
-            </div> --></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Joystick &amp; Software integration"><h2>Joystick  &amp; software integration (optional)</h2>
-            <br>
-            <div class="row align-items-center">
-
-                
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <ul class="project-point-list"><li>This project was mainly electronics, so we wanted to add a software component. We found two servo motors and experimented with using a joystick to control the barrel’s direction. The longer-term goal was to explore computer vision with OpenCV and tools such as MediaPipe, eventually allowing the turret to track targets automatically.
-                    </li></ul>
+            </div> -->
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Joystick &amp; Software integration">
+          <h2>Joystick &amp; software integration (optional)</h2>
+          <br>
+          <div class="row align-items-center">
 
 
-                    <ul class="project-point-list"><li> Beyond the software, this would need a sturdy frame to support the barrel’s weight and withstand recoil. We started with a laser pointer to check the movement and joystick control, then moved on to testing a single stage at low power.
-                    </li></ul>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+              <ul class="project-point-list">
+                <li>This project was mainly electronics, so we wanted to add a software component. We found two servo
+                  motors and experimented with using a joystick to control the barrel’s direction. The longer-term goal
+                  was to explore computer vision with OpenCV and tools such as MediaPipe, eventually allowing the turret
+                  to track targets automatically.
+                </li>
+              </ul>
 
-                    <ul class="project-point-list"><li> We found a library that worked well with joysticks and Xbox controllers: the   <a href="http://lagers.org.uk/gamecontrol/">GCP library</a>. This 
-                        <a href="https://www.youtube.com/watch?v=MUM8_4mWxng&amp;t=816s&amp;ab_channel=MakeUseOf">tutorial</a>
-                          that explains the setup and shows how to use it with an Arduino.
-                    </li></ul>
-                    <ul class="project-point-list"><li> Since our project uses an ESP32, some of the Arduino libraries in the example, including Servo.h and Firmata, were not compatible with our setup. I did some research but could not find a complete A-to-Z tutorial, so I adapted the code myself. It worked with the ESP32, and the Arduino tutorial above was still a useful reference for the main setup steps. If you are using an ESP32, you can follow that explanation alongside my   <a href="https://github.com/rachad47/ESP-32-Servos-FlightSimJoystick/tree/main">ESP32 adaptation is available here</a>.
-                        </li></ul>
 
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <img src="assets/projects/coilgun/optional-joystick-software-integration-02-optimized.webp" alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:97%" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+              <ul class="project-point-list">
+                <li> Beyond the software, this would need a sturdy frame to support the barrel’s weight and withstand
+                  recoil. We started with a laser pointer to check the movement and joystick control, then moved on to
+                  testing a single stage at low power.
+                </li>
+              </ul>
+
+              <ul class="project-point-list">
+                <li> We found a library that worked well with joysticks and Xbox controllers: the <a
+                    href="http://lagers.org.uk/gamecontrol/">GCP library</a>. This
+                  <a href="https://www.youtube.com/watch?v=MUM8_4mWxng&amp;t=816s&amp;ab_channel=MakeUseOf">tutorial</a>
+                  that explains the setup and shows how to use it with an Arduino.
+                </li>
+              </ul>
+              <ul class="project-point-list">
+                <li> Since our project uses an ESP32, some of the Arduino libraries in the example, including Servo.h
+                  and Firmata, were not compatible with our setup. I did some research but could not find a complete
+                  A-to-Z tutorial, so I adapted the code myself. It worked with the ESP32, and the Arduino tutorial
+                  above was still a useful reference for the main setup steps. If you are using an ESP32, you can follow
+                  that explanation alongside my <a
+                    href="https://github.com/rachad47/ESP-32-Servos-FlightSimJoystick/tree/main">ESP32 adaptation is
+                    available here</a>.
+                </li>
+              </ul>
 
             </div>
-            <br>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+              <img src="assets/projects/coilgun/optional-joystick-software-integration-02-optimized.webp"
+                alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:97%"
+                class="programmingLA" decoding="async" loading="lazy">
+            </div>
+
+          </div>
+          <br>
+          <div class="row">
+            <img src="assets/projects/coilgun/optional-joystick-software-integration-01.webp"
+              alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:100%"
+              class="programingLA" decoding="async" loading="lazy">
+          </div>
+          <br>
+
+          <section class="project-glass-subsection" aria-label="LMAO">
             <div class="row">
-                <img src="assets/projects/coilgun/optional-joystick-software-integration-01.webp" alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:100%" class="programingLA" decoding="async" loading="lazy">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5 align-self-center">
+                <video src="assets/projects/coilgun/joystick-control-demo.mp4" style="width: 100%;height: auto;"
+                  controls="" class="rogrammingLA" preload="none" playsinline=""
+                  poster="assets/projects/coilgun/joystick-control-demo-poster.webp" width="480" height="480">
+                </video>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
+                <h5>A lesson in mechanical support</h5>
+
+                <p>I am not sure what I expected from gluing two small servos together, but the mount clearly was not up
+                  to the job. In the test on the left, the capacitors were charged to only 15%, and the servos still
+                  failed completely.
+                </p>
+                <img src="assets/projects/coilgun/prototype-experiment-01.webp" alt="LMAO — project illustration"
+                  style="width: 90%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              </div>
+
             </div>
-            <br>
-            
-<section class="project-glass-subsection" aria-label="LMAO"><div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-5 align-self-center">
-                    <video src="assets/projects/coilgun/joystick-control-demo.mp4" style="width: 100%;height: auto;" controls="" class="rogrammingLA" preload="none" playsinline="" poster="assets/projects/coilgun/joystick-control-demo-poster.webp" width="480" height="480">
-                    </video>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
-                    <h5>A lesson in mechanical support</h5>
+          </section>
 
-                    <p>I am not sure what I expected from gluing two small servos together, but the mount clearly was not up to the job. In the test on the left, the capacitors were charged to only 15%, and the servos still failed completely.
-                    </p>
-                    <img src="assets/projects/coilgun/prototype-experiment-01.webp" alt="LMAO — project illustration" style="width: 90%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                </div>
-
-            </div></section>
-
-<section class="project-glass-subsection" aria-label="future improvements"><div class="row">
-                <h3>Future improvements</h3>
+          <section class="project-glass-subsection" aria-label="future improvements">
+            <div class="row">
+              <h3>Future improvements</h3>
             </div>
             <div class="row">
-                <div class="row align-items-center">
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
+              <div class="row align-items-center">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
 
-                        <!-- <figure class="project-media"> -->
-                            <img src="assets/projects/coilgun/future-improvements-01.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>Nonlinear input mapping for finer joystick control.</figcaption>
-                        <!-- </figure> -->
-                    </div>
+                  <!-- <figure class="project-media"> -->
+                  <img src="assets/projects/coilgun/future-improvements-01.webp"
+                    alt="future improvements — project illustration" style="width: 100%;height: auto;"
+                    class="programmingLA" decoding="async" loading="lazy">
+                  <figcaption>Nonlinear input mapping for finer joystick control.</figcaption>
+                  <!-- </figure> -->
+                </div>
 
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                        <!-- <img src="assets/projects/coilgun/future-improvements-02.png" alt="Paris" style="width: 100%;height: auto;"
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                  <!-- <img src="assets/projects/coilgun/future-improvements-02.png" alt="Paris" style="width: 100%;height: auto;"
                             id="programmingLA"> -->
-                        <!-- <figure class="project-media"> -->
-                            <img src="assets/projects/coilgun/future-improvements-04-optimized.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>A sturdier barrel support.</figcaption>
-                        <!-- </figure> -->
-                    </div>
+                  <!-- <figure class="project-media"> -->
+                  <img src="assets/projects/coilgun/future-improvements-04-optimized.webp"
+                    alt="future improvements — project illustration" style="width: 100%;height: auto;"
+                    class="programmingLA" decoding="async" loading="lazy">
+                  <figcaption>A sturdier barrel support.</figcaption>
+                  <!-- </figure> -->
+                </div>
 
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
-                        <!-- <figure class="project-media"> -->
-                            <img src="assets/projects/coilgun/future-improvements-03.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>OpenCV, AI, Wi-Fi, and Bluetooth integration.</figcaption>
-                        <!-- </figure> -->
-
-                    </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
+                  <!-- <figure class="project-media"> -->
+                  <img src="assets/projects/coilgun/future-improvements-03.webp"
+                    alt="future improvements — project illustration" style="width: 100%;height: auto;"
+                    class="programmingLA" decoding="async" loading="lazy">
+                  <figcaption>OpenCV, AI, Wi-Fi, and Bluetooth integration.</figcaption>
+                  <!-- </figure> -->
 
                 </div>
-            </div></section>
-</section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="High Voltage Components"><h2>High-voltage components</h2>
+
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="High Voltage Components">
+          <h2>High-voltage components</h2>
+          <div class="row">
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/high-voltage-components-02.webp"
+                alt="High Voltage Components — project illustration" style="width: 100%;height: auto;"
+                class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>AC to &gt; 3–12 V DC power supply.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/high-voltage-components-01.webp"
+                alt="High Voltage Components — project illustration" style="width: 100%;height: auto;"
+                class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>12 V to &gt; 45–385 V DC-DC boost converter. </figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/high-voltage-components-03.webp"
+                alt="High Voltage Components — project illustration" style="width: 100%;height: auto;"
+                class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>Thicker magnet wire for lower resistance.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/high-voltage-components-04.webp"
+                alt="High Voltage Components — project illustration" style="width: 100%;height: auto;"
+                class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>Three 820 µF capacitors and one 680 µF capacitor, all rated for 450 V.</figcaption>
+            </div>
+
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <video src="assets/projects/coilgun/high-voltage-test.mp4" style="width: 100%;height: auto;" controls=""
+                class="rogrammingLA image-gap" preload="none" playsinline=""
+                poster="assets/projects/coilgun/high-voltage-test-poster.webp" width="642" height="480">
+              </video>
+              <figcaption>First high-voltage firing test.</figcaption>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <video src="assets/projects/coilgun/high-voltage-discharge-demo.mp4" style="width: 100%;height: auto;"
+                controls="" class="rogrammingLA image-gap" preload="none" playsinline=""
+                poster="assets/projects/coilgun/high-voltage-discharge-demo-poster.webp" width="640" height="480">
+              </video>
+              <figcaption>Capacitor short-circuit test (loud audio).</figcaption>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <img src="assets/projects/coilgun/high-voltage-components-05.webp"
+                alt="High Voltage Components — project illustration" style="width: 100%;height: auto;"
+                class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Permanent damage to the floor :/</figcaption>
+            </div>
+          </div>
+
+          <section class="project-glass-subsection" aria-label="Optocoupler">
+            <h3>Optocoupler</h3>
             <div class="row">
 
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/high-voltage-components-02.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>AC to &gt; 3–12 V DC power supply.</figcaption>
-                </div>
 
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/high-voltage-components-01.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>12 V to &gt; 45–385 V DC-DC boost converter. </figcaption>
-                </div>
+              <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
+                <br>
+                <ul class="project-point-list">
+                  <li>Because this project involves high voltages and currents, we wanted to keep the high-voltage
+                    section electrically isolated from both the microcontroller and the user controls.</li>
+                  <li>Optocouplers transmit signals via infrared light, keeping both sides of the circuit physically
+                    separated.</li>
+                  <li>Unfortunately, we ran into problems with our optocoupler. We were not sure whether it was
+                    defective or whether we had damaged it during testing. Either way, we decided to try making our own
+                    version.</li>
+                </ul>
 
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/high-voltage-components-03.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Thicker magnet wire for lower resistance.</figcaption>
-                </div>
+              </div>
 
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/high-voltage-components-04.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Three 820 µF capacitors and one 680 µF capacitor, all rated for 450 V.</figcaption>
-                </div>
+              <div class="col-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
+                <img src="assets/projects/coilgun/optocoupler-01.webp" alt="Optocoupler — project illustration"
+                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              </div>
 
             </div>
             <br>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                    <video src="assets/projects/coilgun/high-voltage-test.mp4" style="width: 100%;height: auto;" controls="" class="rogrammingLA image-gap" preload="none" playsinline="" poster="assets/projects/coilgun/high-voltage-test-poster.webp" width="642" height="480">
-                    </video>
-                    <figcaption>First high-voltage firing test.</figcaption>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                    <video src="assets/projects/coilgun/high-voltage-discharge-demo.mp4" style="width: 100%;height: auto;" controls="" class="rogrammingLA image-gap" preload="none" playsinline="" poster="assets/projects/coilgun/high-voltage-discharge-demo-poster.webp" width="640" height="480">
-                    </video>
-                    <figcaption>Capacitor short-circuit test (loud audio).</figcaption>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                    <img src="assets/projects/coilgun/high-voltage-components-05.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Permanent damage to the floor :/</figcaption>
-                </div>
-            </div>
-            
-<section class="project-glass-subsection" aria-label="Optocoupler"><h3>Optocoupler</h3>
-            <div class="row">
-
-
-
-                <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
-                    <br>
-                    <ul class="project-point-list"><li>Because this project involves high voltages and currents, we wanted to keep the high-voltage section electrically isolated from both the microcontroller and the user controls.</li>
-                    <li>Optocouplers transmit signals via infrared light, keeping both sides of the circuit physically separated.</li>
-                    <li>Unfortunately, we ran into problems with our optocoupler. We were not sure whether it was defective or whether we had damaged it during testing. Either way, we decided to try making our own version.</li></ul>
-
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
-                    <img src="assets/projects/coilgun/optocoupler-01.webp" alt="Optocoupler — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+              <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-8 align-self-center">
+                <ul class="project-point-list">
+                  <li>As shown in the photos, the two circuits are physically separated from each other.</li>
+                  <li>An IR emitter (the clear diode) faces a receiver (the black diode). In our test, the receiver
+                    measured about 3 MΩ with the emitter off, behaving like an open circuit. With the emitter on, that
+                    resistance dropped to about 30 Ω, allowing current through the receiving circuit. The red and blue
+                    LEDs are visual indicators for the two sides.</li>
+                  <li>Another advantage of the homemade optocoupler was how easy it was to inspect and troubleshoot. We
+                    could use a camera to check that the IR emitter 🟣 was working, then measure the receiver’s
+                    resistance to see how it responded.</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-5 col-lg-4 align-self-center">
+                <img src="assets/projects/coilgun/optocoupler-02-optimized.webp"
+                  alt="Optocoupler — project illustration" style="width: 100%;height: auto;" class="programmingLA"
+                  decoding="async" loading="lazy">
+              </div>
 
             </div>
-            <br>
-            <div class="row">
-                <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-8 align-self-center">
-                    <ul class="project-point-list"><li>As shown in the photos, the two circuits are physically separated from each other.</li>
-                    <li>An IR emitter (the clear diode) faces a receiver (the black diode). In our test, the receiver measured about 3 MΩ with the emitter off, behaving like an open circuit. With the emitter on, that resistance dropped to about 30 Ω, allowing current through the receiving circuit. The red and blue LEDs are visual indicators for the two sides.</li>
-                    <li>Another advantage of the homemade optocoupler was how easy it was to inspect and troubleshoot. We could use a camera to check that the IR emitter 🟣 was working, then measure the receiver’s resistance to see how it responded.</li></ul>
-                </div>
-                <div class="col-12 col-sm-12 col-md-5 col-lg-4 align-self-center">
-                    <img src="assets/projects/coilgun/optocoupler-02-optimized.webp" alt="Optocoupler — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+          </section>
 
-            </div></section>
-
-<section class="project-glass-subsection" aria-label="SCR - Thyristors"><h3>SCR thyristors</h3>
+          <section class="project-glass-subsection" aria-label="SCR - Thyristors">
+            <h3>SCR thyristors</h3>
             <div style="text-align: left;" class="row">
 
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <br>
-                    <ul class="project-point-list"><li>We chose thyristors for the high-voltage section because of their high-current capability and suitability for our circuit.
-                        <p></p>
-                    </li><li>An SCR thyristor remains conductive after its initial gate signal is removed. Unlike a transistor that needs a sustained control signal, an SCR latches on once triggered. It continues conducting until the current falls below its holding current, then switches off and returns to its nonconducting state. This was an important distinction when choosing the switching components. <p></p>
-                </li></ul></div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <br>
+                <ul class="project-point-list">
+                  <li>We chose thyristors for the high-voltage section because of their high-current capability and
+                    suitability for our circuit.
+                    <p></p>
+                  </li>
+                  <li>An SCR thyristor remains conductive after its initial gate signal is removed. Unlike a transistor
+                    that needs a sustained control signal, an SCR latches on once triggered. It continues conducting
+                    until the current falls below its holding current, then switches off and returns to its
+                    nonconducting state. This was an important distinction when choosing the switching components. <p>
+                    </p>
+                  </li>
+                </ul>
+              </div>
 
 
             </div>
@@ -388,183 +514,223 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
 
 
-                <div class="col-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
-                    <img src="assets/projects/coilgun/scr-thyristors-01.webp" alt="SCR - Thyristors — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <ul class="project-point-list"><figcaption>BTW69-1200 </figcaption></ul>
-                    <figcaption>Key ratings: I_GT (gate trigger current) and I_TSM (peak surge current). </figcaption>
+              <div class="col-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
+                <img src="assets/projects/coilgun/scr-thyristors-01.webp" alt="SCR - Thyristors — project illustration"
+                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <ul class="project-point-list">
+                  <figcaption>BTW69-1200 </figcaption>
+                </ul>
+                <figcaption>Key ratings: I_GT (gate trigger current) and I_TSM (peak surge current). </figcaption>
 
-                </div>
+              </div>
 
-                <div class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
-                    <video src="assets/projects/coilgun/thyristor-switching-demo.mp4" style="width: 90%;height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/coilgun/thyristor-switching-demo-poster.webp" width="690" height="480">
-                    </video>
-                    <figcaption>First test with the thyristor and optocoupler, isolating the push-button control from the high-voltage circuit.</figcaption>
-                </div>
-            </div></section>
-</section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="2nd Stage"><h2>Second stage</h2>
-            <br>
-            <div style="text-align: left;" class="row">
+              <div class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
+                <video src="assets/projects/coilgun/thyristor-switching-demo.mp4" style="width: 90%;height: auto;"
+                  controls="" class="programmingLA" preload="none" playsinline=""
+                  poster="assets/projects/coilgun/thyristor-switching-demo-poster.webp" width="690" height="480">
+                </video>
+                <figcaption>First test with the thyristor and optocoupler, isolating the push-button control from the
+                  high-voltage circuit.</figcaption>
+              </div>
+            </div>
+          </section>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="2nd Stage">
+          <h2>Second stage</h2>
+          <br>
+          <div style="text-align: left;" class="row">
 
-                <ul class="project-point-list"><li>The sensor uses the same IR emitter–receiver principle, but detects an interruption in the light beam.</li><li>With the emitter on &gt;
-                     the receiver’s resistance is low &gt;  and the microcontroller reads HIGH.</li> <li> When the projectile blocks the beam &gt;  the receiver’s resistance rises &gt;  and the input goes LOW, triggering the second stage. </li>
+            <ul class="project-point-list">
+              <li>The sensor uses the same IR emitter–receiver principle, but detects an interruption in the light beam.
+              </li>
+              <li>With the emitter on &gt;
+                the receiver’s resistance is low &gt; and the microcontroller reads HIGH.</li>
+              <li> When the projectile blocks the beam &gt; the receiver’s resistance rises &gt; and the input goes LOW,
+                triggering the second stage. </li>
 
-            </li></ul></div>
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <img src="assets/projects/coilgun/2nd-stage-01.webp" alt="2nd Stage — project illustration" style="width: 100%;height: auto;" class="programmingLA1" decoding="async" loading="lazy">
-                </div>
-
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <img src="assets/projects/coilgun/2nd-stage-01.webp" alt="2nd Stage — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA1" decoding="async" loading="lazy">
             </div>
 
-            <br>
+          </div>
 
-            <div class="row align-items-center">
+          <br>
 
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/2nd-stage-03-optimized.webp" alt="2nd Stage — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Testing the IR sensor with a moving projectile.</figcaption>
-                </div>
+          <div class="row align-items-center">
 
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/2nd-stage-02.webp" alt="2nd Stage — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Initial CAD design for the sensor holder.</figcaption>
-                </div>
-
-            </div></section>
-<hr id="electronicS" class="rounded">
-<section class="project-glass-panel" aria-label="Manufacturing"><h2>Manufacturing</h2>
-            <br>
-            <div class="row">
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-03.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Bending the plexiglass.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-01.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption> Thyristor mount. </figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-02.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>PCB design, DIY edition.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-05.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>High-voltage converter mount.</figcaption>
-                </div>
-
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/coilgun/2nd-stage-03-optimized.webp" alt="2nd Stage — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>Testing the IR sensor with a moving projectile.</figcaption>
             </div>
 
-
-            <div class="row">
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-06.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Hard working.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-04.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Hardly working.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-12.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Certified mechanical monkey.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-08.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Nails from Home Depot.</figcaption>
-                </div>
-
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <img src="assets/projects/coilgun/2nd-stage-02.webp" alt="2nd Stage — project illustration"
+                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <figcaption>Initial CAD design for the sensor holder.</figcaption>
             </div>
 
-            <div class="row">
+          </div>
+        </section>
+        <hr id="electronicS" class="rounded">
+        <section class="project-glass-panel" aria-label="Manufacturing">
+          <h2>Manufacturing</h2>
+          <br>
+          <div class="row">
 
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-09-optimized.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Work smarter, not harder.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-07.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Integration test.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-11.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>No comment.</figcaption>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <img src="assets/projects/coilgun/manufacturing-10.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Pretty much done.</figcaption>
-                </div>
-
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-03.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Bending the plexiglass.</figcaption>
             </div>
 
-            <div class="row">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-01.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption> Thyristor mount. </figcaption>
+            </div>
 
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/manufacturing-14.jpg" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Switched to an ESP32 and added connectors for a removable barrel. </figcaption>
-                </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-02.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>PCB design, DIY edition.</figcaption>
+            </div>
 
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                    <!-- <img src="assets/projects/coilgun/manufacturing-13.jpg" alt="Paris" style="width: 100%;height: auto;"
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-05.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>High-voltage converter mount.</figcaption>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-06.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Hard working.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-04.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Hardly working.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-12.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Certified mechanical monkey.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-08.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Nails from Home Depot.</figcaption>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-09-optimized.webp"
+                alt="Manufacturing — project illustration" style="width: 100%;height: auto;"
+                class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Work smarter, not harder.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-07.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Integration test.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-11.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>No comment.</figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+              <img src="assets/projects/coilgun/manufacturing-10.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Pretty much done.</figcaption>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+              <img src="assets/projects/coilgun/manufacturing-14.jpg" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Switched to an ESP32 and added connectors for a removable barrel. </figcaption>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+              <!-- <img src="assets/projects/coilgun/manufacturing-13.jpg" alt="Paris" style="width: 100%;height: auto;"
                         id="rogrammingLA"> -->
-                    <img src="assets/projects/coilgun/project-cover.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Looking good :)</figcaption>
-                </div>
-
+              <img src="assets/projects/coilgun/project-cover.webp" alt="Manufacturing — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
+              <figcaption>Looking good :)</figcaption>
             </div>
 
+          </div>
 
 
-            
-<section class="project-glass-subsection" aria-label="Quick note:"><div class="row align-items-center
+          <section class="project-glass-subsection" aria-label="Quick note:">
+            <div class="row align-items-center
             ">
-                <div class="col-sm-12 col-md-7 col-lg-7">
-                    <h4>Build note</h4>
-                    <br>
-                    <ul class="project-point-list"><li>Since the barrel was intended to be temporary, we did not build a dedicated support frame for it. The plan was to add a sturdier mechanical structure before developing the joystick controls further or exploring additional software features, such as face detection and Wi-Fi connectivity.
-                    </li></ul>
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <h4>Build note</h4>
+                <br>
+                <ul class="project-point-list">
+                  <li>Since the barrel was intended to be temporary, we did not build a dedicated support frame for it.
+                    The plan was to add a sturdier mechanical structure before developing the joystick controls further
+                    or exploring additional software features, such as face detection and Wi-Fi connectivity.
+                  </li>
+                </ul>
 
-                </div>
-                <div style="text-align: right;" class="col-sm-12 col-md-5 col-lg-5">
-                    <img src="assets/projects/coilgun/quick-note-01-optimized.webp" alt="Quick note: — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                </div>
+              </div>
+              <div style="text-align: right;" class="col-sm-12 col-md-5 col-lg-5">
+                <img src="assets/projects/coilgun/quick-note-01-optimized.webp" alt="Quick note: — project illustration"
+                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              </div>
 
-            </div></section>
-</section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Circuit"><h2>Circuit</h2>
-            <br>
-            <p>Voltage distribution across the main components. </p>
-            <div class="row ">
+            </div>
+          </section>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Circuit">
+          <h2>Circuit</h2>
+          <br>
+          <p>Voltage distribution across the main components. </p>
+          <div class="row ">
 
-                <div class="col-sm-12 col-md-6 col-lg-5 align-self-center ">
-                    <img src="assets/projects/coilgun/circuit-03.webp" alt="Circuit — project illustration" style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-7">
-
-                    <img src="assets/projects/coilgun/circuit-02.webp" alt="Circuit — project illustration" style="width: 76%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
-
-                </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 align-self-center ">
+              <img src="assets/projects/coilgun/circuit-03.webp" alt="Circuit — project illustration"
+                style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
             </div>
 
+            <div class="col-sm-12 col-md-6 col-lg-7">
+
+              <img src="assets/projects/coilgun/circuit-02.webp" alt="Circuit — project illustration"
+                style="width: 76%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
+
+            </div>
+          </div>
 
 
-
-
-            <!-- <div class="row">
+          <!-- <div class="row">
 
                 <div class="col-sm-12 col-md-5 col-lg-12">
                     <img src="assets/projects/coilgun/circuit-03.jpg" alt="Paris" style="width: 100%;height: auto;"
@@ -586,71 +752,97 @@ https://www.tooplate.com/view/2115-marvel
             </div> -->
 
 
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
 
+              <p>My circuit is based on <a
+                  href="https://github.com/kakushinAU/coilgun/blob/main/Coil%20Gun%20Schematic.pdf">the reference
+                  schematic linked here </a>, the main differences is the number of stages and the operating voltage. I
+                also changed the isolation components: rather than using the packaged optocouplers shown in the original
+                design, I used separate IR emitters and receivers to transfer control signals between the low- and
+                high-voltage sections without direct electrical contact.
 
-
-            <br>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    
-                    <p>My circuit is based on  <a href="https://github.com/kakushinAU/coilgun/blob/main/Coil%20Gun%20Schematic.pdf">the reference schematic linked here </a>, the main differences is the number of stages and the operating voltage. I also changed the isolation components: rather than using the packaged optocouplers shown in the original design, I used separate IR emitters and receivers to transfer control signals between the low- and high-voltage sections without direct electrical contact.
-                        
-                        <img src="assets/projects/coilgun/circuit-01.webp" alt="Circuit — project illustration" style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
-                </p></div>
-            </div></section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Optimization"><h2>Optimization</h2>
-            <br>
-            <div style="text-align: left;" class="row">
-                <div class="col">
-                    <ul class="project-point-list"><li>Optimization involves several interacting parameters: coil diameter, winding count, resistance, coil length, operating voltage, and capacitance. The projectile’s shape and length-to-diameter ratio also affect its behavior, so changing one part of the design means considering the rest of the system.
-                    </li>
-                    <li>I also consulted an  <a href="https://www.instructables.com/Coil-Gun-Projectiles/">article on projectile dimensions</a> , which discusses projectile dimensions relative to coil length and flight stability. It suggests a projectile at least half the coil’s length, with longer projectiles approaching that length. It also discusses length-to-diameter ratios of roughly three to five to reduce tumbling. These provided useful guidelines to consider alongside our own experiments. </li>
-                    <li>Interrupt-driven code could replace continuous polling loops. The difference may be small in the current setup, but interrupts would become more useful as additional features are introduced. Joystick input, computer vision, and other tasks would all need to share processing time. </li></ul>
-                    <!-- <img src="images/project/AIroute.png" alt="Paris" style="width:1000px;" id="programingLA"> -->
-
-                </div>
+                <img src="assets/projects/coilgun/circuit-01.webp" alt="Circuit — project illustration"
+                  style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
+              </p>
+            </div>
+          </div>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Optimization">
+          <h2>Optimization</h2>
+          <br>
+          <div style="text-align: left;" class="row">
+            <div class="col">
+              <ul class="project-point-list">
+                <li>Optimization involves several interacting parameters: coil diameter, winding count, resistance, coil
+                  length, operating voltage, and capacitance. The projectile’s shape and length-to-diameter ratio also
+                  affect its behavior, so changing one part of the design means considering the rest of the system.
+                </li>
+                <li>I also consulted an <a href="https://www.instructables.com/Coil-Gun-Projectiles/">article on
+                    projectile dimensions</a> , which discusses projectile dimensions relative to coil length and flight
+                  stability. It suggests a projectile at least half the coil’s length, with longer projectiles
+                  approaching that length. It also discusses length-to-diameter ratios of roughly three to five to
+                  reduce tumbling. These provided useful guidelines to consider alongside our own experiments. </li>
+                <li>Interrupt-driven code could replace continuous polling loops. The difference may be small in the
+                  current setup, but interrupts would become more useful as additional features are introduced. Joystick
+                  input, computer vision, and other tasks would all need to share processing time. </li>
+              </ul>
+              <!-- <img src="images/project/AIroute.png" alt="Paris" style="width:1000px;" id="programingLA"> -->
 
             </div>
-            
-<section class="project-glass-subsection" aria-label="Distances Optimisation"><div class="row">
 
-                <div class="col-sm-12 col-md-6 col-lg-5 align-self-center">
-                    <img src="assets/projects/coilgun/optimization-01.webp" alt="Optimization — project illustration" style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
-                </div>
+          </div>
+
+          <section class="project-glass-subsection" aria-label="Distances Optimisation">
+            <div class="row">
+
+              <div class="col-sm-12 col-md-6 col-lg-5 align-self-center">
+                <img src="assets/projects/coilgun/optimization-01.webp" alt="Optimization — project illustration"
+                  style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
+              </div>
 
 
-                <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-7">
-                    <br>
-                    <h3>Distance optimization </h5>
-                    <br>
-                    <ul>
-                    <li>We focused on two distances: d1, between the projectile and the first stage, and d2, between the IR sensor and the second stage. Adjusting these positions let us compare how the timing affected performance.</li>
-</ul>
-                </div>
-
+              <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-7">
+                <br>
+                <h3>Distance optimization </h5>
+                  <br>
+                  <ul>
+                    <li>We focused on two distances: d1, between the projectile and the first stage, and d2, between the
+                      IR sensor and the second stage. Adjusting these positions let us compare how the timing affected
+                      performance.</li>
+                  </ul>
+              </div>
 
 
             </div>
             <br>
             <div class="row">
-                <p>We built a speedometer using two IR sensors separated by a measured distance. The projectile’s travel time between them let us calculate its speed. Using a caliper, we adjusted and measured the sensor spacing while recording travel times for each test. 
-                </p><div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/distances-optimisation-01.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>IR speedometer.</figcaption>
-                </div>
+              <p>We built a speedometer using two IR sensors separated by a measured distance. The projectile’s travel
+                time between them let us calculate its speed. Using a caliper, we adjusted and measured the sensor
+                spacing while recording travel times for each test.
+              </p>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="assets/projects/coilgun/distances-optimisation-01.webp"
+                  alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;"
+                  class="programmingLA" decoding="async" loading="lazy">
+                <figcaption>IR speedometer.</figcaption>
+              </div>
 
 
-                <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/distances-optimisation-02.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Collecting timing data.</figcaption>
-                </div>
+              <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
+                <img src="assets/projects/coilgun/distances-optimisation-02.webp"
+                  alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;"
+                  class="programmingLA" decoding="async" loading="lazy">
+                <figcaption>Collecting timing data.</figcaption>
+              </div>
 
             </div>
             <br>
 
             <div class="row">
-                <!-- <p>
+              <!-- <p>
                     We conducted several tests at each distance and took an average. Initially, we determined the
                     optimal distance for only the first stage <b>(d1)</b>, we then secured the solenoid at that distance
                     using a glue gun. We repeated the process with both stages fixed and ON while varying the sensor
@@ -658,54 +850,73 @@ https://www.tooplate.com/view/2115-marvel
                     sensor at the optimal distance. 
 
                 </p> -->
-                <div class="col-12">
-                    <ul class="project-point-list"><li>We ran multiple tests per position and averaged the results. First, we tested the first stage alone to find and hot-glue the solenoid at the optimal starting distance (d_1). With both stages active, we then adjusted the sensor position (d_2) until we found the best-performing location, securing it there as well.
-                    </li></ul>
-                </div>
-                <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/distances-optimisation-03.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async" loading="lazy">
-                    <figcaption><b>d1:</b>  Distance between the projectile and the first stage.</figcaption>
-                </div>
+              <div class="col-12">
+                <ul class="project-point-list">
+                  <li>We ran multiple tests per position and averaged the results. First, we tested the first stage
+                    alone to find and hot-glue the solenoid at the optimal starting distance (d_1). With both stages
+                    active, we then adjusted the sensor position (d_2) until we found the best-performing location,
+                    securing it there as well.
+                  </li>
+                </ul>
+              </div>
+              <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
+                <img src="assets/projects/coilgun/distances-optimisation-03.webp"
+                  alt="Distances Optimisation — project illustration"
+                  style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async"
+                  loading="lazy">
+                <figcaption><b>d1:</b> Distance between the projectile and the first stage.</figcaption>
+              </div>
 
 
-                <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="assets/projects/coilgun/distances-optimisation-04.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async" loading="lazy">
-                    <figcaption><b>d2:</b>  Distance between the IR sensor and the second stage.</figcaption>
-                </div>
-
-            </div></section>
-</section>
-<hr class="rounded">
-<section class="project-glass-panel" aria-label="Final testing"><h2>Final testing</h2>
-            <br>
-
-            <div class="row">
-
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Projectile mass</b>: 20 g / 0.7 oz</li></ul>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Speed</b>: 17.4 m/s / 57 ft/s</li></ul>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Energy</b>: approximately 3 J</li></ul>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <!-- <img src="assets/projects/xylophone/assembled-instrument.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
-                    <iframe width="95%" height="700px" src="https://www.youtube.com/embed/TgsxHmQksyM" loading="lazy" title="Final testing video">
-                    </iframe>
-                </div>
-
-
+              <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
+                <img src="assets/projects/coilgun/distances-optimisation-04.webp"
+                  alt="Distances Optimisation — project illustration"
+                  style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async"
+                  loading="lazy">
+                <figcaption><b>d2:</b> Distance between the IR sensor and the second stage.</figcaption>
+              </div>
 
             </div>
+          </section>
+        </section>
+        <hr class="rounded">
+        <section class="project-glass-panel" aria-label="Final testing">
+          <h2>Final testing</h2>
+          <br>
+
+          <div class="row">
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul class="project-point-list">
+                <li><b>Projectile mass</b>: 20 g / 0.7 oz</li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul class="project-point-list">
+                <li><b>Speed</b>: 17.4 m/s / 57 ft/s</li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul class="project-point-list">
+                <li><b>Energy</b>: approximately 3 J</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <!-- <img src="assets/projects/xylophone/assembled-instrument.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
+              <iframe width="95%" height="700px" src="https://www.youtube.com/embed/TgsxHmQksyM" loading="lazy"
+                title="Final testing video">
+              </iframe>
+            </div>
 
 
-            <!-- <div class="row">
+          </div>
+
+
+          <!-- <div class="row">
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <video src="assets/projects/coilgun/final-testing-demo.mp4" alt="Paris" style="width: 100%;
@@ -717,15 +928,14 @@ https://www.tooplate.com/view/2115-marvel
 
             </div> -->
 
-            <br>
+          <br>
 
 
-
-            <!-- no touch  --></section>
-</div>
+          <!-- no touch  -->
+        </section>
+      </div>
     </section>
     <hr class="rounded">
-
 
 
     <!-- work experienc ... -->
@@ -747,18 +957,18 @@ https://www.tooplate.com/view/2115-marvel
     <!-- FOOTER -->
 
     <footer id="contact" class="ce-footer">
-    <div class="container">
-      <p class="ce-eyebrow">Have a project in mind?</p>
-      <div class="ce-footer-main">
-        <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
+      <div class="container">
+        <p class="ce-eyebrow">Have a project in mind?</p>
+        <div class="ce-footer-main">
+          <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
+        </div>
+        <div class="ce-footer-bottom"><span>Rachad El Moutaouaffiq</span>
+          <div><a href="https://www.instagram.com/rachad.mtq/">Instagram ↗</a><a
+              href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/">LinkedIn ↗</a><a
+              href="tel:+14388780603">Phone ↗</a></div>
+        </div>
       </div>
-      <div class="ce-footer-bottom"><span>Rachad El Moutaouaffiq</span>
-        <div><a href="https://www.instagram.com/rachad.mtq/">Instagram ↗</a><a
-            href="https://www.linkedin.com/in/rachad-el-moutaouaffiq-94a2301b2/">LinkedIn ↗</a><a
-            href="tel:+14388780603">Phone ↗</a></div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -771,9 +981,9 @@ https://www.tooplate.com/view/2115-marvel
 
     <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
 
-  <script src="js/navbar-glass.js?v=1"></script>
-  <script src="js/widget-glass.js?v=editorial-1"></script>
-  <script src="js/project-media-corners.js?v=2"></script>
-</body>
+    <script src="js/navbar-glass.js?v=1"></script>
+    <script src="js/widget-glass.js?v=editorial-1"></script>
+    <script src="js/project-media-corners.js?v=2"></script>
+  </body>
 
 </html>
