@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var photos = Array.from(document.querySelectorAll('.nj-photo'));
+  var photos = Array.from(document.querySelectorAll('.nj-photo, .field-poster-open'));
   var dialog = document.querySelector('.nj-lightbox');
   var current = 0;
   var opener;
@@ -28,8 +28,5 @@
   });
   dialog.addEventListener('close', function () { if (opener) opener.focus({ preventScroll: true }); });
   dialog.addEventListener('click', function (event) { if (event.target === dialog) { var box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); } });
-  document.getElementById('nj-trip-select').addEventListener('change', function () {
-    var target = document.getElementById(this.value);
-    if (target) target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
-  });
+
 })();

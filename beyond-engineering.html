@@ -19,9 +19,10 @@
   <link rel="stylesheet" href="css/navbar-glass.css?v=2">
   <link rel="stylesheet" href="css/glass-dividers.css?v=3">
   <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
+  <link rel="stylesheet" href="css/travel-field-notes.css?v=wrap-1">
 </head>
 
-<body class="clean-evolution frosted-studio cj-page dark-mode site-shell navy-editorial">
+<body class="clean-evolution frosted-studio cj-page dark-mode site-shell navy-editorial field-notes">
   <script>
     // Apply the saved theme before rendering the page content.
     try {
@@ -70,39 +71,46 @@
       </div>
     </div>
   </nav>
+  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol" aria-label="Grand Canyon trip banner">
+    <img src="assets/site/postcards/trip_Banner3.webp" alt="Rachad looking out over the Grand Canyon" class="img-fluid" id="lool" decoding="async" loading="eager" style="object-position:right center;">
+  </section>
   <main id="journal" class="container nj-journal">
-    <section class="nj-intro"><a class="cj-back" href="index.html">← Back to engineering</a>
-      <p class="ce-eyebrow">When the laptop closes.</p>
-      <h1>Postcards from outside.</h1>
-      <p>A few trips, a few detours. Rachad touching grass.</p>
-      <div class="cj-jump"><label for="nj-trip-select">Jump to a trip</label><select id="nj-trip-select">
-          <option value="">Choose a chapter</option>
-          <option value="selected-trip-2">Around the Bay 🚲 🌉</option>
-          <option value="selected-trip-6">Grand Canyon &amp; Vegas 🏜️ ✨</option>
-          <option value="selected-trip-18">Yosemite in winter 🏔️ ❄️</option>
-          <option value="selected-trip-12">Pinnacles &amp; Carmel-by-the-Sea 🥾 🏖️</option>
-          <option value="selected-trip-14">Redwoods 🌲 🌲</option>
-          <option value="selected-trip-5">Death Valley 🏜️ 🌌</option>
-          <option value="selected-trip-8">LA 🌴 🏖️</option>
-          <option value="selected-trip-4">Big Sur 🌊 🚗</option>
-          <option value="selected-trip-19">Yosemite in spring 🏔️ 💦</option>
-          <option value="selected-trip-16">Tahoe 🏔️ 🛶</option>
-          <option value="selected-trip-9">Lassen Volcanic 🌋 🥾</option>
-          <option value="selected-trip-3">Austin &amp; Chicago weekend 🤠 🏙️</option>
-          <option value="selected-trip-13">Red-rock road trip 🏜️ 🚗</option>
-          <option value="selected-trip-7">Hawaii 🌋 🤿 🐠</option>
-          <option value="selected-trip-0">July 4th · Happy 250 🇺🇸 🎆</option>
-          <option value="selected-trip-17">The big road trip · SF to Austin 🚗 🌵</option>
-          <option value="selected-trip-15">Starbase 🚀 ⭐</option>
-          <option value="selected-trip-10">Longhorn nation 🤘 🏈</option>
-          <option value="selected-trip-11">New York · An internship send-off 🗽 🏙️</option>
-          <option value="selected-trip-1">After-school Rainier trip 🏔️ 🍂</option>
-        </select><span>20 chapters · 152 moments</span></div>
+    <section class="nj-intro"><a class="cj-back" href="index.html">← Back to engineering ⚙️</a>
+      <div class="field-intro-layout field-natural-wrap"><figure class="field-intro-postcards programmingLA"><button type="button" class="field-poster-open" data-full="assets/site/postcards/NationalParks.webp" data-caption="US national parks I&#8217;ve visited so far." aria-label="Enlarge national parks poster"><img src="assets/site/postcards/NationalParks.webp" alt="A collection of illustrated US national park postcards" width="2811" height="2050" decoding="async" loading="eager"></button><figcaption>US national parks I&#8217;ve visited so far.</figcaption></figure><div class="field-intro-copy">
+      <p class="ce-eyebrow">Field notes / Life outside</p>
+      <h1>Rachad, touching grass.</h1>
+      <p>I love engineering, but I also love getting away from my desk, exploring national parks ⛰️, taking photos, hiking, stargazing, and going on long drives with friends.</p>
+            <p>Explore some of the places I’ve visited and the photos I’ve taken along the way.🗺️</p>
+
+      </div>
+      <nav class="field-trip-nav" aria-label="Jump to a trip">
+        <a href="#selected-trip-2"><span aria-hidden="true">🌉</span> Bay Area</a>
+        <a href="#selected-trip-6"><span aria-hidden="true">🏜️</span> Grand Canyon National Park</a>
+        <a href="#selected-trip-18"><span aria-hidden="true">❄️</span> Yosemite in winter</a>
+        <a href="#selected-trip-12"><span aria-hidden="true">🥾</span> Pinnacles &amp; Carmel</a>
+        <a href="#selected-trip-14"><span aria-hidden="true">🌲</span> Redwoods</a>
+        <a href="#selected-trip-5"><span aria-hidden="true">☠️</span> Death Valley National Park</a>
+        <a href="#selected-trip-8"><span aria-hidden="true">🌴</span> Los Angeles</a>
+        <a href="#selected-trip-4"><span aria-hidden="true">🌊</span> Big Sur</a>
+        <a href="#selected-trip-19"><span aria-hidden="true">🏔️</span> Yosemite in spring</a>
+        <a href="#selected-trip-16"><span aria-hidden="true">🛶</span> Lake Tahoe</a>
+        <a href="#selected-trip-9"><span aria-hidden="true">🌋</span> Lassen Volcanic National Park</a>
+        <a href="#selected-trip-3"><span aria-hidden="true">🏙️</span> Austin &amp; Chicago</a>
+        <a href="#selected-trip-13"><span aria-hidden="true">🚗</span> Red-rock road trip</a>
+        <a href="#selected-trip-7"><span aria-hidden="true">🤿</span> Hawaii</a>
+        <a href="#selected-trip-0"><span aria-hidden="true">🎆</span> July 4th</a>
+        <a href="#selected-trip-17"><span aria-hidden="true">🌵</span> SF to Austin road trip</a>
+        <a href="#selected-trip-15"><span aria-hidden="true">🚀</span> Starbase</a>
+        <a href="#selected-trip-10"><span aria-hidden="true">🤘</span> Longhorn nation</a>
+        <a href="#selected-trip-11"><span aria-hidden="true">🗽</span> New York</a>
+        <a href="#selected-trip-1"><span aria-hidden="true">🍂</span> Mount Rainier</a>
+      </nav>
+      </div>
     </section>
     <section class="nj-trip" id="selected-trip-2">
       <header>
         <h2>Around the Bay 🚲 🌉</h2>
-        <p>A few local escapes between workdays—coastal walks, bike rides, and a different view of the Bay.</p>
+        <p>A few escapes between workdays—coastal walks, bike rides, and a different view of the Bay.</p>
       </header>
       <div class="nj-photos"><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_01.webp" data-caption="Around the Bay · 1 / 9" aria-label="Open Around the Bay photograph 1"><img src="assets/travel/around-the-bay/around-the-bay_01.webp" width="1350" height="1800" alt="Around the Bay — photograph 1" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_02.webp" data-caption="Around the Bay · 2 / 9" aria-label="Open Around the Bay photograph 2"><img src="assets/travel/around-the-bay/around-the-bay_02.webp" width="1350" height="1800" alt="Around the Bay — photograph 2" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_03.webp" data-caption="Around the Bay · 3 / 9" aria-label="Open Around the Bay photograph 3"><img src="assets/travel/around-the-bay/around-the-bay_03.webp" width="1800" height="1350" alt="Around the Bay — photograph 3" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_05.webp" data-caption="Around the Bay · 4 / 9" aria-label="Open Around the Bay photograph 4"><img src="assets/travel/around-the-bay/around-the-bay_05.webp" width="1800" height="1350" alt="Around the Bay — photograph 4" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_06.webp" data-caption="Around the Bay · 5 / 9" aria-label="Open Around the Bay photograph 5"><img src="assets/travel/around-the-bay/around-the-bay_06.webp" width="1800" height="1350" alt="Around the Bay — photograph 5" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_07.webp" data-caption="Around the Bay · 6 / 9" aria-label="Open Around the Bay photograph 6"><img src="assets/travel/around-the-bay/around-the-bay_07.webp" width="1350" height="1800" alt="Around the Bay — photograph 6" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_08.webp" data-caption="Around the Bay · 7 / 9" aria-label="Open Around the Bay photograph 7"><img src="assets/travel/around-the-bay/around-the-bay_08.webp" width="1191" height="1191" alt="Around the Bay — photograph 7" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/IMG_0591.webp" data-caption="Around the Bay · 8 / 9" aria-label="Open Around the Bay photograph 8"><img src="assets/travel/around-the-bay/IMG_0591.webp" width="1592" height="1972" alt="Around the Bay — photograph 8" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/IMG_9343.webp" data-caption="Around the Bay · 9 / 9" aria-label="Open Around the Bay photograph 9"><img src="assets/travel/around-the-bay/IMG_9343.webp" width="2400" height="1003" alt="Around the Bay — photograph 9" loading="lazy" decoding="async"></button></div></section>
     <section class="nj-trip" id="selected-trip-6">
@@ -131,7 +139,7 @@
       <div class="nj-photos"><button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_01.webp" data-caption="Redwoods · 1 / 7" aria-label="Open Redwoods photograph 1"><img src="assets/travel/redwoods/redwoods_01.webp" width="1350" height="1800" alt="Redwoods — photograph 1" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_02.webp" data-caption="Redwoods · 2 / 7" aria-label="Open Redwoods photograph 2"><img src="assets/travel/redwoods/redwoods_02.webp" width="1800" height="1350" alt="Redwoods — photograph 2" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_03.webp" data-caption="Redwoods · 3 / 7" aria-label="Open Redwoods photograph 3"><img src="assets/travel/redwoods/redwoods_03.webp" width="1800" height="1350" alt="Redwoods — photograph 3" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_04.webp" data-caption="Redwoods · 4 / 7" aria-label="Open Redwoods photograph 4"><img src="assets/travel/redwoods/redwoods_04.webp" width="1800" height="1350" alt="Redwoods — photograph 4" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_05.webp" data-caption="Redwoods · 5 / 7" aria-label="Open Redwoods photograph 5"><img src="assets/travel/redwoods/redwoods_05.webp" width="1800" height="1350" alt="Redwoods — photograph 5" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/IMG_5285.webp" data-caption="Redwoods · 6 / 7" aria-label="Open Redwoods photograph 6"><img src="assets/travel/redwoods/IMG_5285.webp" width="1536" height="2048" alt="Redwoods — photograph 6" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/redwoods/IMG_5647.webp" data-caption="Redwoods · 7 / 7" aria-label="Open Redwoods photograph 7"><img src="assets/travel/redwoods/IMG_5647.webp" width="2000" height="1500" alt="Redwoods — photograph 7" loading="lazy" decoding="async"></button></div></section>
     <section class="nj-trip" id="selected-trip-5">
       <header>
-        <h2>Death Valley 🏜️ 🌌</h2>
+        <h2>Death Valley ☠️ 🌌</h2>
         <p>Long desert roads, strange landscapes, and a night sky worth staying outside for.</p>
       </header>
       <div class="nj-photos"><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_01.webp" data-caption="Death Valley · 1 / 9" aria-label="Open Death Valley photograph 1"><img src="assets/travel/death-valley/death-valley_01.webp" width="1280" height="984" alt="Death Valley — photograph 1" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_02.webp" data-caption="Death Valley · 2 / 9" aria-label="Open Death Valley photograph 2"><img src="assets/travel/death-valley/death-valley_02.webp" width="1685" height="1348" alt="Death Valley — photograph 2" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_03.webp" data-caption="Death Valley · 3 / 9" aria-label="Open Death Valley photograph 3"><img src="assets/travel/death-valley/death-valley_03.webp" width="1685" height="1348" alt="Death Valley — photograph 3" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_07.webp" data-caption="Death Valley · 4 / 9" aria-label="Open Death Valley photograph 4"><img src="assets/travel/death-valley/death-valley_07.webp" width="1092" height="1456" alt="Death Valley — photograph 4" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_09.webp" data-caption="Death Valley · 5 / 9" aria-label="Open Death Valley photograph 5"><img src="assets/travel/death-valley/death-valley_09.webp" width="984" height="1312" alt="Death Valley — photograph 5" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_04.webp" data-caption="Death Valley · 6 / 9" aria-label="Open Death Valley photograph 6"><img src="assets/travel/death-valley/death-valley_04.webp" width="1600" height="1200" alt="Death Valley — photograph 6" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_05.webp" data-caption="Death Valley · 7 / 9" aria-label="Open Death Valley photograph 7"><img src="assets/travel/death-valley/death-valley_05.webp" width="1600" height="1200" alt="Death Valley — photograph 7" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_06.webp" data-caption="Death Valley · 8 / 9" aria-label="Open Death Valley photograph 8"><img src="assets/travel/death-valley/death-valley_06.webp" width="1800" height="1350" alt="Death Valley — photograph 8" loading="lazy" decoding="async"></button><button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_08.webp" data-caption="Death Valley · 9 / 9" aria-label="Open Death Valley photograph 9"><img src="assets/travel/death-valley/death-valley_08.webp" width="1600" height="1200" alt="Death Valley — photograph 9" loading="lazy" decoding="async"></button></div></section>
@@ -234,7 +242,7 @@
   <script src="js/jQuery.headroom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/custom.js?v=theme-2"></script>
-  <script src="js/natural-selected-journal.js"></script>
+  <script src="js/natural-selected-journal.js?v=tags-1"></script>
   <script src="js/navbar-glass.js?v=1"></script>
 </body>
 
