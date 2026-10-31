@@ -15,7 +15,7 @@
   ];
   if (originals.length !== 9) return;
   var tabs = document.createElement('div'); tabs.className = 'tp-tabs';
-  tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', 'Project groups');
+  tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', 'Projects');
   var buttons = [], panels = [];
   definitions.forEach(function (definition, index) {
     var panel = document.createElement('div'); panel.className = 'item tp-group';
@@ -49,7 +49,7 @@
   });
   carousel.before(tabs);
   var controls = document.createElement('div'); controls.className = 'tp-controls';
-  controls.innerHTML = '<span class="tp-status" aria-live="polite" aria-atomic="true"></span><div class="tp-arrows"><button type="button" class="tp-prev" aria-label="Previous project group">← <span>Previous group</span></button><button type="button" class="tp-next" aria-label="Next project group"><span>Next group</span> →</button></div>';
+  controls.innerHTML = '<span class="tp-status" aria-live="polite" aria-atomic="true"></span><div class="tp-arrows"><button type="button" class="tp-prev" aria-label="Previous project">← <span>Previous project</span></button><button type="button" class="tp-next" aria-label="Next project"><span>Next project</span> →</button></div>';
   carousel.after(controls);
   var current = 0;
   function select(index, scroll) {
@@ -60,7 +60,7 @@
       buttons[i].setAttribute('aria-selected', String(active)); buttons[i].tabIndex = active ? 0 : -1;
       if (!active) $(panel).find('audio,video').each(function () { this.pause(); });
     });
-    controls.querySelector('.tp-status').textContent = (index + 1) + ' / ' + definitions.length + ' groups · ' + definitions[index].label;
+    controls.querySelector('.tp-status').textContent = (index + 1) + ' / ' + definitions.length + ' projects · ' + definitions[index].label;
     if (scroll) tabs.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
   }
   controls.querySelector('.tp-prev').addEventListener('click', function () { select((current + definitions.length - 1) % definitions.length, true); });

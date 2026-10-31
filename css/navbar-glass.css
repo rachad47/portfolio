@@ -15,6 +15,7 @@
 
 :is(.frosted-studio,.site-shell) .navbar.navbar-glass>.container {
     position: relative;
+    border-radius: 30px;
     isolation: isolate;
     background: transparent;
     border: 1px solid var(--ng-edge);
@@ -96,4 +97,22 @@
         border: 1px solid CanvasText;
         box-shadow: none
     }
+}
+/* Quiet navigation: color changes without moving or duplicating labels. */
+.navbar.navbar-glass .nav-link span,
+.navbar.navbar-glass .nav-link:is(:hover,:focus,:focus-visible) span {
+  transform: none !important;
+  transition: none;
+}
+.navbar.navbar-glass .nav-link span::before {
+  content: none;
+  display: none;
+}
+.navbar.navbar-glass .navbar-nav .nav-link,
+.navbar.navbar-glass .navbar-nav .nav-link:is(:hover,:focus,:focus-visible) {
+  font-weight: 500;
+  transition: color .18s ease;
+}
+.navbar.navbar-glass .navbar-nav .nav-link:is(:hover,:focus-visible) {
+  color: var(--flag-red) !important;
 }

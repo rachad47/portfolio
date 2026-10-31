@@ -3,7 +3,7 @@
 .he-portrait{margin:0}.he-portrait img{display:block;width:100%;height:auto;border-radius:22px;box-shadow:var(--fs-shadow);border:1px solid var(--fs-edge)}
 .he-hero h1{font-size:clamp(36px,4vw,49px);line-height:1.07;letter-spacing:-2px;font-weight:500;margin:12px 0 0}
 .he-introduction{font-size:16px;line-height:1.7;margin:23px 0 14px;color:var(--body-text)}
-.he-role{font-size:13px;line-height:1.8;border-left:2px solid var(--flag-red);padding-left:13px;margin:0;color:var(--body-text)}
+.he-role{font-size:15px;line-height:1.8;border-left:2px solid var(--flag-red);padding-left:13px;margin:0;color:var(--body-text)}
 .he-hero .ce-actions{margin-top:23px;gap:20px}
 .he-outside{display:block;border-left:1px solid var(--divider);padding-left:25px;color:var(--page-text)}
 .he-postcards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}

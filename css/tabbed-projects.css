@@ -3,7 +3,7 @@
 #project.tp-ready>.container>.row>.col-lg-11>.col-lg-8>br{display:none}
 #project.tp-ready h2 small{margin-bottom:22px}
 .tp-tabs{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 20px;padding:10px;background:var(--fs-glass,#ffffffb8);border:1px solid var(--fs-edge,#ffffffe0);border-radius:24px;box-shadow:var(--fs-shadow,0 10px 30px #00214710);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);scroll-margin-top:115px;text-align:left}
-.tp-tab{flex:1 1 140px;min-height:49px;border:1px solid transparent;background:transparent;color:var(--body-text);border-radius:16px;padding:11px 14px;font:500 13px/1.5 'DM Sans',Arial,sans-serif;text-align:left;transition:background .18s ease,border-color .18s ease}
+.tp-tab{flex:1 1 140px;min-height:49px;border:1px solid transparent;background:transparent;color:var(--body-text);border-radius:16px;padding:11px 14px;font:500 13px/1.5 'DM Sans',Arial,sans-serif;text-align:center;transition:background .18s ease,border-color .18s ease}
 .tp-tab:hover{background:var(--panel-bg)}
 .tp-tab[aria-selected=true]{background:var(--fs-glass,#fff);color:var(--page-text);border-color:var(--flag-red);box-shadow:inset 0 -2px 0 var(--flag-red),0 5px 15px #0021470b}
 #project.tp-ready .owl-nav,#project.tp-ready .owl-dots{display:none}

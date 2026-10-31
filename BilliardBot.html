@@ -109,7 +109,7 @@ https://www.tooplate.com/view/2115-marvel
     <section class="contact py-3" id="project-details">
 
         <div style="text-align: center;" class="container ">
-            <h1>Billiard Bot 🎱🤖</h1>
+            <h1>BilliardBot 🎱🤖</h1>
 
             <!-- <div class="row align-items-center">
                 <div class="col-sm-12 col-md-7 col-lg-7">
@@ -150,9 +150,7 @@ https://www.tooplate.com/view/2115-marvel
                     <ul class="project-point-list"><li style="text-align: left;">
 
                         <b>
-                            BilliardBot</b> is a pool-playing robot that uses computer vision for ball detection
-                        and navigation. when properly positioned, it strikes the cue ball with a solenoid powered
-                        kicker.<p></p> </li></ul>
+                            BilliardBot</b>  is a pool-playing robot that uses computer vision to detect balls and navigate the table. Once positioned and aligned, it strikes the cue ball with a solenoid-powered kicker.<p></p> </li></ul>
                         
 
                         <!-- <img src="assets/projects/billiardbot/robot-logo.png" alt="" style="width:50%; text-align: right;" id="programmingLA"> -->
@@ -169,19 +167,14 @@ https://www.tooplate.com/view/2115-marvel
             
 <section class="project-glass-subsection" aria-label="High level overview"><div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h3 style="text-align: left;">High level overview</h3>
+                    <h3 style="text-align: left;">High-level overview</h3>
                     <br>
 
                     <ul class="project-point-list"><li style="text-align: left;">
 
-                        OpenCV analyses overhead camera feed for tracking the ball and robot, as well as for calculating
-                        distances and trajectories on the pool table. </li>
-                    <li style="text-align: left;">Software sends commands to ESP32 over Wi-Fi, directing robot to
-                        maneuver to set
-                        coordinates via omniwheels.</li>
-                    <li style="text-align: left;">Upon reaching the target position and orientation, the robot charges
-                        and discharges its capacitors powering a solenoid to strike the cue ball along the intended
-                        path.
+                        OpenCV analyzes the overhead camera feed to track the balls and robot, then calculate distances and trajectories across the pool table. </li>
+                    <li style="text-align: left;">The software sends commands to an ESP32 over Wi-Fi, directing the robot to specific coordinates.</li>
+                    <li style="text-align: left;">Once the robot reaches its target position and orientation, it charges the capacitors and discharges them through a solenoid to strike the cue ball along the intended path.
                     </li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -203,18 +196,18 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/robot-motion-side-view-optimized.webp" alt="Highlights — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>side view (speed x2) </figcaption>
+                    <figcaption>Side view (2× speed). </figcaption>
 
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/robot-motion-top-view-optimized.webp" alt="Highlights — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>top view (speed x2) </figcaption>
+                    <figcaption>Top view (2× speed). </figcaption>
                 </div>
             </div></section>
 </section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="Mechanical"><h2>Mechanical</h2>
+<section class="project-glass-panel" aria-label="Mechanical"><h2>Mechanical design</h2>
 
             <br>
 
@@ -223,12 +216,8 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-12 col-sm-12 col-md-6 col-lg-7">
                     <h4>Omniwheels</h4>
 <ul>
-                    <li>The omnidirectional wheel, as the name suggests, can move in any direction, at any angle, and in
-                        any direction. Therefore, compared to the traditional
-                        differential drive method, the omnidirectional wheel can complete the rotation while
-                        translating, <a href="https://youtu.be/OIdMkZyhx7E?si=dfeYYCNPFXWvryhR&amp;t=43">more info</a></li>
-                    <li>We also decided after reading some papers comparing 3 based / 4 wheel based structres we decided
-                        on 3 wheels mainly due to costs</li></ul>
+                    <li>Omniwheels let the robot move in any direction without first turning to face that direction. Compared with a conventional differential drive, this allows translation and rotation to happen together. That flexibility makes it easier to position the robot on the table.  <a href="https://youtu.be/OIdMkZyhx7E?si=dfeYYCNPFXWvryhR&amp;t=43">More information.</a></li>
+                    <li>After reading papers comparing three- and four-wheel layouts, we chose a three-wheel configuration, mainly to keep costs down.</li></ul>
 
                 </div>
 
@@ -253,7 +242,7 @@ https://www.tooplate.com/view/2115-marvel
                         <!-- <img src="assets/projects/coilgun/future-improvements-02.png" alt="Paris" style="width: 100%;height: auto;"
                             id="programmingLA"> -->
                         <img src="assets/projects/billiardbot/laser-cut-frame.webp" alt="Structure — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                        <figcaption>Laser cut</figcaption>
+                        <figcaption>Laser-cut parts.</figcaption>
                     </div>
 
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
@@ -278,11 +267,7 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <h4>Motors</h4>
-                    <ul><li>We chose stepper motors over other types for their precision, prioritizing accuracy over speed or
-                        torque. Despite the manual cable connection required due to our use of
-                        an ESP32 instead of an Arduino Uno, the CNC shield facilitated wiring and enabled microstepping
-                        (increasing the resolution from 200 to 1600 steps per revolution),
-                        enhancing the robot's precision. </li></ul>
+                    <ul><li>We chose stepper motors for their precision, prioritizing positioning accuracy over speed and torque. The CNC shield simplified the wiring and enabled microstepping, increasing the resolution from 200 to 1,600 steps per revolution. Since we used an ESP32 rather than an Arduino Uno, we had to wire the connections manually instead of plugging the shield directly into the controller. </li></ul>
                 </div>
 
             </div></section>
@@ -290,11 +275,9 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Ball puncher"><div class="row">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
-                    <h4>Ball puncher</h4>
+                    <h4>Ball striker</h4>
                     <br>
-                    <ul><li>Essentially, we utilize a voltage booster to elevate the voltage from 14V to 200V for charging
-                        the capacitors, and subsequently discharge the stored energy, leading to
-                        the impact on the ball.
+                    <ul><li>A voltage booster raises the supply from 14 V to 200 V to charge the capacitors. Discharging that stored energy through the solenoid drives the kicker forward and strikes the ball.
                     </li></ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-5 align-self-center">
@@ -310,19 +293,19 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                     <img src="assets/projects/billiardbot/high-voltage-boost-converter.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>14V-&gt;200V <a href="https://www.amazon.com/Regulator-Converter-%C2%B145V-390V-Capacitor-Charging/dp/B07SM89NJ4/ref=psdc_10967761_t3_B07T6L61D9">
-                            votage booster</a> </figcaption>
+                    <figcaption>14 V–&gt;200 V <a href="https://www.amazon.com/Regulator-Converter-%C2%B145V-390V-Capacitor-Charging/dp/B07SM89NJ4/ref=psdc_10967761_t3_B07T6L61D9">
+                            voltage booster</a> </figcaption>
                 </div>
 
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/billiardbot/striker-capacitor.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>2*1000uF 200V capacitors</figcaption>
+                    <figcaption>Two 1,000 µF, 200 V capacitors</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/billiardbot/striker-thyristor.webp" alt="Ball puncher — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Thyristor BTW69-1200</figcaption>
+                    <figcaption>BTW69-1200 thyristor</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -340,43 +323,38 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                     
-                    <h4>Customizing the force</h4><ul>
+                    <h4>Adjusting shot strength</h4><ul>
                     <br>
                     <li>
-                        Increasing the voltage equates to increasing the power output. The concept is to create three
-                        distinct levels of power for the shots: a weak shot,
-                        a medium shot, and a strong shot. This is achieved by timing the charging process and
-                        interrupting the current flow to the capacitors when they reach
-                        a certain percentage of charge.</li></ul>
+                        A higher capacitor voltage produces a stronger shot. The goal was to offer three settings: weak, medium, and strong. We adjusted the charging time and interrupted the current to the capacitors at different charge levels, giving us a way to vary the force.</li></ul>
                 </div>
 
             </div></section>
 
 <section class="project-glass-subsection" aria-label="Power distribution"><h4>Power distribution</h4>
-            <p>The full diagram includes components such as optocouplers, thyristors explained in detail in my <a href="CoilGun.html">CoilGun project</a> a 4s LiPo battery, a buck converter
-                for voltage stability, and a 7-segment voltage reader. </p>
+            <p>The full diagram includes optocouplers and thyristors, which I explain in more detail in my  <a href="CoilGun.html">CoilGun project</a> . It also includes a 4S LiPo battery, a buck converter to regulate voltage, and a seven-segment voltage display. </p>
             <img src="assets/projects/billiardbot/power-distribution-diagram.webp" alt="Power distribution — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy"></section>
 </section>
 <hr class="rounded">
 <section class="project-glass-panel" aria-label="Full circuit and integration"><h3>Full circuit and integration</h3>
             <img src="assets/projects/billiardbot/full-circuit.webp" alt="Full circuit and integration — project illustration" style="width:80%" class="programingLA" decoding="async" loading="lazy">
-            <figcaption>Rough sketch on iPad</figcaption>
+            <figcaption>Rough circuit sketch on an iPad.</figcaption>
 
 
             <div class="row">
 
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/motor-control-circuit.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Signals circuit</figcaption>
+                    <figcaption>Signal circuit.</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/high-voltage-assembly.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>High voltage caps + thyristor</figcaption>
+                    <figcaption>High-voltage capacitors and thyristor.</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 align-self-center">
                     <img src="assets/projects/billiardbot/integrated-striker-demo-optimized.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
 
-                    <figcaption>Puncher test</figcaption>
+                    <figcaption>Striker test.</figcaption>
                 </div>
 
             </div>
@@ -384,11 +362,11 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
                     <img src="assets/projects/billiardbot/circuit-detail-01.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>First layer circuit</figcaption>
+                    <figcaption>First-layer circuit.</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
                     <img src="assets/projects/billiardbot/circuit-detail-02.webp" alt="Full circuit and integration — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Second layer circuit</figcaption>
+                    <figcaption>Second-layer circuit.</figcaption>
                 </div>
 
             </div>
@@ -397,9 +375,7 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Circuit &amp; PCB"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-7 col-lg-7">
                     <h4 style="text-align: center;">Circuit &amp; PCB</h4>
-                    <ul class="project-point-list"><li>We are still in the process of testing to ensure that our prototype functions correctly. Once we
-                        have successfully completed the testing phase, our next step will be to design the circuit on a
-                        PCB</li></ul>
+                    <ul class="project-point-list"><li>We were still testing the prototype to make sure the complete circuit worked reliably. Once those tests were finished, the next step was to transfer the design from the prototype wiring to a PCB.</li></ul>
 
                 </div>
 
@@ -419,11 +395,7 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Overview"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-7 col-lg-8">
                     <h3 style="text-align: center;">Overview</h3>
-                    <ul><li> The camera is positioned on top, and we use computer vision with OpenCV to handle ball
-                        detection, measurements, and path decisions. Afterward, Python sends a command to the ESP32 via
-                        WiFi to maneuver the robot to specific coordinates. Once it reaches the designated position and
-                        orientation, we charge the capacitors to 200V and then discharge them through the solenoid,
-                        resulting in striking the ball. </li></ul>
+                    <ul><li> An overhead camera provides the view of the table. OpenCV handles ball detection, measurements, and path calculations, then Python sends movement commands to the ESP32 over Wi-Fi. The robot moves to the requested coordinates and orientation before charging its capacitors to 200 V. Discharging them through the solenoid drives the kicker into the cue ball. </li></ul>
 
                 </div>
 
@@ -451,11 +423,8 @@ https://www.tooplate.com/view/2115-marvel
             
 <section class="project-glass-subsection" aria-label="HSV Model"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-8 col-lg-9">
-                    <h4 style="text-align: left;">HSV Model</h4>
-                    <ul class="project-point-list"><li>In computer vision, the HSV model is often preferred over RGB for color detection. HSV allows
-                        for easy selection of thresholds that work well under various lighting conditions, unlike RGB,
-                        which makes threshold variation challenging. In my project, I'm using HSV, and I'm also creating
-                        masks. First, I detect the table, and then I only consider objects within that boundary</li></ul>
+                    <h4 style="text-align: left;">HSV color model</h4>
+                    <ul class="project-point-list"><li>HSV is useful for color detection because it separates hue from brightness, making thresholds easier to adjust than with RGB. I use HSV thresholds and masks to isolate the objects of interest under different lighting conditions. First, I detect the table boundary; then I limit further detection to objects inside that area.</li><li>I also added glare suppression to reduce reflections that could interfere with color detection.</li></ul>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-4 col-lg-3">
@@ -470,17 +439,17 @@ https://www.tooplate.com/view/2115-marvel
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
                     <h4 style="text-align: center;">Robot detection</h4>
                     <img src="assets/projects/billiardbot/robot-marker-detection.webp" alt="Robot detection — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <ul class="project-point-list"><li>Detect the boundary table (yellow counter)</li>
-                    <li>Detect the robot <b>within</b> the table (pink counter) </li>
-                    <li>We can use <code>cv2.bitwise_and</code> for such maskings </li></ul>
+                    <ul class="project-point-list"><li>Detect the table boundary (yellow contour).</li>
+                    <li>Detect the robot  <b>within</b>  the table boundary (pink contour). </li>
+                    <li>We can use  <code>cv2.bitwise_and</code>  to create these masks. </li></ul>
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
                     <h4 style="text-align: center;">Robot orientation</h4>
                     <img src="assets/projects/billiardbot/robot-orientation.webp" alt="Robot orientation — project illustration" style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <ul class="project-point-list"><li>Considers a black spot as the center of the robot</li>
-                    <li>The Y-axis to be from the black spot to the red spot</li>
-                    <li>The X-axis to be 90* to the right of the Y-axis</li></ul>
+                    <ul class="project-point-list"><li>Use the black marker as the robot’s center.</li>
+                    <li>Set the Y-axis from the black spot toward the red spot.</li>
+                    <li>Define the X-axis at 90° clockwise from the Y-axis.</li></ul>
                 </div>
 
 
@@ -489,14 +458,10 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Calculating distances"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
                     <h4 style="text-align: center;">Calculating distances</h4>
-                    <ul class="project-point-list"><li>At that point I simply used color detections to look for balls for a certain size</li>
+                    <ul class="project-point-list"><li>I corrected fisheye distortion, re-zeroed the camera using pocket fiducials, and applied color and size filters to detect potential balls.</li>
                     <li>
 
-                        In OpenCV, images are considered as pixel grids. To measure distances and angles, I use a 2D
-                        distance formula and the cross product method, converting from pixels to centimeters based on
-                        the ball's size. All
-                        calculations are based on the robot being at the origin (0,0), with projections used to find X
-                        and Y coordinates.
+                        OpenCV represents an image as a grid of pixels. I use the 2D distance formula and cross products to calculate distances and angles, then convert pixels to centimeters using the ball’s size as a reference. The robot is treated as the origin, (0, 0), and projections give each target’s X and Y coordinates relative to it.
                     </li></ul>
 
                 </div>
@@ -509,16 +474,14 @@ https://www.tooplate.com/view/2115-marvel
 
 <section class="project-glass-subsection" aria-label="detection &amp; classification of balls"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h4 style="text-align: center;">detection &amp; classification of balls</h4>
-                    <p>We can only do much with computer vision even if we carefully tuned the paramters of
-                        cv2.HoughCirle ML required to detect the ball, we also have to classify them into 4 categories:
+                    <h4 style="text-align: center;">Ball detection  &amp; classification</h4>
+                    <p>Basic computer vision has its limits, even with carefully tuned Hough-circle parameters. Beyond detecting a ball, we also need to identify which type it is. The planned classification groups are:
                     </p>
-                    <ul class="project-point-list"><li>Cue ball: white one</li>
-                    <li>black ball: 8 ball</li>
-                    <li>solid balls: (our balls)</li>
-                    <li>stripe balls: (opponent balls)</li></ul>
-                    <p>There is no need to get to detect the exact number or color of each ball our strategy is to
-                        consider all solid balls as valid target and opponent balls as no go </p>
+                    <ul class="project-point-list"><li>Cue ball: white.</li>
+                    <li>Black ball: the 8-ball.</li>
+                    <li>Solid balls: our targets.</li>
+                    <li>Striped balls: the opponent’s targets.</li></ul>
+                    <p>We do not need to identify every ball’s exact number or color. For this strategy, solid balls are valid targets, while the opponent’s striped balls must be avoided. </p>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
@@ -528,15 +491,8 @@ https://www.tooplate.com/view/2115-marvel
 
 <section class="project-glass-subsection" aria-label="Strategy to hit the ball"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h4 style="text-align: center;">Strategy to hit the ball</h4>
-                    <ul class="project-point-list"><li><b>Strike position:</b> Provided we know the position of the cue ball, the target ball, and the
-                        pocket, currently we
-                        are
-                        just calculating the distance from the center of the robot to the center of the ball (so it will
-                        hit the ball with the robot structure instead of the solenoid). Eventually, we have to calculate
-                        where the robot should go to strike the ball at the desired angle without colliding anything on
-                        its
-                        path. I also made a physics simulation of the pool table to ease the testing process. (more info below)
+                    <h4 style="text-align: center;">Planning the shot</h4>
+                    <ul class="project-point-list"><li><b>Strike position</b> Given the positions of the cue ball, target ball, and pocket, the current calculation measures from the robot’s center to the ball’s center. That would bring the robot’s frame into contact with the ball rather than correctly positioning the solenoid. The next step is to account for the kicker’s offset, choose the required strike angle, and find a collision-free path to that position. I also built a pool-table physics simulation to make these calculations easier to test; more on that below.
                     </li></ul>
                 
                 </div>
@@ -549,8 +505,8 @@ https://www.tooplate.com/view/2115-marvel
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
                     <h4 style="text-align: center;">Error mitigation</h4>
                     
-                    <ul class="project-point-list"><li>When dealing with long distances, errors can add up. To fix this, I made a self-adjusting loop that keeps readjusting until the error is negilible.</li>
-                    <li>Note that stepper motors are much more accurate. Here, I intentionally altered the math to test the self-adjusting loop. </li></ul>
+                    <ul class="project-point-list"><li>Small positioning errors can accumulate over long distances. To address this, I added a feedback loop that checks the robot’s position and keeps correcting it until the remaining error is negligible.</li>
+                    <li>The stepper motors are more accurate than this example suggests. I deliberately altered the calculations here to test whether the correction loop worked. </li></ul>
 
 
                 </div>
@@ -568,14 +524,14 @@ https://www.tooplate.com/view/2115-marvel
 
 
             
-<section class="project-glass-subsection" aria-label="Robot mouvement"><h4 style="text-align: left;">Robot mouvement</h4>
+<section class="project-glass-subsection" aria-label="Robot mouvement"><h4 style="text-align: left;">Robot movement</h4>
             <p style="text-align: left;">To move from point A to B given their coordinates, target distances and angles must be converted into motor step counts and speeds. There are two approaches:</p>
 
 
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
                     <h5 style="text-align: center;">Polar coordinates</h5>
-                    <p style="text-align: center;">First rotation then translation</p>
+                    <p style="text-align: center;">Rotate first, then translate.</p>
                     <video src="assets/projects/billiardbot/polar-motion-demo.mp4" style="width: 100%;
                     height: auto;" controls="" class="programmingL" preload="none" playsinline="" poster="assets/projects/billiardbot/polar-motion-demo-poster.webp" width="560" height="316">
                     </video>
@@ -584,8 +540,8 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-6">
-                    <h5 style="text-align: center;">Carterian coordinates</h5>
-                    <p style="text-align: center;">Vector addition to move from A-&gt;B without rotating</p>
+                    <h5 style="text-align: center;">Cartesian coordinates</h5>
+                    <p style="text-align: center;">Use vector addition to move from A–&gt;B without rotating.</p>
                     <video src="assets/projects/billiardbot/cartesian-motion-demo.mp4" style="width: 100%;
                     height: auto;" controls="" class="programmingL" preload="none" playsinline="" poster="assets/projects/billiardbot/cartesian-motion-demo-poster.webp" width="854" height="480">
                     </video>
@@ -598,8 +554,7 @@ https://www.tooplate.com/view/2115-marvel
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
                     <h4 style="text-align: left;">Polar coordinates</h4>
 
-                    <ul><li>give the angle and the distance, we take raduis of the wheel.... to calculate the number of steps
-                        required for rotation for the angle and same thing for translation
+                    <ul><li>Given a target angle and distance, I use the wheel radius to calculate the required motor steps. Rotation and translation are handled separately: the robot first turns to face the target, then moves toward it.
                     </li></ul>
                 </div>
 
@@ -614,12 +569,9 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
 
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h4 style="text-align: left;">Carterian coordinates</h4>
+                    <h4 style="text-align: left;">Cartesian coordinates</h4>
                     <ul>
-                    <li>This one is harder as it involves vector addition, also required to move the wheels at diffrent
-                        speeds to finish at the same time we will lose the vector addition calculation so dependind on
-                        the distination if wheel X have 800 steps and wheel Y have 400 steps we will move wheel X at 2
-                        of the speed of wheel Y in order to finish at the same time.
+                    <li>This approach uses vector addition, with the wheels moving at different speeds so they finish together. Otherwise, the robot would not follow the intended direction throughout the move. For example, if one wheel needs 800 steps and another needs 400, the first runs at twice the second’s speed. Both then reach their target step counts at the same time.
                     </li>
                     <li>Small angles can cause disproportionate step counts between wheels (e.g., 200 steps on Y vs. 3,000 on Z). Synchronizing arrival times requires a 15× speed differential. However, running the slower wheel too slow induces low-speed stepper resonance, while speeding it up forces the faster wheel to spin fast enough to destabilize the chassis and skip steps. </li></ul>
 
@@ -634,8 +586,7 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Pool table physics"><h4 style="text-align: left;">Pool table physics</h4>
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <ul><li>To ease the testing process in the devolepment phase, I created a physics simulation of the pool table to test my code on it.
-                        So given the position of the cue ball the target ball the pocket and the boundary of the table we can calculate the point and direction of the robot to strike the cue ball have it bounce and hit the target ball and have it go to the pocket.
+                    <ul><li>To simplify testing during development, I built a physics simulation of the pool table. Given the cue ball, target ball, pocket, and table boundaries, it helps calculate where the robot should stand and which direction it should strike. This lets me test paths in which the cue ball bounces, hits the target ball, and sends it toward a pocket before trying them on the real table.
                     </li></ul>
                 </div>
 
@@ -649,19 +600,13 @@ https://www.tooplate.com/view/2115-marvel
 <hr class="rounded">
 <section class="project-glass-panel" aria-label="Firmware"><h3>Firmware</h3>
             <br>
-            <p style="text-align: left;">ESP32 is a microcontroller that has both WIFI capabilities, we use it to
-                control the
-                motors and the solenoid, so we have it connect to WIFI (same as computer) then we had multiple routes
+            <p style="text-align: left;">The ESP32 provides Wi-Fi connectivity and controls the motors and solenoid. It joins the same network as the computer and exposes several routes for movement, status checks, and firing:
             </p>
-            <ul class="project-point-list"><li style="text-align: left;"><code>/control</code>: Accepts 6 parameters to control the motors (StepsX,
-                SpeedX, StepsY, SpeedY, StepsZ, SpeedZ)</li>
-            <li style="text-align: left;"><code>/status</code>: Check wether the robot is done mooving or no (returns
-                True/False)
+            <ul class="project-point-list"><li style="text-align: left;"><code>/control</code>: Accepts six motor-control parameters: StepsX, SpeedX, StepsY, SpeedY, StepsZ, and SpeedZ.</li>
+            <li style="text-align: left;"><code>/status</code>: Reports whether the robot has finished moving.
             </li>
-            <li style="text-align: left;"><code>/stop</code>: Stops the robot (emergency command)</li>
-            <li style="text-align: left;"><code>/strike</code>: Charges capacitors and discharges into the solenoid,
-                with an
-                adjustable charging time for customizable force. </li></ul>
+            <li style="text-align: left;"><code>/stop</code>: Stops the robot as an emergency command.</li>
+            <li style="text-align: left;"><code>/strike</code>: Charges the capacitors, then discharges them through the solenoid. Adjustable charging time controls shot strength. </li></ul>
 
             <br>
 
@@ -671,11 +616,8 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <h5>/control</h5>
-                    <p>The goal was being able to control individaully each wheel with a specefic revolution and speed
-                        and have them turn at the same time, doing so direclty is challanging because of the way stepper
-                        motor works with loops and <code>delay</code>, thankfully I found a library:
-                        <code>AccelStepper</code> that allows that without
-                        manually coding the <code>millis</code> and non-blocking functions
+                    <p>The goal was to give each wheel its own step count and speed while allowing all three wheels to move together. Doing this directly is awkward because basic stepper control relies on loops and  <code>delay</code>. Fortunately, I found 
+                        <code>AccelStepper</code> , which handles this without manually implementing  <code>millis</code>  timing and nonblocking motor control.
                     </p>
                 </div>
 
@@ -787,12 +729,8 @@ send_command(stepsX, speedX, stepsY, speedY, stepsZ, speedZ)
             <div class="row align-items-center">
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <ul class="project-point-list"><li style="text-align: left;">We can achieve both Polar and Cartesian, as we can control the speed
-                        and steps for the wheels
-                        independently for cartesian
-                        we only send one command, and polar we send two commands one for rotation seperated so it will
-                        exceute rotation then translation, and thats where the route <code>ESP_ip_Address/status</code>
-                        comes in handy.
+                    <ul class="project-point-list"><li style="text-align: left;">Independent control of each wheel’s speed and step count supports both coordinate approaches. Cartesian movement needs one command, while polar movement needs two: one for rotation and another for translation. The second must wait for the first to finish, which is where the  <code>ESP_ip_Address/status</code>
+                         route becomes useful.
                     </li></ul>
                 </div>
 
@@ -803,9 +741,7 @@ send_command(stepsX, speedX, stepsY, speedY, stepsZ, speedZ)
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <h5>/status</h5>
-                    <p>Essentially we have a global variable <code>movementComplete </code> set to False and we set it
-                        to True once we finish the request, on python side we keep requesting <code>/status</code> till
-                        it returns True, only then we send the following <code>send_command()</code> to motors </p>
+                    <p>A global variable,  <code>movementComplete </code> , starts as False and becomes True when the movement finishes. On the Python side, the program keeps checking  <code>/status</code>  until the move is complete. Only then does it send the next  <code>send_command()</code>  command to the motors. </p>
 
 
                 </div>
@@ -892,15 +828,9 @@ if ball_measurements is not None:
             <div class="row align-items-center">
 
                 <div style="text-align: left;" class="col-sm-12 col-md-12 col-lg-12">
-                    <ul class="project-point-list"><li>So in this example, we first send the rotation command we wait till it finishes then we send
-                        translation </li>
-                    <li> Im using a time.delay in python to keep requesting from the server
-                        periodically and
-                        time.delay is a blocking function Im using that with <code>threading</code> so the program and
-                        the UI won't
-                        freeze</li>
-                    <li>This also helpful in error mitigation as I devide big dsitances into samller steps then we
-                        recalculate the dsitances to avoid error propogation</li></ul>
+                    <ul class="project-point-list"><li>In this example, Python first sends the rotation command, waits for it to finish, and then sends the translation command. </li>
+                    <li> Python polls the server periodically, with a delay between requests. Because that waiting loop blocks execution, I run it with  <code>threading</code>  so the rest of the program and UI remain responsive.</li>
+                    <li>This also helps with error correction: I split long movements into shorter steps and recalculate the remaining distance between them to limit accumulated positioning errors.</li></ul>
 
 
                 </div>
@@ -909,13 +839,13 @@ if ball_measurements is not None:
             </div>
             <br>
 
-            <p>The other ones are more straight forward, for more info check my code on <a href="https://github.com/rachad47/BilliardBot">GitHub</a> under firmware.</p></section>
+            <p>The remaining routes are more straightforward. For implementation details, see the  <a href="https://github.com/rachad47/BilliardBot">GitHub</a>  repository’s firmware section.</p></section>
 </section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="Graphical User Interface"><h2>Graphical User Interface</h2>
-            <br>
-            <p>the main purpose of the GUI is for testing, I used <code>Tkinter</code> with the help of
-                <code>CustomTkinter</code> fora modern UI
+<section class="project-glass-panel" aria-label="Graphical User Interface"><h2>Graphical user interface</h2>
+            
+            <p>The GUI is mainly a testing tool. I used  <code>Tkinter</code>  together with 
+                <code>CustomTkinter</code>  to give it a more modern interface.
             </p>
 
             
@@ -924,9 +854,7 @@ if ball_measurements is not None:
                     <ul> <h4 style="text-align: center;">Idea:</h4>
                     <br>
                     <li>
-                        I got the idea while doing ball detection with six adjustable parameters. To avoid repeatedly
-                        running the program for each change, I built a UI, making the process much easier as I see the
-                        changes in real time. </li></ul>
+                        The idea came from tuning six parameters for ball detection. Re-running the program after every adjustment was slow, so I built a UI that lets me change the values and immediately see their effect on detection. </li></ul>
 
                     <img src="assets/projects/billiardbot/hough-line-detection.webp" alt="Idea — project illustration" style="max-height:400px ; width: 100%;height: auto;" id="programmingLAn" decoding="async" loading="lazy">
 
@@ -938,12 +866,9 @@ if ball_measurements is not None:
 
 <section class="project-glass-subsection" aria-label="HSV-thresholds / autosave"><div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <h4 style="text-align: center;">HSV-thresholds / autosave</h4>
-                    <ul class="project-point-list"><li>As explained in the Compter Vision section Im using color thresholds, the issue is as I change
-                        the light condition some thresholds fails so having the option to change the thresholds and see
-                        the counter in real time really helped</li>
-                    <li>As I click close it automatically saves thresholds into a .txt file and upon launching the
-                        program again it reads and loads from that file</li></ul>
+                    <h4 style="text-align: center;">HSV thresholds and autosave</h4>
+                    <ul class="project-point-list"><li>As described in the computer vision section, detection relies on color thresholds. Those settings can stop working as lighting changes. Being able to adjust them in the UI and see the detected contours update in real time made tuning much easier.</li>
+                    <li>Closing the program automatically saves the thresholds to a text file. The next time it starts, it reads that file and restores the previous settings.</li></ul>
 
                 </div>
                 <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
@@ -988,8 +913,7 @@ if ball_measurements is not None:
                     <ul><h4>Ball detection &amp; classification</h4>
                     <br>
                     
-                    <li>Training an Machine learning model that accurately detects and classifies balls into four
-                        categories: black, cue, solid, and stripes </li></ul>
+                    <li>Train a machine-learning model to detect balls and classify them into four categories: black, cue, solid, and striped. </li></ul>
                 </div>
 
             </div>
@@ -1000,9 +924,7 @@ if ball_measurements is not None:
                     <ul><h4>Smart game strategy</h4>
                     <br>
                     
-                    <li>Compute all possibilities and determine which ball to hit in order to maximize the score in a
-                        row. After striking using physics, we aim for the ball to finish in a position that is favorable
-                        for the robot to score again or making it more challenging for the opponent.</li></ul>
+                    <li>Compare possible shots and choose the one that offers the best chance of scoring several balls in succession. The physics model could also help choose where the cue ball finishes, either setting up the robot’s next shot or leaving a more difficult position for the opponent.</li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/billiardbot/shot-planning-decisions.webp" alt="Smart game strategy — project illustration" style="width: 75%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
@@ -1016,11 +938,10 @@ if ball_measurements is not None:
                     <img src="assets/projects/billiardbot/shot-planning.webp" alt="Smart game strategy — project illustration" style="width: 75%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <ul><h4>Make autonomous</h4>
+                    <ul><h4>More autonomous play</h4>
                     <br>
                     
-                    <li>Play the game with less human intervention, i.e., knowing when it's not its turn, so it waits for
-                        the other player to strike.</li></ul>
+                    <li>Reduce the need for human input by tracking whose turn it is, waiting while the opponent plays, and resuming when it is the robot’s turn.</li></ul>
                 </div>
 
             </div>

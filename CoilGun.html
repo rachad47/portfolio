@@ -109,14 +109,14 @@ https://www.tooplate.com/view/2115-marvel
     <section class="contact py-3" id="project-details">
 
         <div style="text-align: center;" class="container ">
-            <h1>Multi-stage coil gun ⚡🧲</h1>
+            <h1>Multi-stage coilgun ⚡🧲</h1>
 <section class="project-glass-panel" aria-label="Idea"><div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h2>Idea</h2>
+                    <h2>The idea</h2>
                     <br>
-                    <ul class="project-point-list"><li style="text-align: left;">Following my previous project <a href="Xylophone.html">Automatic
-                            Xylophone</a> I wanted to make things more fun.</li>
-                    <li style="text-align: left;">I also wanted to do some high-voltage applications</li></ul>
+                    <ul class="project-point-list"><li style="text-align: left;">After building my  <a href="Xylophone.html">Automatic
+                            Xylophone</a> , I wanted to take the idea further.</li>
+                    <li style="text-align: left;">This time, I wanted to explore high-voltage electronics.</li></ul>
                     <!-- <li style="text-align: left;"> Now I hate them more and I've learned that I shouldn't get near Electrical Engineering.</li> -->
                     <br>
                     <!-- <H6>Software for the win!</H6> -->
@@ -128,12 +128,10 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
             </div></section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="Alert !"><h2 style="color:red ;">Alert !</h2>
+<section class="project-glass-panel" aria-label="Alert !"><h2 style="color:rgb(189, 16, 45) ;">Safety and legal notes</h2>
             <div class="row align-items-center">
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-9">
-                    <ul class="project-point-list"><li><b>First</b> : Exercise caution if you're not familiar with high voltage applications. 380V can cause
-                        severe damage. As we're not engineers (yet?), it's possible that we may have overlooked certain
-                        aspects. Proceed at your own risk.
+                    <ul class="project-point-list"><li><b>High voltage</b> : This project involves voltages up to 380 V, which can cause serious injury or death. This is a record of our experiments, not a safety-validated build guide.
                     </li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
@@ -146,7 +144,7 @@ https://www.tooplate.com/view/2115-marvel
                     <img src="assets/projects/coilgun/project-safety-note.webp" alt="Alert ! — project illustration" style="width:100%" class="programmingLA" decoding="async" loading="lazy">
                 </div>
                 <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                    <ul class="project-point-list"><li><b>Second</b>: We live live in Canada, guns here are heavily resitrcted, while its fine to make
+                    <ul class="project-point-list"><li><b>Regulations</b>: We live live in Canada, guns here are heavily resitrcted, while its fine to make
                         Coil/Rail guns without a license, they should NOT
                         exceed 500 feet/s or produce over 5.7 Joules of energy or else they will <a href="https://www.rcmp-grc.gc.ca/en/firearms/specific-types-firearms">fall under
                             FireArms</a>. So It's a good idea to check
@@ -159,10 +157,7 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-panel" aria-label="How it works"><h2>How it works</h2>
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <ul><li> In coil guns, a high current is passed through coils of wire which generate strong magnetic
-                        fields. Theses magnetic fields cause the metal bullet to accelerate extremely quickly.
-                        The GIF on the right is showing 3 stages but I'll only be using only two. Theres also a sensor
-                        in between the first and second stage to detect the bullet and trigger the second stage.
+                    <ul><li> A coilgun sends a high-current pulse through a coil of wire, creating a strong magnetic field that accelerates a metal projectile. The animation shows three stages, but our build uses two. A sensor between the stages detects the projectile as it passes and triggers the second stage.
                     </li></ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -181,13 +176,8 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-12 col-sm-12 col-md-6 col-lg-7">
                     <br>
                     <ul>
-                    <li>We decided to start by experimenting and getting comfortable with low voltage capacitors first
-                        as high voltage capacitors are very dangerous. We tried variety capacitors and multiple coil
-                        wiring configurations just to get a rough idea what works best. </li>
-                    <li>In the circuit on the right we charged the capacitor up to 19 volts. We then disconnected it from
-                        the voltage source and hooked it up to the magnetic coil. This caused the capacitor to discharge
-                        and send current through magnetic coil, generating a magnetic field which caused the bullet to
-                        accelerate forward </li></ul>
+                    <li>We started by experimenting with low-voltage capacitors to get comfortable with the basic circuit before moving to the much more dangerous high-voltage setup. We tried several capacitors and different coil wiring configurations to get a rough idea of what worked best. </li>
+                    <li>In the circuit on the right, we charged the capacitor to 19 V, disconnected the power supply, and connected it to the coil. As the capacitor discharged, current flowed through the coil and generated a magnetic field that accelerated the projectile forward. </li></ul>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-5">
@@ -205,16 +195,9 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <ul>
-                    <li><b>Idea:</b> Simulate second stage triggering mechanisms to determine which configuration would
-                        be best to trigger the second stage for our gun.</li>
+                    <li><b>Idea:</b>   Compare different triggering mechanisms and determine which configuration would work best for the second stage of our coilgun.</li>
 
-                    <li>We found that transistors were a bad choice as they drew a lot of current. We tried using a
-                        mechanical
-                        relay as a switch instead. We also tried adding in multiple capacitors to increase the maximum
-                        potential
-                        energy stored however, this idea was scrapped as it occasionally caused the projectile to
-                        oscillate and lose
-                        power or worse, fire backward.</li></ul>
+                    <li>The transistors we tried drew too much current, so we tested a mechanical relay as a switch instead. We also tried multiple capacitors to increase the stored energy. However, we abandoned that configuration because the projectile sometimes oscillated and lost speed.</li></ul>
                 </div>
 
                 <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-4">
@@ -233,48 +216,30 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
             </div> --></section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="(Optional): Joystick &amp; Software integration"><h2>(Optional): Joystick &amp; Software integration</h2>
+<section class="project-glass-panel" aria-label="Joystick &amp; Software integration"><h2>Joystick  &amp; software integration (optional)</h2>
             <br>
             <div class="row align-items-center">
 
                 
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <ul class="project-point-list"><li>This project was very Elec heavy so we decided to include some software in it. We found two
-                        servo
-                        motors and wanted to use them along with a joystick to be able to control/move the gun.
-                        Ultimately,
-                        the goal was to use OpenCV for computer vision along with AI (such as MediaPipe to have our
-                        turret
-                        automatically track targets.
+                    <ul class="project-point-list"><li>This project was mainly electronics, so we wanted to add a software component. We found two servo motors and experimented with using a joystick to control the barrel’s direction. The longer-term goal was to explore computer vision with OpenCV and tools such as MediaPipe, eventually allowing the turret to track targets automatically.
                     </li></ul>
 
 
-                    <ul class="project-point-list"><li> Other than the software aspect, implementing the above would require some more mechanical work,
-                        mainly a good structure that can hold the weight of the barrel and withstand the recoil. For
-                        early
-                        testing we used a laser pointer and we followed by only one stage with low power.
+                    <ul class="project-point-list"><li> Beyond the software, this would need a sturdy frame to support the barrel’s weight and withstand recoil. We started with a laser pointer to check the movement and joystick control, then moved on to testing a single stage at low power.
                     </li></ul>
 
-                    <ul class="project-point-list"><li> We found a library that works well with the Joysticks and Xbox
-                        handcontrollers, namely <a href="http://lagers.org.uk/gamecontrol/">GCP library</a>. we also
-                        found a
+                    <ul class="project-point-list"><li> We found a library that worked well with joysticks and Xbox controllers: the   <a href="http://lagers.org.uk/gamecontrol/">GCP library</a>. This 
                         <a href="https://www.youtube.com/watch?v=MUM8_4mWxng&amp;t=816s&amp;ab_channel=MakeUseOf">tutorial</a>
-                        that explains how to
-                        use it with Arduino.
+                          that explains the setup and shows how to use it with an Arduino.
                     </li></ul>
-                    <ul class="project-point-list"><li> As we are using ESP-32 some libraries such as Servo.h and Fermata don't work. I had to do some
-                        research and wasn't able to find a specefic tutorial A-&gt;Z but the code I wrote for it still
-                        works
-                        fine with the ESP. If you have an ESP I would still recommend watching the Arduino tutorial
-                        above as it goes
-                        through some important setup things. Here the <a href="https://github.com/rachad47/ESP-32-Servos-FlightSimJoystick/tree/main">link to the
-                            ESP-32 version of the tutorial</a>.
+                    <ul class="project-point-list"><li> Since our project uses an ESP32, some of the Arduino libraries in the example, including Servo.h and Firmata, were not compatible with our setup. I did some research but could not find a complete A-to-Z tutorial, so I adapted the code myself. It worked with the ESP32, and the Arduino tutorial above was still a useful reference for the main setup steps. If you are using an ESP32, you can follow that explanation alongside my   <a href="https://github.com/rachad47/ESP-32-Servos-FlightSimJoystick/tree/main">ESP32 adaptation is available here</a>.
                         </li></ul>
 
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                    <img src="assets/projects/coilgun/optional-joystick-software-integration-02-optimized.webp" alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:90%" class="programmingLA" decoding="async" loading="lazy">
+                    <img src="assets/projects/coilgun/optional-joystick-software-integration-02-optimized.webp" alt="(Optional): Joystick &amp; Software integration — project illustration" style="width:97%" class="programmingLA" decoding="async" loading="lazy">
                 </div>
 
             </div>
@@ -290,11 +255,9 @@ https://www.tooplate.com/view/2115-marvel
                     </video>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 align-self-center">
-                    <h5>LMAO</h5>
+                    <h5>A lesson in mechanical support</h5>
 
-                    <p>I don't what I was expecting when mounting two small servos like that with glue but it obviously
-                        failed. In the test on the left, the capacitors were only charged to 15% and the servos
-                        completly failed.
+                    <p>I am not sure what I expected from gluing two small servos together, but the mount clearly was not up to the job. In the test on the left, the capacitors were charged to only 15%, and the servos still failed completely.
                     </p>
                     <img src="assets/projects/coilgun/prototype-experiment-01.webp" alt="LMAO — project illustration" style="width: 90%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                 </div>
@@ -302,7 +265,7 @@ https://www.tooplate.com/view/2115-marvel
             </div></section>
 
 <section class="project-glass-subsection" aria-label="future improvements"><div class="row">
-                <h3>future improvements</h3>
+                <h3>Future improvements</h3>
             </div>
             <div class="row">
                 <div class="row align-items-center">
@@ -310,7 +273,7 @@ https://www.tooplate.com/view/2115-marvel
 
                         <!-- <figure class="project-media"> -->
                             <img src="assets/projects/coilgun/future-improvements-01.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>Non-linear functions to improve sensitivity.</figcaption>
+                            <figcaption>Nonlinear input mapping for finer joystick control.</figcaption>
                         <!-- </figure> -->
                     </div>
 
@@ -319,14 +282,14 @@ https://www.tooplate.com/view/2115-marvel
                             id="programmingLA"> -->
                         <!-- <figure class="project-media"> -->
                             <img src="assets/projects/coilgun/future-improvements-04-optimized.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>Mechanical support concept.</figcaption>
+                            <figcaption>A sturdier barrel support.</figcaption>
                         <!-- </figure> -->
                     </div>
 
                     <div class="col-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
                         <!-- <figure class="project-media"> -->
                             <img src="assets/projects/coilgun/future-improvements-03.webp" alt="future improvements — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                            <figcaption>OpenCV, AI, Wi-Fi and Bluetooth.</figcaption>
+                            <figcaption>OpenCV, AI, Wi-Fi, and Bluetooth integration.</figcaption>
                         <!-- </figure> -->
 
                     </div>
@@ -335,27 +298,27 @@ https://www.tooplate.com/view/2115-marvel
             </div></section>
 </section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="High Voltage Components"><h2>High Voltage Components</h2>
+<section class="project-glass-panel" aria-label="High Voltage Components"><h2>High-voltage components</h2>
             <div class="row">
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/high-voltage-components-02.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>AC -&gt; 3~12V DC.</figcaption>
+                    <figcaption>AC to &gt; 3–12 V DC power supply.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/high-voltage-components-01.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>12V -&gt; 45~385V. DC-DC boster </figcaption>
+                    <figcaption>12 V to &gt; 45–385 V DC-DC boost converter. </figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/high-voltage-components-03.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Thick magnet coil (less resistance)</figcaption>
+                    <figcaption>Thicker magnet wire for lower resistance.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/high-voltage-components-04.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>3*450V@820uF + 1*450V@680uF.</figcaption>
+                    <figcaption>Three 820 µF capacitors and one 680 µF capacitor, all rated for 450 V.</figcaption>
                 </div>
 
             </div>
@@ -364,16 +327,16 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <video src="assets/projects/coilgun/high-voltage-test.mp4" style="width: 100%;height: auto;" controls="" class="rogrammingLA image-gap" preload="none" playsinline="" poster="assets/projects/coilgun/high-voltage-test-poster.webp" width="642" height="480">
                     </video>
-                    <figcaption>first high voltage fire test</figcaption>
+                    <figcaption>First high-voltage firing test.</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <video src="assets/projects/coilgun/high-voltage-discharge-demo.mp4" style="width: 100%;height: auto;" controls="" class="rogrammingLA image-gap" preload="none" playsinline="" poster="assets/projects/coilgun/high-voltage-discharge-demo-poster.webp" width="640" height="480">
                     </video>
-                    <figcaption>Short circuiting the caps (headphone ALERT)</figcaption>
+                    <figcaption>Capacitor short-circuit test (loud audio).</figcaption>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="assets/projects/coilgun/high-voltage-components-05.webp" alt="High Voltage Components — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>permanent damage on the floor :/</figcaption>
+                    <figcaption>Permanent damage to the floor :/</figcaption>
                 </div>
             </div>
             
@@ -384,13 +347,9 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
                     <br>
-                    <ul class="project-point-list"><li>As we are dealing with high voltage/current, it is better to seperate the high voltage/current
-                        portions of the circuit from the microcontrollers/ourselves.</li>
-                    <li>Optocouplers can be thought about as light transistors with as they work with IR and there is
-                        not
-                        physical contact between the inner circuit and the outer circuit. </li>
-                    <li>Unfortunatly we had some issues with the optocoupler. Were not sure if it was deffecitive or
-                        if we fried it. Either way, we decided to make one ourselves.</li></ul>
+                    <ul class="project-point-list"><li>Because this project involves high voltages and currents, we wanted to keep the high-voltage section electrically isolated from both the microcontroller and the user controls.</li>
+                    <li>Optocouplers transmit signals via infrared light, keeping both sides of the circuit physically separated.</li>
+                    <li>Unfortunately, we ran into problems with our optocoupler. We were not sure whether it was defective or whether we had damaged it during testing. Either way, we decided to try making our own version.</li></ul>
 
                 </div>
 
@@ -402,17 +361,9 @@ https://www.tooplate.com/view/2115-marvel
             <br>
             <div class="row">
                 <div style="text-align: left;" class="col-12 col-sm-12 col-md-7 col-lg-8 align-self-center">
-                    <ul class="project-point-list"><li>As you can see the 2 circuits are physically seperated.</li>
-                    <li>Essentially there is an IR emmiter (transparanet diode) and a receiver (black diode) pointing
-                        at each other. When the emmiter is off, the resistance across the receiver diode is ~3MΩ so it
-                        acts like an open the circuit. When the IR emmiter is on, the resistance across the receiver
-                        drops
-                        drastically to ~30Ω essentially closing the circuit current to pass through. The red and blue
-                        LED
-                        are just visual indicators.</li>
-                    <li>Another positive aspect of the homemade optocouplers is that they are easy to troubleshoot. We
-                        can
-                        easily use a camera to see the IR light and measure the resistance across the circuit.</li></ul>
+                    <ul class="project-point-list"><li>As shown in the photos, the two circuits are physically separated from each other.</li>
+                    <li>An IR emitter (the clear diode) faces a receiver (the black diode). In our test, the receiver measured about 3 MΩ with the emitter off, behaving like an open circuit. With the emitter on, that resistance dropped to about 30 Ω, allowing current through the receiving circuit. The red and blue LEDs are visual indicators for the two sides.</li>
+                    <li>Another advantage of the homemade optocoupler was how easy it was to inspect and troubleshoot. We could use a camera to check that the IR emitter 🟣 was working, then measure the receiver’s resistance to see how it responded.</li></ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4 align-self-center">
                     <img src="assets/projects/coilgun/optocoupler-02-optimized.webp" alt="Optocoupler — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
@@ -420,20 +371,14 @@ https://www.tooplate.com/view/2115-marvel
 
             </div></section>
 
-<section class="project-glass-subsection" aria-label="SCR - Thyristors"><h3>SCR - Thyristors</h3>
+<section class="project-glass-subsection" aria-label="SCR - Thyristors"><h3>SCR thyristors</h3>
             <div style="text-align: left;" class="row">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <br>
-                    <ul class="project-point-list"><li>As we are dealing with high voltage/current, we chose thyristors for our circuit as they have
-                        heir high current support.
+                    <ul class="project-point-list"><li>We chose thyristors for the high-voltage section because of their high-current capability and suitability for our circuit.
                         <p></p>
-                    </li><li>The main differnece between thyristors and other switches is their unique ability to maintain a
-                        closed circuit even after the initial triggering signal has been removed. Unlike other switches
-                        that
-                        require a continuous flow of current to maintain a closed circuit, a thyristor once triggered,
-                        will remain conducting until the current flowing through it drops below a specific level, at
-                        which point it will turn off and return to its non-conducting state. <p></p>
+                    </li><li>An SCR thyristor remains conductive after its initial gate signal is removed. Unlike a transistor that needs a sustained control signal, an SCR latches on once triggered. It continues conducting until the current falls below its holding current, then switches off and returns to its nonconducting state. This was an important distinction when choosing the switching components. <p></p>
                 </li></ul></div>
 
 
@@ -446,31 +391,24 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
                     <img src="assets/projects/coilgun/scr-thyristors-01.webp" alt="SCR - Thyristors — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
                     <ul class="project-point-list"><figcaption>BTW69-1200 </figcaption></ul>
-                    <figcaption>Main featues to look for: I-GT and I-TSM (peak current) </figcaption>
+                    <figcaption>Key ratings: I_GT (gate trigger current) and I_TSM (peak surge current). </figcaption>
 
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-7 col-lg-7 align-self-center">
                     <video src="assets/projects/coilgun/thyristor-switching-demo.mp4" style="width: 90%;height: auto;" controls="" class="programmingLA" preload="none" playsinline="" poster="assets/projects/coilgun/thyristor-switching-demo-poster.webp" width="690" height="480">
                     </video>
-                    <figcaption>First trial with the thyristor and optocoupler. The push button is completely isolated from the high-voltage circuit.</figcaption>
+                    <figcaption>First test with the thyristor and optocoupler, isolating the push-button control from the high-voltage circuit.</figcaption>
                 </div>
             </div></section>
 </section>
 <hr class="rounded">
-<section class="project-glass-panel" aria-label="2nd Stage"><h2>2nd Stage</h2>
+<section class="project-glass-panel" aria-label="2nd Stage"><h2>Second stage</h2>
             <br>
             <div style="text-align: left;" class="row">
 
-                <ul class="project-point-list"><li>Similar to the optocopleurs explained above but in reverse.</li><li>The emitter is always in the on state
-                    -&gt;
-                    recreiver's resistance = LOW -&gt; it's read as HIGH on the
-                    microncontroller
-                    digital pins.</li> <li> the bullet crosses the sensor
-                    it blocks the emitter -&gt; receiver's resitance = HIGH -&gt; microcontroller pins = LOW, then finally it
-                    activates
-                    the
-                    second stage </li>
+                <ul class="project-point-list"><li>The sensor uses the same IR emitter–receiver principle, but detects an interruption in the light beam.</li><li>With the emitter on &gt;
+                     the receiver’s resistance is low &gt;  and the microcontroller reads HIGH.</li> <li> When the projectile blocks the beam &gt;  the receiver’s resistance rises &gt;  and the input goes LOW, triggering the second stage. </li>
 
             </li></ul></div>
             <div class="row">
@@ -486,12 +424,12 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/2nd-stage-03-optimized.webp" alt="2nd Stage — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>I gave the projectile an intial speed to test the IR sensor.</figcaption>
+                    <figcaption>Testing the IR sensor with a moving projectile.</figcaption>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/2nd-stage-02.webp" alt="2nd Stage — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>initial CAD design for the sensor holder</figcaption>
+                    <figcaption>Initial CAD design for the sensor holder.</figcaption>
                 </div>
 
             </div></section>
@@ -502,22 +440,22 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-03.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Bending PlexiGass</figcaption>
+                    <figcaption>Bending the plexiglass.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-01.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption> Thyristor support </figcaption>
+                    <figcaption> Thyristor mount. </figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-02.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>PCB design lol.</figcaption>
+                    <figcaption>PCB design, DIY edition.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-05.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>HV converter support.</figcaption>
+                    <figcaption>High-voltage converter mount.</figcaption>
                 </div>
 
             </div>
@@ -537,12 +475,12 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-12.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Certified Mech monkey.</figcaption>
+                    <figcaption>Certified mechanical monkey.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-08.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Home Depot's nails.</figcaption>
+                    <figcaption>Nails from Home Depot.</figcaption>
                 </div>
 
             </div>
@@ -551,12 +489,12 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-09-optimized.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Work smarter not harder.</figcaption>
+                    <figcaption>Work smarter, not harder.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-07.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Integration test</figcaption>
+                    <figcaption>Integration test.</figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -566,7 +504,7 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                     <img src="assets/projects/coilgun/manufacturing-10.webp" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Pretty much done</figcaption>
+                    <figcaption>Pretty much done.</figcaption>
                 </div>
 
             </div>
@@ -575,7 +513,7 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/manufacturing-14.jpg" alt="Manufacturing — project illustration" style="width: 100%;height: auto;" class="rogrammingLA image-gap" decoding="async" loading="lazy">
-                    <figcaption>Moved to ESP-32 and put connectors for removable barrel </figcaption>
+                    <figcaption>Switched to an ESP32 and added connectors for a removable barrel. </figcaption>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
@@ -593,11 +531,9 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project-glass-subsection" aria-label="Quick note:"><div class="row align-items-center
             ">
                 <div class="col-sm-12 col-md-7 col-lg-7">
-                    <h4>Quick note:</h4>
+                    <h4>Build note</h4>
                     <br>
-                    <ul class="project-point-list"><li>As the barrel is intended to be temporary, we have not implemented a
-                        dedicated support system. Our plan is to incorporate joystick controls and additional software
-                        functionalities such as facial detection , Wifi ...
+                    <ul class="project-point-list"><li>Since the barrel was intended to be temporary, we did not build a dedicated support frame for it. The plan was to add a sturdier mechanical structure before developing the joystick controls further or exploring additional software features, such as face detection and Wi-Fi connectivity.
                     </li></ul>
 
                 </div>
@@ -610,7 +546,7 @@ https://www.tooplate.com/view/2115-marvel
 <hr class="rounded">
 <section class="project-glass-panel" aria-label="Circuit"><h2>Circuit</h2>
             <br>
-            <p>Below is a detailed breakdown of the voltage distribution for the primary components. </p>
+            <p>Voltage distribution across the main components. </p>
             <div class="row ">
 
                 <div class="col-sm-12 col-md-6 col-lg-5 align-self-center ">
@@ -657,10 +593,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     
-                    <p>My circuit is nearly identical to <a href="https://github.com/kakushinAU/coilgun/blob/main/Coil%20Gun%20Schematic.pdf">B.Samspons's
-                            circuit. </a>with the main difference being that I've made adjustments to the number of
-                        stages and voltage used. Additionally, instead of using optocouplers as shown in the original
-                        circuit, I'm utilizing IR receivers and emitters to act as switches between LOW/HIGH voltage.
+                    <p>My circuit is based on  <a href="https://github.com/kakushinAU/coilgun/blob/main/Coil%20Gun%20Schematic.pdf">the reference schematic linked here </a>, the main differences is the number of stages and the operating voltage. I also changed the isolation components: rather than using the packaged optocouplers shown in the original design, I used separate IR emitters and receivers to transfer control signals between the low- and high-voltage sections without direct electrical contact.
                         
                         <img src="assets/projects/coilgun/circuit-01.webp" alt="Circuit — project illustration" style="width: 100%;height: auto;" class="rogrammingLA" decoding="async" loading="lazy">
                 </p></div>
@@ -670,25 +603,15 @@ https://www.tooplate.com/view/2115-marvel
             <br>
             <div style="text-align: left;" class="row">
                 <div class="col">
-                    <ul class="project-point-list"><li>This is a highly complex task, as there are numerous parameters that must be taken into
-                        consideration. These include the coil diameter, number of turns, resistance, coil length, ideal
-                        voltage and capacitance, as well as the shape of the bullet and its length-to-diameter ratio.
+                    <ul class="project-point-list"><li>Optimization involves several interacting parameters: coil diameter, winding count, resistance, coil length, operating voltage, and capacitance. The projectile’s shape and length-to-diameter ratio also affect its behavior, so changing one part of the design means considering the rest of the system.
                     </li>
-                    <li>Looking online I found an <a href="https://www.instructables.com/Coil-Gun-Projectiles/">article
-                            about projectiles</a> with the following conlusions: "the projectile
-                        needs to be at least half the length of the coil and that longer projectiles leaning towards the
-                        length of but no longer than the coil" and "The projectile should follow good dimensions for
-                        ballistics. This means that the length of the projectile should be at least three times its
-                        diameter to reduce tumbling and no more than five times the length." </li>
-                    <li>Software Optimisation could be done with interrpt functions instead of countinous
-                        loops although the current impact may not be significant. The benefits will become more apparent
-                        as we integrate additional software and AI. </li></ul>
+                    <li>I also consulted an  <a href="https://www.instructables.com/Coil-Gun-Projectiles/">article on projectile dimensions</a> , which discusses projectile dimensions relative to coil length and flight stability. It suggests a projectile at least half the coil’s length, with longer projectiles approaching that length. It also discusses length-to-diameter ratios of roughly three to five to reduce tumbling. These provided useful guidelines to consider alongside our own experiments. </li>
+                    <li>Interrupt-driven code could replace continuous polling loops. The difference may be small in the current setup, but interrupts would become more useful as additional features are introduced. Joystick input, computer vision, and other tasks would all need to share processing time. </li></ul>
                     <!-- <img src="images/project/AIroute.png" alt="Paris" style="width:1000px;" id="programingLA"> -->
 
                 </div>
 
             </div>
-            <br>
             
 <section class="project-glass-subsection" aria-label="Distances Optimisation"><div class="row">
 
@@ -699,13 +622,11 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-7">
                     <br>
-                    <h3>Distances Optimisation </h5>
+                    <h3>Distance optimization </h5>
                     <br>
-                    <p>We have implemented an optimization strategy to improve the performance of the system, focusing
-                        on two key distances: d1, the distance between the bullet and the first stage and d2, the
-                        disance between IR
-                        sensor and the second stage.</p>
-
+                    <ul>
+                    <li>We focused on two distances: d1, between the projectile and the first stage, and d2, between the IR sensor and the second stage. Adjusting these positions let us compare how the timing affected performance.</li>
+</ul>
                 </div>
 
 
@@ -713,19 +634,16 @@ https://www.tooplate.com/view/2115-marvel
             </div>
             <br>
             <div class="row">
-                <p>To achieve this, we designed a speedometer using two IR sensors placed at a fixed distance, allowing
-                    us to measure the duration of the bullet between each sensor. Using a caliper, we were able
-                    to adjust the distance between the sensors and record the corresponding durations at each
-                    interval. 
+                <p>We built a speedometer using two IR sensors separated by a measured distance. The projectile’s travel time between them let us calculate its speed. Using a caliper, we adjusted and measured the sensor spacing while recording travel times for each test. 
                 </p><div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/distances-optimisation-01.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Speedometer</figcaption>
+                    <figcaption>IR speedometer.</figcaption>
                 </div>
 
 
                 <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/distances-optimisation-02.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                    <figcaption>Data gathering</figcaption>
+                    <figcaption>Collecting timing data.</figcaption>
                 </div>
 
             </div>
@@ -741,22 +659,18 @@ https://www.tooplate.com/view/2115-marvel
 
                 </p> -->
                 <div class="col-12">
-                    <ul class="project-point-list"><li>We conducted several tests at each distance and took an average. Initially, we determined the
-                    optimal distance for only the first stage <b>(d1)</b>, we then secured the solenoid at that distance
-                    using a glue gun. We repeated the process with both stages fixed and ON while varying the sensor
-                    location <b>(d2)</b>. Finally, we secured the
-                    sensor at the optimal distance. 
+                    <ul class="project-point-list"><li>We ran multiple tests per position and averaged the results. First, we tested the first stage alone to find and hot-glue the solenoid at the optimal starting distance (d_1). With both stages active, we then adjusted the sensor position (d_2) until we found the best-performing location, securing it there as well.
                     </li></ul>
                 </div>
                 <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/distances-optimisation-03.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async" loading="lazy">
-                    <figcaption><b>d1:</b> Distance between the bullet and first stage</figcaption>
+                    <figcaption><b>d1:</b>  Distance between the projectile and the first stage.</figcaption>
                 </div>
 
 
                 <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
                     <img src="assets/projects/coilgun/distances-optimisation-04.webp" alt="Distances Optimisation — project illustration" style="width: 100%;height: auto; margin-bottom: 13px;" class="rogrammingLA" decoding="async" loading="lazy">
-                    <figcaption><b>d2:</b> Distance between the IR-sensor and second stage</figcaption>
+                    <figcaption><b>d2:</b>  Distance between the IR sensor and the second stage.</figcaption>
                 </div>
 
             </div></section>
@@ -768,13 +682,13 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
 
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Weight</b>: 20g - 0.7oz</li></ul>
+                    <ul class="project-point-list"><li><b>Projectile mass</b>: 20 g / 0.7 oz</li></ul>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Speed</b>: 17.4m/s - 57 Foot/s</li></ul>
+                    <ul class="project-point-list"><li><b>Speed</b>: 17.4 m/s / 57 ft/s</li></ul>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <ul class="project-point-list"><li><b>Energy</b>: ~3Joules</li></ul>
+                    <ul class="project-point-list"><li><b>Energy</b>: approximately 3 J</li></ul>
                 </div>
             </div>
             <br>

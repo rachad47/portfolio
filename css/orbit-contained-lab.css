@@ -38,7 +38,7 @@
 /* Magnetorquer illustration and the experimental approach. */
 .orbit-lab-evidence.orbit-lab-approach{grid-template-columns:minmax(0,1fr) minmax(0,1.65fr);gap:28px;align-items:center}
 #project.tp-ready .orbit-gimbal.orbit-lab .orbit-lab-mtq{width:100%;height:auto;max-height:230px;object-fit:contain;background:transparent;border:0;padding:0}
-#project.tp-ready .orbit-lab-method .orbit-eyebrow{font-size:10px;margin-bottom:10px}
+#project.tp-ready .orbit-lab-method .orbit-eyebrow{font-size:12px;margin-bottom:10px}
 #project.tp-ready .orbit-lab-method h5{margin:0 0 13px}
 #project.tp-ready .orbit-lab-method li{font-size:14px;line-height:1.75}
 @media(max-width:767px){.orbit-lab-evidence.orbit-lab-approach{grid-template-columns:1fr;gap:22px}.orbit-lab-approach>figure{max-width:350px;width:100%;margin:0 auto}#project.tp-ready .orbit-lab-method li{font-size:13px}}
