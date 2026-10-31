@@ -1,74 +1,301 @@
 /* Glass section windows retain each project's existing Bootstrap columns. */
-body.project-glass{--project-panel-radius:23px;--project-panel-padding:20px}
-body.project-glass #project-details>.container{min-width:0}
-body.project-glass .project-glass-panel{min-width:0;padding:var(--project-panel-padding);margin:0;border:1px solid var(--wg-rim,rgba(225,242,255,.19));border-radius:var(--project-panel-radius)}
-body.project-glass .project-glass-panel>:first-child{margin-top:0}
-body.project-glass .project-glass-panel>:last-child{margin-bottom:0}
-body.project-glass #project-details>.container>hr{margin:20px auto;scroll-margin-top:120px}
-body.project-glass .project-glass-panel :is(img,video,iframe){max-width:100%;box-sizing:border-box}
-body.project-glass .project-glass-panel .row>:is(img,video,iframe){display:block;max-width:calc(100% - 30px);margin-inline:15px}
-body.project-glass .project-glass-panel .row>:is(h2,h3,h4){margin-inline:15px}
-body.project-glass .project-glass-panel pre{max-width:100%;overflow-x:auto}
-body.project-glass .project-glass-panel :is(p,li,a){overflow-wrap:anywhere}
-@media(max-width:767px){body.project-glass{--project-panel-padding:16px}body.project-glass .project-glass-panel img{height:auto!important}}
-@media(max-width:575px){body.project-glass{--project-panel-padding:14px;--project-panel-radius:19px}body.project-glass #project-details>.container>hr{margin:17px auto}}
+body.project-glass {
+  --project-panel-radius: 23px;
+  --project-panel-padding: 20px
+}
+
+body.project-glass #project-details>.container {
+  min-width: 0
+}
+
+body.project-glass .project-glass-panel {
+  min-width: 0;
+  padding: var(--project-panel-padding);
+  margin: 0;
+  border: 1px solid var(--wg-rim, rgba(225, 242, 255, .19));
+  border-radius: var(--project-panel-radius)
+}
+
+body.project-glass .project-glass-panel>:first-child {
+  margin-top: 0
+}
+
+body.project-glass .project-glass-panel>:last-child {
+  margin-bottom: 0
+}
+
+body.project-glass #project-details>.container>hr {
+  margin: 20px auto;
+  scroll-margin-top: 120px
+}
+
+body.project-glass .project-glass-panel :is(img, video, iframe) {
+  max-width: 100%;
+  box-sizing: border-box
+}
+
+body.project-glass .project-glass-panel .row>:is(img, video, iframe) {
+  display: block;
+  max-width: calc(100% - 30px);
+  margin-inline: 15px
+}
+
+body.project-glass .project-glass-panel .row>:is(h2, h3, h4) {
+  margin-inline: 15px
+}
+
+body.project-glass .project-glass-panel pre {
+  max-width: 100%;
+  overflow-x: auto
+}
+
+body.project-glass .project-glass-panel :is(p, li, a) {
+  overflow-wrap: anywhere
+}
+
+@media(max-width:767px) {
+  body.project-glass {
+    --project-panel-padding: 16px
+  }
+
+  body.project-glass .project-glass-panel img {
+    height: auto !important
+  }
+}
+
+@media(max-width:575px) {
+  body.project-glass {
+    --project-panel-padding: 14px;
+    --project-panel-radius: 19px
+  }
+
+  body.project-glass #project-details>.container>hr {
+    margin: 17px auto
+  }
+}
 
 /* Match the homepage's inset red markers and hanging text alignment. */
-body.project-glass{--project-list-indent:20px}
-body.project-glass .project-glass-panel :is(ul,ol){padding-inline-start:var(--project-list-indent);margin:12px 0 0;text-align:left}
-body.project-glass .project-glass-panel li{padding-inline-start:3px;margin:7px 0;line-height:1.7;text-align:left}
-body.project-glass .project-glass-panel ul>li{list-style:disc}
-body.project-glass .project-glass-panel ul>li::marker{color:var(--flag-red);font-size:.7em}
-body.project-glass .project-glass-panel ol>li::marker{color:var(--flag-red)}
+body.project-glass {
+  --project-list-indent: 20px
+}
+
+body.project-glass .project-glass-panel :is(ul, ol) {
+  padding-inline-start: var(--project-list-indent);
+  margin: 12px 0 0;
+  text-align: left
+}
+
+body.project-glass .project-glass-panel li {
+  padding-inline-start: 3px;
+  margin: 7px 0;
+  line-height: 1.7;
+  text-align: left
+}
+
+body.project-glass .project-glass-panel ul>li {
+  list-style: disc
+}
+
+body.project-glass .project-glass-panel ul>li::marker {
+  color: var(--flag-red);
+  font-size: .7em
+}
+
+body.project-glass .project-glass-panel ol>li::marker {
+  color: var(--flag-red)
+}
+
 /* Homepage typography: DM Sans text and Space Grotesk headings. */
-body.project-glass{font-family:'DM Sans',Arial,sans-serif;font-size:14px;line-height:1.75}
-body.project-glass :is(h1,h2,h3,h4,h5,h6){font-family:'Space Grotesk','DM Sans',Arial,sans-serif;font-weight:500;letter-spacing:-.7px}
-body.project-glass #project-details h1{font-size:35px;line-height:1.15;letter-spacing:-1.1px;margin:26px 0}
-body.project-glass .project-glass-panel h2{font-size:27px;line-height:1.25;letter-spacing:-.8px;margin-bottom:18px}
-body.project-glass .project-glass-panel h3{font-size:21px;line-height:1.3;letter-spacing:-.4px;margin-bottom:12px}
-body.project-glass .project-glass-panel h4{font-size:18px;line-height:1.4;letter-spacing:-.3px}
-body.project-glass .project-glass-panel h5{font-size:16px;line-height:1.4;letter-spacing:-.2px}
-body.project-glass .project-glass-panel h6{font-size:14px;line-height:1.5;letter-spacing:0}
-body.project-glass .project-glass-panel :is(p,li){font-size:18px;line-height:1.8;color:var(--body-text)}
-body.project-glass .project-glass-panel p{margin-bottom:14px}
-body.project-glass .project-glass-panel li{padding-inline-start:2px;margin:5px 0}
-body.project-glass .project-glass-panel a{font-family:inherit;font-size:inherit}
-body.project-glass .project-glass-panel :is(pre,code){font-family:var(--font-family-monospace,monospace);font-size:13px;line-height:1.6}
-@media(max-width:767px){body.project-glass #project-details h1{font-size:30px}body.project-glass .project-glass-panel h2{font-size:24px}body.project-glass .project-glass-panel h3{font-size:20px}body.project-glass .project-glass-panel :is(p,li){font-size:13px}}
+body.project-glass {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.75
+}
+
+body.project-glass :is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Space Grotesk', 'DM Sans', Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -.7px
+}
+
+body.project-glass #project-details h1 {
+  font-size: 35px;
+  line-height: 1.15;
+  letter-spacing: -1.1px;
+  margin: 26px 0
+}
+
+body.project-glass .project-glass-panel h2 {
+  font-size: 27px;
+  line-height: 1.25;
+  letter-spacing: -.8px;
+  margin-bottom: 18px
+}
+
+body.project-glass .project-glass-panel h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  letter-spacing: -.4px;
+  margin-bottom: 12px
+}
+
+body.project-glass .project-glass-panel h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -.3px
+}
+
+body.project-glass .project-glass-panel h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -.2px
+}
+
+body.project-glass .project-glass-panel h6 {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0
+}
+
+body.project-glass .project-glass-panel :is(p, li) {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--body-text)
+}
+
+body.project-glass .project-glass-panel p {
+  margin-bottom: 14px
+}
+
+body.project-glass .project-glass-panel li {
+  padding-inline-start: 2px;
+  margin: 5px 0
+}
+
+body.project-glass .project-glass-panel a {
+  font-family: inherit;
+  font-size: inherit
+}
+
+body.project-glass .project-glass-panel :is(pre, code) {
+  font-family: var(--font-family-monospace, monospace);
+  font-size: 13px;
+  line-height: 1.6
+}
+
+@media(max-width:767px) {
+  body.project-glass #project-details h1 {
+    font-size: 30px
+  }
+
+  body.project-glass .project-glass-panel h2 {
+    font-size: 24px
+  }
+
+  body.project-glass .project-glass-panel h3 {
+    font-size: 20px
+  }
+
+  body.project-glass .project-glass-panel :is(p, li) {
+    font-size: 13px
+  }
+}
 
 /* Second-level glass windows group each named subsection with its media. */
-body.project-glass .project-glass-subsection{min-width:0;padding:16px;margin-top:18px;border:1px solid var(--wg-rim,rgba(225,242,255,.19));border-radius:19px}
-body.project-glass .project-glass-subsection>:first-child{margin-top:0}
-body.project-glass .project-glass-subsection>:last-child{margin-bottom:0}
-body.project-glass .project-glass-panel>.project-glass-subsection:first-child{margin-top:0}
-body.project-glass .project-glass-panel .row>p{width:100%;padding-inline:15px}
-@media(max-width:575px){body.project-glass .project-glass-subsection{padding:12px;margin-top:15px;border-radius:16px}}
+body.project-glass .project-glass-subsection {
+  min-width: 0;
+  padding: 16px;
+  margin-top: 18px;
+  border: 1px solid var(--wg-rim, rgba(225, 242, 255, .19));
+  border-radius: 19px
+}
+
+body.project-glass .project-glass-subsection>:first-child {
+  margin-top: 0
+}
+
+body.project-glass .project-glass-subsection>:last-child {
+  margin-bottom: 0
+}
+
+body.project-glass .project-glass-panel>.project-glass-subsection:first-child {
+  margin-top: 0
+}
+
+body.project-glass .project-glass-panel .row>p {
+  width: 100%;
+  padding-inline: 15px
+}
+
+@media(max-width:575px) {
+  body.project-glass .project-glass-subsection {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 16px
+  }
+}
 
 /* Media captions use the same quiet, centered treatment as the homepage. */
-body.project-glass .project-media{width:100%;margin:0}
-body.project-glass .project-glass-panel figcaption{font-family:inherit;font-size:15px;line-height:1.5;color:var(--body-text);text-align:center;margin: 5 0 5px;}
+body.project-glass .project-media {
+  width: 100%;
+  margin: 0
+}
+
+body.project-glass .project-glass-panel figcaption {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--body-text);
+  text-align: center;
+  margin: 5 0 5px;
+}
 
 /* Figures have no legacy image padding: captions sit against the actual media. */
-body.project-glass .project-media>img{display:block;padding:0;margin:0 auto}
+body.project-glass .project-media>img {
+  display: block;
+  padding: 0;
+  margin: 0 auto
+}
 
 /* Reusable space below images. */
 :is(img, video).image-gap {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* Keep captions close without compressing their text lines. */
-body.project-glass .project-glass-panel :is(img, video).programmingLA{padding-bottom:10px}
+body.project-glass .project-glass-panel :is(img, video).programmingLA {
+  padding-bottom: 10px
+}
+
 /* body.project-glass .project-glass-panel :is(img, video).image-gap:has(+ figcaption){margin-bottom:0} */
 
 /* Match the homepage workbench image corners. */
-body.project-glass #project-details :is(img,video){border-radius:14px}
+body.project-glass #project-details :is(img, video) {
+  border-radius: 14px
+}
 
 /* Keep legacy spacing outside the rounded photograph. */
-body.project-glass .project-image-spacing{display:inline-block;max-width:100%;box-sizing:border-box;vertical-align:top}
-body.project-glass #project-details :is(img,video).project-image-rounded{padding:0!important;border-radius:14px;max-width:100%}
+body.project-glass .project-image-spacing {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  vertical-align: top
+}
+
+body.project-glass #project-details :is(img, video).project-image-rounded {
+  padding: 0 !important;
+  border-radius: 14px;
+  max-width: 100%
+}
 
 /* Smaller media spacing on phones, including the rounded-media wrapper. */
-@media(max-width:575px){
-  body.project-glass .project-image-spacing{padding:7px!important}
-  body.project-glass #project-details :is(img,video).programmingLA:not(.project-image-rounded){padding:10px}
+@media(max-width:575px) {
+  body.project-glass .project-image-spacing {
+    padding: 7px !important
+  }
+
+  body.project-glass #project-details :is(img, video).programmingLA:not(.project-image-rounded) {
+    padding: 10px
+  }
 }

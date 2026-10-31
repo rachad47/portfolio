@@ -1,14 +1,121 @@
-#project.tp-ready .sim-build{text-align:left}
-#project.tp-ready .sim-build>h3{font-size:28px;font-weight:500;margin:0 0 18px;letter-spacing:-.7px}
-.sim-row{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:23px;align-items:center}
-.sim-row.sim-reverse{grid-template-columns:minmax(0,7fr) minmax(0,3fr)}
-.sim-row+.sim-row{margin-top:18px;padding-top:18px;border-top:1px solid var(--divider)}
-.sim-row figure{margin:0;min-width:0}
-#project.tp-ready .sim-build img{display:block;width:100%;height:auto;max-height:205px;object-fit:contain;border-radius:13px!important}
-#project.tp-ready .sim-build h4{font-size:21px;font-weight:500;line-height:1.35;letter-spacing:-.4px;color:var(--page-text);margin:0 0 11px}
-.sim-build ul{padding-left:18px;margin:0}
-#project.tp-ready .sim-build li,#project.tp-ready .sim-build p{font-size:14px;line-height:1.75;color:var(--body-text);margin:0}
-.sim-build li{list-style:disc}.sim-build li+li{margin-top:9px!important}.sim-build li::marker{color:var(--flag-red)}
-.sim-label{display:block;font:10px/1.6 'Space Grotesk',Arial,sans-serif;color:var(--body-text);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
-#project.tp-grouped .tp-group>.tp-entry+.tp-entry{margin-top:25px;padding-top:23px}
-@media(max-width:575px){.sim-row{gap:13px}.sim-row.sim-reverse{grid-template-columns:minmax(0,7fr) minmax(0,3fr)}#project.tp-ready .sim-build>h3{font-size:25px}#project.tp-ready .sim-build h4{font-size:18px}#project.tp-ready .sim-build li,#project.tp-ready .sim-build p{font-size:12px;line-height:1.7}#project.tp-ready .sim-build img{max-height:165px}.sim-build ul{padding-left:15px}}
+#project.tp-ready .sim-build {
+  text-align: left
+}
+
+#project.tp-ready .sim-build>h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 18px;
+  letter-spacing: -.7px
+}
+
+.sim-row {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+  gap: 23px;
+  align-items: center
+}
+
+.sim-row.sim-reverse {
+  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr)
+}
+
+.sim-row+.sim-row {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--divider)
+}
+
+.sim-row figure {
+  margin: 0;
+  min-width: 0
+}
+
+#project.tp-ready .sim-build img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 205px;
+  object-fit: contain;
+  border-radius: 13px !important
+}
+
+#project.tp-ready .sim-build h4 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.4px;
+  color: var(--page-text);
+  margin: 0 0 11px
+}
+
+.sim-build ul {
+  padding-left: 18px;
+  margin: 0
+}
+
+#project.tp-ready .sim-build li,
+#project.tp-ready .sim-build p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--body-text);
+  margin: 0
+}
+
+.sim-build li {
+  list-style: disc
+}
+
+.sim-build li+li {
+  margin-top: 9px !important
+}
+
+.sim-build li::marker {
+  color: var(--flag-red)
+}
+
+.sim-label {
+  display: block;
+  font: 10px/1.6 'Space Grotesk', Arial, sans-serif;
+  color: var(--body-text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px
+}
+
+#project.tp-grouped .tp-group>.tp-entry+.tp-entry {
+  margin-top: 25px;
+  padding-top: 23px
+}
+
+@media(max-width:575px) {
+  .sim-row {
+    gap: 13px
+  }
+
+  .sim-row.sim-reverse {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 3fr)
+  }
+
+  #project.tp-ready .sim-build>h3 {
+    font-size: 25px
+  }
+
+  #project.tp-ready .sim-build h4 {
+    font-size: 18px
+  }
+
+  #project.tp-ready .sim-build li,
+  #project.tp-ready .sim-build p {
+    font-size: 12px;
+    line-height: 1.7
+  }
+
+  #project.tp-ready .sim-build img {
+    max-height: 165px
+  }
+
+  .sim-build ul {
+    padding-left: 15px
+  }
+}

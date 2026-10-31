@@ -1,14 +1,82 @@
 /* Shared section separators: a thin red glass filament. */
-body:is(.home-widget-glass,.site-shell){--divider-glass-height:2px;--divider-glass-red:rgba(153, 14, 37, 0.62);--divider-glass-glow:rgba(187,19,62,.32)}
-body:is(.home-widget-glass,.site-shell).dark-mode{--divider-glass-red:rgba(220,40,82,.74);--divider-glass-glow:rgba(187,19,62,.20)}
-body:is(.home-widget-glass,.site-shell) :is(hr.ce-divider,hr.rounded),body.site-shell .nj-trip::before,body.site-shell .cj-footer::before{width:calc(100% - 44px);max-width:1110px;height:var(--divider-glass-height);box-sizing:border-box;border:0;border-radius:999px;margin:0 auto;overflow:hidden;background:linear-gradient(180deg,#ffffff60,transparent 65%),linear-gradient(90deg,transparent,var(--divider-glass-red) 12%,var(--divider-glass-red) 88%,transparent);box-shadow:0 2px 9px var(--divider-glass-glow),inset 0 1px 0 #ffffff28;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
-@media(max-width:575px){body:is(.home-widget-glass,.site-shell) :is(hr.ce-divider,hr.rounded),body.site-shell .nj-trip::before,body.site-shell .cj-footer::before{height:2px}}
-@media(prefers-reduced-transparency:reduce){body:is(.home-widget-glass,.site-shell) :is(hr.ce-divider,hr.rounded),body.site-shell .nj-trip::before,body.site-shell .cj-footer::before{background:var(--flag-red);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}}
-@media(forced-colors:active){body:is(.home-widget-glass,.site-shell) :is(hr.ce-divider,hr.rounded),body.site-shell .nj-trip::before,body.site-shell .cj-footer::before{background:CanvasText;box-shadow:none}}
+body:is(.home-widget-glass, .site-shell) {
+  --divider-glass-height: 2px;
+  --divider-glass-red: rgba(153, 14, 37, 0.62);
+  --divider-glass-glow: rgba(187, 19, 62, .32)
+}
+
+body:is(.home-widget-glass, .site-shell).dark-mode {
+  --divider-glass-red: rgba(220, 40, 82, .74);
+  --divider-glass-glow: rgba(187, 19, 62, .20)
+}
+
+body:is(.home-widget-glass, .site-shell) :is(hr.ce-divider, hr.rounded),
+body.site-shell .nj-trip::before,
+body.site-shell .cj-footer::before {
+  width: calc(100% - 44px);
+  max-width: 1110px;
+  height: var(--divider-glass-height);
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 999px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff60, transparent 65%), linear-gradient(90deg, transparent, var(--divider-glass-red) 12%, var(--divider-glass-red) 88%, transparent);
+  box-shadow: 0 2px 9px var(--divider-glass-glow), inset 0 1px 0 #ffffff28;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px)
+}
+
+@media(max-width:575px) {
+
+  body:is(.home-widget-glass, .site-shell) :is(hr.ce-divider, hr.rounded),
+  body.site-shell .nj-trip::before,
+  body.site-shell .cj-footer::before {
+    height: 2px
+  }
+}
+
+@media(prefers-reduced-transparency:reduce) {
+
+  body:is(.home-widget-glass, .site-shell) :is(hr.ce-divider, hr.rounded),
+  body.site-shell .nj-trip::before,
+  body.site-shell .cj-footer::before {
+    background: var(--flag-red);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none
+  }
+}
+
+@media(forced-colors:active) {
+
+  body:is(.home-widget-glass, .site-shell) :is(hr.ce-divider, hr.rounded),
+  body.site-shell .nj-trip::before,
+  body.site-shell .cj-footer::before {
+    background: CanvasText;
+    box-shadow: none
+  }
+}
 
 /* Preserve the project pages' existing section spacing and container width. */
-body.site-shell hr.rounded{width:100%;margin:1rem auto}
+body.site-shell hr.rounded {
+  width: 100%;
+  margin: 1rem auto
+}
 
 /* Journal separators reuse the same red glass material. */
-body.site-shell :is(.nj-trip,.cj-footer){border-top:0;position:relative}
-body.site-shell :is(.nj-trip,.cj-footer)::before{content:'';display:block;position:absolute;top:0;left:0;width:100%;max-width:none;margin:0}
+body.site-shell :is(.nj-trip, .cj-footer) {
+  border-top: 0;
+  position: relative
+}
+
+body.site-shell :is(.nj-trip, .cj-footer)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0
+}

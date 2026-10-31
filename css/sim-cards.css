@@ -1,44 +1,263 @@
-#project.tp-grouped .tp-group:has(.sim-card){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
-#project.tp-grouped .tp-group:has(.sim-card)[hidden]{display:none!important}
-#project .tp-group:has(.sim-card)>.tp-group-heading{grid-column:1/-1;margin:0;padding-bottom:19px}
-#project.tp-grouped .tp-group:has(.sim-card)>.tp-entry{margin:0;padding:0;border:0;align-self:stretch}
-.sim-card{height:100%;padding:11px;border-radius:21px;background:var(--fs-glass,#ffffffb8);border:1px solid var(--fs-edge,#ffffffe0);text-align:left}
-.sim-card-photos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px;align-items:start}
-.sim-card figure{margin:0;min-width:0}
-#project.tp-ready .sim-card img{display:block;width:100%;height:190px;object-fit:contain;border-radius:12px!important}
-.sim-card figcaption{font-size:10px;color:var(--body-text);line-height:1.5;margin-top:7px}
-.sim-card-copy{padding:17px 7px 9px}
-#project.tp-ready .sim-card h3{font-size:24px;font-weight:500;letter-spacing:-.6px;margin:0 0 14px;line-height:1.2}
-.sim-card ul{padding-left:17px;margin:0}
-#project.tp-ready .sim-card li{list-style:disc;font-size:14px;line-height:1.75;color:var(--body-text)}
-.sim-card li+li{margin-top:10px}.sim-card li::marker{color:var(--flag-red)}
-#project.tp-ready .sim-card .sim-card-plan{font-size:12px;line-height:1.7;border-left:2px solid var(--flag-red);padding-left:11px;margin:17px 0 0;color:var(--body-text)}
-.sim-card-plan strong{color:var(--page-text);font-weight:500}
-#project.tp-ready .sim-card .sim-card-meta{font-size:11px;line-height:1.7;margin:17px 0 0;color:var(--body-text)}
-@media(max-width:767px){#project.tp-ready .sim-card img{height:155px}#project.tp-ready .sim-card li{font-size:13px}#project.tp-ready .sim-card h3{font-size:22px}}
-@media(max-width:575px){#project.tp-grouped .tp-group:has(.sim-card){grid-template-columns:1fr;gap:17px}#project.tp-ready .sim-card img{height:180px}.sim-card-copy{padding-top:16px}#project.tp-ready .sim-card li{font-size:14px}}
-
-/* Match each build's layout to the shape of its media. */
-#project.tp-grouped .tp-group:has(.sim-card){grid-template-columns:1fr;gap:20px}
-#project .tp-group:has(.sim-card)>.tp-group-heading{grid-column:1}
-.sim-card:has(img[src*="simulator-demo"]){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);gap:20px;align-items:center;padding:14px}
-.sim-card:has(img[src*="simulator-demo"]) .sim-card-photos{display:contents}
-.sim-card:has(img[src*="simulator-demo"]) figure:first-child{grid-column:1;grid-row:1}
-.sim-card:has(img[src*="simulator-demo"]) .sim-card-copy{grid-column:2;grid-row:1;padding:7px 0}
-.sim-card:has(img[src*="simulator-demo"]) figure:nth-child(2){grid-column:3;grid-row:1}
-#project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img{height:300px;object-fit:contain}
-.sim-card:not(:has(img[src*="simulator-demo"])) .sim-card-photos{grid-template-columns:1fr 1fr;gap:15px}
-#project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img{height:240px;object-fit:contain}
-.sim-card:not(:has(img[src*="simulator-demo"])) .sim-card-copy{padding:20px 9px 12px}
-@media(max-width:767px){.sim-card:has(img[src*="simulator-demo"]){gap:14px}#project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img{height:250px}#project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img{height:190px}}
-@media(max-width:575px){
- .sim-card:has(img[src*="simulator-demo"]){grid-template-columns:1fr 1fr;gap:15px;padding:11px}
- .sim-card:has(img[src*="simulator-demo"]) figure:first-child{grid-column:1;grid-row:1}
- .sim-card:has(img[src*="simulator-demo"]) figure:nth-child(2){grid-column:2;grid-row:1}
- .sim-card:has(img[src*="simulator-demo"]) .sim-card-copy{grid-column:1/-1;grid-row:2;padding:0 5px 7px}
- #project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img{height:220px}
- #project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img{height:150px}
+#project.tp-grouped .tp-group:has(.sim-card) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start
 }
 
-.sim-card:not(:has(img[src*='simulator-demo'])) .sim-card-photos{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
-@media(max-width:575px){#project.tp-ready .sim-card:not(:has(img[src*='simulator-demo'])) img{height:120px}.sim-card:not(:has(img[src*='simulator-demo'])) .sim-card-photos{gap:8px}}
+#project.tp-grouped .tp-group:has(.sim-card)[hidden] {
+  display: none !important
+}
+
+#project .tp-group:has(.sim-card)>.tp-group-heading {
+  grid-column: 1/-1;
+  margin: 0;
+  padding-bottom: 19px
+}
+
+#project.tp-grouped .tp-group:has(.sim-card)>.tp-entry {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  align-self: stretch
+}
+
+.sim-card {
+  height: 100%;
+  padding: 11px;
+  border-radius: 21px;
+  background: var(--fs-glass, #ffffffb8);
+  border: 1px solid var(--fs-edge, #ffffffe0);
+  text-align: left
+}
+
+.sim-card-photos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 9px;
+  align-items: start
+}
+
+.sim-card figure {
+  margin: 0;
+  min-width: 0
+}
+
+#project.tp-ready .sim-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 12px !important
+}
+
+.sim-card figcaption {
+  font-size: 10px;
+  color: var(--body-text);
+  line-height: 1.5;
+  margin-top: 7px
+}
+
+.sim-card-copy {
+  padding: 17px 7px 9px
+}
+
+#project.tp-ready .sim-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.6px;
+  margin: 0 0 14px;
+  line-height: 1.2
+}
+
+.sim-card ul {
+  padding-left: 17px;
+  margin: 0
+}
+
+#project.tp-ready .sim-card li {
+  list-style: disc;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--body-text)
+}
+
+.sim-card li+li {
+  margin-top: 10px
+}
+
+.sim-card li::marker {
+  color: var(--flag-red)
+}
+
+#project.tp-ready .sim-card .sim-card-plan {
+  font-size: 12px;
+  line-height: 1.7;
+  border-left: 2px solid var(--flag-red);
+  padding-left: 11px;
+  margin: 17px 0 0;
+  color: var(--body-text)
+}
+
+.sim-card-plan strong {
+  color: var(--page-text);
+  font-weight: 500
+}
+
+#project.tp-ready .sim-card .sim-card-meta {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 17px 0 0;
+  color: var(--body-text)
+}
+
+@media(max-width:767px) {
+  #project.tp-ready .sim-card img {
+    height: 155px
+  }
+
+  #project.tp-ready .sim-card li {
+    font-size: 13px
+  }
+
+  #project.tp-ready .sim-card h3 {
+    font-size: 22px
+  }
+}
+
+@media(max-width:575px) {
+  #project.tp-grouped .tp-group:has(.sim-card) {
+    grid-template-columns: 1fr;
+    gap: 17px
+  }
+
+  #project.tp-ready .sim-card img {
+    height: 180px
+  }
+
+  .sim-card-copy {
+    padding-top: 16px
+  }
+
+  #project.tp-ready .sim-card li {
+    font-size: 14px
+  }
+}
+
+/* Match each build's layout to the shape of its media. */
+#project.tp-grouped .tp-group:has(.sim-card) {
+  grid-template-columns: 1fr;
+  gap: 20px
+}
+
+#project .tp-group:has(.sim-card)>.tp-group-heading {
+  grid-column: 1
+}
+
+.sim-card:has(img[src*="simulator-demo"]) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  padding: 14px
+}
+
+.sim-card:has(img[src*="simulator-demo"]) .sim-card-photos {
+  display: contents
+}
+
+.sim-card:has(img[src*="simulator-demo"]) figure:first-child {
+  grid-column: 1;
+  grid-row: 1
+}
+
+.sim-card:has(img[src*="simulator-demo"]) .sim-card-copy {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 7px 0
+}
+
+.sim-card:has(img[src*="simulator-demo"]) figure:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1
+}
+
+#project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img {
+  height: 300px;
+  object-fit: contain
+}
+
+.sim-card:not(:has(img[src*="simulator-demo"])) .sim-card-photos {
+  grid-template-columns: 1fr 1fr;
+  gap: 15px
+}
+
+#project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img {
+  height: 240px;
+  object-fit: contain
+}
+
+.sim-card:not(:has(img[src*="simulator-demo"])) .sim-card-copy {
+  padding: 20px 9px 12px
+}
+
+@media(max-width:767px) {
+  .sim-card:has(img[src*="simulator-demo"]) {
+    gap: 14px
+  }
+
+  #project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img {
+    height: 250px
+  }
+
+  #project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img {
+    height: 190px
+  }
+}
+
+@media(max-width:575px) {
+  .sim-card:has(img[src*="simulator-demo"]) {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 11px
+  }
+
+  .sim-card:has(img[src*="simulator-demo"]) figure:first-child {
+    grid-column: 1;
+    grid-row: 1
+  }
+
+  .sim-card:has(img[src*="simulator-demo"]) figure:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1
+  }
+
+  .sim-card:has(img[src*="simulator-demo"]) .sim-card-copy {
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0 5px 7px
+  }
+
+  #project.tp-ready .sim-card:has(img[src*="simulator-demo"]) img {
+    height: 220px
+  }
+
+  #project.tp-ready .sim-card:not(:has(img[src*="simulator-demo"])) img {
+    height: 150px
+  }
+}
+
+.sim-card:not(:has(img[src*='simulator-demo'])) .sim-card-photos {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px
+}
+
+@media(max-width:575px) {
+  #project.tp-ready .sim-card:not(:has(img[src*='simulator-demo'])) img {
+    height: 120px
+  }
+
+  .sim-card:not(:has(img[src*='simulator-demo'])) .sim-card-photos {
+    gap: 8px
+  }
+}

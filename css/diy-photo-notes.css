@@ -1,31 +1,179 @@
-#project.tp-grouped .tp-group:has(.diy-note){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px;align-items:start}
-#project.tp-grouped .tp-group:has(.diy-note)[hidden]{display:none!important}
-#project .tp-group:has(.diy-note)>.tp-group-heading{grid-column:1/-1;margin:0;padding-bottom:19px}
-#project.tp-grouped .tp-group:has(.diy-note)>.tp-entry{margin:0;padding:0;border:0}
-.diy-note{text-align:left}
-.diy-photos{display:grid;gap:12px}
-.diy-photos figure{margin:0;min-width:0}
-#project.tp-ready .diy-note img{width:100%;height:190px;object-fit:contain;display:block;border-radius:14px!important}
-#project.tp-ready .diy-note .diy-detail-photo img{height:125px}
-.diy-note figcaption{font-size:10px;line-height:1.5;color:var(--body-text);margin-top:6px}
-.diy-copy{padding-top:20px}
-.diy-event{font:10px/1.6 'Space Grotesk',Arial,sans-serif;letter-spacing:.7px;text-transform:uppercase;color:var(--body-text)}
-#project.tp-ready .diy-note h3{font-size:26px;font-weight:500;line-height:1.2;letter-spacing:-.6px;margin:9px 0 18px}
-#project.tp-ready .diy-note p{font-size:14px;line-height:1.75;color:var(--body-text);margin:15px 0 0}
-.diy-note p strong{display:block;color:var(--page-text);font:500 10px/1.6 'Space Grotesk',Arial,sans-serif;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
-@media(max-width:767px){#project.tp-ready .diy-note h3{font-size:23px}#project.tp-ready .diy-note p{font-size:13px}#project.tp-ready .diy-note img{height:170px}}
-@media(max-width:575px){#project.tp-grouped .tp-group:has(.diy-note){grid-template-columns:1fr;gap:28px}.diy-note .diy-photos{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11px;align-items:center}#project.tp-ready .diy-note img,#project.tp-ready .diy-note .diy-detail-photo img{height:150px}.diy-copy{padding-top:17px}#project.tp-ready .diy-note p{font-size:14px}}
+#project.tp-grouped .tp-group:has(.diy-note) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 25px;
+  align-items: start
+}
+
+#project.tp-grouped .tp-group:has(.diy-note)[hidden] {
+  display: none !important
+}
+
+#project .tp-group:has(.diy-note)>.tp-group-heading {
+  grid-column: 1/-1;
+  margin: 0;
+  padding-bottom: 19px
+}
+
+#project.tp-grouped .tp-group:has(.diy-note)>.tp-entry {
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+
+.diy-note {
+  text-align: left
+}
+
+.diy-photos {
+  display: grid;
+  gap: 12px
+}
+
+.diy-photos figure {
+  margin: 0;
+  min-width: 0
+}
+
+#project.tp-ready .diy-note img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  border-radius: 14px !important
+}
+
+#project.tp-ready .diy-note .diy-detail-photo img {
+  height: 125px
+}
+
+.diy-note figcaption {
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--body-text);
+  margin-top: 6px
+}
+
+.diy-copy {
+  padding-top: 20px
+}
+
+.diy-event {
+  font: 10px/1.6 'Space Grotesk', Arial, sans-serif;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  color: var(--body-text)
+}
+
+#project.tp-ready .diy-note h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.6px;
+  margin: 9px 0 18px
+}
+
+#project.tp-ready .diy-note p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--body-text);
+  margin: 15px 0 0
+}
+
+.diy-note p strong {
+  display: block;
+  color: var(--page-text);
+  font: 500 10px/1.6 'Space Grotesk', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin-bottom: 6px
+}
+
+@media(max-width:767px) {
+  #project.tp-ready .diy-note h3 {
+    font-size: 23px
+  }
+
+  #project.tp-ready .diy-note p {
+    font-size: 13px
+  }
+
+  #project.tp-ready .diy-note img {
+    height: 170px
+  }
+}
+
+@media(max-width:575px) {
+  #project.tp-grouped .tp-group:has(.diy-note) {
+    grid-template-columns: 1fr;
+    gap: 28px
+  }
+
+  .diy-note .diy-photos {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 11px;
+    align-items: center
+  }
+
+  #project.tp-ready .diy-note img,
+  #project.tp-ready .diy-note .diy-detail-photo img {
+    height: 150px
+  }
+
+  .diy-copy {
+    padding-top: 17px
+  }
+
+  #project.tp-ready .diy-note p {
+    font-size: 14px
+  }
+}
 
 /* Fill the photo columns; only the portrait is deliberately cropped. */
-.diy-note .diy-photos{gap:10px}
-#project.tp-ready .diy-note .diy-photos>figure:first-child img{height:auto;aspect-ratio:1.4;object-fit:cover}
-#project.tp-ready .diy-note img[src*="cleaning-robot-build"]{object-position:center 30%}
-#project.tp-ready .diy-note .diy-detail-photo img{height:185px;object-fit:contain}
-#project.tp-ready .diy-note .diy-detail-photo img[src*="homemade-pump-reservoir"]{object-fit:cover;object-position:center}
-.diy-note figcaption{margin-top:5px}
-.diy-copy{padding-top:15px}
-@media(max-width:575px){
- .diy-note .diy-photos{grid-template-columns:1fr;gap:10px}
- #project.tp-ready .diy-note .diy-photos>figure:first-child img{height:auto;aspect-ratio:1.4}
- #project.tp-ready .diy-note .diy-detail-photo img{height:160px}
+.diy-note .diy-photos {
+  gap: 10px
+}
+
+#project.tp-ready .diy-note .diy-photos>figure:first-child img {
+  height: auto;
+  aspect-ratio: 1.4;
+  object-fit: cover
+}
+
+#project.tp-ready .diy-note img[src*="cleaning-robot-build"] {
+  object-position: center 30%
+}
+
+#project.tp-ready .diy-note .diy-detail-photo img {
+  height: 185px;
+  object-fit: contain
+}
+
+#project.tp-ready .diy-note .diy-detail-photo img[src*="homemade-pump-reservoir"] {
+  object-fit: cover;
+  object-position: center
+}
+
+.diy-note figcaption {
+  margin-top: 5px
+}
+
+.diy-copy {
+  padding-top: 15px
+}
+
+@media(max-width:575px) {
+  .diy-note .diy-photos {
+    grid-template-columns: 1fr;
+    gap: 10px
+  }
+
+  #project.tp-ready .diy-note .diy-photos>figure:first-child img {
+    height: auto;
+    aspect-ratio: 1.4
+  }
+
+  #project.tp-ready .diy-note .diy-detail-photo img {
+    height: 160px
+  }
 }
