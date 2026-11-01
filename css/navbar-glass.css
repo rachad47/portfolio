@@ -120,3 +120,21 @@
 .navbar.navbar-glass .navbar-nav .nav-link:is(:hover, :focus-visible) {
   color: var(--flag-red) !important;
 }
+/* Match the navigation text; use green on hover for the photo journal. */
+.navbar.navbar-glass .navbar-nav .nav-link.nav-touching-grass {
+  color: var(--page-text) !important;
+}
+.dark-mode .navbar.navbar-glass .navbar-nav .nav-link.nav-touching-grass {
+  color: var(--page-text) !important;
+}
+.navbar.navbar-glass .navbar-nav .nav-link.nav-touching-grass:is(:hover, :focus-visible) {
+  color: #224f34 !important;
+}
+.dark-mode .navbar.navbar-glass .navbar-nav .nav-link.nav-touching-grass:is(:hover, :focus-visible) {
+  color: #73bb84 !important;
+}
+.navbar.navbar-glass .nav-touching-grass .nav-leaf {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 7px;
+}
