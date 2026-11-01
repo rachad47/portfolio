@@ -104,6 +104,7 @@
 .navbar.navbar-glass .nav-link:is(:hover, :focus, :focus-visible) span {
   transform: none !important;
   transition: none;
+  font-weight: 520 !important;
 }
 
 .navbar.navbar-glass .nav-link span::before {
@@ -113,12 +114,12 @@
 
 .navbar.navbar-glass .navbar-nav .nav-link,
 .navbar.navbar-glass .navbar-nav .nav-link:is(:hover, :focus, :focus-visible) {
-  font-weight: 500;
-  transition: color .18s ease;
+  font-weight: 520 !important;
+  transition: color .2s ease-in-out;
 }
 
 .navbar.navbar-glass .navbar-nav .nav-link:is(:hover, :focus-visible) {
-  color: var(--flag-red) !important;
+  color: var(--nav-hover-color, var(--flag-red)) !important;
 }
 /* Match the navigation text; use green on hover for the photo journal. */
 .navbar.navbar-glass .navbar-nav .nav-link.nav-touching-grass {
@@ -138,3 +139,12 @@
   vertical-align: -2px;
   margin-right: 7px;
 }
+
+/* Keep hover text legible against the navy glass. */
+.dark-mode .navbar.navbar-glass {
+  --nav-hover-color: #d6244e;
+}
+
+/* Keep the journal leaf sage in both interaction states. */
+.navbar.navbar-glass .nav-touching-grass .nav-leaf { color: #356b46; }
+.dark-mode .navbar.navbar-glass .nav-touching-grass .nav-leaf { color: #a4d4ac; }

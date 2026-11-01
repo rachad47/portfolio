@@ -688,3 +688,76 @@
     width: 100%
   }
 }
+/* The journal title changes color without changing its weight. */
+.he-portrait-note .he-outside h2,
+.he-portrait-note .he-outside:is(:hover, :focus-visible) h2 {
+  font-weight: 520 !important;
+  transition: color .2s ease-in-out;
+}
+.dark-mode .he-portrait-note .he-outside:is(:hover, :focus-visible) h2 {
+  color: #d6244e;
+}
+
+/* Keep hero action labels bold through hover and focus. */
+.he-hero .ce-actions :is(.ce-primary, .ce-secondary),
+.he-hero .ce-actions :is(.ce-primary, .ce-secondary):is(:hover, :focus, :focus-visible),
+.he-hero .ce-actions :is(.ce-primary, .ce-secondary) span {
+  font-weight: 520 !important;
+}
+
+/* Squarer hero buttons and the shared reddish hover accent. */
+.he-hero .ce-actions :is(.ce-primary, .ce-secondary) {
+  border-radius: 17px;
+  transition: color .2s ease-in-out;
+}
+body.home-widget-glass .he-hero .ce-actions .ce-secondary:is(:hover, :focus-visible) {
+  color: var(--flag-red) !important;
+}
+body.home-widget-glass.dark-mode .he-hero .ce-actions .ce-secondary:is(:hover, :focus-visible) {
+  color: #d6244e !important;
+}
+
+
+/* Light-mode primary action changes only its text color. */
+body.home-widget-glass:not(.dark-mode) .he-hero .ce-actions .ce-primary {
+  transition: color .2s ease-in-out;
+}
+body.home-widget-glass:not(.dark-mode) .he-hero .ce-actions .ce-primary:is(:hover, :focus-visible) {
+  color: var(--flag-blue) !important;
+}
+
+/* Align the journal ribbon with the selected-project column below. */
+@media (min-width: 992px) {
+  .he-slim-ribbon .he-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .he-slim-ribbon .he-outside {
+    width: 100%;
+  }
+}
+
+.he-outside h2 .he-journal-leaf {
+  display: inline-block;
+  vertical-align: -2px;
+  color: inherit;
+}
+
+.he-outside h2 .he-journal-leaf { color: #356b46; }
+.dark-mode .he-outside h2 .he-journal-leaf { color: #a4d4ac; }
+.he-slim-ribbon .he-outside .he-outside-copy > p {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Keep the short homepage headline and robot together on phones. */
+@media (max-width: 575px) {
+  body.home-widget-glass #about h1 {
+    font-size: clamp(32px, 7.2vw, 34px);
+    letter-spacing: -.8px;
+    line-height: 1.15;
+  }
+}

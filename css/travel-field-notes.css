@@ -228,8 +228,8 @@ body.field-notes .field-trip-nav a {
 body.field-notes .field-trip-nav a:hover {
   color: var(--field-heading) !important;
   border-color: var(--field-accent);
-  text-decoration: underline !important;
-  text-underline-offset: 4px
+  text-decoration: none !important;
+
 }
 
 html:has(body.field-notes) {
@@ -491,3 +491,4 @@ body.field-notes .field-trip-nav a::after {
     display: none
   }
 }
+body.field-notes a:is(:hover, :focus-visible) { text-decoration: none !important; }

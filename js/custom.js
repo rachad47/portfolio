@@ -16,9 +16,19 @@
 
   }
   setColorMode(dark);
+  var themeTransition;
   $('.color-mode').on('click', function() {
     dark = !dark;
-    setColorMode(dark);
+    var nextMode = dark;
+    if (themeTransition) themeTransition.skipTransition();
+    if (document.startViewTransition && !reducedMotion.matches) {
+      themeTransition = document.startViewTransition(function() {
+        setColorMode(nextMode);
+      });
+      themeTransition.finished.catch(function() { /* Rapid toggles may skip a fade. */ });
+    } else {
+      setColorMode(nextMode);
+    }
     try {
       window.localStorage.setItem('portfolio-color-mode-v2', dark ? 'dark' : 'light');
 
