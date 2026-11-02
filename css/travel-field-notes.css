@@ -492,3 +492,99 @@ body.field-notes .field-trip-nav a::after {
   }
 }
 body.field-notes a:is(:hover, :focus-visible) { text-decoration: none !important; }
+
+/* Park chapters reuse the trip glass material inside their parent trip. */
+body.field-notes .nj-stop {
+  padding: 18px;
+  margin-top: 18px;
+  border: 1px solid var(--trip-edge);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff06, transparent 42%), var(--trip-glass);
+  box-shadow: inset 0 1px 1px #ffffff20, inset 0 -1px 1px #ffffff08;
+  scroll-margin-top: 120px;
+}
+body.field-notes .nj-stop h3 {
+  color: var(--field-heading);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+body.field-notes .nj-empty-note {
+  color: var(--field-text);
+  font-size: 13px;
+  margin: 0;
+}
+body.field-notes .nj-justified {
+  --justified-row-height: 200px;
+  align-items: flex-start;
+}
+body.field-notes .nj-justified .nj-photo img {
+  width: 100%;
+  height: auto;
+}
+@media(max-width:767px) {
+  body.field-notes .nj-stop { padding: 12px; }
+  body.field-notes .nj-justified { --justified-row-height: 160px; }
+}
+
+/* The drive remains open inside the trip: no additional glass panel. */
+body.field-notes .nj-drive {
+  margin: 24px 0;
+}
+body.field-notes .nj-drive h3 {
+  color: var(--field-heading);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+body.field-notes .nj-trip-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+body.field-notes .nj-drive .nj-justified {
+  --justified-row-height: 145px;
+  min-width: 0;
+}
+body.field-notes .nj-drive-map {
+  min-width: 0;
+  margin: 0;
+}
+body.field-notes .nj-drive-map .nj-photo {
+  width: 100%;
+}
+body.field-notes .nj-drive-map .nj-photo img {
+  width: 100%;
+  height: auto;
+}
+body.field-notes .nj-drive-map .nj-photo:hover {
+  transform: none;
+}
+body.field-notes .nj-drive-map figcaption {
+  color: var(--field-text);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 5px 0 0;
+}
+@media(max-width:767px) {
+  body.field-notes .nj-trip-intro {
+    grid-template-columns: minmax(0, 1fr) 130px;
+    gap: 12px;
+  }
+  body.field-notes .nj-drive .nj-justified {
+    --justified-row-height: 110px;
+  }
+}
+
+/* A quiet maple-leaf marker distinguishes Canadian destinations. */
+body.field-notes .canada-leaf {
+  display: inline-block;
+  font-size: .72em;
+  vertical-align: .08em;
+  margin-left: .2em;
+  filter: grayscale(1);
+  opacity: .7;
+}
