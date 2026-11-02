@@ -12,14 +12,74 @@
     dialog.querySelector('p').textContent = photo.dataset.caption;
 
   }
+  // A body-level preview escapes the scroll container's clipping boundary.
+  var hoverPreview = document.createElement('img');
+  hoverPreview.className = 'nj-hover-preview';
+  hoverPreview.alt = '';
+  hoverPreview.setAttribute('aria-hidden', 'true');
+  hoverPreview.hidden = true;
+  document.body.appendChild(hoverPreview);
+  var hoverTimer;
+  var hoverVersion = 0;
+  var hoverAnimation;
+  function hideHoverPreview() {
+    hoverVersion++;
+    clearTimeout(hoverTimer);
+    if (hoverAnimation) hoverAnimation.cancel();
+    hoverPreview.hidden = true;
+  }
+  function showHoverPreview(button) {
+    if (!button.closest('.nj-photo-rail') || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    hideHoverPreview();
+    var version = hoverVersion;
+    // Passing across a row should not trigger a preview for every image.
+    hoverTimer = setTimeout(async function() {
+      var image = button.querySelector('img');
+      try {
+        if (image.decode) await image.decode();
+        if (version !== hoverVersion || dialog.open) return;
+        var source = image.currentSrc || image.src;
+        if (hoverPreview.getAttribute('src') !== source) hoverPreview.src = source;
+        if (hoverPreview.decode) await hoverPreview.decode();
+      } catch (error) {
+        return;
+      }
+      if (version !== hoverVersion || dialog.open) return;
+      var box = image.getBoundingClientRect();
+      var scale = Math.min(2, (innerWidth - 24) / box.width, (innerHeight - 24) / box.height);
+      var width = box.width * scale;
+      var height = box.height * scale;
+      var left = Math.max(12, Math.min(innerWidth - width - 12, box.left + (box.width - width) / 2));
+      var top = Math.max(12, Math.min(innerHeight - height - 12, box.top + (box.height - height) / 2));
+      hoverPreview.style.width = width + 'px';
+      hoverPreview.style.height = height + 'px';
+      hoverPreview.style.left = left + 'px';
+      hoverPreview.style.top = top + 'px';
+      hoverPreview.hidden = false;
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        hoverAnimation = hoverPreview.animate([
+          { transform: 'translate(' + (box.left - left) + 'px, ' + (box.top - top) + 'px) scale(' + (1 / scale) + ')', opacity: .85 },
+          { transform: 'translate(0, 0) scale(1)', opacity: 1 }
+        ], { duration: 260, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'both' });
+      }
+    }, 140);
+  }
+  window.addEventListener('scroll', hideHoverPreview, { capture: true, passive: true });
+  window.addEventListener('resize', hideHoverPreview);
+  window.addEventListener('blur', hideHoverPreview);
   photos.forEach(function(button, index) {
+    button.addEventListener('mouseleave', hideHoverPreview);
+    button.addEventListener('blur', hideHoverPreview);
+    button.addEventListener('focus', function() { showHoverPreview(button); });
     button.addEventListener('mouseenter', function() {
+      showHoverPreview(button);
       var bounds = button.getBoundingClientRect();
       var growth = bounds.width * .325;
       button.style.transformOrigin = bounds.left < growth + 15 ? 'left center' : bounds.right + growth > innerWidth - 15 ? 'right center' : 'center';
 
     });
     button.addEventListener('click', function() {
+      hideHoverPreview();
       opener = button;
       display(index);
       dialog.showModal();
@@ -58,55 +118,75 @@
 
 
 
-  // Justify only galleries that opt in. Width/height attributes preserve the
-  // original image proportions without waiting for lazy images to download.
-  document.querySelectorAll('.nj-justified').forEach(function(gallery) {
-    var items = Array.from(gallery.querySelectorAll('.nj-photo'));
-    if (!items.length) return;
-    function layoutGallery() {
-      var width = gallery.clientWidth;
-      if (!width) return;
-      var styles = getComputedStyle(gallery);
-      var gap = parseFloat(styles.columnGap) || 12;
-      var target = parseFloat(styles.getPropertyValue('--justified-row-height')) || 220;
-      var ratios = items.map(function(item) {
-        var image = item.querySelector('img');
-        return Number(image.getAttribute('width')) / Number(image.getAttribute('height')) || 1;
+  // All photo galleries are native horizontal rails; original proportions stay intact.
+  document.querySelectorAll('.nj-photos').forEach(function(gallery, index) {
+    if (!gallery.querySelector('.nj-photo')) return;
+    gallery.classList.add('nj-photo-rail');
+    gallery.id = gallery.id || 'photo-rail-' + index;
+    var section = gallery.closest('section');
+    var heading = section && section.querySelector('h3, h2');
+    var title = heading ? heading.textContent.trim() : 'Travel';
+    gallery.setAttribute('aria-label', title + ' photographs');
+    var controls = document.createElement('div');
+    controls.className = 'nj-rail-controls';
+    var buttons = [-1, 1].map(function(direction) {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = direction < 0 ? '←' : '→';
+      button.setAttribute('aria-label', (direction < 0 ? 'Previous' : 'Next') + ' ' + title + ' photographs');
+      button.setAttribute('aria-controls', gallery.id);
+      button.addEventListener('click', function() {
+        gallery.scrollBy({
+          left: direction * gallery.clientWidth * .75,
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        });
       });
-      var count = items.length;
-      var cost = Array(count + 1).fill(Infinity);
-      var breaks = Array(count).fill(count);
-      cost[count] = 0;
-      for (var start = count - 1; start >= 0; start--) {
-        var sum = 0;
-        for (var end = start; end < count; end++) {
-          sum += ratios[end];
-          var height = (width - gap * (end - start)) / sum;
-          if (height <= 0) break;
-          // Keep a short final row left-aligned instead of enlarging it.
-          var rowHeight = end === count - 1 ? Math.min(height, target) : height;
-          var score = Math.pow(rowHeight - target, 2) * (end - start + 1) + cost[end + 1];
-          if (score < cost[start]) {
-            cost[start] = score;
-            breaks[start] = end + 1;
-          }
-        }
-      }
-      for (var first = 0; first < count;) {
-        var last = breaks[first];
-        var total = ratios.slice(first, last).reduce(function(a, b) { return a + b; }, 0);
-        var row = (width - gap * (last - first - 1)) / total;
-        if (last === count) row = Math.min(row, target);
-        for (var i = first; i < last; i++) {
-          // Floor to avoid subpixel rounding pushing the last photo to a new line.
-          items[i].style.width = Math.floor(row * ratios[i] * 100) / 100 + 'px';
-        }
-        first = last;
-      }
+      controls.appendChild(button);
+      return button;
+    });
+    var galleryHeader = heading && heading.closest('header');
+    if (galleryHeader) {
+      galleryHeader.classList.add('nj-gallery-heading');
+      galleryHeader.appendChild(controls);
+    } else {
+      gallery.before(controls);
     }
-    if ('ResizeObserver' in window) new ResizeObserver(layoutGallery).observe(gallery);
-    else window.addEventListener('resize', layoutGallery);
-    layoutGallery();
+    function updateArrows() {
+      var overflowing = gallery.scrollWidth > gallery.clientWidth + 1;
+      controls.hidden = !overflowing;
+      buttons[0].disabled = gallery.scrollLeft <= 1;
+      buttons[1].disabled = gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 1;
+    }
+    gallery.addEventListener('scroll', updateArrows, { passive: true });
+    gallery.querySelectorAll('img').forEach(function(image) {
+      image.addEventListener('load', updateArrows);
+    });
+    if ('ResizeObserver' in window) new ResizeObserver(updateArrows).observe(gallery);
+    else window.addEventListener('resize', updateArrows);
+    updateArrows();
   });
+
+  // The extra destination links have their own independent rail.
+  var destinationRail = document.querySelector('.field-more-rail');
+  if (destinationRail) {
+    var previousDestinations = document.querySelector('.field-more-prev');
+    var nextDestinations = document.querySelector('.field-more-next');
+    function updateDestinationArrows() {
+      previousDestinations.disabled = destinationRail.scrollLeft <= 1;
+      nextDestinations.disabled = destinationRail.scrollLeft + destinationRail.clientWidth >= destinationRail.scrollWidth - 1;
+    }
+    function scrollDestinations(direction) {
+      destinationRail.scrollBy({
+        left: direction * destinationRail.clientWidth * .75,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    }
+    previousDestinations.addEventListener('click', function() { scrollDestinations(-1); });
+    nextDestinations.addEventListener('click', function() { scrollDestinations(1); });
+    destinationRail.addEventListener('scroll', updateDestinationArrows, { passive: true });
+    if ('ResizeObserver' in window) new ResizeObserver(updateDestinationArrows).observe(destinationRail);
+    else window.addEventListener('resize', updateDestinationArrows);
+    updateDestinationArrows();
+  }
 
 })();
