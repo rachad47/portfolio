@@ -163,6 +163,8 @@ body.field-notes .cj-footer a {
 
 body.field-notes .cj-lightbox {
   background: var(--field-bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   color: var(--field-heading);
   border: 1px solid var(--field-line)
 }
@@ -409,8 +411,9 @@ body.field-notes .nj-trip {
   border-radius: 18px;
   background: linear-gradient(135deg, #ffffff06, transparent 42%), var(--trip-glass);
   box-shadow: 0 10px 28px var(--trip-shadow), inset 0 1px 1px #ffffff20, inset 0 -1px 1px #ffffff08;
-  backdrop-filter: blur(3px) saturate(175%);
-  -webkit-backdrop-filter: blur(3px) saturate(175%);
+  /* Opaque panels do not need costly backdrop surfaces during pinch zoom. */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   overflow: visible;
 }
 
@@ -915,5 +918,14 @@ body.field-notes {
   body.field-notes .navbar-glass > .container:has(.navbar-collapse.show)::before,
   body.field-notes .navbar-glass > .container:has(.navbar-collapse.collapsing)::before {
     background: var(--field-control);
+  }
+}
+
+/* Keep touch zoom from allocating blur surfaces for every destination chip. */
+@media (hover: none) and (pointer: coarse) {
+  body.field-notes .field-trip-nav a::before,
+  body.field-notes .cj-lightbox::backdrop {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }
