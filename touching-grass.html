@@ -17,19 +17,14 @@
   <link rel="stylesheet" href="css/natural-selected-journal.css">
   <link rel="icon" type="image/x-icon" href="assets/site/travel-favicon.ico">
   <link rel="stylesheet" href="css/site-shell.css?v=2">
-  <link rel="stylesheet" href="css/navbar-glass.css?v=sage-leaves-3">
+  <link rel="stylesheet" href="css/navbar-glass.css?v=mobile-menu-spacing-4">
   <link rel="stylesheet" href="css/glass-dividers.css?v=3">
   <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
-  <link rel="stylesheet" href="css/travel-field-notes.css?v=all-park-icons-9">
+  <link rel="stylesheet" href="css/travel-field-notes.css?v=burnt-orange-dark-26">
 </head>
 
-<body class="clean-evolution frosted-studio cj-page dark-mode site-shell navy-editorial field-notes">
-  <script>
-    // Apply the saved theme before rendering the page content.
-    try {
-      document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
-    } catch (error) { /* Keep the default navy theme if storage is unavailable. */ }
-  </script><a class="ce-skip" href="#journal">Skip to the journal</a>
+<body class="clean-evolution frosted-studio cj-page site-shell navy-editorial field-notes" data-color-mode="light">
+  <a class="ce-skip" href="#journal">Skip to the journal</a>
   <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
     <div class="container">
       <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
@@ -58,16 +53,6 @@
           <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
           </li>
         </ul>
-
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
-              aria-label="Toggle dark mode" aria-pressed="false">
-              <i class="color-mode-icon"></i>
-              Color mode
-            </button>
-          </div>
-        </ul>
       </div>
     </div>
   </nav>
@@ -86,19 +71,18 @@
       <!-- Flag artwork: Twemoji v14.0.2, Twitter and contributors, CC BY 4.0. See assets/site/flags/ATTRIBUTION.md. -->
       <nav class="field-trip-nav" aria-label="Destinations">
         <div class="field-featured-links">
+          <a href="#grand-canyon-vegas-grand-canyon" title="🏜️ Grand Canyon National Park"><img class="park-icon" src="assets/site/park-icons/grand-canyon.svg" alt="" aria-hidden="true" width="22" height="22"> Grand Canyon NP</a>
           <a href="#hawaii-volcanoes-national-park" title="🌋 Hawaiʻi Volcanoes National Park"><img class="park-icon" src="assets/site/park-icons/hawaii-volcanoes.svg" alt="" aria-hidden="true" width="22" height="22"> Hawaiʻi Volcanoes NP</a>
           <a href="#san-francisco-austin-road-trip-carlsbad-caverns" title="🦇 Carlsbad Caverns National Park"><img class="park-icon" src="assets/site/park-icons/carlsbad-caverns.svg" alt="" aria-hidden="true" width="22" height="22"> Carlsbad Caverns NP</a>
           <a href="#selected-trip-18" title="🏔️ Yosemite National Park"><img class="park-icon" src="assets/site/park-icons/yosemite.svg" alt="" aria-hidden="true" width="22" height="22"> Yosemite NP</a>
-          <a href="#trip-italy"><span aria-hidden="true"><img class="country-flag" src="assets/site/flags/italy.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></span> Italy</a>
-          <a href="#grand-canyon-vegas-grand-canyon" title="🏜️ Grand Canyon National Park"><img class="park-icon" src="assets/site/park-icons/grand-canyon.svg" alt="" aria-hidden="true" width="22" height="22"> Grand Canyon NP</a>
-          <a href="#red-rock-road-trip-bryce-canyon" title="🏜️ Bryce Canyon National Park"><img class="park-icon" src="assets/site/park-icons/bryce-canyon.svg" alt="" aria-hidden="true" width="22" height="22"> Bryce Canyon NP</a>
           <a href="#selected-trip-1" title="🏔️ Mount Rainier National Park"><img class="park-icon" src="assets/site/park-icons/mount-rainier.svg?v=autumn-1" alt="" aria-hidden="true" width="22" height="22"> Mount Rainier NP</a>
-          <a href="#trip-france"><span aria-hidden="true"><img class="country-flag" src="assets/site/flags/france.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></span> France</a>
           <a href="#selected-trip-5" title="🏜️ Death Valley National Park"><img class="park-icon" src="assets/site/park-icons/death-valley.svg" alt="" aria-hidden="true" width="22" height="22"> Death Valley NP</a>
-          <a href="#trip-banff-national-park" title="Banff National Park 🍁︎"><img class="park-icon" src="assets/site/park-icons/banff.svg" alt="" aria-hidden="true" width="22" height="22">Banff NP <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
-          <a href="#selected-trip-11"><span aria-hidden="true">🗽</span> New York</a>
           <a href="#red-rock-road-trip-zion" title="🏞️ Zion National Park"><img class="park-icon" src="assets/site/park-icons/zion.svg" alt="" aria-hidden="true" width="22" height="22"> Zion NP</a>
-          <a href="#morocco-desert"><img class="country-flag" src="assets/site/flags/morocco.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"> <span aria-hidden="true"></span> Dunes</a>
+          <a href="#selected-trip-14" title="🌲 Redwood National Park"><img class="park-icon" src="assets/site/park-icons/redwood.svg" alt="" aria-hidden="true" width="22" height="22"> Redwood NP</a>
+          <a href="#san-francisco-austin-road-trip-white-sands" title="🏜️ White Sands National Park"><img class="park-icon" src="assets/site/park-icons/white-sands.svg" alt="" aria-hidden="true" width="22" height="22"> White Sands NP</a>
+          <a href="#red-rock-road-trip-bryce-canyon" title="🏜️ Bryce Canyon National Park"><img class="park-icon" src="assets/site/park-icons/bryce-canyon.svg" alt="" aria-hidden="true" width="22" height="22"> Bryce Canyon NP</a>
+          <a href="#trip-banff-national-park" title="Banff National Park 🍁︎"><img class="park-icon" src="assets/site/park-icons/banff.svg" alt="" aria-hidden="true" width="22" height="22">Banff NP <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
+
         </div>
         <div class="field-more-places">
           <div class="field-more-heading">
@@ -109,32 +93,34 @@
             </div>
           </div>
           <div class="field-more-rail" id="more-destination-links">
+            <a href="#morocco-desert"><img class="country-flag" src="assets/site/flags/morocco.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"> <span aria-hidden="true"></span> Dunes🐪</a>
+            <a href="#trip-sequoia-and-kings-canyon" title="🌲 Sequoia National Park"><img class="park-icon" src="assets/site/park-icons/sequoia.svg" alt="" aria-hidden="true" width="22" height="22"> Sequoia NP</a>
+            <a href="#selected-trip-4"><span aria-hidden="true">🌊</span> Big Sur</a>
+            <a href="#trip-france"><span aria-hidden="true"><img class="country-flag" src="assets/site/flags/france.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></span> Normandy</a>
+            <a href="#trip-italy"><span aria-hidden="true"><img class="country-flag" src="assets/site/flags/italy.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></span> Florence</a>
+            <a href="#selected-trip-11"><span aria-hidden="true">🗽</span> New York</a>
+            <a href="#trip-niagara-falls">Niagara Falls <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
+            <a href="#selected-trip-15"><span aria-hidden="true">🚀</span> Starbase</a>
+            <a href="#selected-trip-0"><span aria-hidden="true">🎆</span> July 4th</a>
+
+
             <a href="#selected-trip-12" title="🥾 Pinnacles National Park"><img class="park-icon" src="assets/site/park-icons/pinnacles.svg" alt="" aria-hidden="true" width="22" height="22"> Pinnacles NP</a>
-            <a href="#selected-trip-14" title="🌲 Redwood National Park"><img class="park-icon" src="assets/site/park-icons/redwood.svg" alt="" aria-hidden="true" width="22" height="22"> Redwood NP</a>
             <a href="#selected-trip-9" title="🌋 Lassen Volcanic National Park"><img class="park-icon" src="assets/site/park-icons/lassen-volcanic.svg" alt="" aria-hidden="true" width="22" height="22"> Lassen Volcanic NP</a>
             <a href="#hawaii-tropical-hawaii"><span aria-hidden="true">🤿</span> Tropical Hawaii</a>
             <a href="#san-francisco-austin-road-trip-joshua-tree" title="🌵 Joshua Tree National Park"><img class="park-icon" src="assets/site/park-icons/joshua-tree.svg" alt="" aria-hidden="true" width="22" height="22"> Joshua Tree NP</a>
             <a href="#san-francisco-austin-road-trip-saguaro" title="🌵 Saguaro National Park"><img class="park-icon" src="assets/site/park-icons/saguaro.svg" alt="" aria-hidden="true" width="22" height="22"> Saguaro NP</a>
-            <a href="#san-francisco-austin-road-trip-white-sands" title="🏜️ White Sands National Park"><img class="park-icon" src="assets/site/park-icons/white-sands.svg" alt="" aria-hidden="true" width="22" height="22"> White Sands NP</a>
             <a href="#san-francisco-austin-road-trip-guadalupe-mountains" title="⛰️ Guadalupe Mountains National Park"><img class="park-icon" src="assets/site/park-icons/guadalupe-mountains.svg" alt="" aria-hidden="true" width="22" height="22"> Guadalupe Mountains NP</a>
-            <a href="#trip-sequoia-and-kings-canyon" title="🌲 Sequoia National Park"><img class="park-icon" src="assets/site/park-icons/sequoia.svg" alt="" aria-hidden="true" width="22" height="22"> Sequoia NP</a>
             <a href="#trip-sequoia-and-kings-canyon" title="🏞️ Kings Canyon National Park"><img class="park-icon" src="assets/site/park-icons/kings-canyon.svg" alt="" aria-hidden="true" width="22" height="22"> Kings Canyon NP</a>
-            <a href="#visited-national-parks" title="🏔️ North Cascades National Park"><img class="park-icon" src="assets/site/park-icons/north-cascades.svg" alt="" aria-hidden="true" width="22" height="22"> North Cascades NP</a>
             <a href="#selected-trip-2"><span aria-hidden="true">🌉</span> Bay Area</a>
             <a href="#selected-trip-8"><span aria-hidden="true">🌴</span> Los Angeles</a>
-            <a href="#selected-trip-4"><span aria-hidden="true">🌊</span> Big Sur</a>
             <a href="#selected-trip-16"><span aria-hidden="true">🛶</span> Lake Tahoe</a>
             <a href="#selected-trip-3"><span aria-hidden="true">🏙️</span> Austin &amp; Chicago</a>
-            <a href="#selected-trip-0"><span aria-hidden="true">🎆</span> July 4th</a>
-            <a href="#selected-trip-15"><span aria-hidden="true">🚀</span> Starbase</a>
             <a href="#selected-trip-10"><span aria-hidden="true">🤘</span> Longhorn nation</a>
-            <a href="#trip-morocco"><span aria-hidden="true"><img class="country-flag" src="assets/site/flags/morocco.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></span> Morocco</a>
             <a href="#trip-joffre-lakes">Joffre Lakes <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
             <a href="#trip-panorama-ridge">Panorama Ridge <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
             <a href="#trip-wedgemount-lake">Wedgemount Lake <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
-                      <a href="#trip-niagara-falls">Niagara Falls <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
-                      <a href="#trip-toronto">Toronto <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
-                      <a href="#trip-vancouver">Vancouver <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
+            <a href="#trip-toronto">Toronto <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
+            <a href="#trip-vancouver">Vancouver <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></a>
           </div>
         </div>
       </nav>
@@ -142,8 +128,7 @@
     </section>
     <section class="nj-trip" id="selected-trip-2">
       <header>
-        <h2>Around the Bay 🚲 🌉</h2>
-        <p>A few escapes between workdays—coastal walks, bike rides, and a different view of the Bay.</p>
+        <h2>Around the Bay 🌉</h2>
       </header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/around-the-bay_01.webp" data-caption="Around the Bay 🚲 🌉 · 1 / 12" aria-label="Open Around the Bay 🚲 🌉 photograph 1"><img src="assets/travel/around-the-bay/around-the-bay_01.webp" width="1350" height="1800" alt="Around the Bay 🚲 🌉 — photograph 1" loading="lazy" decoding="async"></button>
@@ -162,18 +147,23 @@
     </section>
     <section class="nj-trip" id="selected-trip-6">
       <div class="nj-trip-intro">
-        <header>
-        <h2>Grand Canyon &amp; Vegas 🏜️ ✨</h2>
-        <p>From canyon views to city lights. A weekend with two very different kinds of scenery.</p>
-      </header>
         <figure class="nj-drive-map">
             <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/grand-canyon-vegas_04.webp" data-caption="The trip route" aria-label="Enlarge the trip route map"><img src="assets/travel/grand-canyon-vegas/grand-canyon-vegas_04.webp" width="1029" height="724" alt="Map showing the route for this road trip" loading="lazy" decoding="async"></button>
             <figcaption>The trip route · Click to enlarge</figcaption>
           </figure>
+        <header>
+        <h2>Desert Highways &amp; Canyon Rims </h2>
+        <ul class="trip-mileage"><li>1,760+ miles across 3 states (California, Nevada, and Arizona) over 3 nights.</li></ul><p>
+
+<b>Friday Night:</b> San Francisco to Bakersfield<br>
+<b>Saturday:</b> Valley of Fire & Las Vegas<br>
+<b>Sunday:</b> Grand Canyon National Park<br>
+<b>Monday:</b> The Mojave Desert & back to San Francisco<br></p>
+      </header>
       </div>
 
       <section class="nj-stop" id="grand-canyon-vegas-grand-canyon" aria-labelledby="grand-canyon-vegas-grand-canyon-title">
-        <header><h3 id="grand-canyon-vegas-grand-canyon-title">Grand Canyon National Park <img class="park-icon" src="assets/site/park-icons/grand-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Canyon views and a few stops along the rim.</p></header>
+        <header><h3 id="grand-canyon-vegas-grand-canyon-title">Grand Canyon National Park <img class="park-icon" src="assets/site/park-icons/grand-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>All of that was carved by a river!</p></header>
       <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Grand Canyon/grand-canyon_01.webp" data-caption="Grand Canyon National Park · 1 / 11" aria-label="Open Grand Canyon National Park photograph 1"><img src="assets/travel/grand-canyon-vegas/Grand Canyon/grand-canyon_01.webp" width="1800" height="1350" alt="Grand Canyon National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Grand Canyon/grand-canyon_02.webp" data-caption="Grand Canyon National Park · 2 / 11" aria-label="Open Grand Canyon National Park photograph 2"><img src="assets/travel/grand-canyon-vegas/Grand Canyon/grand-canyon_02.webp" width="1800" height="1350" alt="Grand Canyon National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -189,7 +179,7 @@
         </div>
       </section>
       <section class="nj-stop" id="grand-canyon-vegas-valley-of-fire" aria-labelledby="grand-canyon-vegas-valley-of-fire-title">
-        <header><h3 id="grand-canyon-vegas-valley-of-fire-title">Valley of Fire</h3><p>Red sandstone, winding roads, and desert views.</p></header>
+        <header><h3 id="grand-canyon-vegas-valley-of-fire-title">Valley of Fire</h3><p>Red sandstone and winding roads. Feels like Mars.</p></header>
       <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Valley of Fire/valley-of-fire_01.webp" data-caption="Valley of Fire · 1 / 9" aria-label="Open Valley of Fire photograph 1"><img src="assets/travel/grand-canyon-vegas/Valley of Fire/valley-of-fire_01.webp" width="1800" height="1350" alt="Valley of Fire — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Valley of Fire/valley-of-fire_02.webp" data-caption="Valley of Fire · 2 / 9" aria-label="Open Valley of Fire photograph 2"><img src="assets/travel/grand-canyon-vegas/Valley of Fire/valley-of-fire_02.webp" width="1500" height="1125" alt="Valley of Fire — photograph 2" loading="lazy" decoding="async"></button>
@@ -203,7 +193,7 @@
         </div>
       </section>
       <section class="nj-stop" id="grand-canyon-vegas-vegas" aria-labelledby="grand-canyon-vegas-vegas-title">
-        <header><h3 id="grand-canyon-vegas-vegas-title">Las Vegas</h3><p>A few city stops between the desert drives.</p></header>
+        <header><h3 id="grand-canyon-vegas-vegas-title">Las Vegas 🎰</h3><p>The Sphere is AWESOME!</p></header>
       <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Vegas/vegas_01.webp" data-caption="Las Vegas · 1 / 7" aria-label="Open Las Vegas photograph 1"><img src="assets/travel/grand-canyon-vegas/Vegas/vegas_01.webp" width="1800" height="1350" alt="Las Vegas — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Vegas/vegas_02.webp" data-caption="Las Vegas · 2 / 7" aria-label="Open Las Vegas photograph 2"><img src="assets/travel/grand-canyon-vegas/Vegas/vegas_02.webp" width="2048" height="1536" alt="Las Vegas — photograph 2" loading="lazy" decoding="async"></button>
@@ -217,7 +207,7 @@
 
 
           <section class="nj-stop" id="grand-canyon-vegas-mojave-desert" aria-labelledby="grand-canyon-vegas-mojave-desert-title">
-        <header><h3 id="grand-canyon-vegas-mojave-desert-title">Mojave Desert</h3><p>A few views and moments from this stop along the way.</p></header>
+        <header><h3 id="grand-canyon-vegas-mojave-desert-title">Mojave Desert</h3><p>I told my friend I didn't need sunscreen 😬.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Mojave Desert/grand-canyon-vegas_01.webp" data-caption="Mojave Desert · 1 / 6" aria-label="Open Mojave Desert photograph 1"><img src="assets/travel/grand-canyon-vegas/Mojave Desert/grand-canyon-vegas_01.webp" width="1500" height="1125" alt="Mojave Desert — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Mojave Desert/mojave-desert_06.webp" data-caption="Mojave Desert · 6 / 6" aria-label="Open Mojave Desert photograph 6"><img src="assets/travel/grand-canyon-vegas/Mojave Desert/mojave-desert_06.webp" width="1800" height="1350" alt="Mojave Desert — photograph 6" loading="lazy" decoding="async"></button>
@@ -253,41 +243,11 @@
           <button type="button" class="nj-photo" data-full="assets/travel/yosemite/yosemite_17.webp" data-caption="Yosemite National Park 🏔️ · 17 / 17" aria-label="Open Yosemite National Park 🏔️ photograph 17"><img src="assets/travel/yosemite/yosemite_17.webp" width="1500" height="1125" alt="Yosemite National Park 🏔️ — photograph 17" loading="lazy" decoding="async"></button>
         </div>
     </section>
-    <section class="nj-trip" id="selected-trip-12">
-      <header>
-        <h2>Pinnacles National Park <img class="park-icon" src="assets/site/park-icons/pinnacles.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
-        <p>A little time among the rocks.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_01.webp" data-caption="Pinnacles 🥾  · 1 / 6" aria-label="Open Pinnacles  🥾  photograph 1"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_01.webp" width="1280" height="960" alt="Pinnacles 🥾 — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_03.webp" data-caption="Pinnacles 🥾  · 2 / 6" aria-label="Open Pinnacles  🥾  photograph 2"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_03.webp" width="2000" height="1500" alt="Pinnacles 🥾  — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_04.webp" data-caption="Pinnacles 🥾  · 3 / 6" aria-label="Open Pinnacles  🥾  photograph 3"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_04.webp" width="1800" height="1350" alt="Pinnacles 🥾  — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_05.webp" data-caption="Pinnacles 🥾 · 4 / 6" aria-label="Open Pinnacles 🥾  photograph 4"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_05.webp" width="216" height="288" alt="Pinnacles 🥾 — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_06.webp" data-caption="Pinnacles 🥾  · 5 / 6" aria-label="Open Pinnacles  🥾  photograph 5"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_06.webp" width="1800" height="1350" alt="Pinnacles 🥾  — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_07.webp" data-caption="Pinnacles 🥾  · 6 / 6" aria-label="Open Pinnacles  🥾  photograph 6"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_07.webp" width="1500" height="1125" alt="Pinnacles 🥾  — photograph 6" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
-    <section class="nj-trip" id="selected-trip-14">
-      <header>
-        <h2>Redwoods 🌲 🌲 <img class="park-icon" src="assets/site/park-icons/redwood.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
-        <p>Looking up a lot. These trees have a way of making everything else feel a little smaller.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_01.webp" data-caption="Redwoods 🌲 🌲 · 1 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 1"><img src="assets/travel/redwoods/redwoods_01.webp" width="1125" height="1500" alt="Redwoods 🌲 🌲 — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_02.webp" data-caption="Redwoods 🌲 🌲 · 2 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 2"><img src="assets/travel/redwoods/redwoods_02.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_03.webp" data-caption="Redwoods 🌲 🌲 · 3 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 3"><img src="assets/travel/redwoods/redwoods_03.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_04.webp" data-caption="Redwoods 🌲 🌲 · 4 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 4"><img src="assets/travel/redwoods/redwoods_04.webp" width="1800" height="1350" alt="Redwoods 🌲 🌲 — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_05.webp" data-caption="Redwoods 🌲 🌲 · 5 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 5"><img src="assets/travel/redwoods/redwoods_05.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_06.webp" data-caption="Redwoods 🌲 🌲 · 6 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 6"><img src="assets/travel/redwoods/redwoods_06.webp" width="1536" height="2048" alt="Redwoods 🌲 🌲 — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_07.webp" data-caption="Redwoods 🌲 🌲 · 7 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 7"><img src="assets/travel/redwoods/redwoods_07.webp" width="1800" height="1350" alt="Redwoods 🌲 🌲 — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_08.webp" data-caption="Redwoods 🌲 🌲 · 8 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 8"><img src="assets/travel/redwoods/redwoods_08.webp" width="2048" height="1536" alt="Redwoods 🌲 🌲 — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_09.webp" data-caption="Redwoods 🌲 🌲 · 9 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 9"><img src="assets/travel/redwoods/redwoods_09.webp" width="1100" height="825" alt="Redwoods 🌲 🌲 — photograph 9" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
+    
     <section class="nj-trip" id="selected-trip-5">
       <header>
-        <h2>Death Valley ☠️ 🌌 <img class="park-icon" src="assets/site/park-icons/death-valley.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
-        <p>Long desert roads, strange landscapes, and a night sky worth staying outside for.</p>
+        <h2>Death Valley National Park ☠️ 🌌 <img class="park-icon" src="assets/site/park-icons/death-valley.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
+        <p>Amazing colorful rocks, strange landscapes, and a next-level night sky.</p>
       </header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_01.webp" data-caption="Death Valley ☠️ 🌌 · 1 / 15" aria-label="Open Death Valley ☠️ 🌌 photograph 1"><img src="assets/travel/death-valley/death-valley_01.webp" width="1280" height="984" alt="Death Valley ☠️ 🌌 — photograph 1" loading="lazy" decoding="async"></button>
@@ -307,142 +267,20 @@
           <button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_15.webp" data-caption="Death Valley ☠️ 🌌 · 15 / 15" aria-label="Open Death Valley ☠️ 🌌 photograph 15"><img src="assets/travel/death-valley/death-valley_15.webp" width="2048" height="1536" alt="Death Valley ☠️ 🌌 — photograph 15" loading="lazy" decoding="async"></button>
         </div>
     </section>
-    <section class="nj-trip" id="selected-trip-8">
-      <header>
-        <h2>LA 🌴 🏖️</h2>
-        <p>Palm-lined streets, a little city exploring, and a taste of Southern California.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_01.webp" data-caption="LA 🌴 🏖️ · 1 / 7" aria-label="Open LA 🌴 🏖️ photograph 1"><img src="assets/travel/los-angeles/los-angeles_01.webp" width="1500" height="1215" alt="LA 🌴 🏖️ — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_02.webp" data-caption="LA 🌴 🏖️ · 2 / 7" aria-label="Open LA 🌴 🏖️ photograph 2"><img src="assets/travel/los-angeles/los-angeles_02.webp" width="1500" height="1125" alt="LA 🌴 🏖️ — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_03.webp" data-caption="LA 🌴 🏖️ · 3 / 7" aria-label="Open LA 🌴 🏖️ photograph 3"><img src="assets/travel/los-angeles/los-angeles_03.webp" width="1800" height="1350" alt="LA 🌴 🏖️ — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_04.webp" data-caption="LA 🌴 🏖️ · 4 / 7" aria-label="Open LA 🌴 🏖️ photograph 4"><img src="assets/travel/los-angeles/los-angeles_04.webp" width="1800" height="1350" alt="LA 🌴 🏖️ — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_05.webp" data-caption="LA 🌴 🏖️ · 5 / 7" aria-label="Open LA 🌴 🏖️ photograph 5"><img src="assets/travel/los-angeles/los-angeles_05.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_06.webp" data-caption="LA 🌴 🏖️ · 6 / 7" aria-label="Open LA 🌴 🏖️ photograph 6"><img src="assets/travel/los-angeles/los-angeles_06.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_07.webp" data-caption="LA 🌴 🏖️ · 7 / 7" aria-label="Open LA 🌴 🏖️ photograph 7"><img src="assets/travel/los-angeles/los-angeles_07.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 7" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
-    <section class="nj-trip" id="selected-trip-4">
-      <header>
-        <h2>Big Sur 🌊 🚗</h2>
-        <p>The kind of coastal drive where the stops are just as good as the destination.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_01.webp" data-caption="Big Sur 🌊 🚗 · 1 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 1"><img src="assets/travel/big-sur/big-sur_01.webp" width="1500" height="1125" alt="Big Sur 🌊 🚗 — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_02.webp" data-caption="Big Sur 🌊 🚗 · 2 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 2"><img src="assets/travel/big-sur/big-sur_02.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_03.webp" data-caption="Big Sur 🌊 🚗 · 3 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 3"><img src="assets/travel/big-sur/big-sur_03.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_04.webp" data-caption="Big Sur 🌊 🚗 · 4 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 4"><img src="assets/travel/big-sur/big-sur_04.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_05.webp" data-caption="Big Sur 🌊 🚗 · 5 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 5"><img src="assets/travel/big-sur/big-sur_05.webp" width="1280" height="960" alt="Big Sur 🌊 🚗 — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_06.webp" data-caption="Big Sur 🌊 🚗 · 6 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 6"><img src="assets/travel/big-sur/big-sur_06.webp" width="1350" height="1800" alt="Big Sur 🌊 🚗 — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_07.webp" data-caption="Big Sur 🌊 🚗 · 7 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 7"><img src="assets/travel/big-sur/big-sur_07.webp" width="2000" height="1500" alt="Big Sur 🌊 🚗 — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_08.webp" data-caption="Big Sur 🌊 🚗 · 8 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 8"><img src="assets/travel/big-sur/big-sur_08.webp" width="1500" height="2000" alt="Big Sur 🌊 🚗 — photograph 8" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
-
-    <section class="nj-trip" id="selected-trip-16">
-      <header>
-        <h2>Tahoe 🏔️ 🛶</h2>
-        <p>Clear water and mountain air. A few moments around the lake, on and off the water.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_01.webp" data-caption="Tahoe 🏔️ 🛶 · 1 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 1"><img src="assets/travel/tahoe/tahoe_01.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_02.webp" data-caption="Tahoe 🏔️ 🛶 · 2 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 2"><img src="assets/travel/tahoe/tahoe_02.webp" width="1350" height="1800" alt="Tahoe 🏔️ 🛶 — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_03.webp" data-caption="Tahoe 🏔️ 🛶 · 3 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 3"><img src="assets/travel/tahoe/tahoe_03.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_04.webp" data-caption="Tahoe 🏔️ 🛶 · 4 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 4"><img src="assets/travel/tahoe/tahoe_04.webp" width="1500" height="1125" alt="Tahoe 🏔️ 🛶 — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_05.webp" data-caption="Tahoe 🏔️ 🛶 · 5 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 5"><img src="assets/travel/tahoe/tahoe_05.webp" width="470" height="626" alt="Tahoe 🏔️ 🛶 — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_06.webp" data-caption="Tahoe 🏔️ 🛶 · 6 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 6"><img src="assets/travel/tahoe/tahoe_06.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_07.webp" data-caption="Tahoe 🏔️ 🛶 · 7 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 7"><img src="assets/travel/tahoe/tahoe_07.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_08.webp" data-caption="Tahoe 🏔️ 🛶 · 8 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 8"><img src="assets/travel/tahoe/tahoe_08.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_09.webp" data-caption="Tahoe 🏔️ 🛶 · 9 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 9"><img src="assets/travel/tahoe/tahoe_09.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 9" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_10.webp" data-caption="Tahoe 🏔️ 🛶 · 10 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 10"><img src="assets/travel/tahoe/tahoe_10.webp" width="2048" height="1536" alt="Tahoe 🏔️ 🛶 — photograph 10" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_11.webp" data-caption="Tahoe 🏔️ 🛶 · 11 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 11"><img src="assets/travel/tahoe/tahoe_11.webp" width="1800" height="1198" alt="Tahoe 🏔️ 🛶 — photograph 11" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
-    <section class="nj-trip" id="selected-trip-9">
-      <header>
-        <h2>Lassen Volcanic 🌋 🥾 <img class="park-icon" src="assets/site/park-icons/lassen-volcanic.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
-        <p>Volcanic ground, quiet lakes, and trails that make a weekend feel a little longer.</p>
-      </header>
-      <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_01.webp" data-caption="Lassen Volcanic 🌋 🥾 · 1 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 1"><img src="assets/travel/lassen-volcanic/lassen-volcanic_01.webp" width="1350" height="1800" alt="Lassen Volcanic 🌋 🥾 — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_02.webp" data-caption="Lassen Volcanic 🌋 🥾 · 2 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 2"><img src="assets/travel/lassen-volcanic/lassen-volcanic_02.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_03.webp" data-caption="Lassen Volcanic 🌋 🥾 · 3 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 3"><img src="assets/travel/lassen-volcanic/lassen-volcanic_03.webp" width="1350" height="1800" alt="Lassen Volcanic 🌋 🥾 — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_04.webp" data-caption="Lassen Volcanic 🌋 🥾 · 4 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 4"><img src="assets/travel/lassen-volcanic/lassen-volcanic_04.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_05.webp" data-caption="Lassen Volcanic 🌋 🥾 · 5 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 5"><img src="assets/travel/lassen-volcanic/lassen-volcanic_05.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_06.webp" data-caption="Lassen Volcanic 🌋 🥾 · 6 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 6"><img src="assets/travel/lassen-volcanic/lassen-volcanic_06.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_07.webp" data-caption="Lassen Volcanic 🌋 🥾 · 7 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 7"><img src="assets/travel/lassen-volcanic/lassen-volcanic_07.webp" width="1125" height="1500" alt="Lassen Volcanic 🌋 🥾 — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_08.webp" data-caption="Lassen Volcanic 🌋 🥾 · 8 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 8"><img src="assets/travel/lassen-volcanic/lassen-volcanic_08.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_09.webp" data-caption="Lassen Volcanic 🌋 🥾 · 9 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 9"><img src="assets/travel/lassen-volcanic/lassen-volcanic_09.webp" width="2048" height="1536" alt="Lassen Volcanic 🌋 🥾 — photograph 9" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_10.webp" data-caption="Lassen Volcanic 🌋 🥾 · 10 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 10"><img src="assets/travel/lassen-volcanic/lassen-volcanic_10.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 10" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_11.webp" data-caption="Lassen Volcanic 🌋 🥾 · 11 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 11"><img src="assets/travel/lassen-volcanic/lassen-volcanic_11.webp" width="2048" height="1536" alt="Lassen Volcanic 🌋 🥾 — photograph 11" loading="lazy" decoding="async"></button>
-        </div>
-    </section>
-    <section class="nj-trip" id="selected-trip-3">
-      <header>
-        <h2>Austin &amp; Chicago 🤠 🏙️</h2>
-        <p>Two cities, each with its own little photo journal.</p>
-      </header>
-      <section class="nj-stop" id="austin-chicago-austin" aria-labelledby="austin-chicago-austin-title">
-        <header><h3 id="austin-chicago-austin-title">Austin</h3></header>
-      <div class="nj-photos nj-justified">
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_01.webp" data-caption="Austin · 1 / 11" aria-label="Open Austin photograph 1"><img src="assets/travel/austin-chicago/Austin/austin_01.webp" width="1500" height="1125" alt="Austin — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_02.webp" data-caption="Austin · 2 / 11" aria-label="Open Austin photograph 2"><img src="assets/travel/austin-chicago/Austin/austin_02.webp" width="1350" height="1800" alt="Austin — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_03.webp" data-caption="Austin · 3 / 11" aria-label="Open Austin photograph 3"><img src="assets/travel/austin-chicago/Austin/austin_03.webp" width="816" height="1800" alt="Austin — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_04.webp" data-caption="Austin · 4 / 11" aria-label="Open Austin photograph 4"><img src="assets/travel/austin-chicago/Austin/austin_04.webp" width="1350" height="1800" alt="Austin — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_05.webp" data-caption="Austin · 5 / 11" aria-label="Open Austin photograph 5"><img src="assets/travel/austin-chicago/Austin/austin_05.webp" width="1536" height="2048" alt="Austin — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_06.webp" data-caption="Austin · 6 / 11" aria-label="Open Austin photograph 6"><img src="assets/travel/austin-chicago/Austin/austin_06.webp" width="2048" height="1536" alt="Austin — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_07.webp" data-caption="Austin · 7 / 11" aria-label="Open Austin photograph 7"><img src="assets/travel/austin-chicago/Austin/austin_07.webp" width="2048" height="1536" alt="Austin — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_08.webp" data-caption="Austin · 8 / 11" aria-label="Open Austin photograph 8"><img src="assets/travel/austin-chicago/Austin/austin_08.webp" width="1800" height="1350" alt="Austin — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_09.webp" data-caption="Austin · 9 / 11" aria-label="Open Austin photograph 9"><img src="assets/travel/austin-chicago/Austin/austin_09.webp" width="2048" height="1536" alt="Austin — photograph 9" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_10.webp" data-caption="Austin · 10 / 11" aria-label="Open Austin photograph 10"><img src="assets/travel/austin-chicago/Austin/austin_10.webp" width="1536" height="2048" alt="Austin — photograph 10" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_11.webp" data-caption="Austin · 11 / 11" aria-label="Open Austin photograph 11"><img src="assets/travel/austin-chicago/Austin/austin_11.webp" width="2048" height="1536" alt="Austin — photograph 11" loading="lazy" decoding="async"></button>
-        </div>
-      </section>
-      <section class="nj-stop" id="austin-chicago-chicago" aria-labelledby="austin-chicago-chicago-title">
-        <header><h3 id="austin-chicago-chicago-title">Chicago</h3><p>City walks and a different skyline.</p></header>
-      <div class="nj-photos nj-justified">
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_01.webp" data-caption="Chicago · 1 / 6" aria-label="Open Chicago photograph 1"><img src="assets/travel/austin-chicago/Chicago/chicago_01.webp" width="1800" height="1350" alt="Chicago — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_02.webp" data-caption="Chicago · 2 / 6" aria-label="Open Chicago photograph 2"><img src="assets/travel/austin-chicago/Chicago/chicago_02.webp" width="1800" height="1350" alt="Chicago — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_03.webp" data-caption="Chicago · 3 / 6" aria-label="Open Chicago photograph 3"><img src="assets/travel/austin-chicago/Chicago/chicago_03.webp" width="1500" height="2000" alt="Chicago — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_04.webp" data-caption="Chicago · 4 / 6" aria-label="Open Chicago photograph 4"><img src="assets/travel/austin-chicago/Chicago/chicago_04.webp" width="1536" height="2048" alt="Chicago — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_05.webp" data-caption="Chicago · 5 / 6" aria-label="Open Chicago photograph 5"><img src="assets/travel/austin-chicago/Chicago/chicago_05.webp" width="2048" height="1536" alt="Chicago — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_06.webp" data-caption="Chicago · 6 / 6" aria-label="Open Chicago photograph 6"><img src="assets/travel/austin-chicago/Chicago/chicago_06.webp" width="1800" height="1350" alt="Chicago — photograph 6" loading="lazy" decoding="async"></button>
-        </div>
-      </section>
-    </section>
-    <section class="nj-trip" id="selected-trip-13">
+     <section class="nj-trip" id="selected-trip-13">
       <div class="nj-trip-intro">
-        <header><h2>Red-rock road trip 🏜️ 🚗</h2><p>Zion, Bryce Canyon, Antelope Canyon, Monument Valley, and Yosemite. Red rocks, open roads, and one more reason to stop for a photo.</p></header>
         <figure class="nj-drive-map"><button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/red-rock-road-trip_03.webp" data-caption="The trip route · 1 / 1" aria-label="Open The trip route photograph 1"><img src="assets/travel/red-rock-road-trip/red-rock-road-trip_03.webp" width="1089" height="816" alt="The trip route — photograph 1" loading="lazy" decoding="async"></button><figcaption>The trip route · Click to enlarge</figcaption></figure>
+        <header><h2>The Great Western Drive: Red-rocks 🏜️ 🚗</h2>
+                  <ul class="trip-mileage"><li>2,100+ miles across 4 states (California, Utah, Arizona, and Nevada) over 4 nights.</li></ul><p>
+<b>Thursday Night:</b> San Francisco to Bakersfield<br>
+<b>Friday:</b> Sedona & Monument Valley<br>
+<b>Saturday:</b> Antelope Canyon, Horseshoe Bend & Bryce Canyon<br>
+<b>Sunday:</b> Zion National Park & The Nevada Desert<br>
+<b>Monday:</b> Yosemite National Park & Home</p>
+          </header>
       </div>
-      <section class="nj-stop" id="red-rock-road-trip-antelope-canyon" aria-labelledby="red-rock-road-trip-antelope-canyon-title">
-        <header><h3 id="red-rock-road-trip-antelope-canyon-title">Antelope Canyon &amp; Horseshoe Bend</h3><p>Curving sandstone, river bends, and desert views.</p></header>
-        <div class="nj-photos nj-justified">
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon-and-horseshoe-bend_06.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 1 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 1"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon-and-horseshoe-bend_06.webp" width="1536" height="2048" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_01.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 2 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 2"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_01.webp" width="1350" height="1800" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_02.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 3 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 3"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_02.webp" width="1500" height="1125" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_03.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 4 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 4"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_03.webp" width="973" height="1297" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_04.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 5 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 5"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_04.webp" width="1729" height="1297" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_05.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 6 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 6"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_05.webp" width="924" height="1232" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 6" loading="lazy" decoding="async"></button>
-        </div>
-      </section>
-      <section class="nj-stop" id="red-rock-road-trip-bryce-canyon" aria-labelledby="red-rock-road-trip-bryce-canyon-title">
-        <header><h3 id="red-rock-road-trip-bryce-canyon-title">Bryce Canyon National Park <img class="park-icon" src="assets/site/park-icons/bryce-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Hoodoos and views across the amphitheater.</p></header>
-        <div class="nj-photos nj-justified">
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_01.webp" data-caption="Bryce Canyon National Park · 1 / 10" aria-label="Open Bryce Canyon National Park photograph 1"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_01.webp" width="1800" height="1350" alt="Bryce Canyon National Park — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_02.webp" data-caption="Bryce Canyon National Park · 2 / 10" aria-label="Open Bryce Canyon National Park photograph 2"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_02.webp" width="1500" height="1125" alt="Bryce Canyon National Park — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_03.webp" data-caption="Bryce Canyon National Park · 3 / 10" aria-label="Open Bryce Canyon National Park photograph 3"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_03.webp" width="1500" height="1125" alt="Bryce Canyon National Park — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_04.webp" data-caption="Bryce Canyon National Park · 4 / 10" aria-label="Open Bryce Canyon National Park photograph 4"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_04.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_05.webp" data-caption="Bryce Canyon National Park · 5 / 10" aria-label="Open Bryce Canyon National Park photograph 5"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_05.webp" width="1280" height="960" alt="Bryce Canyon National Park — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_06.webp" data-caption="Bryce Canyon National Park · 6 / 10" aria-label="Open Bryce Canyon National Park photograph 6"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_06.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 6" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_07.webp" data-caption="Bryce Canyon National Park · 7 / 10" aria-label="Open Bryce Canyon National Park photograph 7"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_07.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 7" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_08.webp" data-caption="Bryce Canyon National Park · 8 / 10" aria-label="Open Bryce Canyon National Park photograph 8"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_08.webp" width="1350" height="1800" alt="Bryce Canyon National Park — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_09.webp" data-caption="Bryce Canyon National Park · 9 / 10" aria-label="Open Bryce Canyon National Park photograph 9"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_09.webp" width="2048" height="1536" alt="Bryce Canyon National Park — photograph 9" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_10.webp" data-caption="Bryce Canyon National Park · 10 / 10" aria-label="Open Bryce Canyon National Park photograph 10"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_10.webp" width="1280" height="960" alt="Bryce Canyon National Park — photograph 10" loading="lazy" decoding="async"></button>
-        </div>
-      </section>
       <section class="nj-stop" id="red-rock-road-trip-monument-valley" aria-labelledby="red-rock-road-trip-monument-valley-title">
-        <header><h3 id="red-rock-road-trip-monument-valley-title">Monument Valley</h3><p>Open roads and sandstone rising from the horizon.</p></header>
+        <header><h3 id="red-rock-road-trip-monument-valley-title">Monument Valley</h3><p>I thought it was a good idea to start off-roading with my 2008 Honda Accord (and it sure was) ❤️ Japanese cars.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/monument-valley/monument-valley_01.webp" data-caption="Monument Valley · 1 / 14" aria-label="Open Monument Valley photograph 1"><img src="assets/travel/red-rock-road-trip/monument-valley/monument-valley_01.webp" width="1800" height="1637" alt="Monument Valley — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/monument-valley/monument-valley_02.webp" data-caption="Monument Valley · 2 / 14" aria-label="Open Monument Valley photograph 2"><img src="assets/travel/red-rock-road-trip/monument-valley/monument-valley_02.webp" width="1800" height="1350" alt="Monument Valley — photograph 2" loading="lazy" decoding="async"></button>
@@ -460,19 +298,35 @@
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/monument-valley/monument-valley_14.webp" data-caption="Monument Valley · 14 / 14" aria-label="Open Monument Valley photograph 14"><img src="assets/travel/red-rock-road-trip/monument-valley/monument-valley_14.webp" width="2048" height="1536" alt="Monument Valley — photograph 14" loading="lazy" decoding="async"></button>
         </div>
       </section>
-      <section class="nj-stop" id="red-rock-road-trip-yosemite" aria-labelledby="red-rock-road-trip-yosemite-title">
-        <header><h3 id="red-rock-road-trip-yosemite-title">Yosemite National Park <img class="park-icon" src="assets/site/park-icons/yosemite.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Granite cliffs, waterfalls, and forest trails.</p></header>
+      <section class="nj-stop" id="red-rock-road-trip-antelope-canyon" aria-labelledby="red-rock-road-trip-antelope-canyon-title">
+        <header><h3 id="red-rock-road-trip-antelope-canyon-title">Antelope Canyon &amp; Horseshoe Bend</h3><p>Microsoft Windows wallpapers in real life!</p></header>
         <div class="nj-photos nj-justified">
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_01.webp" data-caption="Yosemite National Park · 1 / 6" aria-label="Open Yosemite National Park photograph 1"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_01.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_02.webp" data-caption="Yosemite National Park · 2 / 6" aria-label="Open Yosemite National Park photograph 2"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_02.webp" width="1280" height="960" alt="Yosemite National Park — photograph 2" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_03.webp" data-caption="Yosemite National Park · 3 / 6" aria-label="Open Yosemite National Park photograph 3"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_03.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 3" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_04.webp" data-caption="Yosemite National Park · 4 / 6" aria-label="Open Yosemite National Park photograph 4"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_04.webp" width="973" height="1297" alt="Yosemite National Park — photograph 4" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_05.webp" data-caption="Yosemite National Park · 5 / 6" aria-label="Open Yosemite National Park photograph 5"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_05.webp" width="1143" height="857" alt="Yosemite National Park — photograph 5" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_06.webp" data-caption="Yosemite National Park · 6 / 6" aria-label="Open Yosemite National Park photograph 6"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_06.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon-and-horseshoe-bend_06.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 1 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 1"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon-and-horseshoe-bend_06.webp" width="1536" height="2048" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_01.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 2 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 2"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_01.webp" width="1350" height="1800" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_02.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 3 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 3"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_02.webp" width="1500" height="1125" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_03.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 4 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 4"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_03.webp" width="973" height="1297" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_04.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 5 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 5"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_04.webp" width="1729" height="1297" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_05.webp" data-caption="Antelope Canyon &amp; Horseshoe Bend · 6 / 6" aria-label="Open Antelope Canyon &amp; Horseshoe Bend photograph 6"><img src="assets/travel/red-rock-road-trip/antelope-canyon &amp; horseshoe bend/antelope-canyon_05.webp" width="924" height="1232" alt="Antelope Canyon &amp; Horseshoe Bend — photograph 6" loading="lazy" decoding="async"></button>
         </div>
       </section>
+      <section class="nj-stop" id="red-rock-road-trip-bryce-canyon" aria-labelledby="red-rock-road-trip-bryce-canyon-title">
+        <header><h3 id="red-rock-road-trip-bryce-canyon-title">Bryce Canyon National Park <img class="park-icon" src="assets/site/park-icons/bryce-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Hoodoos!</p></header>
+        <div class="nj-photos nj-justified">
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_01.webp" data-caption="Bryce Canyon National Park · 1 / 10" aria-label="Open Bryce Canyon National Park photograph 1"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_01.webp" width="1800" height="1350" alt="Bryce Canyon National Park — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_02.webp" data-caption="Bryce Canyon National Park · 2 / 10" aria-label="Open Bryce Canyon National Park photograph 2"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_02.webp" width="1500" height="1125" alt="Bryce Canyon National Park — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_03.webp" data-caption="Bryce Canyon National Park · 3 / 10" aria-label="Open Bryce Canyon National Park photograph 3"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_03.webp" width="1500" height="1125" alt="Bryce Canyon National Park — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_04.webp" data-caption="Bryce Canyon National Park · 4 / 10" aria-label="Open Bryce Canyon National Park photograph 4"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_04.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_05.webp" data-caption="Bryce Canyon National Park · 5 / 10" aria-label="Open Bryce Canyon National Park photograph 5"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_05.webp" width="1280" height="960" alt="Bryce Canyon National Park — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_06.webp" data-caption="Bryce Canyon National Park · 6 / 10" aria-label="Open Bryce Canyon National Park photograph 6"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_06.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_07.webp" data-caption="Bryce Canyon National Park · 7 / 10" aria-label="Open Bryce Canyon National Park photograph 7"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_07.webp" width="1729" height="1297" alt="Bryce Canyon National Park — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_08.webp" data-caption="Bryce Canyon National Park · 8 / 10" aria-label="Open Bryce Canyon National Park photograph 8"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_08.webp" width="1350" height="1800" alt="Bryce Canyon National Park — photograph 8" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_09.webp" data-caption="Bryce Canyon National Park · 9 / 10" aria-label="Open Bryce Canyon National Park photograph 9"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_09.webp" width="2048" height="1536" alt="Bryce Canyon National Park — photograph 9" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_10.webp" data-caption="Bryce Canyon National Park · 10 / 10" aria-label="Open Bryce Canyon National Park photograph 10"><img src="assets/travel/red-rock-road-trip/bryce-canyon/bryce-canyon_10.webp" width="1280" height="960" alt="Bryce Canyon National Park — photograph 10" loading="lazy" decoding="async"></button>
+        </div>
+      </section>
+      
       <section class="nj-stop" id="red-rock-road-trip-zion" aria-labelledby="red-rock-road-trip-zion-title">
-        <header><h3 id="red-rock-road-trip-zion-title">Zion National Park <img class="park-icon" src="assets/site/park-icons/zion.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Canyon walls and plenty of reasons to stop and look.</p></header>
+        <header><h3 id="red-rock-road-trip-zion-title">Zion National Park <img class="park-icon" src="assets/site/park-icons/zion.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>This is my favorite national park! Hiking upstream through the Narrows is such a fun experience.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/zion/zion_01.webp" data-caption="Zion National Park · 1 / 14" aria-label="Open Zion National Park photograph 1"><img src="assets/travel/red-rock-road-trip/zion/zion_01.webp" width="1800" height="1350" alt="Zion National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/zion/zion_02.webp" data-caption="Zion National Park · 2 / 14" aria-label="Open Zion National Park photograph 2"><img src="assets/travel/red-rock-road-trip/zion/zion_02.webp" width="1800" height="1350" alt="Zion National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -488,6 +342,17 @@
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/zion/zion_12.webp" data-caption="Zion National Park · 12 / 14" aria-label="Open Zion National Park photograph 12"><img src="assets/travel/red-rock-road-trip/zion/zion_12.webp" width="1230" height="922" alt="Zion National Park — photograph 12" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/zion/zion_13.webp" data-caption="Zion National Park · 13 / 14" aria-label="Open Zion National Park photograph 13"><img src="assets/travel/red-rock-road-trip/zion/zion_13.webp" width="2048" height="1536" alt="Zion National Park — photograph 13" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/zion/zion_14.webp" data-caption="Zion National Park · 14 / 14" aria-label="Open Zion National Park photograph 14"><img src="assets/travel/red-rock-road-trip/zion/zion_14.webp" width="1800" height="1350" alt="Zion National Park — photograph 14" loading="lazy" decoding="async"></button>
+        </div>
+      </section>
+      <section class="nj-stop" id="red-rock-road-trip-yosemite" aria-labelledby="red-rock-road-trip-yosemite-title">
+        <header><h3 id="red-rock-road-trip-yosemite-title">Yosemite National Park <img class="park-icon" src="assets/site/park-icons/yosemite.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Interesting change of scenery from desert to snow and mountains in the same day.</p></header>
+        <div class="nj-photos nj-justified">
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_01.webp" data-caption="Yosemite National Park · 1 / 6" aria-label="Open Yosemite National Park photograph 1"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_01.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_02.webp" data-caption="Yosemite National Park · 2 / 6" aria-label="Open Yosemite National Park photograph 2"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_02.webp" width="1280" height="960" alt="Yosemite National Park — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_03.webp" data-caption="Yosemite National Park · 3 / 6" aria-label="Open Yosemite National Park photograph 3"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_03.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_04.webp" data-caption="Yosemite National Park · 4 / 6" aria-label="Open Yosemite National Park photograph 4"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_04.webp" width="973" height="1297" alt="Yosemite National Park — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_05.webp" data-caption="Yosemite National Park · 5 / 6" aria-label="Open Yosemite National Park photograph 5"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_05.webp" width="1143" height="857" alt="Yosemite National Park — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/yosemite/yosemite_06.webp" data-caption="Yosemite National Park · 6 / 6" aria-label="Open Yosemite National Park photograph 6"><img src="assets/travel/red-rock-road-trip/yosemite/yosemite_06.webp" width="1729" height="1297" alt="Yosemite National Park — photograph 6" loading="lazy" decoding="async"></button>
         </div>
       </section>
       <section class="nj-drive" aria-label="The drive">
@@ -508,9 +373,9 @@
       </section>
     </section>
     <section class="nj-trip" id="selected-trip-7">
-      <header><h2>Hawaii 🌋 🤿 🐠</h2><p>From black lava rock to blue water. A few island days exploring above and below the surface.</p></header>
+      <header><h2>Hawaii 🌋 🤿 🐠</h2><p>Saw an eruption forecast, told two coworkers, and we booked same-day tickets to fly out Thursday. Long live unlimited PTO!</p></header>
       <section class="nj-stop" id="hawaii-tropical-hawaii" aria-labelledby="hawaii-tropical-hawaii-title">
-        <header><h3 id="hawaii-tropical-hawaii-title">Ocean &amp; tropical Hawaii</h3><p>Blue water, shoreline walks, and a look below the surface.</p></header>
+        <header><h3 id="hawaii-tropical-hawaii-title">Ocean &amp; Tropical Hawaii</h3></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/hawaii/Tropical Hawaii/tropical-hawaii_01.webp" data-caption="Ocean &amp; tropical Hawaii · 1 / 13" aria-label="Open Ocean &amp; tropical Hawaii photograph 1"><img src="assets/travel/hawaii/Tropical Hawaii/tropical-hawaii_01.webp" width="1800" height="1350" alt="Ocean &amp; tropical Hawaii — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/hawaii/Tropical Hawaii/tropical-hawaii_02.webp" data-caption="Ocean &amp; tropical Hawaii · 2 / 13" aria-label="Open Ocean &amp; tropical Hawaii photograph 2"><img src="assets/travel/hawaii/Tropical Hawaii/tropical-hawaii_02.webp" width="884" height="1179" alt="Ocean &amp; tropical Hawaii — photograph 2" loading="lazy" decoding="async"></button>
@@ -528,7 +393,7 @@
         </div>
       </section>
       <section class="nj-stop" id="hawaii-volcanoes-national-park" aria-labelledby="hawaii-volcanoes-national-park-title">
-        <header><h3 id="hawaii-volcanoes-national-park-title">Hawaiʻi Volcanoes National Park <img class="park-icon" src="assets/site/park-icons/hawaii-volcanoes.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Lava rock and landscapes shaped by volcanic activity.</p></header>
+        <header><h3 id="hawaii-volcanoes-national-park-title">Hawaiʻi Volcanoes National Park <img class="park-icon" src="assets/site/park-icons/hawaii-volcanoes.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>The floor is lava (literally).</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/hawaii/volcanoes national park/volcanoes-national-park_01.webp" data-caption="Hawaiʻi Volcanoes National Park · 1 / 17" aria-label="Open Hawaiʻi Volcanoes National Park photograph 1"><img src="assets/travel/hawaii/volcanoes national park/volcanoes-national-park_01.webp" width="1350" height="1800" alt="Hawaiʻi Volcanoes National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/hawaii/volcanoes national park/volcanoes-national-park_02.webp" data-caption="Hawaiʻi Volcanoes National Park · 2 / 17" aria-label="Open Hawaiʻi Volcanoes National Park photograph 2"><img src="assets/travel/hawaii/volcanoes national park/volcanoes-national-park_02.webp" width="1800" height="1350" alt="Hawaiʻi Volcanoes National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -550,8 +415,110 @@
         </div>
       </section>
     </section>
+    <section class="nj-trip" id="selected-trip-8">
+      <header>
+        <h2>Los Angeles 🌴 🏖️</h2>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_01.webp" data-caption="LA 🌴 🏖️ · 1 / 7" aria-label="Open LA 🌴 🏖️ photograph 1"><img src="assets/travel/los-angeles/los-angeles_01.webp" width="1500" height="1215" alt="LA 🌴 🏖️ — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_02.webp" data-caption="LA 🌴 🏖️ · 2 / 7" aria-label="Open LA 🌴 🏖️ photograph 2"><img src="assets/travel/los-angeles/los-angeles_02.webp" width="1500" height="1125" alt="LA 🌴 🏖️ — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_03.webp" data-caption="LA 🌴 🏖️ · 3 / 7" aria-label="Open LA 🌴 🏖️ photograph 3"><img src="assets/travel/los-angeles/los-angeles_03.webp" width="1800" height="1350" alt="LA 🌴 🏖️ — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_04.webp" data-caption="LA 🌴 🏖️ · 4 / 7" aria-label="Open LA 🌴 🏖️ photograph 4"><img src="assets/travel/los-angeles/los-angeles_04.webp" width="1800" height="1350" alt="LA 🌴 🏖️ — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_05.webp" data-caption="LA 🌴 🏖️ · 5 / 7" aria-label="Open LA 🌴 🏖️ photograph 5"><img src="assets/travel/los-angeles/los-angeles_05.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_06.webp" data-caption="LA 🌴 🏖️ · 6 / 7" aria-label="Open LA 🌴 🏖️ photograph 6"><img src="assets/travel/los-angeles/los-angeles_06.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/los-angeles/los-angeles_07.webp" data-caption="LA 🌴 🏖️ · 7 / 7" aria-label="Open LA 🌴 🏖️ photograph 7"><img src="assets/travel/los-angeles/los-angeles_07.webp" width="2048" height="1536" alt="LA 🌴 🏖️ — photograph 7" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
+    <section class="nj-trip" id="selected-trip-4">
+      <header>
+        <h2>Big Sur 🌊 </h2>
+        <p>The kind of coastal drive where the stops are just as good as the destination.</p>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_01.webp" data-caption="Big Sur 🌊 🚗 · 1 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 1"><img src="assets/travel/big-sur/big-sur_01.webp" width="1500" height="1125" alt="Big Sur 🌊 🚗 — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_02.webp" data-caption="Big Sur 🌊 🚗 · 2 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 2"><img src="assets/travel/big-sur/big-sur_02.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_03.webp" data-caption="Big Sur 🌊 🚗 · 3 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 3"><img src="assets/travel/big-sur/big-sur_03.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_04.webp" data-caption="Big Sur 🌊 🚗 · 4 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 4"><img src="assets/travel/big-sur/big-sur_04.webp" width="1800" height="1350" alt="Big Sur 🌊 🚗 — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_05.webp" data-caption="Big Sur 🌊 🚗 · 5 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 5"><img src="assets/travel/big-sur/big-sur_05.webp" width="1280" height="960" alt="Big Sur 🌊 🚗 — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_06.webp" data-caption="Big Sur 🌊 🚗 · 6 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 6"><img src="assets/travel/big-sur/big-sur_06.webp" width="1350" height="1800" alt="Big Sur 🌊 🚗 — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_07.webp" data-caption="Big Sur 🌊 🚗 · 7 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 7"><img src="assets/travel/big-sur/big-sur_07.webp" width="2000" height="1500" alt="Big Sur 🌊 🚗 — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/big-sur/big-sur_08.webp" data-caption="Big Sur 🌊 🚗 · 8 / 8" aria-label="Open Big Sur 🌊 🚗 photograph 8"><img src="assets/travel/big-sur/big-sur_08.webp" width="1500" height="2000" alt="Big Sur 🌊 🚗 — photograph 8" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
+
+    <section class="nj-trip" id="selected-trip-16">
+      <header>
+        <h2>Tahoe 🏔️ 🛶</h2>
+        <p>Clear glacier water, a scenic hike, and a cute bear hanging out in the parking lot.</p>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_01.webp" data-caption="Tahoe 🏔️ 🛶 · 1 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 1"><img src="assets/travel/tahoe/tahoe_01.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_02.webp" data-caption="Tahoe 🏔️ 🛶 · 2 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 2"><img src="assets/travel/tahoe/tahoe_02.webp" width="1350" height="1800" alt="Tahoe 🏔️ 🛶 — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_03.webp" data-caption="Tahoe 🏔️ 🛶 · 3 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 3"><img src="assets/travel/tahoe/tahoe_03.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_04.webp" data-caption="Tahoe 🏔️ 🛶 · 4 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 4"><img src="assets/travel/tahoe/tahoe_04.webp" width="1500" height="1125" alt="Tahoe 🏔️ 🛶 — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_05.webp" data-caption="Tahoe 🏔️ 🛶 · 5 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 5"><img src="assets/travel/tahoe/tahoe_05.webp" width="470" height="626" alt="Tahoe 🏔️ 🛶 — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_06.webp" data-caption="Tahoe 🏔️ 🛶 · 6 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 6"><img src="assets/travel/tahoe/tahoe_06.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_07.webp" data-caption="Tahoe 🏔️ 🛶 · 7 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 7"><img src="assets/travel/tahoe/tahoe_07.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_08.webp" data-caption="Tahoe 🏔️ 🛶 · 8 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 8"><img src="assets/travel/tahoe/tahoe_08.webp" width="1729" height="1297" alt="Tahoe 🏔️ 🛶 — photograph 8" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_09.webp" data-caption="Tahoe 🏔️ 🛶 · 9 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 9"><img src="assets/travel/tahoe/tahoe_09.webp" width="1800" height="1350" alt="Tahoe 🏔️ 🛶 — photograph 9" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_10.webp" data-caption="Tahoe 🏔️ 🛶 · 10 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 10"><img src="assets/travel/tahoe/tahoe_10.webp" width="2048" height="1536" alt="Tahoe 🏔️ 🛶 — photograph 10" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/tahoe/tahoe_11.webp" data-caption="Tahoe 🏔️ 🛶 · 11 / 11" aria-label="Open Tahoe 🏔️ 🛶 photograph 11"><img src="assets/travel/tahoe/tahoe_11.webp" width="1800" height="1198" alt="Tahoe 🏔️ 🛶 — photograph 11" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
+    <section class="nj-trip" id="selected-trip-9">
+      <header>
+        <h2>Lassen Volcanic National Park🌋 </h2>
+        <p>A grueling climb through loose, sinking volcanic rock that kept filling my shoes.</p>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_01.webp" data-caption="Lassen Volcanic 🌋 🥾 · 1 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 1"><img src="assets/travel/lassen-volcanic/lassen-volcanic_01.webp" width="1350" height="1800" alt="Lassen Volcanic 🌋 🥾 — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_02.webp" data-caption="Lassen Volcanic 🌋 🥾 · 2 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 2"><img src="assets/travel/lassen-volcanic/lassen-volcanic_02.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_03.webp" data-caption="Lassen Volcanic 🌋 🥾 · 3 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 3"><img src="assets/travel/lassen-volcanic/lassen-volcanic_03.webp" width="1350" height="1800" alt="Lassen Volcanic 🌋 🥾 — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_04.webp" data-caption="Lassen Volcanic 🌋 🥾 · 4 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 4"><img src="assets/travel/lassen-volcanic/lassen-volcanic_04.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_05.webp" data-caption="Lassen Volcanic 🌋 🥾 · 5 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 5"><img src="assets/travel/lassen-volcanic/lassen-volcanic_05.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_06.webp" data-caption="Lassen Volcanic 🌋 🥾 · 6 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 6"><img src="assets/travel/lassen-volcanic/lassen-volcanic_06.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_07.webp" data-caption="Lassen Volcanic 🌋 🥾 · 7 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 7"><img src="assets/travel/lassen-volcanic/lassen-volcanic_07.webp" width="1125" height="1500" alt="Lassen Volcanic 🌋 🥾 — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_08.webp" data-caption="Lassen Volcanic 🌋 🥾 · 8 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 8"><img src="assets/travel/lassen-volcanic/lassen-volcanic_08.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 8" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_09.webp" data-caption="Lassen Volcanic 🌋 🥾 · 9 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 9"><img src="assets/travel/lassen-volcanic/lassen-volcanic_09.webp" width="2048" height="1536" alt="Lassen Volcanic 🌋 🥾 — photograph 9" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_10.webp" data-caption="Lassen Volcanic 🌋 🥾 · 10 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 10"><img src="assets/travel/lassen-volcanic/lassen-volcanic_10.webp" width="1800" height="1350" alt="Lassen Volcanic 🌋 🥾 — photograph 10" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/lassen-volcanic/lassen-volcanic_11.webp" data-caption="Lassen Volcanic 🌋 🥾 · 11 / 11" aria-label="Open Lassen Volcanic 🌋 🥾 photograph 11"><img src="assets/travel/lassen-volcanic/lassen-volcanic_11.webp" width="2048" height="1536" alt="Lassen Volcanic 🌋 🥾 — photograph 11" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
+    <section class="nj-trip" id="selected-trip-3">
+      <header>
+        <h2>Austin &amp; Chicago 🤠 🏙️</h2>
+        <p>Turned a company flight for the new Austin office opening party into a multi-stop adventure by adding layovers to explore new places (and it was actually cheaper!).</p>
+      </header>
+      <section class="nj-stop" id="austin-chicago-austin" aria-labelledby="austin-chicago-austin-title">
+        <header><h3 id="austin-chicago-austin-title">Austin 🤠</h3></header>
+      <div class="nj-photos nj-justified">
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_01.webp" data-caption="Austin · 1 / 11" aria-label="Open Austin photograph 1"><img src="assets/travel/austin-chicago/Austin/austin_01.webp" width="1500" height="1125" alt="Austin — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_02.webp" data-caption="Austin · 2 / 11" aria-label="Open Austin photograph 2"><img src="assets/travel/austin-chicago/Austin/austin_02.webp" width="1350" height="1800" alt="Austin — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_03.webp" data-caption="Austin · 3 / 11" aria-label="Open Austin photograph 3"><img src="assets/travel/austin-chicago/Austin/austin_03.webp" width="816" height="1800" alt="Austin — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_04.webp" data-caption="Austin · 4 / 11" aria-label="Open Austin photograph 4"><img src="assets/travel/austin-chicago/Austin/austin_04.webp" width="1350" height="1800" alt="Austin — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_05.webp" data-caption="Austin · 5 / 11" aria-label="Open Austin photograph 5"><img src="assets/travel/austin-chicago/Austin/austin_05.webp" width="1536" height="2048" alt="Austin — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_06.webp" data-caption="Austin · 6 / 11" aria-label="Open Austin photograph 6"><img src="assets/travel/austin-chicago/Austin/austin_06.webp" width="2048" height="1536" alt="Austin — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_07.webp" data-caption="Austin · 7 / 11" aria-label="Open Austin photograph 7"><img src="assets/travel/austin-chicago/Austin/austin_07.webp" width="2048" height="1536" alt="Austin — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_08.webp" data-caption="Austin · 8 / 11" aria-label="Open Austin photograph 8"><img src="assets/travel/austin-chicago/Austin/austin_08.webp" width="1800" height="1350" alt="Austin — photograph 8" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_09.webp" data-caption="Austin · 9 / 11" aria-label="Open Austin photograph 9"><img src="assets/travel/austin-chicago/Austin/austin_09.webp" width="2048" height="1536" alt="Austin — photograph 9" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_10.webp" data-caption="Austin · 10 / 11" aria-label="Open Austin photograph 10"><img src="assets/travel/austin-chicago/Austin/austin_10.webp" width="1536" height="2048" alt="Austin — photograph 10" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Austin/austin_11.webp" data-caption="Austin · 11 / 11" aria-label="Open Austin photograph 11"><img src="assets/travel/austin-chicago/Austin/austin_11.webp" width="2048" height="1536" alt="Austin — photograph 11" loading="lazy" decoding="async"></button>
+        </div>
+      </section>
+      <section class="nj-stop" id="austin-chicago-chicago" aria-labelledby="austin-chicago-chicago-title">
+        <header><h3 id="austin-chicago-chicago-title">Chicago</h3><p>ChatGPT, I have a 7-hour layover including transit time and TSA. What can I explore and still make it to my flight?</p></header>
+      <div class="nj-photos nj-justified">
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_01.webp" data-caption="Chicago · 1 / 6" aria-label="Open Chicago photograph 1"><img src="assets/travel/austin-chicago/Chicago/chicago_01.webp" width="1800" height="1350" alt="Chicago — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_02.webp" data-caption="Chicago · 2 / 6" aria-label="Open Chicago photograph 2"><img src="assets/travel/austin-chicago/Chicago/chicago_02.webp" width="1800" height="1350" alt="Chicago — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_03.webp" data-caption="Chicago · 3 / 6" aria-label="Open Chicago photograph 3"><img src="assets/travel/austin-chicago/Chicago/chicago_03.webp" width="1500" height="2000" alt="Chicago — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_04.webp" data-caption="Chicago · 4 / 6" aria-label="Open Chicago photograph 4"><img src="assets/travel/austin-chicago/Chicago/chicago_04.webp" width="1536" height="2048" alt="Chicago — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_05.webp" data-caption="Chicago · 5 / 6" aria-label="Open Chicago photograph 5"><img src="assets/travel/austin-chicago/Chicago/chicago_05.webp" width="2048" height="1536" alt="Chicago — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/austin-chicago/Chicago/chicago_06.webp" data-caption="Chicago · 6 / 6" aria-label="Open Chicago photograph 6"><img src="assets/travel/austin-chicago/Chicago/chicago_06.webp" width="1800" height="1350" alt="Chicago — photograph 6" loading="lazy" decoding="async"></button>
+        </div>
+      </section>
+    </section>
     <section class="nj-trip" id="selected-trip-0">
-      <header><h2>July 4th · Happy 250 🇺🇸 🎆</h2><p>A little red, white, and blue for the birthday celebrations.</p></header>
+      <header><h2>July 4th · Happy 250 🦅🎆</h2></header>
       <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/july-fourth/july-fourth_01.webp" data-caption="July 4th · Happy 250 🇺🇸 🎆 · 1 / 5" aria-label="Open July 4th · Happy 250 🇺🇸 🎆 photograph 1"><img src="assets/travel/july-fourth/july-fourth_01.webp" width="1312" height="984" alt="July 4th · Happy 250 🇺🇸 🎆 — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/july-fourth/july-fourth_02.webp" data-caption="July 4th · Happy 250 🇺🇸 🎆 · 2 / 5" aria-label="Open July 4th · Happy 250 🇺🇸 🎆 photograph 2"><img src="assets/travel/july-fourth/july-fourth_02.webp" width="1350" height="1800" alt="July 4th · Happy 250 🇺🇸 🎆 — photograph 2" loading="lazy" decoding="async"></button>
@@ -560,13 +527,49 @@
           <button type="button" class="nj-photo" data-full="assets/travel/july-fourth/july-fourth_05.webp" data-caption="July 4th · Happy 250 🇺🇸 🎆 · 5 / 5" aria-label="Open July 4th · Happy 250 🇺🇸 🎆 photograph 5"><img src="assets/travel/july-fourth/july-fourth_05.webp" width="1064" height="1418" alt="July 4th · Happy 250 🇺🇸 🎆 — photograph 5" loading="lazy" decoding="async"></button>
         </div>
     </section>
+    <section class="nj-trip" id="selected-trip-12">
+      <header>
+        <h2>Pinnacles National Park <img class="park-icon" src="assets/site/park-icons/pinnacles.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_01.webp" data-caption="Pinnacles 🥾  · 1 / 6" aria-label="Open Pinnacles  🥾  photograph 1"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_01.webp" width="1280" height="960" alt="Pinnacles 🥾 — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_03.webp" data-caption="Pinnacles 🥾  · 2 / 6" aria-label="Open Pinnacles  🥾  photograph 2"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_03.webp" width="2000" height="1500" alt="Pinnacles 🥾  — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_04.webp" data-caption="Pinnacles 🥾  · 3 / 6" aria-label="Open Pinnacles  🥾  photograph 3"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_04.webp" width="1800" height="1350" alt="Pinnacles 🥾  — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_05.webp" data-caption="Pinnacles 🥾 · 4 / 6" aria-label="Open Pinnacles 🥾  photograph 4"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_05.webp" width="216" height="288" alt="Pinnacles 🥾 — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_06.webp" data-caption="Pinnacles 🥾  · 5 / 6" aria-label="Open Pinnacles  🥾  photograph 5"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_06.webp" width="1800" height="1350" alt="Pinnacles 🥾  — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/pinnacles-carmel/pinnacles-carmel_07.webp" data-caption="Pinnacles 🥾  · 6 / 6" aria-label="Open Pinnacles  🥾  photograph 6"><img src="assets/travel/pinnacles-carmel/pinnacles-carmel_07.webp" width="1500" height="1125" alt="Pinnacles 🥾  — photograph 6" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
+    <section class="nj-trip" id="selected-trip-14">
+      <header>
+        <h2>Redwoods National Park<img class="park-icon" src="assets/site/park-icons/redwood.svg" alt="" aria-hidden="true" width="22" height="22"></h2>
+        <p>Looking up a lot. These trees have a way of making everything else feel a little smaller.</p>
+      </header>
+      <div class="nj-photos">
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_01.webp" data-caption="Redwoods 🌲 🌲 · 1 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 1"><img src="assets/travel/redwoods/redwoods_01.webp" width="1125" height="1500" alt="Redwoods 🌲 🌲 — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_02.webp" data-caption="Redwoods 🌲 🌲 · 2 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 2"><img src="assets/travel/redwoods/redwoods_02.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_03.webp" data-caption="Redwoods 🌲 🌲 · 3 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 3"><img src="assets/travel/redwoods/redwoods_03.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 3" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_04.webp" data-caption="Redwoods 🌲 🌲 · 4 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 4"><img src="assets/travel/redwoods/redwoods_04.webp" width="1800" height="1350" alt="Redwoods 🌲 🌲 — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_05.webp" data-caption="Redwoods 🌲 🌲 · 5 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 5"><img src="assets/travel/redwoods/redwoods_05.webp" width="1280" height="960" alt="Redwoods 🌲 🌲 — photograph 5" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_06.webp" data-caption="Redwoods 🌲 🌲 · 6 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 6"><img src="assets/travel/redwoods/redwoods_06.webp" width="1536" height="2048" alt="Redwoods 🌲 🌲 — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_07.webp" data-caption="Redwoods 🌲 🌲 · 7 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 7"><img src="assets/travel/redwoods/redwoods_07.webp" width="1800" height="1350" alt="Redwoods 🌲 🌲 — photograph 7" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_08.webp" data-caption="Redwoods 🌲 🌲 · 8 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 8"><img src="assets/travel/redwoods/redwoods_08.webp" width="2048" height="1536" alt="Redwoods 🌲 🌲 — photograph 8" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_09.webp" data-caption="Redwoods 🌲 🌲 · 9 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 9"><img src="assets/travel/redwoods/redwoods_09.webp" width="1100" height="825" alt="Redwoods 🌲 🌲 — photograph 9" loading="lazy" decoding="async"></button>
+        </div>
+    </section>
     <section class="nj-trip" id="selected-trip-17">
       <div class="nj-trip-intro">
-        <header><h2>The big road trip · SF to Austin 🚗 🌵</h2><p>National parks, desert roads, and a few detours on the way to Austin.</p></header>
         <figure class="nj-drive-map"><button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/san-francisco-austin-road-trip_04.webp" data-caption="The trip route · 1 / 1" aria-label="Open The trip route photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/san-francisco-austin-road-trip_04.webp" width="1093" height="687" alt="The trip route — photograph 1" loading="lazy" decoding="async"></button><figcaption>The trip route · Click to enlarge</figcaption></figure>
+        <header><h2>The Great Southern Drive · San Francisco to Austin 🚗 🌵</h2>
+        <ul class="trip-mileage"><li>Moving to the new Austin office: a 2,000+-mile drive across 4 states (California, Arizona, New Mexico, and Texas) over 3 nights.</li></ul><p>
+<b>Friday Night:</b> San Francisco to Bakersfield (my favorite pass-through town 😂).<br>
+<b>Saturday:</b> Joshua Tree National Park and Tucson, AZ.<br>
+<b>Sunday:</b> Saguaro National Park, Nuclear Missile Silo museum, and White Sands National Park.<br>
+<b>Monday:</b> Carlsbad Caverns National Park, Guadalupe Mountains National Park, and Austin, TX.<br></p>
+        </header>
       </div>
       <section class="nj-stop" id="san-francisco-austin-road-trip-carlsbad-caverns" aria-labelledby="san-francisco-austin-road-trip-carlsbad-caverns-title">
-        <header><h3 id="san-francisco-austin-road-trip-carlsbad-caverns-title">Carlsbad Caverns National Park <img class="park-icon" src="assets/site/park-icons/carlsbad-caverns.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>A different landscape beneath the surface.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-carlsbad-caverns-title">Carlsbad Caverns National Park 🦇<img class="park-icon" src="assets/site/park-icons/carlsbad-caverns.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Breathtaking views!</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/Carlsbad Caverns/carlsbad-caverns_01.webp" data-caption="Carlsbad Caverns National Park · 1 / 8" aria-label="Open Carlsbad Caverns National Park photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/Carlsbad Caverns/carlsbad-caverns_01.webp" width="1500" height="1125" alt="Carlsbad Caverns National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/Carlsbad Caverns/carlsbad-caverns_02.webp" data-caption="Carlsbad Caverns National Park · 2 / 8" aria-label="Open Carlsbad Caverns National Park photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/Carlsbad Caverns/carlsbad-caverns_02.webp" width="1500" height="1125" alt="Carlsbad Caverns National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -579,7 +582,7 @@
         </div>
       </section>
       <section class="nj-stop" id="san-francisco-austin-road-trip-guadalupe-mountains" aria-labelledby="san-francisco-austin-road-trip-guadalupe-mountains-title">
-        <header><h3 id="san-francisco-austin-road-trip-guadalupe-mountains-title">Guadalupe Mountains National Park <img class="park-icon" src="assets/site/park-icons/guadalupe-mountains.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Mountain views on the road through West Texas.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-guadalupe-mountains-title">Guadalupe Mountains National Park <img class="park-icon" src="assets/site/park-icons/guadalupe-mountains.svg" alt="" aria-hidden="true" width="22" height="22"></h3></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/guadalupe mountains/guadalupe-mountains_01.webp" data-caption="Guadalupe Mountains National Park · 1 / 6" aria-label="Open Guadalupe Mountains National Park photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/guadalupe mountains/guadalupe-mountains_01.webp" width="1800" height="1740" alt="Guadalupe Mountains National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/guadalupe mountains/guadalupe-mountains_02.webp" data-caption="Guadalupe Mountains National Park · 2 / 6" aria-label="Open Guadalupe Mountains National Park photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/guadalupe mountains/guadalupe-mountains_02.webp" width="767" height="1023" alt="Guadalupe Mountains National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -590,7 +593,7 @@
         </div>
       </section>
       <section class="nj-stop" id="san-francisco-austin-road-trip-joshua-tree" aria-labelledby="san-francisco-austin-road-trip-joshua-tree-title">
-        <header><h3 id="san-francisco-austin-road-trip-joshua-tree-title">Joshua Tree National Park <img class="park-icon" src="assets/site/park-icons/joshua-tree.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Desert trails, rock formations, and Joshua trees.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-joshua-tree-title">Joshua Tree National Park <img class="park-icon" src="assets/site/park-icons/joshua-tree.svg" alt="" aria-hidden="true" width="22" height="22"></h3></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/Joshua Tree/joshua-tree_01.webp" data-caption="Joshua Tree National Park · 1 / 5" aria-label="Open Joshua Tree National Park photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/Joshua Tree/joshua-tree_01.webp" width="1800" height="1350" alt="Joshua Tree National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/Joshua Tree/joshua-tree_02.webp" data-caption="Joshua Tree National Park · 2 / 5" aria-label="Open Joshua Tree National Park photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/Joshua Tree/joshua-tree_02.webp" width="973" height="1297" alt="Joshua Tree National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -600,7 +603,7 @@
         </div>
       </section>
       <section class="nj-stop" id="san-francisco-austin-road-trip-saguaro" aria-labelledby="san-francisco-austin-road-trip-saguaro-title">
-        <header><h3 id="san-francisco-austin-road-trip-saguaro-title">Saguaro National Park <img class="park-icon" src="assets/site/park-icons/saguaro.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>A desert landscape full of towering cacti.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-saguaro-title">Saguaro National Park <img class="park-icon" src="assets/site/park-icons/saguaro.svg" alt="" aria-hidden="true" width="22" height="22"></h3></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/saguaro/saguaro_01.webp" data-caption="Saguaro National Park · 1 / 6" aria-label="Open Saguaro National Park photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/saguaro/saguaro_01.webp" width="495" height="660" alt="Saguaro National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/saguaro/saguaro_02.webp" data-caption="Saguaro National Park · 2 / 6" aria-label="Open Saguaro National Park photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/saguaro/saguaro_02.webp" width="1729" height="1297" alt="Saguaro National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -611,7 +614,7 @@
         </div>
       </section>
       <section class="nj-stop" id="san-francisco-austin-road-trip-titan-nuclear-missile-museum" aria-labelledby="san-francisco-austin-road-trip-titan-nuclear-missile-museum-title">
-        <header><h3 id="san-francisco-austin-road-trip-titan-nuclear-missile-museum-title">Titan Missile Museum</h3><p>A closer look at the engineering inside a missile silo.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-titan-nuclear-missile-museum-title">Titan Nuclear ☢️ Missile</h3><p>Experienced a nuclear launch simulation—kinda overwhelming, but I guess M.A.D. is keeping us safe.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/titan nuclear missile museum/san-francisco-austin-road-trip_01.webp" data-caption="Titan Missile Museum · 1 / 5" aria-label="Open Titan Missile Museum photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/titan nuclear missile museum/san-francisco-austin-road-trip_01.webp" width="1350" height="1800" alt="Titan Missile Museum — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/titan nuclear missile museum/titan-nuclear-missile-museum_01.webp" data-caption="Titan Missile Museum · 2 / 5" aria-label="Open Titan Missile Museum photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/titan nuclear missile museum/titan-nuclear-missile-museum_01.webp" width="1729" height="1297" alt="Titan Missile Museum — photograph 2" loading="lazy" decoding="async"></button>
@@ -621,7 +624,7 @@
         </div>
       </section>
       <section class="nj-stop" id="san-francisco-austin-road-trip-white-sands" aria-labelledby="san-francisco-austin-road-trip-white-sands-title">
-        <header><h3 id="san-francisco-austin-road-trip-white-sands-title">White Sands National Park <img class="park-icon" src="assets/site/park-icons/white-sands.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Bright dunes and wide-open views.</p></header>
+        <header><h3 id="san-francisco-austin-road-trip-white-sands-title">White Sands National Park <img class="park-icon" src="assets/site/park-icons/white-sands.svg" alt="" aria-hidden="true" width="22" height="22"></h3><p>Pictures don't do this place justice. The sand is snow-white!</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/White Sands/white-sands_01.webp" data-caption="White Sands National Park · 1 / 8" aria-label="Open White Sands National Park photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/White Sands/white-sands_01.webp" width="1800" height="1350" alt="White Sands National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/White Sands/white-sands_02.webp" data-caption="White Sands National Park · 2 / 8" aria-label="Open White Sands National Park photograph 2"><img src="assets/travel/san-francisco-austin-road-trip/White Sands/white-sands_02.webp" width="1800" height="1350" alt="White Sands National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -637,7 +640,7 @@
     <section class="nj-trip" id="selected-trip-15">
       <header>
         <h2>Starbase 🚀 ⭐</h2>
-        <p>A detour for some very big hardware. Rockets, Texas skies, and plenty to look up at.</p>
+        <p>I got to witness Flight 13 of Starship! That thing is huuuuugeee.</p>
       </header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/starbase/starbase_01.webp" data-caption="Starbase 🚀 ⭐ · 1 / 13" aria-label="Open Starbase 🚀 ⭐ photograph 1"><img src="assets/travel/starbase/starbase_01.webp" width="1350" height="1800" alt="Starbase 🚀 ⭐ — photograph 1" loading="lazy" decoding="async"></button>
@@ -658,7 +661,7 @@
     <section class="nj-trip" id="selected-trip-10">
       <header>
         <h2>Longhorn nation 🤘 🏈</h2>
-        <p>A little burnt orange and a taste of game-day atmosphere in Austin.</p>
+        <p>Keep Austin weird.</p>
       </header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/longhorn-nation/longhorn-nation_01.webp" data-caption="Longhorn nation 🤘 🏈 · 1 / 8" aria-label="Open Longhorn nation 🤘 🏈 photograph 1"><img src="assets/travel/longhorn-nation/longhorn-nation_01.webp" width="1800" height="1350" alt="Longhorn nation 🤘 🏈 — photograph 1" loading="lazy" decoding="async"></button>
@@ -673,7 +676,7 @@
     </section>
     <section class="nj-trip" id="selected-trip-11">
       <header>
-        <h2>New York · An internship send-off 🗽 🏙️</h2>
+        <h2>New York 🗽 🏙️</h2>
         <p>Closing out an incredible internship with a few days exploring New York.</p>
       </header>
       <div class="nj-photos">
@@ -699,7 +702,7 @@
     </section>
     <section class="nj-trip" id="selected-trip-1">
       <header>
-        <h2>Rainier National Park🏔️ 🍂</h2>
+        <h2>Mount Rainier National Park 🍂 <img class="park-icon" src="assets/site/park-icons/mount-rainier.svg?v=autumn-1" alt="" aria-hidden="true" width="22" height="22"></a></h2>
         <p>Back at school, but still making time for mountain views and a little autumn color.</p>
       </header>
       <div class="nj-photos">
@@ -715,7 +718,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-sequoia-and-kings-canyon">
-      <header><h2>Sequoia &amp; Kings Canyon National Parks <img class="park-icon" src="assets/site/park-icons/sequoia.svg" alt="" aria-hidden="true" width="22" height="22"> <img class="park-icon" src="assets/site/park-icons/kings-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h2><p>Giant trees, mountain views, and a little time outside.</p></header>
+      <header><h2>Sequoia &amp; Kings Canyon National Parks <img class="park-icon" src="assets/site/park-icons/sequoia.svg" alt="" aria-hidden="true" width="22" height="22"> <img class="park-icon" src="assets/site/park-icons/kings-canyon.svg" alt="" aria-hidden="true" width="22" height="22"></h2></header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Sequoia&amp; Kings Canyon/sequoia-and-kings-canyon_01.webp" data-caption="Sequoia &amp; Kings Canyon National Parks 🌲 · 1 / 9" aria-label="Open Sequoia &amp; Kings Canyon National Parks 🌲 photograph 1"><img src="assets/travel/Sequoia&amp; Kings Canyon/sequoia-and-kings-canyon_01.webp" width="973" height="1297" alt="Sequoia &amp; Kings Canyon National Parks 🌲 — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Sequoia&amp; Kings Canyon/sequoia-and-kings-canyon_02.webp" data-caption="Sequoia &amp; Kings Canyon National Parks 🌲 · 2 / 9" aria-label="Open Sequoia &amp; Kings Canyon National Parks 🌲 photograph 2"><img src="assets/travel/Sequoia&amp; Kings Canyon/sequoia-and-kings-canyon_02.webp" width="1729" height="1297" alt="Sequoia &amp; Kings Canyon National Parks 🌲 — photograph 2" loading="lazy" decoding="async"></button>
@@ -729,7 +732,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-morocco">
-      <header><h2>Morocco <img class="country-flag" src="assets/site/flags/morocco.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2><p>City streets, desert landscapes, and a few moments from home.</p></header>
+      <header><h2>Morocco <img class="country-flag" src="assets/site/flags/morocco.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2><p>Little trip with my friends to Morocco.</p></header>
       <section class="nj-stop" id="morocco-cities" aria-labelledby="morocco-cities-title">
         <header><h3 id="morocco-cities-title">Cities</h3></header>
         <div class="nj-photos nj-justified">
@@ -751,7 +754,7 @@
         </div>
       </section>
       <section class="nj-stop" id="morocco-desert" aria-labelledby="morocco-desert-title">
-        <header><h3 id="morocco-desert-title">Desert</h3><p>Desert roads, changing landscapes, and a few stops along the way.</p></header>
+        <header><h3 id="morocco-desert-title">Desert 🐪 </h3></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/Morocco/Desert/desert_01.webp" data-caption="Morocco · 1 / 23" aria-label="Open Morocco photograph 1"><img src="assets/travel/Morocco/Desert/desert_01.webp" width="1800" height="1350" alt="Morocco — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Morocco/Desert/desert_02.webp" data-caption="Morocco · 2 / 23" aria-label="Open Morocco photograph 2"><img src="assets/travel/Morocco/Desert/desert_02.webp" width="1102" height="826" alt="Morocco — photograph 2" loading="lazy" decoding="async"></button>
@@ -780,20 +783,20 @@
       </section>
     </section>
     <section class="nj-trip" id="trip-france">
-      <header><h2>France <img class="country-flag" src="assets/site/flags/france.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2><p>A few moments from Carcassonne, Normandy, and Paris.</p></header>
+      <header><h2>France <img class="country-flag" src="assets/site/flags/france.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2></header>
       <section class="nj-stop" id="france-carcassonne" aria-labelledby="france-carcassonne-title">
-        <header><h3 id="france-carcassonne-title">Carcassonne</h3><p>Stone walls and walks through the old city.</p></header>
+        <header><h3 id="france-carcassonne-title">Carcassonne 🏰</h3><p>Stone walls and walks through the old city.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_01.webp" data-caption="France · 1 / 6" aria-label="Open France photograph 1"><img src="assets/travel/France/Carcassonne/carcassonne_01.webp" width="2048" height="1536" alt="France — photograph 1" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_02.webp" data-caption="France · 2 / 6" aria-label="Open France photograph 2"><img src="assets/travel/France/Carcassonne/carcassonne_02.webp" width="2048" height="1536" alt="France — photograph 2" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_03.webp" data-caption="France · 3 / 6" aria-label="Open France photograph 3"><img src="assets/travel/France/Carcassonne/carcassonne_03.webp" width="2048" height="1536" alt="France — photograph 3" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_04.webp" data-caption="France · 4 / 6" aria-label="Open France photograph 4"><img src="assets/travel/France/Carcassonne/carcassonne_04.webp" width="1800" height="1350" alt="France — photograph 4" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_02.webp" data-caption="France · 2 / 6" aria-label="Open France photograph 2"><img src="assets/travel/France/Carcassonne/carcassonne_02.webp" width="2048" height="1536" alt="France — photograph 2" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_05.webp" data-caption="France · 5 / 6" aria-label="Open France photograph 5"><img src="assets/travel/France/Carcassonne/carcassonne_05.webp" width="1350" height="1800" alt="France — photograph 5" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Carcassonne/carcassonne_06.webp" data-caption="France · 6 / 6" aria-label="Open France photograph 6"><img src="assets/travel/France/Carcassonne/carcassonne_06.webp" width="1800" height="1350" alt="France — photograph 6" loading="lazy" decoding="async"></button>
         </div>
       </section>
       <section class="nj-stop" id="france-normandy" aria-labelledby="france-normandy-title">
-        <header><h3 id="france-normandy-title">Normandy</h3><p>Coastal views and a few moments from the journey.</p></header>
+        <header><h3 id="france-normandy-title">Normandy</h3><p>Road trip from Paris to Étretat, the WW2 D-Day landing beaches, and Mont-Saint-Michel.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/France/Normandy/normandy_01.webp" data-caption="France · 1 / 8" aria-label="Open France photograph 1"><img src="assets/travel/France/Normandy/normandy_01.webp" width="2048" height="1536" alt="France — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Normandy/normandy_02.webp" data-caption="France · 2 / 8" aria-label="Open France photograph 2"><img src="assets/travel/France/Normandy/normandy_02.webp" width="2048" height="1536" alt="France — photograph 2" loading="lazy" decoding="async"></button>
@@ -806,7 +809,7 @@
         </div>
       </section>
       <section class="nj-stop" id="france-paris" aria-labelledby="france-paris-title">
-        <header><h3 id="france-paris-title">Paris</h3><p>City walks, landmarks, and the details in between.</p></header>
+        <header><h3 id="france-paris-title">Paris</h3><p>Needless to say, Paris has great architecture.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/France/Paris/paris_01.webp" data-caption="France · 1 / 30" aria-label="Open France photograph 1"><img src="assets/travel/France/Paris/paris_01.webp" width="1536" height="2048" alt="France — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/France/Paris/paris_02.webp" data-caption="France · 2 / 30" aria-label="Open France photograph 2"><img src="assets/travel/France/Paris/paris_02.webp" width="1536" height="2048" alt="France — photograph 2" loading="lazy" decoding="async"></button>
@@ -842,9 +845,9 @@
       </section>
     </section>
     <section class="nj-trip" id="trip-italy">
-      <header><h2>Italy <img class="country-flag" src="assets/site/flags/italy.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2><p>City walks and a few favorite views from Florence and Rome.</p></header>
+      <header><h2>Italy <img class="country-flag" src="assets/site/flags/italy.svg?v=twemoji-1" alt="" aria-hidden="true" width="18" height="12"></h2><p>Flying from Morocco to Western Canada was $550 extra, so I did a 3-day layover in Italy, spent under $400, and actually saved money. God bless Ryanair.</p></header>
       <section class="nj-stop" id="italy-florence" aria-labelledby="italy-florence-title">
-        <header><h3 id="italy-florence-title">Florence</h3><p>Old streets and views across the city.</p></header>
+        <header><h3 id="italy-florence-title">Florence</h3><p>The entire city is an open-air museum.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/Italy/Florence/florence_01.webp" data-caption="Italy · 1 / 8" aria-label="Open Italy photograph 1"><img src="assets/travel/Italy/Florence/florence_01.webp" width="1728" height="1296" alt="Italy — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Italy/Florence/florence_02.webp" data-caption="Italy · 2 / 8" aria-label="Open Italy photograph 2"><img src="assets/travel/Italy/Florence/florence_02.webp" width="1728" height="1296" alt="Italy — photograph 2" loading="lazy" decoding="async"></button>
@@ -857,7 +860,7 @@
         </div>
       </section>
       <section class="nj-stop" id="italy-rome" aria-labelledby="italy-rome-title">
-        <header><h3 id="italy-rome-title">Rome</h3><p>City walks among old landmarks and busy streets.</p></header>
+        <header><h3 id="italy-rome-title">Rome</h3><p>Got an engineering tour of the city. Damn, the Romans were ahead of their time.</p></header>
         <div class="nj-photos nj-justified">
           <button type="button" class="nj-photo" data-full="assets/travel/Italy/Rome/rome_01.webp" data-caption="Italy · 1 / 15" aria-label="Open Italy photograph 1"><img src="assets/travel/Italy/Rome/rome_01.webp" width="1728" height="1296" alt="Italy — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Italy/Rome/rome_02.webp" data-caption="Italy · 2 / 15" aria-label="Open Italy photograph 2"><img src="assets/travel/Italy/Rome/rome_02.webp" width="973" height="1297" alt="Italy — photograph 2" loading="lazy" decoding="async"></button>
@@ -878,7 +881,7 @@
       </section>
     </section>
     <section class="nj-trip" id="trip-banff-national-park">
-      <header><h2>Banff National Park <img class="park-icon" src="assets/site/park-icons/banff.svg" alt="" aria-hidden="true" width="22" height="22"> <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>Mountain views and a few moments from the Canadian Rockies.</p></header>
+      <header><h2>Banff National Park <img class="park-icon" src="assets/site/park-icons/banff.svg" alt="" aria-hidden="true" width="22" height="22"> <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2></header>
 <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Banff National Park/banff-national-park_01.webp" data-caption="Banff National Park · 1 / 8" aria-label="Open Banff National Park photograph 1"><img src="assets/travel/Banff National Park/banff-national-park_01.webp" width="1728" height="1296" alt="Banff National Park — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Banff National Park/banff-national-park_02.webp" data-caption="Banff National Park · 2 / 8" aria-label="Open Banff National Park photograph 2"><img src="assets/travel/Banff National Park/banff-national-park_02.webp" width="1728" height="1296" alt="Banff National Park — photograph 2" loading="lazy" decoding="async"></button>
@@ -891,7 +894,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-joffre-lakes">
-      <header><h2>Joffre Lakes <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>Alpine lakes and a good reason to get out on the trail.</p></header>
+      <header><h2>Joffre Lakes <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2></header>
 <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Joffre Lakes/joffre-lakes_01.webp" data-caption="Joffre Lakes · 1 / 8" aria-label="Open Joffre Lakes photograph 1"><img src="assets/travel/Joffre Lakes/joffre-lakes_01.webp" width="973" height="1297" alt="Joffre Lakes — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Joffre Lakes/joffre-lakes_02.webp" data-caption="Joffre Lakes · 2 / 8" aria-label="Open Joffre Lakes photograph 2"><img src="assets/travel/Joffre Lakes/joffre-lakes_02.webp" width="1059" height="1297" alt="Joffre Lakes — photograph 2" loading="lazy" decoding="async"></button>
@@ -904,7 +907,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-panorama-ridge">
-      <header><h2>Panorama Ridge <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>A hike for the views, with plenty to see along the way.</p></header>
+      <header><h2>Panorama Ridge <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>My friend calls it the One Big Beautiful Hike.</p></header>
 <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Panorama Ridge/panorama-ridge_01.webp" data-caption="Panorama Ridge · 1 / 8" aria-label="Open Panorama Ridge photograph 1"><img src="assets/travel/Panorama Ridge/panorama-ridge_01.webp" width="1656" height="2200" alt="Panorama Ridge — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Panorama Ridge/panorama-ridge_02.webp" data-caption="Panorama Ridge · 2 / 8" aria-label="Open Panorama Ridge photograph 2"><img src="assets/travel/Panorama Ridge/panorama-ridge_02.webp" width="1800" height="1350" alt="Panorama Ridge — photograph 2" loading="lazy" decoding="async"></button>
@@ -917,7 +920,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-wedgemount-lake">
-      <header><h2>Wedgemount Lake <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>A climb into the mountains and a lake worth the effort.</p></header>
+      <header><h2>Wedgemount Lake <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>Lots of exposure.</p></header>
 <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Wedgemount Lake/wedgemount-lake_01.webp" data-caption="Wedgemount Lake · 1 / 6" aria-label="Open Wedgemount Lake photograph 1"><img src="assets/travel/Wedgemount Lake/wedgemount-lake_01.webp" width="973" height="1297" alt="Wedgemount Lake — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Wedgemount Lake/wedgemount-lake_02.webp" data-caption="Wedgemount Lake · 2 / 6" aria-label="Open Wedgemount Lake photograph 2"><img src="assets/travel/Wedgemount Lake/wedgemount-lake_02.webp" width="973" height="1297" alt="Wedgemount Lake — photograph 2" loading="lazy" decoding="async"></button>
@@ -928,22 +931,23 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-niagara-falls">
-      <header><h2>Niagara Falls <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>Waterfall views and a few stops along the way.</p></header>
+      <header><h2>Niagara Falls <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2></header>
       <div class="nj-photos">
-          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/20210806_180111.webp" data-caption="Niagara Falls · 1 / 10" aria-label="Open Niagara Falls photograph 1"><img src="assets/travel/Niagara Falls/20210806_180111.webp" width="1739" height="1304" alt="Niagara Falls — photograph 1" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180118.webp" data-caption="Niagara Falls · 9 / 10" aria-label="Open Niagara Falls photograph 9"><img src="assets/travel/Niagara Falls/niagara-falls_180118.webp" width="734" height="979" alt="Niagara Falls — photograph 9" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/20210807_064842.webp" data-caption="Niagara Falls · 2 / 10" aria-label="Open Niagara Falls photograph 2"><img src="assets/travel/Niagara Falls/20210807_064842.webp" width="1739" height="1304" alt="Niagara Falls — photograph 2" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180119.webp" data-caption="Niagara Falls · 10 / 10" aria-label="Open Niagara Falls photograph 10"><img src="assets/travel/Niagara Falls/niagara-falls_180119.webp" width="1280" height="720" alt="Niagara Falls — photograph 10" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180117.webp" data-caption="Niagara Falls · 8 / 10" aria-label="Open Niagara Falls photograph 8"><img src="assets/travel/Niagara Falls/niagara-falls_180117.webp" width="1080" height="1249" alt="Niagara Falls — photograph 8" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180112.webp" data-caption="Niagara Falls · 3 / 10" aria-label="Open Niagara Falls photograph 3"><img src="assets/travel/Niagara Falls/niagara-falls_180112.webp" width="1739" height="1304" alt="Niagara Falls — photograph 3" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180113.webp" data-caption="Niagara Falls · 4 / 10" aria-label="Open Niagara Falls photograph 4"><img src="assets/travel/Niagara Falls/niagara-falls_180113.webp" width="1739" height="1304" alt="Niagara Falls — photograph 4" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180114.webp" data-caption="Niagara Falls · 5 / 10" aria-label="Open Niagara Falls photograph 5"><img src="assets/travel/Niagara Falls/niagara-falls_180114.webp" width="1739" height="1304" alt="Niagara Falls — photograph 5" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180115.webp" data-caption="Niagara Falls · 6 / 10" aria-label="Open Niagara Falls photograph 6"><img src="assets/travel/Niagara Falls/niagara-falls_180115.webp" width="1739" height="1304" alt="Niagara Falls — photograph 6" loading="lazy" decoding="async"></button>
+          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/20210806_180111.webp" data-caption="Niagara Falls · 1 / 10" aria-label="Open Niagara Falls photograph 1"><img src="assets/travel/Niagara Falls/20210806_180111.webp" width="1739" height="1304" alt="Niagara Falls — photograph 1" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180116.webp" data-caption="Niagara Falls · 7 / 10" aria-label="Open Niagara Falls photograph 7"><img src="assets/travel/Niagara Falls/niagara-falls_180116.webp" width="1080" height="1080" alt="Niagara Falls — photograph 7" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180117.webp" data-caption="Niagara Falls · 8 / 10" aria-label="Open Niagara Falls photograph 8"><img src="assets/travel/Niagara Falls/niagara-falls_180117.webp" width="1080" height="1249" alt="Niagara Falls — photograph 8" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180118.webp" data-caption="Niagara Falls · 9 / 10" aria-label="Open Niagara Falls photograph 9"><img src="assets/travel/Niagara Falls/niagara-falls_180118.webp" width="734" height="979" alt="Niagara Falls — photograph 9" loading="lazy" decoding="async"></button>
-          <button type="button" class="nj-photo" data-full="assets/travel/Niagara Falls/niagara-falls_180119.webp" data-caption="Niagara Falls · 10 / 10" aria-label="Open Niagara Falls photograph 10"><img src="assets/travel/Niagara Falls/niagara-falls_180119.webp" width="1280" height="720" alt="Niagara Falls — photograph 10" loading="lazy" decoding="async"></button>
         </div>
     </section>
     <section class="nj-trip" id="trip-toronto">
-      <header><h2>Toronto <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>City walks, skyline views, and a few moments around Toronto.</p></header>
+      <header><h2>Toronto <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2></header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Toronto/toronto_231049.webp" data-caption="Toronto · 10 / 14" aria-label="Open Toronto photograph 10"><img src="assets/travel/Toronto/toronto_231049.webp" width="2048" height="2048" alt="Toronto — photograph 10" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Toronto/toronto_231052.webp" data-caption="Toronto · 13 / 14" aria-label="Open Toronto photograph 13"><img src="assets/travel/Toronto/toronto_231052.webp" width="733" height="977" alt="Toronto — photograph 13" loading="lazy" decoding="async"></button>
@@ -962,7 +966,7 @@
         </div>
     </section>
     <section class="nj-trip" id="trip-vancouver">
-      <header><h2>Vancouver <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2><p>A few views and everyday escapes around Vancouver.</p></header>
+      <header><h2>Vancouver <span class="canada-leaf" role="img" aria-label="Canada" title="Canada"><img src="assets/site/flags/maple-leaf-red.svg" alt="" aria-hidden="true" width="14" height="14"></span></h2></header>
       <div class="nj-photos">
           <button type="button" class="nj-photo" data-full="assets/travel/Vancouver/20220114_170607.webp" data-caption="Vancouver · 3 / 14" aria-label="Open Vancouver photograph 3"><img src="assets/travel/Vancouver/20220114_170607.webp" width="1739" height="1304" alt="Vancouver — photograph 3" loading="lazy" decoding="async"></button>
           <button type="button" class="nj-photo" data-full="assets/travel/Vancouver/20240510_234511.webp" data-caption="Vancouver · 11 / 14" aria-label="Open Vancouver photograph 11"><img src="assets/travel/Vancouver/20240510_234511.webp" width="717" height="956" alt="Vancouver — photograph 11" loading="lazy" decoding="async"></button>
@@ -994,8 +998,9 @@
   <script src="js/Headroom.js"></script>
   <script src="js/jQuery.headroom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/custom.js?v=theme-fade-1"></script>
+  <script src="js/custom.js?v=page-theme-2"></script>
   <script src="js/natural-selected-journal.js?v=larger-preview-5"></script>
+  <script src="js/route-map-sizing.js?v=1"></script>
   <script src="js/navbar-glass.js?v=1"></script>
 </body>
 

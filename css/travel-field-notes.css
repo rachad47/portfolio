@@ -2,12 +2,12 @@
 
 /* Outdoors journal. Scoped to this page; photo sizes and trip ordering stay intact. */
 body.field-notes {
-  --field-bg: #e6e0d3;
-  --field-heading: #203c31;
-  --field-text: #53675b;
-  --field-accent: #8b4b2f;
-  --field-line: #c8d2c4;
-  --field-control: #fbfaf5;
+  --field-bg: #f0d8bd;
+  --field-heading: #234439;
+  --field-text: #3e5849;
+  --field-accent: #98502f;
+  --field-line: #ceb698;
+  --field-control: #faead8;
   --page-bg: var(--field-bg);
   --page-text: var(--field-heading);
   --body-text: var(--field-text);
@@ -21,12 +21,12 @@ body.field-notes {
 }
 
 body.field-notes.dark-mode {
-  --field-bg: #040c01;
-  --field-heading: #f2eddf;
-  --field-text: #b7c7bb;
-  --field-accent: #d9ab74;
-  --field-line: #334a40;
-  --field-control: #192d24;
+  --field-bg: #30211c;
+  --field-heading: #f9e2c7;
+  --field-text: #d2bca9;
+  --field-accent: #efa77c;
+  --field-line: #65493b;
+  --field-control: #402d25;
   --page-bg: var(--field-bg);
   --page-text: var(--field-heading);
   --body-text: var(--field-text);
@@ -39,17 +39,17 @@ body.field-notes.dark-mode {
 }
 
 body.field-notes .navbar.navbar-glass {
-  --ng-tint: rgba(244, 241, 232, .94);
-  --ng-edge: rgba(56, 83, 65, .22);
+  --ng-tint: rgba(250, 234, 216, .96);
+  --ng-edge: rgba(152, 112, 73, .28);
   --ng-shadow: rgba(22, 45, 31, .10);
   --ng-gloss: rgba(255, 255, 245, .32);
 }
 
 body.field-notes.dark-mode .navbar.navbar-glass {
-  --ng-tint: rgba(16, 31, 27, .94);
-  --ng-edge: rgba(193, 213, 195, .2);
-  --ng-shadow: rgba(0, 8, 4, .2);
-  --ng-gloss: rgba(230, 238, 213, .08);
+  --ng-tint: rgba(64, 45, 37, .97);
+  --ng-edge: rgba(210, 188, 169, .24);
+  --ng-shadow: rgba(12, 8, 5, .2);
+  --ng-gloss: rgba(249, 226, 199, .08);
 }
 
 body.field-notes .nj-intro {
@@ -379,24 +379,24 @@ body.field-notes .field-poster-open:focus-visible {
   outline-offset: 4px
 }
 
-/* Forest-and-gold atmosphere, with the homepage's quiet glass panel treatment. */
+/* Apricot & Pine: warm desert light mode and burnt-orange dark mode. */
 body.field-notes {
-  --trip-glass: rgba(251, 250, 240, .42);
-  --trip-edge: rgba(102, 119, 83, .24);
+  --trip-glass: #faead8;
+  --trip-edge: #ceb698;
   --trip-shadow: rgba(41, 53, 24, .09);
-  --panel-bg: #eeeadd;
-  background: radial-gradient(ellipse 900px 1100px at 0% 1200px, rgba(69, 133, 85, .17), transparent 80%), radial-gradient(ellipse 700px 600px at 95% 500px, rgba(194, 152, 53, .18), transparent 80%), var(--field-bg);
+  --panel-bg: #faead8;
+  background: var(--field-bg);
   background-attachment: scroll;
   background-size: 100% 3200px;
   background-repeat: repeat-y;
 }
 
 body.field-notes.dark-mode {
-  --trip-glass: rgba(17, 42, 29, .32);
-  --trip-edge: rgba(210, 226, 185, .19);
-  --trip-shadow: rgba(0, 8, 3, .24);
-  --panel-bg: #15271c;
-  background: radial-gradient(ellipse 1000px 1300px at 0% 1250px, rgba(31, 112, 66, 0.151), transparent 85%), radial-gradient(ellipse 800px 600px at 95% 500px, rgba(171, 128, 35, 0.082), transparent 80%), var(--field-bg);
+  --trip-glass: #402d25;
+  --trip-edge: #65493b;
+  --trip-shadow: rgba(12, 8, 5, .24);
+  --panel-bg: #402d25;
+  background: var(--field-bg);
   background-attachment: scroll;
   background-size: 100% 3200px;
   background-repeat: repeat-y;
@@ -437,17 +437,17 @@ body.field-notes .nj-trip::before {
 
 /* Compact trip links use the navigation ribbon's stationary glass material. */
 body.field-notes .field-trip-nav {
-  --ng-tint: rgba(244, 241, 232, .94);
-  --ng-edge: rgba(56, 83, 65, .22);
+  --ng-tint: rgba(250, 234, 216, .96);
+  --ng-edge: rgba(152, 112, 73, .28);
   --ng-shadow: rgba(22, 45, 31, .10);
   --ng-gloss: rgba(255, 255, 245, .32);
 }
 
 body.field-notes.dark-mode .field-trip-nav {
-  --ng-tint: rgba(16, 31, 27, .94);
-  --ng-edge: rgba(193, 213, 195, .2);
-  --ng-shadow: rgba(0, 8, 4, .2);
-  --ng-gloss: rgba(230, 238, 213, .08);
+  --ng-tint: rgba(64, 45, 37, .97);
+  --ng-edge: rgba(210, 188, 169, .24);
+  --ng-shadow: rgba(12, 8, 5, .2);
+  --ng-gloss: rgba(249, 226, 199, .08);
 }
 
 body.field-notes .field-trip-nav a {
@@ -813,4 +813,107 @@ body.field-notes .nj-trip :is(h2, h3) img.park-icon {
   margin-left: 4px;
   border-radius: 5px;
   box-shadow: none;
+}
+
+/* Route maps retain their intrinsic proportions at both sizes. */
+body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro {
+  margin-bottom: 0;
+  align-items: start;
+}
+body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro > header > p {
+  margin-bottom: 0;
+}
+body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro + .nj-stop {
+  margin-top: 12px;
+}
+body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) .nj-drive-map .nj-photo {
+  display: block;
+  width: auto;
+}
+body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) .nj-drive-map .nj-photo img {
+  display: block;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro > header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro > .nj-drive-map {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) .nj-drive-map .nj-photo img {
+    height: var(--route-map-height, 160px);
+  }
+}
+@media (max-width: 767px) {
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro {
+    display: flow-root;
+  }
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) > .nj-trip-intro > .nj-drive-map {
+    float: right;
+    width: min-content;
+    margin: 0 0 10px 12px;
+  }
+  body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) .nj-drive-map .nj-photo img {
+    height: 98px;
+  }
+}
+/* Compact featured park links on phones; desktop keeps its original layout. */
+@media (max-width: 767px) {
+  body.field-notes .field-natural-wrap .field-featured-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+  body.field-notes .field-natural-wrap .field-featured-links > a {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    height: auto;
+    min-height: 40px;
+    margin: 0;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.3;
+    text-align: left;
+  }
+  body.field-notes .field-natural-wrap .field-featured-links > a > .park-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+body.field-notes .nj-trip-intro .trip-mileage {
+  margin: 0;
+  padding-left: 1.15em;
+  list-style: disc;
+  color: var(--field-text);
+  font-size: 14px;
+  line-height: 1.7;
+}
+body.field-notes .nj-trip-intro .trip-mileage > li {
+  display: list-item;
+  list-style: disc outside;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+/* Keep secondary text and the expanded phone menu on the journal palette. */
+body.field-notes {
+  --caption-text: var(--field-text);
+}
+@media (max-width: 575.98px) {
+  body.field-notes .navbar-glass > .container:has(.navbar-collapse.show)::before,
+  body.field-notes .navbar-glass > .container:has(.navbar-collapse.collapsing)::before {
+    background: var(--field-control);
+  }
 }

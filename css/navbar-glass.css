@@ -148,3 +148,21 @@
 /* Keep the journal leaf sage in both interaction states. */
 .navbar.navbar-glass .nav-touching-grass .nav-leaf { color: #356b46; }
 .dark-mode .navbar.navbar-glass .nav-touching-grass .nav-leaf { color: #a4d4ac; }
+
+/* Avoid stacked bottom padding beneath the expanded phone menu. */
+@media (max-width: 575.98px) {
+  body .navbar.navbar-glass .navbar-collapse {
+    padding-bottom: 0;
+  }
+  body .navbar.navbar-glass > .container:has(.navbar-collapse.show),
+  body .navbar.navbar-glass > .container:has(.navbar-collapse.collapsing) {
+    padding-bottom: 6px;
+  }
+  body .navbar.navbar-glass .navbar-collapse > .navbar-nav:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  body .navbar.navbar-glass .navbar-collapse .color-mode {
+    margin-bottom: 0;
+  }
+}

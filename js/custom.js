@@ -2,10 +2,11 @@
   'use strict';
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  var dark = true;
+  var lightOnly = document.body.getAttribute('data-color-mode') === 'light';
+  var dark = !lightOnly;
   // Start in navy until the visitor explicitly chooses a mode.
   try {
-    dark = window.localStorage.getItem('portfolio-color-mode-v2') !== 'light';
+    if (!lightOnly) dark = window.localStorage.getItem('portfolio-color-mode-v2') !== 'light';
 
   } catch (error) { /* Keep navy when browser storage is unavailable. */ }
 
