@@ -9,6 +9,7 @@
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
     if (!context) return { reset: function () {}, clear: function () {} };
+    dialog.classList.add('journal-touch-viewer');
     canvas.className = 'journal-photo-canvas';
     canvas.hidden = true;
     canvas.tabIndex = 0;
@@ -63,8 +64,9 @@
     function fit() {
       if (!dialog.open || !image.complete || !image.naturalWidth) return;
       var viewport = window.visualViewport;
-      var nextWidth = Math.round(viewport ? viewport.width : innerWidth);
-      var nextHeight = Math.max(1, Math.round(viewport ? viewport.height : innerHeight) - 144);
+      var pageScale = viewport ? viewport.scale : 1;
+      var nextWidth = Math.round(viewport ? viewport.width * pageScale : innerWidth);
+      var nextHeight = Math.max(1, Math.round(viewport ? viewport.height * pageScale : innerHeight) - 144);
       if (ready && width === nextWidth && height === nextHeight) return;
       var oldWidth = width, oldHeight = height;
       width = nextWidth;
@@ -93,7 +95,8 @@
 
     function point(touch) {
       var box = canvas.getBoundingClientRect();
-      return { x: touch.clientX - box.left - width / 2, y: touch.clientY - box.top - height / 2 };
+      return { x: (touch.clientX - box.left) * width / box.width - width / 2,
+        y: (touch.clientY - box.top) * height / box.height - height / 2 };
     }
     function center(touches) {
       var a = point(touches[0]), b = point(touches[1]);
@@ -181,6 +184,7 @@
     // Keep document-level non-passive handlers off the normal scrolling page.
     var pinchEvents = ['touchstart', 'touchmove', 'gesturestart', 'gesturechange'];
     function syncPinchHandlers() {
+      if (dialog.open) updateViewport();
       pinchEvents.forEach(function (type) {
         document.removeEventListener(type, preventPagePinch);
         if (dialog.open) document.addEventListener(type, preventPagePinch, { passive: false });
@@ -188,12 +192,28 @@
     }
     new MutationObserver(syncPinchHandlers).observe(dialog, { attributes: true, attributeFilter: ['open'] });
     var resizeFrame = 0;
+    function updateViewport() {
+      if (!dialog.open) return;
+      var viewport = window.visualViewport;
+      var pageScale = viewport ? viewport.scale : 1;
+      // Position in layout coordinates, then cancel the inherited page magnification.
+      // This keeps the controls screen-sized without resetting the user's page zoom.
+      dialog.style.setProperty('--photo-viewport-left', (viewport ? viewport.offsetLeft : 0) + 'px');
+      dialog.style.setProperty('--photo-viewport-top', (viewport ? viewport.offsetTop : 0) + 'px');
+      dialog.style.setProperty('--photo-viewport-width', (viewport ? viewport.width * pageScale : innerWidth) + 'px');
+      dialog.style.setProperty('--photo-viewport-height', (viewport ? viewport.height * pageScale : innerHeight) + 'px');
+      dialog.style.setProperty('--photo-page-inverse', 1 / pageScale);
+      fit();
+    }
     function resize() {
-      if (!dialog.open || !ready || resizeFrame) return;
-      resizeFrame = requestAnimationFrame(function () { resizeFrame = 0; fit(); });
+      if (!dialog.open || resizeFrame) return;
+      resizeFrame = requestAnimationFrame(function () { resizeFrame = 0; updateViewport(); });
     }
     window.addEventListener('resize', resize);
-    if (window.visualViewport) window.visualViewport.addEventListener('resize', resize);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', resize);
+      window.visualViewport.addEventListener('scroll', resize, { passive: true });
+    }
     return { reset: clear, clear: clear };
   };
 })();
