@@ -1070,3 +1070,7 @@ body.field-notes .nj-lightbox.journal-photo-zoom { touch-action: none; }
   body.field-notes .nj-lightbox .cj-lightbox-prev,
   body.field-notes .nj-lightbox .cj-lightbox-next { top: auto; bottom: max(16px, env(safe-area-inset-bottom)); }
 }
+
+/* Responsive image sources keep the existing gallery geometry. */
+body.field-notes picture.journal-preview-source { display: contents; }
+body.field-notes picture.journal-preview-source > source { display: none; }

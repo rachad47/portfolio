@@ -30,3 +30,9 @@ If you move or rename a file later, update `src`, `poster`, `data-full`, CSS URL
 Keep `site/park-icons/*.svg` as the artwork masters. The journal uses the matching transparent WebP files in `site/park-icons/touch/` on touch devices, avoiding repeated rendering of thousands of SVG paths during pinch zoom. Desktop keeps the original SVGs.
 
 After editing an SVG, regenerate its touch preview using `node tools/generate-park-touch-icons.cjs` with Sharp available (or set `SHARP_MODULE` to an existing Sharp installation). The tool bounds previews to 384 pixels and updates their cache versions in the journal HTML. Do not edit the previews independently.
+
+### Touch photo previews
+
+`travel/touch-previews/` contains generated WebP previews used only on coarse-pointer touch devices in Touching Grass. Gallery previews fit within 1200 × 600 pixels; the park poster fits within 1200 × 1200. The image dimensions, desktop sources, and full-resolution lightbox sources remain unchanged.
+
+After adding or replacing journal photos, run `node tools/generate-journal-touch-previews.cjs` with Sharp installed (or set `SHARP_MODULE` to its module path). The script regenerates previews and updates the responsive picture sources. Content hashes refresh cached previews when an image changes.
