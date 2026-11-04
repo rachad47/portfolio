@@ -975,3 +975,29 @@ body.field-notes picture.park-icon-source {
 body.field-notes picture.park-icon-source > source {
   display: none;
 }
+
+
+/* Temporary opt-in Safari diagnostics. Remove after the crash is isolated. */
+html[data-journal-zoom-test="no-snap"] body.field-notes .nj-photos,
+html[data-journal-zoom-test="no-snap"] body.field-notes .field-more-rail {
+  scroll-snap-type: none !important;
+}
+html[data-journal-zoom-test="no-effects"] body.field-notes *,
+html[data-journal-zoom-test="no-effects"] body.field-notes *::before,
+html[data-journal-zoom-test="no-effects"] body.field-notes *::after {
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+html[data-journal-zoom-test="no-images"] body.field-notes img,
+html[data-journal-zoom-test="no-images"] body.field-notes picture,
+html[data-journal-zoom-test="no-images"] body.field-notes video {
+  display: none !important;
+}
+html[data-journal-zoom-test="no-images"] body.field-notes .nj-photos {
+  min-height: 150px;
+}

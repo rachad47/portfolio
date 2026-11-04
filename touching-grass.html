@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Temporary Safari isolation modes; no effect without the zoom-test query. -->
+  <script>
+    try {
+      var journalZoomTest = new URLSearchParams(window.location.search).get('zoom-test');
+      if (['no-snap', 'no-effects', 'no-images'].indexOf(journalZoomTest) !== -1) {
+        document.documentElement.setAttribute('data-journal-zoom-test', journalZoomTest);
+      }
+    } catch (error) { /* Leave the regular page unchanged. */ }
+  </script>
+
   <link rel="canonical" href="https://rachad.dev/touching-grass">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -20,7 +30,7 @@
   <link rel="stylesheet" href="css/navbar-glass.css?v=mobile-menu-spacing-4">
   <link rel="stylesheet" href="css/glass-dividers.css?v=3">
   <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
-  <link rel="stylesheet" href="css/travel-field-notes.css?v=touch-park-icons-31">
+  <link rel="stylesheet" href="css/travel-field-notes.css?v=safari-isolation-32">
 </head>
 
 <body class="clean-evolution frosted-studio cj-page site-shell navy-editorial field-notes" data-color-mode="light">
