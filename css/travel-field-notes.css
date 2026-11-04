@@ -1038,3 +1038,35 @@ body.field-notes .journal-photo-canvas {
 }
 body.field-notes .journal-photo-canvas[hidden] { display: none; }
 body.field-notes .nj-lightbox.journal-photo-zoom { touch-action: none; }
+
+/* Touch galleries keep native scrolling without snap corrections during page zoom. */
+@media (hover: none) and (pointer: coarse) {
+  body.field-notes .nj-photos,
+  body.field-notes .field-more-rail { scroll-snap-type: none; }
+  body.field-notes .nj-lightbox {
+    position: fixed;
+    inset: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    padding: 64px 0 80px;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  body.field-notes .nj-lightbox > p {
+    position: absolute;
+    bottom: max(14px, env(safe-area-inset-bottom));
+    left: 56px;
+    right: 56px;
+    max-height: 60px;
+    overflow: auto;
+    margin: 0;
+  }
+  body.field-notes .nj-lightbox .cj-close { top: max(12px, env(safe-area-inset-top)); }
+  body.field-notes .nj-lightbox .cj-lightbox-prev,
+  body.field-notes .nj-lightbox .cj-lightbox-next { top: auto; bottom: max(16px, env(safe-area-inset-bottom)); }
+}

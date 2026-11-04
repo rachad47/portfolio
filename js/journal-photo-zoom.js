@@ -16,7 +16,7 @@
     canvas.setAttribute('aria-description', 'Pinch or double-tap to zoom. Drag to pan. Press 0 to reset.');
     image.after(canvas);
 
-    var width = 0, height = 0, ratio = 1;
+    var width = 0, height = 0, ratio = 1, photoWidth = 0, photoHeight = 0;
     var scale = 1, x = 0, y = 0, ready = false;
     var gesture = null, tap = null, lastTap = null;
     var frame = 0;
@@ -26,18 +26,25 @@
     function draw() {
       frame = 0;
       if (!ready || !dialog.open) return;
-      x = clamp(x, -width * (scale - 1) / 2, width * (scale - 1) / 2);
-      y = clamp(y, -height * (scale - 1) / 2, height * (scale - 1) / 2);
+      var drawnWidth = photoWidth * scale, drawnHeight = photoHeight * scale;
+      x = clamp(x, -Math.max(0, drawnWidth - width) / 2, Math.max(0, drawnWidth - width) / 2);
+      y = clamp(y, -Math.max(0, drawnHeight - height) / 2, Math.max(0, drawnHeight - height) / 2);
       context.setTransform(ratio, 0, 0, ratio, 0, 0);
       context.clearRect(0, 0, width, height);
       context.imageSmoothingEnabled = true;
-      context.imageSmoothingQuality = 'high';
-      // Only the visible source region is drawn into a fixed-size bitmap.
-      var sourceWidth = image.naturalWidth / scale;
-      var sourceHeight = image.naturalHeight / scale;
-      var sourceX = (image.naturalWidth - sourceWidth) / 2 - x * image.naturalWidth / (width * scale);
-      var sourceY = (image.naturalHeight - sourceHeight) / 2 - y * image.naturalHeight / (height * scale);
-      context.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, width, height);
+      context.imageSmoothingQuality = 'medium';
+      // Clip the photo to the screen, not to its original fitted rectangle.
+      var left = (width - drawnWidth) / 2 + x;
+      var top = (height - drawnHeight) / 2 + y;
+      var visibleLeft = Math.max(0, left), visibleTop = Math.max(0, top);
+      var visibleWidth = Math.min(width, left + drawnWidth) - visibleLeft;
+      var visibleHeight = Math.min(height, top + drawnHeight) - visibleTop;
+      context.drawImage(image,
+        (visibleLeft - left) * image.naturalWidth / drawnWidth,
+        (visibleTop - top) * image.naturalHeight / drawnHeight,
+        visibleWidth * image.naturalWidth / drawnWidth,
+        visibleHeight * image.naturalHeight / drawnHeight,
+        visibleLeft, visibleTop, visibleWidth, visibleHeight);
       canvas.setAttribute('aria-label', (image.alt || 'Travel photograph') + ', zoom ' + Math.round(scale * 100) + '%');
     }
     function redraw() { if (!frame) frame = requestAnimationFrame(draw); }
@@ -55,29 +62,26 @@
     }
     function fit() {
       if (!dialog.open || !image.complete || !image.naturalWidth) return;
-      canvas.hidden = true;
-      image.style.removeProperty('display');
-      var box = image.getBoundingClientRect();
-      if (!box.width || !box.height) return;
       var viewport = window.visualViewport;
-      var viewportWidth = viewport ? viewport.width : innerWidth;
-      var viewportHeight = viewport ? viewport.height : innerHeight;
-      var style = getComputedStyle(dialog);
-      var horizontalPadding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + 2;
-      var verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + 2;
-      var captionHeight = dialog.querySelector('p').getBoundingClientRect().height + 12;
-      var availableWidth = Math.max(1, viewportWidth * .96 - horizontalPadding);
-      var availableHeight = Math.max(1, viewportHeight * .96 - verticalPadding - captionHeight);
-      var fitScale = Math.min(1, availableWidth / box.width, availableHeight / box.height);
-      width = box.width * fitScale;
-      height = box.height * fitScale;
+      var nextWidth = Math.round(viewport ? viewport.width : innerWidth);
+      var nextHeight = Math.max(1, Math.round(viewport ? viewport.height : innerHeight) - 144);
+      if (ready && width === nextWidth && height === nextHeight) return;
+      var oldWidth = width, oldHeight = height;
+      width = nextWidth;
+      height = nextHeight;
+      var fitScale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+      photoWidth = image.naturalWidth * fitScale;
+      photoHeight = image.naturalHeight * fitScale;
+      if (ready) {
+        x *= width / oldWidth;
+        y *= height / oldHeight;
+      } else { scale = 1; x = 0; y = 0; }
       // A single bounded surface, independent of the photo's zoom factor.
       ratio = Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(2000000 / (width * height)));
       canvas.width = Math.max(1, Math.round(width * ratio));
       canvas.height = Math.max(1, Math.round(height * ratio));
       canvas.style.width = width + 'px';
       canvas.style.height = height + 'px';
-      scale = 1; x = 0; y = 0;
       ready = true;
       image.style.display = 'none';
       canvas.hidden = false;
@@ -174,10 +178,15 @@
         if (event.cancelable) event.preventDefault();
       }
     }
-    document.addEventListener('touchstart', preventPagePinch, { passive: false });
-    document.addEventListener('touchmove', preventPagePinch, { passive: false });
-    document.addEventListener('gesturestart', preventPagePinch, { passive: false });
-    document.addEventListener('gesturechange', preventPagePinch, { passive: false });
+    // Keep document-level non-passive handlers off the normal scrolling page.
+    var pinchEvents = ['touchstart', 'touchmove', 'gesturestart', 'gesturechange'];
+    function syncPinchHandlers() {
+      pinchEvents.forEach(function (type) {
+        document.removeEventListener(type, preventPagePinch);
+        if (dialog.open) document.addEventListener(type, preventPagePinch, { passive: false });
+      });
+    }
+    new MutationObserver(syncPinchHandlers).observe(dialog, { attributes: true, attributeFilter: ['open'] });
     var resizeFrame = 0;
     function resize() {
       if (!dialog.open || !ready || resizeFrame) return;
