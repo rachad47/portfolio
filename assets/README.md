@@ -25,3 +25,8 @@ The site pages are at the repository root, so their paths begin with `assets/`. 
 
 If you move or rename a file later, update `src`, `poster`, `data-full`, CSS URLs/selectors, and any JavaScript references. Filenames are case-sensitive on GitHub Pages.
 
+## Park icons on touch devices
+
+Keep `site/park-icons/*.svg` as the artwork masters. The journal uses the matching transparent WebP files in `site/park-icons/touch/` on touch devices, avoiding repeated rendering of thousands of SVG paths during pinch zoom. Desktop keeps the original SVGs.
+
+After editing an SVG, regenerate its touch preview using `node tools/generate-park-touch-icons.cjs` with Sharp available (or set `SHARP_MODULE` to an existing Sharp installation). The tool bounds previews to 384 pixels and updates their cache versions in the journal HTML. Do not edit the previews independently.

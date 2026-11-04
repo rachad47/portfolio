@@ -641,6 +641,10 @@ body.field-notes .field-more-rail {
   max-width: 100%;
 }
 body.field-notes .field-natural-wrap .field-more-rail a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   flex: 0 0 auto;
   margin: 0;
   white-space: nowrap;
@@ -887,7 +891,7 @@ body.field-notes :is(#selected-trip-13, #selected-trip-6, #selected-trip-17) .nj
     line-height: 1.3;
     text-align: left;
   }
-  body.field-notes .field-natural-wrap .field-featured-links > a > .park-icon {
+  body.field-notes .field-natural-wrap .field-featured-links > a .park-icon {
     flex-shrink: 0;
     width: 18px;
     height: 18px;
@@ -928,4 +932,46 @@ body.field-notes {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
+}
+
+
+/* Banff stays highlighted on desktop and joins More places on phones. */
+body.field-notes .field-natural-wrap .field-more-rail > a.park-mobile-only {
+  display: none;
+}
+@media (max-width: 767px) {
+  body.field-notes .field-natural-wrap .field-featured-links > a.park-desktop-only {
+    display: none;
+  }
+  body.field-notes .field-natural-wrap .field-more-rail > a.park-mobile-only {
+    display: inline-flex;
+  }
+}
+
+
+/* Keep nested flag artwork centered on the same axis as park icons and labels. */
+body.field-notes .field-natural-wrap .field-more-rail a > span {
+  display: inline-flex;
+  align-items: center;
+}
+body.field-notes .field-natural-wrap .field-more-rail a > span:empty {
+  display: none;
+}
+body.field-notes .field-natural-wrap .field-more-rail a img {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 0;
+}
+body.field-notes .field-natural-wrap .field-more-rail a .canada-leaf {
+  margin-left: 0;
+}
+
+
+/* Picture sources do not add a layout box around the existing icon image. */
+body.field-notes picture.park-icon-source {
+  display: contents;
+}
+
+body.field-notes picture.park-icon-source > source {
+  display: none;
 }
