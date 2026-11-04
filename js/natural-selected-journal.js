@@ -2,11 +2,13 @@
   'use strict';
   var photos = Array.from(document.querySelectorAll('.nj-photo, .field-poster-open'));
   var dialog = document.querySelector('.nj-lightbox');
+  var photoZoom = window.JournalPhotoZoom(dialog);
   var current = 0;
   var opener;
   function display(index) {
     current = (index + photos.length) % photos.length;
     var photo = photos[current];
+    photoZoom.reset();
     dialog.querySelector('img').src = photo.dataset.full;
     dialog.querySelector('img').alt = photo.querySelector('img').alt;
     dialog.querySelector('p').textContent = photo.dataset.caption;
@@ -86,9 +88,10 @@
     });
 
   });
-  dialog.querySelector('.cj-close').addEventListener('click', function() {
+  function closePhoto() {
     dialog.close();
-  });
+  }
+  dialog.querySelector('.cj-close').addEventListener('click', closePhoto);
   dialog.querySelector('.cj-lightbox-prev').addEventListener('click', function() {
     display(current - 1);
   });
@@ -107,12 +110,18 @@
 
   });
   dialog.addEventListener('close', function() {
+    photoZoom.clear();
+    // Release the enlarged image reference instead of retaining it while hidden.
+    dialog.querySelector('img').removeAttribute('src');
+    dialog.querySelector('img').alt = '';
+    dialog.querySelector('p').textContent = '';
+
     if (opener) opener.focus({ preventScroll: true });
   });
   dialog.addEventListener('click', function(event) {
     if (event.target === dialog) {
       var box = dialog.getBoundingClientRect();
-      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) closePhoto();
     }
   });
 
