@@ -14,12 +14,12 @@
     canvas.hidden = true;
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-description', 'Pinch or double-tap to zoom. Drag to pan. Press 0 to reset.');
+    canvas.setAttribute('aria-description', 'Pinch or double-tap to zoom. Drag to pan. Swipe to change photo. Tap to show or hide the controls. Press 0 to reset.');
     image.after(canvas);
 
     var width = 0, height = 0, ratio = 1, photoWidth = 0, photoHeight = 0;
     var scale = 1, x = 0, y = 0, ready = false;
-    var gesture = null, tap = null, lastTap = null;
+    var gesture = null, tap = null, lastTap = null, tapTimer = 0;
     var frame = 0;
     var MAX_ZOOM = 6;
 
@@ -66,7 +66,7 @@
       var viewport = window.visualViewport;
       var pageScale = viewport ? viewport.scale : 1;
       var nextWidth = Math.round(viewport ? viewport.width * pageScale : innerWidth);
-      var nextHeight = Math.max(1, Math.round(viewport ? viewport.height * pageScale : innerHeight) - 144);
+      var nextHeight = Math.max(1, Math.round(viewport ? viewport.height * pageScale : innerHeight));
       if (ready && width === nextWidth && height === nextHeight) return;
       var oldWidth = width, oldHeight = height;
       width = nextWidth;
@@ -148,16 +148,33 @@
       }
       redraw();
     }, { passive: false });
+    // Swipe sideways (not zoomed in) to change photo, using the dialog's own arrow buttons.
+    function swipe(event) {
+      if (!gesture || gesture.pinch || scale > 1 || !event.changedTouches.length) return;
+      var end = point(event.changedTouches[0]);
+      var dx = end.x - gesture.startX, dy = end.y - gesture.startY;
+      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      var button = dialog.querySelector(dx < 0 ? '.cj-lightbox-next' : '.cj-lightbox-prev');
+      if (button) button.click();
+    }
     canvas.addEventListener('touchend', function (event) {
       if (!ready) return;
       if (event.cancelable) event.preventDefault();
       if (event.touches.length) { tap = null; begin(event.touches); return; }
       if (tap && !tap.moved && Date.now() - tap.time < 300) {
+        clearTimeout(tapTimer);
         if (lastTap && Date.now() - lastTap.time < 350 && Math.hypot(tap.x - lastTap.x, tap.y - lastTap.y) < 30) {
           zoomAt(scale > 1 ? 1 : 2.5, tap);
           lastTap = null;
-        } else lastTap = { x: tap.x, y: tap.y, time: Date.now() };
-      }
+        } else {
+          lastTap = { x: tap.x, y: tap.y, time: Date.now() };
+          // A single tap (no second tap follows) shows or hides the × and caption.
+          tapTimer = setTimeout(function () {
+            lastTap = null;
+            dialog.classList.toggle('journal-ui-hidden');
+          }, 350);
+        }
+      } else swipe(event);
       tap = null; gesture = null;
     }, { passive: false });
     canvas.addEventListener('touchcancel', function () { gesture = null; tap = null; lastTap = null; });
@@ -185,6 +202,7 @@
     var pinchEvents = ['touchstart', 'touchmove', 'gesturestart', 'gesturechange'];
     function syncPinchHandlers() {
       if (dialog.open) updateViewport();
+      else { clearTimeout(tapTimer); dialog.classList.remove('journal-ui-hidden'); }
       pinchEvents.forEach(function (type) {
         document.removeEventListener(type, preventPagePinch);
         if (dialog.open) document.addEventListener(type, preventPagePinch, { passive: false });
