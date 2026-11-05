@@ -1,45 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light" data-theme-fixed>
 
 <head>
-  <!-- Temporary Safari isolation modes; no effect without the zoom-test query. -->
-  <script>
-    try {
-      var journalZoomTest = new URLSearchParams(window.location.search).get('zoom-test');
-      if (['no-snap', 'no-effects', 'no-images'].indexOf(journalZoomTest) !== -1) {
-        document.documentElement.setAttribute('data-journal-zoom-test', journalZoomTest);
-      }
-    } catch (error) { /* Leave the regular page unchanged. */ }
-  </script>
 
   <link rel="canonical" href="https://rachad.dev/touching-grass">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Touching grass | Rachad</title>
   <meta name="description" content="A photo journal of trips, road adventures, trails, and life outside engineering.">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/unicons.css">
-  <link rel="stylesheet" href="css/tooplate-style.css?v=theme-fade-1">
-  <link rel="stylesheet" href="css/clean-evolution.css">
-  <link rel="stylesheet" href="css/frosted-studio.css">
-  <link rel="stylesheet" href="css/beyond-engineering.css">
-  <link rel="stylesheet" href="css/clear-glass-journal.css">
-  <link rel="stylesheet" href="css/natural-selected-journal.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/journal.css">
   <link rel="icon" type="image/x-icon" href="assets/site/travel-favicon.ico">
-  <link rel="stylesheet" href="css/site-shell.css?v=2">
-  <link rel="stylesheet" href="css/navbar-glass.css?v=mobile-menu-spacing-4">
-  <link rel="stylesheet" href="css/glass-dividers.css?v=3">
-  <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
-  <link rel="stylesheet" href="css/travel-field-notes.css?v=visual-viewport-viewer-39">
 </head>
 
-<body class="clean-evolution frosted-studio cj-page site-shell navy-editorial field-notes" data-color-mode="light">
+<body class="page-journal">
   <a class="ce-skip" href="#journal">Skip to the journal</a>
+  <!-- include: partials/nav.html home="index.html" -->
   <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
     <div class="container">
       <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <button class="navbar-toggler" type="button"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
@@ -47,7 +31,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav nav-main">
           <li class="nav-item">
             <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
           </li>
@@ -63,15 +47,17 @@
           <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol" aria-label="Grand Canyon trip banner">
-    <img src="assets/site/postcards/trip_Banner.JPEG" alt="Rachad looking out over the Grand Canyon" class="img-fluid" id="lool" decoding="async" loading="eager" style="object-position:right center;">
+  <!-- /include -->
+  <section class="page-banner d-lg-flex justify-content-center align-items-center" aria-label="Grand Canyon trip banner">
+    <img src="assets/site/postcards/trip_Banner.JPEG" alt="Rachad looking out over the Grand Canyon" class="page-banner-img img-fluid" decoding="async" loading="eager" style="object-position: right center;">
   </section>
   <main id="journal" class="container nj-journal">
     <section class="nj-intro"><a class="cj-back" href="index.html">← Back to engineering ⚙️</a>
-      <div class="field-intro-layout field-natural-wrap"><figure class="field-intro-postcards programmingLA" id="visited-national-parks"><button type="button" class="field-poster-open" data-full="assets/site/postcards/NationalParks.webp" data-caption="US national parks I&#8217;ve visited so far." aria-label="Enlarge national parks poster"><img src="assets/site/postcards/NationalParks_preview.webp?v=32318dbdc3" alt="A collection of illustrated US national park postcards" width="2811" height="2050" decoding="async" loading="eager"></button><figcaption>US national parks I&#8217;ve visited so far.</figcaption></figure><div class="field-intro-copy">
+      <div class="field-intro-layout field-natural-wrap"><figure class="field-intro-postcards framed" id="visited-national-parks"><button type="button" class="field-poster-open" data-full="assets/site/postcards/NationalParks.webp" data-caption="US national parks I&#8217;ve visited so far." aria-label="Enlarge national parks poster"><img src="assets/site/postcards/NationalParks_preview.webp?v=32318dbdc3" alt="A collection of illustrated US national park postcards" width="2811" height="2050" decoding="async" loading="eager"></button><figcaption>US national parks I&#8217;ve visited so far.</figcaption></figure><div class="field-intro-copy">
       <p class="ce-eyebrow">Field notes / Life outside</p>
       <h1>Rachad, touching grass.</h1>
       <p>I love engineering, but I also love getting away from my desk, exploring national parks ⛰️, taking photos, hiking, stargazing, and going on long drives with friends.</p>
@@ -114,7 +100,6 @@
             <a href="#selected-trip-15"><span aria-hidden="true">🚀</span> Starbase</a>
             <a href="#selected-trip-0"><span aria-hidden="true">🎆</span> July 4th</a>
 
-
             <a href="#selected-trip-12" title="🥾 Pinnacles National Park"><picture class="park-icon-source"><source media="(hover: none) and (pointer: coarse)" type="image/webp" srcset="assets/site/park-icons/touch/pinnacles.webp?v=e641875691"><img class="park-icon" src="assets/site/park-icons/pinnacles.svg" alt="" aria-hidden="true" width="22" height="22"></picture> Pinnacles NP</a>
             <a href="#selected-trip-9" title="🌋 Lassen Volcanic National Park"><picture class="park-icon-source"><source media="(hover: none) and (pointer: coarse)" type="image/webp" srcset="assets/site/park-icons/touch/lassen-volcanic.webp?v=de3d7fe40a"><img class="park-icon" src="assets/site/park-icons/lassen-volcanic.svg" alt="" aria-hidden="true" width="22" height="22"></picture> Lassen Volcanic NP</a>
             <a href="#hawaii-tropical-hawaii"><span aria-hidden="true">🤿</span> Tropical Hawaii</a>
@@ -156,7 +141,7 @@
           <button type="button" class="nj-photo" data-full="assets/travel/around-the-bay/pinnacles-carmel_02.webp" data-caption="Around the Bay 🚲 🌉 · 12 / 12" aria-label="Open Around the Bay 🚲 🌉 photograph 12"><img src="assets/travel/around-the-bay/pinnacles-carmel_02_preview.webp?v=7e998c03cd" width="1800" height="1350" alt="Around the Bay 🚲 🌉 — photograph 12" loading="lazy" decoding="async"></button>
         </div>
     </section>
-    <section class="nj-trip" id="selected-trip-6">
+    <section class="nj-trip nj-trip--route-map" id="selected-trip-6">
       <div class="nj-trip-intro">
         <figure class="nj-drive-map">
             <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/grand-canyon-vegas_04.webp" data-caption="The trip route" aria-label="Enlarge the trip route map"><img src="assets/travel/grand-canyon-vegas/grand-canyon-vegas_04_preview.webp?v=709f5549ae" width="1029" height="724" alt="Map showing the route for this road trip" loading="lazy" decoding="async"></button>
@@ -215,7 +200,6 @@
           <button type="button" class="nj-photo" data-full="assets/travel/grand-canyon-vegas/Vegas/vegas_07.webp" data-caption="Las Vegas · 7 / 7" aria-label="Open Las Vegas photograph 7"><img src="assets/travel/grand-canyon-vegas/Vegas/vegas_07_preview.webp?v=a02d93fb4d" width="2048" height="1536" alt="Las Vegas — photograph 7" loading="lazy" decoding="async"></button>
         </div>
       </section>
-
 
           <section class="nj-stop" id="grand-canyon-vegas-mojave-desert" aria-labelledby="grand-canyon-vegas-mojave-desert-title">
         <header><h3 id="grand-canyon-vegas-mojave-desert-title">Mojave Desert</h3><p>I told my friend I didn't need sunscreen 😬.</p></header>
@@ -278,7 +262,7 @@
           <button type="button" class="nj-photo" data-full="assets/travel/death-valley/death-valley_15.webp" data-caption="Death Valley ☠️ 🌌 · 15 / 15" aria-label="Open Death Valley ☠️ 🌌 photograph 15"><img src="assets/travel/death-valley/death-valley_15_preview.webp?v=13b75b6468" width="2048" height="1536" alt="Death Valley ☠️ 🌌 — photograph 15" loading="lazy" decoding="async"></button>
         </div>
     </section>
-     <section class="nj-trip" id="selected-trip-13">
+     <section class="nj-trip nj-trip--route-map" id="selected-trip-13">
       <div class="nj-trip-intro">
         <figure class="nj-drive-map"><button type="button" class="nj-photo" data-full="assets/travel/red-rock-road-trip/red-rock-road-trip_03.webp" data-caption="The trip route · 1 / 1" aria-label="Open The trip route photograph 1"><img src="assets/travel/red-rock-road-trip/red-rock-road-trip_03_preview.webp?v=abc6dd283e" width="1089" height="816" alt="The trip route — photograph 1" loading="lazy" decoding="async"></button><figcaption>The trip route · Click to enlarge</figcaption></figure>
         <header><h2>The Great Western Drive: Red-rocks 🏜️ 🚗</h2>
@@ -383,7 +367,7 @@
         </div>
       </section>
     </section>
-    <section class="nj-trip" id="selected-trip-7">
+    <section class="nj-trip nj-trip--tall-photos" id="selected-trip-7">
       <header><h2>Hawaii 🌋 🤿 🐠</h2><p>Saw an eruption forecast, told two coworkers, and we booked same-day tickets to fly out Thursday. Long live unlimited PTO!</p></header>
       <section class="nj-stop" id="hawaii-tropical-hawaii" aria-labelledby="hawaii-tropical-hawaii-title">
         <header><h3 id="hawaii-tropical-hawaii-title">Ocean &amp; Tropical Hawaii</h3></header>
@@ -568,7 +552,7 @@
           <button type="button" class="nj-photo" data-full="assets/travel/redwoods/redwoods_09.webp" data-caption="Redwoods 🌲 🌲 · 9 / 9" aria-label="Open Redwoods 🌲 🌲 photograph 9"><img src="assets/travel/redwoods/redwoods_09_preview.webp?v=50a21bf393" width="1100" height="825" alt="Redwoods 🌲 🌲 — photograph 9" loading="lazy" decoding="async"></button>
         </div>
     </section>
-    <section class="nj-trip" id="selected-trip-17">
+    <section class="nj-trip nj-trip--route-map" id="selected-trip-17">
       <div class="nj-trip-intro">
         <figure class="nj-drive-map"><button type="button" class="nj-photo" data-full="assets/travel/san-francisco-austin-road-trip/san-francisco-austin-road-trip_04.webp" data-caption="The trip route · 1 / 1" aria-label="Open The trip route photograph 1"><img src="assets/travel/san-francisco-austin-road-trip/san-francisco-austin-road-trip_04_preview.webp?v=7caeef32d6" width="1093" height="687" alt="The trip route — photograph 1" loading="lazy" decoding="async"></button><figcaption>The trip route · Click to enlarge</figcaption></figure>
         <header><h2>The Great Southern Drive · San Francisco to Austin 🚗 🌵</h2>
@@ -1003,17 +987,12 @@
       alt=""><button type="button" class="cj-lightbox-next" aria-label="Next photograph">→</button>
     <p></p>
   </dialog>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/Headroom.js"></script>
-  <script src="js/jQuery.headroom.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/custom.js?v=page-theme-2"></script>
-  <script src="js/journal-photo-zoom.js?v=3"></script>
-  <script src="js/natural-selected-journal.js?v=in-place-zoom-8"></script>
-  <script src="js/route-map-sizing.js?v=1"></script>
-  <script src="js/navbar-glass.js?v=1"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/journal-photo-zoom.js"></script>
+  <script src="js/natural-selected-journal.js"></script>
+  <script src="js/route-map-sizing.js"></script>
+  <script src="js/navbar-glass.js"></script>
 </body>
 
 </html>

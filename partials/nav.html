@@ -1,0 +1,44 @@
+<!-- Shared navigation. Edit here, then run: node build.js -->
+<nav class="navbar navbar-expand-sm navbar-light navbar-glass">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
+
+    <button class="navbar-toggler" type="button"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-main">
+        <li class="nav-item">
+          <a href="{{home}}#about" class="nav-link"><span data-hover="About">About</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="{{home}}#BigProjct" class="nav-link"><span data-hover="Projects">Projects</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="Resume.pdf" class="nav-link"><span data-hover="Resume">Resume</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="touching-grass.html" class="nav-link nav-touching-grass"><svg class="nav-leaf" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A8 8 0 0 1 9.8 4.1C15.5 3 17 2.5 19 1c1 2 1.5 4 1.5 7.5C20.5 15 17 20 11 20Z"/><path d="M3 21c0-5 5-10 11-12"/></svg><span data-hover="Touching grass">Touching grass</span></a>
+        </li>
+        <li class="nav-item"><a href="{{home}}#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+        </li>
+      </ul>
+
+      {{#toggle}}
+      <ul class="navbar-nav nav-tools">
+        <li class="nav-tools-item">
+          <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
+            aria-label="Toggle dark mode" aria-pressed="false">
+            <i class="color-mode-icon"></i>
+            Color mode
+          </button>
+        </li>
+      </ul>
+      {{/toggle}}
+    </div>
+  </div>
+</nav>

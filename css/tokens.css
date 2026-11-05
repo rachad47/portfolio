@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Design tokens: the only place colours, glass materials and radii are set.
+
+   - Light theme on :root, dark theme on [data-theme="dark"] (on <html>,
+     set by the inline script in each page's <head> and by the toggle).
+   - The journal (touching-grass) is always light and re-points the semantic
+     tokens at its own field-notes palette.
+
+   Breakpoints (CSS variables cannot be used inside @media):
+     phone ≤ 575px · tablet ≤ 767px · small laptop ≤ 991px · laptop ≤ 1199px
+   ========================================================================== */
+
+:root {
+  /* Palette */
+  --navy: #0A3161;
+  --red: #B31942;
+  --red-bright: #d6244e;
+  --white: #FFFFFF;
+
+  /* Semantic colours */
+  --brand-blue: var(--navy);
+  --brand-red: var(--red);
+  --page-bg: var(--white);
+  --page-text: var(--brand-blue);
+  --body-text: #42566f;
+  --caption-text: var(--body-text);
+  --link-color: var(--brand-blue);
+  --hover-color: var(--brand-red);
+  --inline-link-hover: #114c88;   /* links inside running text (base colour: --brand-red) */
+  --divider: #00214726;
+  --panel-bg: #edf2f8;
+
+  /* Quiet editorial surfaces (project pages and journal) */
+  --quiet-bg: #f1f5fa;
+  --quiet-panel: #ffffff;
+  --quiet-inner: #f5f8fc;
+  --quiet-edge: #d5deea;
+
+  /* Liquid glass: the navigation ribbon and the widgets that share its material */
+  --glass-tint: rgba(247, 251, 255, .75);
+  --glass-edge: rgba(255, 255, 255, .84);
+  --glass-shadow: rgba(0, 25, 60, .12);
+  --glass-gloss: rgba(255, 255, 255, .42);
+  --glass-fill: rgba(247, 251, 255, .285);
+  --glass-rim: rgba(255, 255, 255, .46);
+  --glass-reflection: rgba(255, 255, 255, .21);
+
+  /* Frosted edge and shadow: the page banner and the homepage portrait */
+  --surface-edge: rgba(255, 255, 255, .88);
+  --surface-shadow: 0 12px 34px #00214710, inset 0 1px 1px #ffffffb0;
+
+  /* Section dividers: a thin red glass filament */
+  --divider-glass-height: 2px;
+  --divider-glass-red: rgba(153, 14, 37, 0.62);
+  --divider-glass-glow: rgba(187, 19, 62, .32);
+
+  --radius-sm: 12px;
+}
+
+[data-theme="dark"] {
+  --page-bg: #050a16;
+  --page-text: #fffaf2;
+  --body-text: #c6c1b9;
+  --caption-text: #a29e99;
+  --link-color: #c5dafa;
+  --hover-color: var(--white);
+  --inline-link: #d12844;
+  --inline-link-hover: #4082c0;
+  --divider: #ffffff30;
+  --panel-bg: var(--brand-blue);
+
+  --quiet-bg: #030d1d;
+  --quiet-panel: #09182c;
+  --quiet-inner: #09182c;
+  --quiet-edge: #29405b;
+
+  --glass-tint: rgba(9, 32, 56, .75);
+  --glass-edge: rgba(225, 242, 255, .35);
+  --glass-shadow: rgba(0, 5, 16, .30);
+  --glass-gloss: rgba(224, 244, 255, .11);
+  --glass-fill: rgba(9, 32, 56, .285);
+  --glass-rim: rgba(225, 242, 255, .19);
+  --glass-reflection: rgba(224, 244, 255, .055);
+
+  --surface-edge: rgba(255, 255, 255, .19);
+  --surface-shadow: 0 12px 34px #000b202d, inset 0 1px 1px #ffffff22;
+
+  --divider-glass-red: rgba(220, 40, 82, .74);
+  --divider-glass-glow: rgba(187, 19, 62, .20);
+}
+
+/* Widget glass is derived from the ribbon where color-mix() is available. */
+@supports(background:color-mix(in srgb, white, transparent)) {
+  :root,
+  [data-theme="dark"] {
+    --glass-fill: color-mix(in srgb, var(--glass-tint) 30%, transparent);
+    --glass-rim: color-mix(in srgb, var(--glass-edge) 55%, transparent);
+    --glass-reflection: color-mix(in srgb, var(--glass-gloss) 50%, transparent)
+  }
+}
+
+/* Journal: warm field-notes palette (always light). */
+.page-journal {
+  --field-bg: #f0d8bd;
+  --field-control: #faead8;
+  --field-heading: #234439;
+  --field-line: #ceb698;
+  --field-text: #3e5849;
+  --field-accent: #98502f;
+  --field-shadow: rgba(41, 53, 24, .09);
+
+  --page-bg: var(--field-bg);
+  --page-text: var(--field-heading);
+  --body-text: var(--field-text);
+  --caption-text: var(--field-text);
+  --link-color: var(--field-accent);
+  --hover-color: var(--field-heading);
+  --brand-red: var(--field-accent);
+  --divider: var(--field-line);
+  --panel-bg: #faead8;
+
+  --divider-glass-red: rgba(139, 75, 47, .62);
+  --divider-glass-glow: rgba(139, 75, 47, .20);
+}

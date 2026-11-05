@@ -1,0 +1,96 @@
+/* Shared footer (partials/footer.html): homepage and project write-ups.
+   The page files only add the container's material. */
+
+.ce-footer {
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: transparent;
+  border: 0;
+  padding: 25px 0 24px;
+}
+
+.ce-footer>.container {
+  padding: 30px;
+  border-radius: 28px;
+}
+
+.ce-footer .ce-eyebrow:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: var(--brand-red);
+}
+
+.ce-footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin: 18px 0 38px;
+}
+
+.ce-footer-main h2 {
+  font-family: 'Space Grotesk', 'DM Sans', Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ce-footer-main a {
+  color: var(--page-text);
+  font-size: 16px;
+  border-bottom: 2px solid var(--brand-red);
+  padding-bottom: 7px;
+  overflow-wrap: anywhere;
+}
+
+.ce-footer-main a:is(:hover, :focus-visible) {
+  color: var(--hover-color);
+}
+
+.ce-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--divider);
+  padding-top: 22px;
+  font-size: 12px;
+  color: var(--body-text);
+}
+
+.ce-footer-bottom>div {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .ce-footer-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ce-footer-main h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ce-footer {
+    padding: 20px 16px;
+  }
+
+  .ce-footer>.container {
+    padding: 25px 22px;
+  }
+
+  .ce-footer-bottom {
+    flex-direction: column;
+  }
+
+  .ce-footer-main a {
+    font-size: 14px;
+  }
+}

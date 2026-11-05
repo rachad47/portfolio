@@ -1,32 +1,10 @@
 (function() {
   'use strict';
   var nav = document.querySelector('.navbar-glass');
-  if (!nav || !document.body.matches('.home-widget-glass, .project-glass')) return;
-  function syncTint() {
-    var style = getComputedStyle(nav);
-    ['tint', 'edge', 'shadow', 'gloss'].forEach(function(name) {
-      var value = style.getPropertyValue('--ng-' + name).trim();
-      if (value) document.body.style.setProperty('--wg-' + name, value);
-
-    });
-
-  }
-  syncTint();
-  new MutationObserver(syncTint).observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  var selector = [
-    '.project-glass-panel', '.project-glass-subsection', '.he-outside', '.ce-project', '.ct-tile', '.es-card', '.be-postcard', '.ce-footer > .container',
-    '.tp-tabs', '#project.tp-ready .owl-carousel', '.fp-hardware-copy',
-    '.fp-details > section:not(.fp-hardware)', '.orbit-gimbal.orbit-lab', '.sim-card', '.diy-note', '.job-script-row',
-    '.ce-primary', '.ce-secondary', '.tp-tab', '.tp-arrows button', '.be-cta'
-  ].join(',');
-  var surfaces = Array.from(document.querySelectorAll(selector));
-  surfaces.forEach(function(element) {
-    element.classList.add('wg-surface');
-    if (element.matches('button, .ce-primary, .ce-secondary, .be-cta')) element.classList.add('wg-button');
-    if (element.matches('.ce-primary, .be-cta')) element.classList.add('wg-primary');
-
-  });
-  if (document.body.classList.contains('navy-editorial')) return;
+  if (!nav) return;
+  // Glass widgets are marked in the HTML (wg-surface, wg-button, wg-primary).
+  // This script only adds the optical refraction filter, on Chromium (homepage only).
+  var surfaces = Array.from(document.querySelectorAll('.wg-surface'));
   if (!window.ResizeObserver || !window.IntersectionObserver || !window.CSS ||
     !CSS.supports('backdrop-filter', 'url("#widget-glass")') || !/Chrome|Chromium|Edg\//.test(navigator.userAgent)) return;
   var ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns, 'svg');
@@ -95,7 +73,7 @@
       }
       var id = filterFor(width, height, radius);
       if (!id) return;
-      element.style.setProperty('--wg-filter', 'url("#' + id + '")');
+      element.style.setProperty('--glass-filter', 'url("#' + id + '")');
       element.classList.add('wg-optical');
       state.key = key;
 

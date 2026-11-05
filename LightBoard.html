@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
   <head>
   <link rel="canonical" href="https://rachad.dev/LightBoard">
     <meta charset="utf-8">
+  <script>try{if(localStorage.getItem('portfolio-color-mode-v2')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
       content="Build, baby, build! 🛠️ | Built a lightboard and produced computer science lessons">
@@ -24,14 +25,14 @@
     <meta name="twitter:description" content="Built a lightboard and produced computer science lessons.">
     <meta name="twitter:image" content="https://rachad.dev/assets/projects/lightboard/teaching-demo-preview.webp">
 
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/project-page.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/tooplate-style.css?v=theme-fade-1">
     <link rel="icon" type="image/x-icon" href="assets/site/algorithm-icon.ico">
 
     <!--
@@ -41,29 +42,16 @@ Tooplate 2115 Marvel
 https://www.tooplate.com/view/2115-marvel
 
 -->
-    <link rel="stylesheet" href="css/site-shell.css?v=2">
-    <link rel="stylesheet" href="css/navbar-glass.css?v=mobile-menu-spacing-4">
-    <link rel="stylesheet" href="css/glass-dividers.css?v=2">
-    <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
-    <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
-    <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
   </head>
 
+  <body class="page-project">
 
-  <body class="dark-mode site-shell project-glass navy-editorial">
-    <script>
-    // Apply the saved theme before rendering the page content.
-    try {
-      document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
-    } catch (error) { /* Keep the default navy theme if storage is unavailable. */ }
-  </script>
-
-    <!-- MENU -->
+    <!-- include: partials/nav.html home="index.html" toggle -->
     <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
       <div class="container">
         <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler" type="button"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +59,7 @@ https://www.tooplate.com/view/2115-marvel
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav nav-main">
             <li class="nav-item">
               <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
             </li>
@@ -84,40 +72,37 @@ https://www.tooplate.com/view/2115-marvel
             <li class="nav-item">
               <a href="touching-grass.html" class="nav-link nav-touching-grass"><svg class="nav-leaf" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A8 8 0 0 1 9.8 4.1C15.5 3 17 2.5 19 1c1 2 1.5 4 1.5 7.5C20.5 15 17 20 11 20Z"/><path d="M3 21c0-5 5-10 11-12"/></svg><span data-hover="Touching grass">Touching grass</span></a>
             </li>
-            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span
-                  data-hover="Contact">Contact</span></a>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
             </li>
           </ul>
 
-          <ul class="navbar-nav ml-lg-auto">
-            <div class="ml-lg-4">
+          <ul class="navbar-nav nav-tools">
+            <li class="nav-tools-item">
               <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
                 aria-label="Toggle dark mode" aria-pressed="false">
                 <i class="color-mode-icon"></i>
                 Color mode
               </button>
-            </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
-      <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:500px ;" alt="" class="img-fluid" id="lool"> -->
-      <img src="assets/projects/lightboard/project-cover-alternate.webp" style="max-height:560px ;"
-        alt="Lightboard — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
-      <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
+    <!-- /include -->
+    <section class="page-banner d-lg-flex justify-content-center align-items-center">
+      <img src="assets/projects/lightboard/project-cover-alternate.webp"
+        alt="Lightboard — project illustration" class="page-banner-img img-fluid u-maxh-560" decoding="async" loading="eager">
     </section>
-    <!-- ABOUT -->
-    <section class="contact py-3" id="project-details">
+    <section class="project-details py-3" id="project-details">
 
       <div class="container">
 
-        <h1 style="text-align: center;"> Lightboard 💡✍️</h1>
+        <h1 class="u-center"> Lightboard 💡✍️</h1>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Intro">
+        <section class="project-glass-panel wg-surface" aria-label="Intro">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <h2 style="text-align: center;">Introduction</h2>
+              <h2 class="u-center">Introduction</h2>
               <br>
               <ul class="project-point-list">
                 <li>Before my 1st programming Olympiad, I thought coding was mostly simple input/output work, like my
@@ -126,17 +111,11 @@ https://www.tooplate.com/view/2115-marvel
                   nationally the following year.</li>
               </ul>
 
-              <!-- <li>Before my 1st participation in the olympiads I used to think I'm good at coding as I was the only guy good
-            Arduino experience in Grade 9, I went to the Olympiads and I was very confident </li>
-          <br> -->
-              <!-- <p>My participation in the olympiads was by far the biggest plot in my life as I used to think prior that that
-                  programming is all about input/output (my experience was limted to arduino by then)</p> -->
-
               <br>
 
             </div>
-            <div style="text-align: center;" class="col-sm-12 col-md-6 col-lg-6">
-              <img style=" border-radius:40px ; width: 100%;height: auto; "
+            <div class="col-sm-12 col-md-6 col-lg-6 u-center">
+              <img class="u-round-40"
                 src="assets/projects/lightboard/teaching-demo-optimized.webp" alt="Intro — project illustration"
                 decoding="async" loading="lazy">
               <br><br>
@@ -216,15 +195,14 @@ https://www.tooplate.com/view/2115-marvel
       </div>
       <br>
 
-      <!-- <h2 style="text-align: center;">Steps</h2> -->
       <br>
 
-      <div style="text-align: left;" class="container">
+      <div class="container">
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Testing"><!-- <h3>Testing</h3> -->
+        <section class="project-glass-panel wg-surface" aria-label="Testing">
           <div class="row  align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-7">
-              <h2 style="text-align: center;">Testing</h2>
+              <h2 class="u-center">Testing</h2>
               <br>
               <ul>
                 <li>A lightboard sends light through a transparent sheet’s edge, making fluorescent marker strokes stand
@@ -233,134 +211,126 @@ https://www.tooplate.com/view/2115-marvel
               </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5">
-              <img src="assets/projects/lightboard/testing-01.webp" alt="Testing — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/testing-01.webp" alt="Testing — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Building the frame">
-          <h2 style="text-align: center;">Building the frame</h2>
+        <section class="project-glass-panel wg-surface" aria-label="Building the frame">
+          <h2 class="u-center">Building the frame</h2>
           <br>
-          <div style="text-align: center;" class="row">
+          <div class="row u-center">
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/building-the-frame-01.webp"
-                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/building-the-frame-01.webp"
+                alt="Building the frame — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
               <figcaption>Cutting the wood.</figcaption>
             </div>
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/building-the-frame-02.webp"
-                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/building-the-frame-02.webp"
+                alt="Building the frame — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
               <figcaption>Screwing the pieces together.</figcaption>
             </div>
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/building-the-frame-03.webp"
-                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/building-the-frame-03.webp"
+                alt="Building the frame — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
               <figcaption>Poor blanket :/</figcaption>
             </div>
           </div>
-          <div style="text-align: center;" class="row">
+          <div class="row u-center">
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/building-the-frame-04.webp"
-                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/building-the-frame-04.webp"
+                alt="Building the frame — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
               <figcaption>Built everything in my student dorm :) </figcaption>
             </div>
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/building-the-frame-05.webp"
-                alt="Building the frame — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/building-the-frame-05.webp"
+                alt="Building the frame — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
               <figcaption>Strengthening the frame.</figcaption>
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Acrylic plexiglass">
-          <h2 style="text-align: center;">Acrylic plexiglass</h2>
+        <section class="project-glass-panel wg-surface" aria-label="Acrylic plexiglass">
+          <h2 class="u-center">Acrylic plexiglass</h2>
           <br>
-          <p style="text-align: center;">Dimensions: 3 ft × 6 ft × 15/64 in / 91 cm × 183 cm × 0.6 cm. </p>
+          <p class="u-center">Dimensions: 3 ft × 6 ft × 15/64 in / 91 cm × 183 cm × 0.6 cm. </p>
           <div class="row">
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/acrylic-plexiglass-02.webp"
-                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/acrylic-plexiglass-02.webp"
+                alt="Acrylic plexiglass — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/acrylic-plexiglass-03.webp"
-                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/acrylic-plexiglass-03.webp"
+                alt="Acrylic plexiglass — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/acrylic-plexiglass-01.webp"
-                alt="Acrylic plexiglass — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/acrylic-plexiglass-01.webp"
+                alt="Acrylic plexiglass — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
 
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Lights">
-          <h2 style="text-align: center;">Lights</h2>
+        <section class="project-glass-panel wg-surface" aria-label="Lights">
+          <h2 class="u-center">Lights</h2>
           <br>
-          <figcaption style="text-align: center;">The LED strip runs along the edge of the plexiglass, facing into its
+          <figcaption>The LED strip runs along the edge of the plexiglass, facing into its
             thickness so the light travels through the sheet. </figcaption>
-          <div style="text-align: center;" class="row">
+          <div class="row u-center">
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/lights-01.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-              <figcaption style="text-align: center;">Installing the LEDs.</figcaption>
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-01.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
+              <figcaption>Installing the LEDs.</figcaption>
             </div>
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/lights-02.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-              <figcaption style="text-align: center;">Looking good.</figcaption>
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-02.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
+              <figcaption>Looking good.</figcaption>
             </div>
           </div>
           <div class="row">
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/lightboard-assembly.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-              <p style="text-align: center;">Added bulbs to light my face.</p>
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lightboard-assembly.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
+              <p class="u-center">Added bulbs to light my face.</p>
             </div>
             <div class="col-6 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/lights-03.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-              <p style="text-align: center;">Added black fabric to reduce background reflections.</p>
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-03.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
+              <p class="u-center">Added black fabric to reduce background reflections.</p>
 
             </div>
           </div>
           <br>
-          <p style="text-align: center; margin-bottom: 0;">Changing the LED color changes the writing’s appearance
+          <p class="u-center u-mb-0">Changing the LED color changes the writing’s appearance
             without erasing or redrawing anything on the board.</p>
           <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/lights-04.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-04.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/lights-05.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-05.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/lights-06-optimized.webp" alt="Lights — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/lights-06-optimized.webp" alt="Lights — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Making videos">
+        <section class="project-glass-panel wg-surface" aria-label="Making videos">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-5">
-              <h2 style="text-align: center;">Making videos</h2>
+              <h2 class="u-center">Making videos</h2>
               <br>
               <ul class="project-point-list">
                 <li><b>Camera: </b>Huawei P30 Pro.</li>
@@ -374,31 +344,26 @@ https://www.tooplate.com/view/2115-marvel
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-7">
-              <img src="assets/projects/lightboard/making-videos-01.webp" alt="Making videos — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/making-videos-01.webp" alt="Making videos — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
 
-
           <br>
 
-          <p style="text-align: center; margin-bottom: 0;">Organizing the ideas and fitting each lesson onto the
+          <p class="u-center u-mb-0">Organizing the ideas and fitting each lesson onto the
             lightboard.</p>
           <div class="row">
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/making-videos-02.webp" alt="Making videos — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/making-videos-02.webp" alt="Making videos — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/making-videos-03.webp" alt="Making videos — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/making-videos-03.webp" alt="Making videos — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/lightboard/making-videos-04.webp" alt="Making videos — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/making-videos-04.webp" alt="Making videos — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
@@ -409,20 +374,20 @@ https://www.tooplate.com/view/2115-marvel
             <div class="col-sm-12 col-md-6 col-lg-7">
 
               <ul>
-                <li>And no, <i><b style="color:rgb(155, 4, 4)">I AM NOT WRITING BACKWARD</b></i>. I get that question a
+                <li>And no, <i><b style="color: rgb(155, 4, 4);">I AM NOT WRITING BACKWARD</b></i>. I get that question a
                   lot! I simply flip the footage horizontally in Adobe Premiere.</li>
               </ul>
               <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
 
-                  <img src="assets/projects/lightboard/teaching-demo-alternate-optimized.webp"
-                    alt="Making videos — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                    decoding="async" loading="lazy">
+                  <span class="project-image-spacing"><img src="assets/projects/lightboard/teaching-demo-alternate-optimized.webp"
+                    alt="Making videos — project illustration" class="framed project-image-rounded"
+                    decoding="async" loading="lazy"></span>
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                  <img src="assets/projects/lightboard/lightboard-detail.webp" style="width: 100%;height: auto;"
-                    class="programmingLA" alt="Making videos — project illustration" decoding="async" loading="lazy">
+                  <span class="project-image-spacing"><img src="assets/projects/lightboard/lightboard-detail.webp"
+                    class="framed project-image-rounded" alt="Making videos — project illustration" decoding="async" loading="lazy"></span>
 
                 </div>
 
@@ -434,69 +399,46 @@ https://www.tooplate.com/view/2115-marvel
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5">
 
-              <img src="assets/projects/lightboard/making-videos-05.webp" alt="Making videos — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/making-videos-05.webp" alt="Making videos — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Some pics">
-          <h2 style="text-align: center;">A few photos</h2>
+        <section class="project-glass-panel wg-surface" aria-label="Some pics">
+          <h2 class="u-center">A few photos</h2>
 
           <br>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/some-pics-01.webp" alt="Some pics — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/some-pics-01.webp" alt="Some pics — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/some-pics-02.webp" alt="Some pics — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/some-pics-02.webp" alt="Some pics — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/some-pics-04.webp" alt="Some pics — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/some-pics-04.webp" alt="Some pics — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/lightboard/some-pics-03.webp" alt="Some pics — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/lightboard/some-pics-03.webp" alt="Some pics — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
 
             </div>
           </div>
         </section>
       </div>
 
-
     </section>
     <hr class="rounded">
 
-
-    <!-- work experienc ... -->
-
-
-    <!-- Big PROJECTS 1 -->
-
-
-    <!-- Big PROJECTS 2 -->
-
-
-    <!-- other project -->
-
-    <!-- asdgashdhasd -->
-
-
-    <!-- CONTACT -->
-
-    <!-- FOOTER -->
+    <!-- include: partials/footer.html -->
     <footer id="contact" class="ce-footer">
-      <div class="container">
+      <div class="container wg-surface">
         <p class="ce-eyebrow">Have a project in mind?</p>
         <div class="ce-footer-main">
           <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
@@ -508,21 +450,12 @@ https://www.tooplate.com/view/2115-marvel
         </div>
       </div>
     </footer>
+    <!-- /include -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js?v=theme-fade-1"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
 
-    <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
-
-    <script src="js/navbar-glass.js?v=1"></script>
-    <script src="js/widget-glass.js?v=editorial-1"></script>
-    <script src="js/project-media-corners.js?v=2"></script>
+    <script src="js/navbar-glass.js"></script>
   </body>
 
 </html>

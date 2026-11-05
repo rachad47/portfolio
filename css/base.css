@@ -1,0 +1,593 @@
+/* Base: element defaults, page shell, dividers. Loaded on every page. */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/*
+  Cascade layers: Bootstrap (vendor) < base < everything else.
+  Component and page files are unlayered, so they override base without
+  needing higher specificity or page qualifiers.
+*/
+@layer vendor, base;
+
+@layer base {
+  /* ---------- Element defaults ---------- */
+
+  [hidden] {
+    display: none !important;
+  }
+
+  @font-face {
+    font-family: 'unicons';
+    src: url('../font/unicons-subset.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block
+  }
+
+  :root {
+    color-scheme: light;
+  }
+
+  [data-theme="dark"] body {
+    color-scheme: dark;
+  }
+
+  body {
+    color: var(--page-text);
+    font-family: 'DM Sans', Arial, sans-serif;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--body-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: var(--page-text);
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  [data-theme="dark"] :is(p, li) :is(strong, b) {
+    color: var(--page-text);
+  }
+
+  [data-theme="dark"] figcaption {
+    color: var(--caption-text);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    p,
+    li {
+      font-size: 17px;
+    }
+  }
+
+  /* ---------- Links and focus ---------- */
+
+  a {
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: var(--link-color);
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--hover-color);
+  }
+
+  /* Links inside running text */
+  :is(p, li, figcaption, .project-glass-panel) a[href]:not(.navbar a) {
+    color: var(--inline-link, var(--brand-red));
+    text-underline-offset: 3px;
+  }
+
+  :is(p, li, figcaption, .project-glass-panel) a[href]:not(.navbar a):is(:hover, :focus-visible) {
+    color: var(--inline-link-hover);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid var(--brand-red);
+    outline-offset: 4px;
+  }
+
+  [data-theme="dark"] a:focus-visible,
+  [data-theme="dark"] button:focus-visible {
+    outline-color: var(--white);
+  }
+
+  /* ---------- Navigation bar ---------- */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999;
+    will-change: transform;
+    transition: transform 200ms linear;
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: transparent;
+    border: 0;
+    padding: 15px 0;
+  }
+
+  .navbar[class*="-unpinned"] {
+    transform: translate(0, -150%);
+  }
+
+  .navbar[class*="-pinned"] {
+    transform: translate(0, 0);
+  }
+
+  .navbar>.container {
+    padding: 13px 24px;
+  }
+
+  .navbar-brand {
+    font-family: 'Space Grotesk', 'DM Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1.4px;
+  }
+
+  .navbar-light .navbar-brand,
+  .navbar-light .navbar-nav .nav-link,
+  .color-mode {
+    color: var(--page-text);
+  }
+
+  .navbar-light .navbar-brand:is(:hover, :focus-visible),
+  .navbar-light .navbar-nav .nav-link:is(:hover, :focus) {
+    color: var(--hover-color);
+  }
+
+  .ce-brand-dot {
+    color: var(--brand-red);
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding: 0 20px;
+  }
+
+  .nav-link {
+    overflow: hidden;
+  }
+
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-link span {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-link span:before {
+    position: absolute;
+    top: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+
+  @media (min-width: 576px) {
+    .nav-main {
+      margin-inline: auto;
+    }
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    outline: none;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:first-child {
+    transform: rotate(45deg);
+    top: 6px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
+    display: none;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
+    transform: rotate(-45deg);
+    bottom: 1px;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.4s ease;
+    position: relative;
+    background: var(--page-text);
+  }
+
+  /* Colour-mode toggle */
+  button.color-mode {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  [data-theme="dark"] .color-mode {
+    color: #ffffff;
+  }
+
+  button.color-mode:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .color-mode-icon {
+    position: relative;
+    right: 6px;
+  }
+
+  .color-mode-icon:after {
+    font-family: 'unicons';
+    content: '\ea9f';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  [data-theme="dark"] .color-mode-icon:after {
+    content: '\eb65';
+    color: #ffffff;
+  }
+
+  @media (max-width: 991px) {
+    .color-mode {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar>.container {
+      padding-inline: 18px;
+    }
+
+    .navbar-brand {
+      font-size: 25px;
+    }
+
+    .navbar-collapse {
+      text-align: center;
+    }
+
+    .navbar .navbar-collapse {
+      background: transparent;
+    }
+
+    .navbar-expand-sm .navbar-nav .nav-link {
+      padding: 3px 20px;
+    }
+  }
+
+  /* Phone: the menu opens as a list below the bar */
+  @media (max-width: 575px) {
+    .navbar {
+      padding: 10px 14px;
+    }
+
+    .navbar>.container {
+      padding: 10px 18px;
+    }
+
+    .navbar .navbar-collapse {
+      text-align: left;
+      padding: 10px 0 4px;
+      border-top: 1px solid var(--divider);
+      margin-top: 10px;
+      max-height: calc(100dvh - 105px);
+      overflow-y: auto;
+    }
+
+    .navbar .navbar-nav {
+      margin: 0;
+      width: 100%;
+    }
+
+    .navbar.navbar-expand-sm .navbar-nav .nav-link {
+      display: block;
+      padding: 10px 8px;
+      line-height: 1.5;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .navbar .navbar-collapse .color-mode {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 8px;
+      margin-top: 8px;
+      border: 0;
+      border-top: 1px solid var(--divider);
+      background: transparent;
+      text-align: left;
+    }
+
+    .navbar .navbar-collapse .nav-tools-item {
+      margin: 0;
+    }
+
+    .navbar:has(.navbar-collapse.show),
+    .navbar:has(.navbar-collapse.collapsing) {
+      transform: none !important;
+    }
+
+    .navbar .navbar-toggler {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    .navbar>.container {
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+  }
+
+  /* ---------- Page shell ---------- */
+
+  body {
+    padding-top: 110px;
+    background: var(--quiet-bg);
+  }
+
+  .ce-skip {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    z-index: 1100;
+    padding: 12px 20px;
+    background: var(--white);
+    color: var(--brand-blue);
+  }
+
+  .ce-skip:focus {
+    top: 12px;
+  }
+
+  .ce-eyebrow {
+    font: 500 13px/1.6 'Space Grotesk', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--body-text);
+    margin: 0;
+  }
+
+  .framed {
+    filter: drop-shadow(5px 5px 7px rgb(65, 65, 65));
+    padding: 30px;
+  }
+
+  /* Page banner: the wide photo under the navigation */
+  .page-banner {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--surface-edge);
+    border-radius: 18px;
+    background: var(--page-bg);
+    box-shadow: var(--surface-shadow);
+  }
+
+  .page-banner-img {
+    display: block;
+    width: 100%;
+    height: clamp(140px, 30vw, 290px);
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    background: var(--page-bg);
+  }
+
+  @media (max-width: 1199px) {
+    .page-banner {
+      max-width: 930px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .page-banner {
+      max-width: 690px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .page-banner {
+      max-width: 510px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    body {
+      padding-top: 95px;
+    }
+
+    .page-banner {
+      width: calc(100% - 36px);
+      margin: 0 18px;
+      border-radius: 16px;
+    }
+  }
+
+  /* ---------- Homepage and journal: display type and tighter spacing ---------- */
+
+  :is(.page-home,.page-journal) :is(h1, h2, h3, h4) {
+    font-family: 'Space Grotesk', 'DM Sans', Arial, sans-serif;
+    letter-spacing: -.7px;
+  }
+
+  @media (max-width: 767px) {
+    :is(.page-home,.page-journal) .navbar-expand-sm .navbar-nav .nav-link {
+      padding-inline: 10px;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 1199px) {
+    :is(.page-home,.page-journal) .navbar-expand-sm .navbar-nav .nav-link {
+      padding-inline: 8px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    :is(.page-home,.page-journal) .container:not(.navbar>*) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    :is(.page-home,.page-journal) .navbar-collapse {
+      padding: 14px 0;
+    }
+
+    :is(.page-home,.page-journal) .framed {
+      padding: 12px;
+    }
+  }
+
+  /* ---------- Project pages and journal: smaller nav links on tablets ---------- */
+
+  @media (max-width: 767px) {
+    body:is(.page-project,.page-journal) .navbar .nav-link {
+      padding-inline: 8px;
+      font-size: 13px;
+    }
+  }
+
+  /* ---------- Section dividers: a thin red glass filament ---------- */
+
+  :is(hr.ce-divider, hr.rounded),
+  .nj-trip::before,
+  .cj-footer::before {
+    width: calc(100% - 44px);
+    max-width: 1110px;
+    height: var(--divider-glass-height);
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 999px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff60, transparent 65%), linear-gradient(90deg, transparent, var(--divider-glass-red) 12%, var(--divider-glass-red) 88%, transparent);
+    box-shadow: 0 2px 9px var(--divider-glass-glow), inset 0 1px 0 #ffffff28;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  @media (max-width: 575px) {
+    :is(hr.ce-divider, hr.rounded),
+    .nj-trip::before,
+    .cj-footer::before {
+      height: 2px;
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    :is(hr.ce-divider, hr.rounded),
+    .nj-trip::before,
+    .cj-footer::before {
+      background: var(--brand-red);
+      box-shadow: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+  }
+
+  @media (forced-colors: active) {
+    :is(hr.ce-divider, hr.rounded),
+    .nj-trip::before,
+    .cj-footer::before {
+      background: CanvasText;
+      box-shadow: none;
+    }
+  }
+
+  /* ---------- Motion ---------- */
+
+  ::view-transition-old(root) {
+    animation: none;
+  }
+
+  ::view-transition-new(root) {
+    animation: theme-crossfade .2s ease-in-out both;
+    mix-blend-mode: normal;
+  }
+
+  @keyframes theme-crossfade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none;
+    }
+  }
+}

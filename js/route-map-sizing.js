@@ -1,7 +1,8 @@
+/* Desktop: size each road-trip route map to the height of its trip intro (trips with class nj-trip--route-map). */
 (function () {
   'use strict';
   var desktop = window.matchMedia('(min-width: 768px)');
-  document.querySelectorAll('#selected-trip-6 > .nj-trip-intro, #selected-trip-13 > .nj-trip-intro, #selected-trip-17 > .nj-trip-intro').forEach(function (intro) {
+  document.querySelectorAll('.nj-trip--route-map > .nj-trip-intro').forEach(function (intro) {
     var header = intro.querySelector('header');
     var map = intro.querySelector('.nj-drive-map');
     var caption = map.querySelector('figcaption');

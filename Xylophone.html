@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
   <head>
   <link rel="canonical" href="https://rachad.dev/Xylophone">
     <meta charset="utf-8">
+  <script>try{if(localStorage.getItem('portfolio-color-mode-v2')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
       content="Build, baby, build! 🛠️ | Electromagnetic xylophone with DIY solenoids, 24 transistors, and MIDI control">
@@ -24,17 +25,14 @@
       content="Electromagnetic xylophone with DIY solenoids, 24 transistors, and MIDI control.">
     <meta name="twitter:image" content="https://rachad.dev/assets/projects/xylophone/project-cover.webp">
 
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet" href="css/project-page.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/tooplate-style.css?v=theme-fade-1">
-    <!-- <link rel = "icon" href = 
-    "assets/projects/xylophone/assembled-instrument.jpg" 
-            type = "image/png"> -->
 
     <link rel="icon" type="image/x-icon" href="assets/projects/xylophone/favicon.ico">
 
@@ -45,30 +43,16 @@ Tooplate 2115 Marvel
 https://www.tooplate.com/view/2115-marvel
 
 -->
-    <link rel="stylesheet" href="css/site-shell.css?v=2">
-    <link rel="stylesheet" href="css/navbar-glass.css?v=mobile-menu-spacing-4">
-    <link rel="stylesheet" href="css/glass-dividers.css?v=2">
-    <link rel="stylesheet" href="css/widget-glass.css?v=project-sections-1">
-    <link rel="stylesheet" href="css/project-glass.css?v=rounded-3">
-    <link rel="stylesheet" href="css/site-background.css?v=pearl-1">
   </head>
 
+  <body class="page-project">
 
-  <body class="dark-mode site-shell project-glass navy-editorial">
-    <script>
-        // Apply the saved theme before rendering the page content.
-        try {
-            document.body.classList.toggle('dark-mode', localStorage.getItem('portfolio-color-mode-v2') !== 'light');
-        } catch (error) { /* Keep the default navy theme if storage is unavailable. */ }
-    </script>
-
-
-    <!-- MENU -->
+    <!-- include: partials/nav.html home="index.html" toggle -->
     <nav class="navbar navbar-expand-sm navbar-light navbar-glass">
       <div class="container">
         <a class="navbar-brand" href="index.html">Rachad<span class="ce-brand-dot">.</span></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler" type="button"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +60,7 @@ https://www.tooplate.com/view/2115-marvel
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav nav-main">
             <li class="nav-item">
               <a href="index.html#about" class="nav-link"><span data-hover="About">About</span></a>
             </li>
@@ -89,52 +73,46 @@ https://www.tooplate.com/view/2115-marvel
             <li class="nav-item">
               <a href="touching-grass.html" class="nav-link nav-touching-grass"><svg class="nav-leaf" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A8 8 0 0 1 9.8 4.1C15.5 3 17 2.5 19 1c1 2 1.5 4 1.5 7.5C20.5 15 17 20 11 20Z"/><path d="M3 21c0-5 5-10 11-12"/></svg><span data-hover="Touching grass">Touching grass</span></a>
             </li>
-            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span
-                  data-hover="Contact">Contact</span></a>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
             </li>
           </ul>
 
-          <ul class="navbar-nav ml-lg-auto">
-            <div class="ml-lg-4">
+          <ul class="navbar-nav nav-tools">
+            <li class="nav-tools-item">
               <button type="button" class="color-mode d-lg-flex justify-content-center align-items-center"
                 aria-label="Toggle dark mode" aria-pressed="false">
                 <i class="color-mode-icon"></i>
                 Color mode
               </button>
-            </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="lol">
-      <!-- <img src="assets/projects/lightboard/lightboard-overview.png" style="height:600px ;" alt="" class="img-fluid" id="lool"> -->
-      <img src="assets/projects/xylophone/project-banner.webp" style="max-height:560px ;"
-        alt="Automatic Xylophone — project illustration" class="img-fluid" id="lool" decoding="async" loading="eager">
-      <!-- <img src="assets/projects/xylophone/project-overview-01.gif" alt="" class="img-fluid" id="lool"> -->
+    <!-- /include -->
+    <section class="page-banner d-lg-flex justify-content-center align-items-center">
+      <img src="assets/projects/xylophone/project-banner.webp"
+        alt="Automatic Xylophone — project illustration" class="page-banner-img img-fluid u-maxh-560" decoding="async" loading="eager">
     </section>
-    <!-- ABOUT -->
-    <section class="contact py-3" id="project-details">
+    <section class="project-details py-3" id="project-details">
 
-      <div style="text-align: center;" class="container ">
+      <div class="container u-center">
         <h1>Automatic xylophone with homemade solenoids 🎶🧲</h1>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Idea">
+        <section class="project-glass-panel wg-surface" aria-label="Idea">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <h2>Idea</h2>
               <br>
               <ul class="project-point-list">
-                <li style="text-align: left;">I used to dislike electromagnetism, so I decided to build a
+                <li>I used to dislike electromagnetism, so I decided to build a
                   project around it and learn through experimentation.</li>
-                <li style="text-align: left;">I also wanted to explore artificial intelligence in a project
+                <li>I also wanted to explore artificial intelligence in a project
                   that combined hardware and software.</li>
               </ul>
-              <!-- <li style="text-align: left;"> Now I hate them more and I've learned that I shouldn't get near Electrical Engineering.</li> -->
               <br>
-              <!-- <H6>Software for the win!</H6> -->
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <!-- <img src="assets/projects/xylophone/assembled-instrument.jpg" alt="Paris" style="height:350px" id="programmingLA"> -->
               <iframe width="100%" height="300px" src="https://www.youtube.com/embed/Z-5NPbMOIGo?controls=1"
                 class="programingLA" loading="lazy" title="Idea video">
               </iframe>
@@ -142,7 +120,7 @@ https://www.tooplate.com/view/2115-marvel
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="How it works">
+        <section class="project-glass-panel wg-surface" aria-label="How it works">
           <h2>How it works</h2>
           <div class="row align-items-center">
             <div class="col">
@@ -154,13 +132,12 @@ https://www.tooplate.com/view/2115-marvel
           </div>
           <div class="row">
             <div class="col-12">
-              <img src="assets/projects/xylophone/system-overview.png" alt="How it works — project illustration"
-                style="width:100%" class="programingLA" decoding="async" loading="lazy">
+              <img src="assets/projects/xylophone/system-overview.png" alt="How it works — project illustration" class="programingLA u-w-100" decoding="async" loading="lazy">
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Trial and erros">
+        <section class="project-glass-panel wg-surface" aria-label="Trial and erros">
           <h2>Trial and error</h2>
           <div class="row">
             <div class="col">
@@ -174,23 +151,20 @@ https://www.tooplate.com/view/2115-marvel
           </div>
           <div class="row">
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/solenoid-experiment-01-optimized.webp"
-                alt="Trial and erros — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/solenoid-experiment-01-optimized.webp"
+                alt="Trial and erros — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/solenoid-experiment-02-optimized.webp"
-                alt="Trial and erros — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/solenoid-experiment-02-optimized.webp"
+                alt="Trial and erros — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/solenoid-experiment-03-optimized.webp"
-                alt="Trial and erros — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/solenoid-experiment-03-optimized.webp"
+                alt="Trial and erros — project illustration" class="framed project-image-rounded"
+                decoding="async" loading="lazy"></span>
             </div>
-            <!-- <div class="col">
-                    <img src="assets/projects/xylophone/solenoid-experiment-04.gif" alt="Paris" style="height:300px" id="programmingLA">
-                </div> -->
           </div>
           <div class="row">
             <div class="col">
@@ -202,13 +176,11 @@ https://www.tooplate.com/view/2115-marvel
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Solenoids">
+        <section class="project-glass-panel wg-surface" aria-label="Solenoids">
           <h2>Solenoids</h2>
-          <!-- <br> -->
 
-
-          <section class="project-glass-subsection" aria-label="3D-printing">
-            <div style="text-align: center;" class="row align-items-center">
+          <section class="project-glass-subsection wg-surface" aria-label="3D-printing">
+            <div class="row align-items-center">
               <div class="col">
                 <h3>3D printing</h3>
 
@@ -225,28 +197,26 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row align-items-center">
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
 
-                <img src="assets/projects/xylophone/solenoid-body-cad.webp" alt="3D-printing — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/solenoid-body-cad.webp" alt="3D-printing — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
                 <figcaption>SolidWorks.</figcaption>
               </div>
 
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/failed-print.webp" alt="3D-printing — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/failed-print.webp" alt="3D-printing — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
                 <figcaption>Failed printing.</figcaption>
               </div>
 
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/printed-solenoid-demo-optimized.webp"
-                  alt="3D-printing — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/printed-solenoid-demo-optimized.webp"
+                  alt="3D-printing — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
                 <figcaption>After a few adjustments.</figcaption>
               </div>
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Old school DIY.">
+          <section class="project-glass-subsection wg-surface" aria-label="Old school DIY.">
             <div class="row">
               <div class="col">
                 <h3>Old-school DIY</h3>
@@ -256,20 +226,18 @@ https://www.tooplate.com/view/2115-marvel
 
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
 
-                <img src="assets/projects/xylophone/tube-and-washers.webp" alt="Old school DIY. — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/tube-and-washers.webp" alt="Old school DIY. — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
                 <figcaption>Tube and washers.</figcaption>
               </div>
 
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/cutting-solenoid-tubes.webp"
-                  alt="Old school DIY. — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/cutting-solenoid-tubes.webp"
+                  alt="Old school DIY. — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
                 <figcaption>Cutting the tube.</figcaption>
               </div>
               <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/handmade-solenoid.webp" alt="Old school DIY. — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/handmade-solenoid.webp" alt="Old school DIY. — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
                 <figcaption>One done, 23 to go.</figcaption>
               </div>
 
@@ -277,12 +245,10 @@ https://www.tooplate.com/view/2115-marvel
             <br>
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-4 col-lg-4">
-                <!-- <video src="assets/projects/xylophone/coil-gluing-process.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video> -->
 
-                <img src="assets/projects/xylophone/coil-gluing-demo-optimized.webp"
-                  alt="Old school DIY. — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/coil-gluing-demo-optimized.webp"
+                  alt="Old school DIY. — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
               </div>
 
               <div class="col-sm-12 col-md-4 col-lg-4 ">
@@ -290,15 +256,15 @@ https://www.tooplate.com/view/2115-marvel
                   spread the glue evenly, which was faster and more convenient than using a glue gun.</p>
               </div>
               <div class="col-sm-12 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/completed-solenoid.webp"
-                  alt="Old school DIY. — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/completed-solenoid.webp"
+                  alt="Old school DIY. — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
 
               </div>
 
             </div>
 
-            <div style="text-align: left;" class="row align-items-center">
+            <div class="row align-items-center u-left">
               <div class="col-sm-12 col-md-6 col-lg-8">
                 <ul class="project-point-list">
                   <li>Counting every turn by hand was tedious, so I used a timing estimate: <br>About 400
@@ -309,23 +275,18 @@ https://www.tooplate.com/view/2115-marvel
                     entirely on counting turns or timing each winding. </li>
                 </ul>
               </div>
-              <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-4">
-                <img src="assets/projects/xylophone/coil-winding.webp" alt="Old school DIY. — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/coil-winding.webp" alt="Old school DIY. — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
               </div>
-
 
             </div>
 
-
-            <div style="text-align: center;" class="row align-items-center ">
+            <div class="row align-items-center ">
               <div class="col-sm-12 col-md-4 col-lg-4">
-                <!-- <video src="assets/projects/xylophone/solenoid-support-demo.mp4" alt="Paris" style="height:300px" id="programmingLA"
-                        controls> </video> -->
 
-                <img src="assets/projects/xylophone/solenoid-support-demo-optimized.webp"
-                  alt="Old school DIY. — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/solenoid-support-demo-optimized.webp"
+                  alt="Old school DIY. — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
               </div>
               <div class="col-sm-12 col-md-4 col-lg-4">
                 <br>
@@ -333,70 +294,65 @@ https://www.tooplate.com/view/2115-marvel
                   simpler to build than the 3D-printed design, so I used it for the final mount.</p>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-4 col-lg-4">
-                <img src="assets/projects/xylophone/wooden-support-detail.webp"
-                  alt="Old school DIY. — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+              <div class="col-sm-12 col-md-4 col-lg-4 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/wooden-support-detail.webp"
+                  alt="Old school DIY. — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
               </div>
-
 
             </div>
           </section>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="The Frame">
+        <section class="project-glass-panel wg-surface" aria-label="The Frame">
           <h2>The frame</h2>
           <div class="row">
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/frame-layout.webp" alt="The Frame — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA image-gap" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/frame-layout.webp" alt="The Frame — project illustration" class="framed image-gap project-image-rounded" decoding="async" loading="lazy"></span>
               <figcaption>Tracing the xylophone’s outline. </figcaption>
             </div>
 
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/mounting-solenoids.webp" alt="The Frame — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA image-gap" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/mounting-solenoids.webp" alt="The Frame — project illustration" class="framed image-gap project-image-rounded" decoding="async" loading="lazy"></span>
               <figcaption>Positioning the solenoids.</figcaption>
             </div>
             <div class="col-4 col-sm-4 col-md-4 col-lg-4">
-              <img src="assets/projects/xylophone/height-adjustment.webp" alt="The Frame — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA image-gap" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/height-adjustment.webp" alt="The Frame — project illustration" class="framed image-gap project-image-rounded" decoding="async" loading="lazy"></span>
               <figcaption>Adjustable height. </figcaption>
             </div>
 
           </div>
 
-
-          <section class="project-glass-subsection" aria-label="Quick note">
+          <section class="project-glass-subsection wg-surface" aria-label="Quick note">
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-6 col-lg-7">
                 <h3>Quick note</h3>
-                <p style="text-align: left;">Adding a permanent magnet on top can <b>dramatically</b>
+                <p class="u-left">Adding a permanent magnet on top can <b>dramatically</b>
                   increase the force for the same electrical input, but I chose not to use one because:
                 </p>
                 <ul class="project-point-list">
-                  <li style="text-align: left;">My washers are metal, so the magnet and nail would
+                  <li>My washers are metal, so the magnet and nail would
                     stick to them.</li>
-                  <li style="text-align: left;">Striking a key with the nail’s tip worked better than
+                  <li>Striking a key with the nail’s tip worked better than
                     using the magnet’s wider face. The larger contact area could damp the key’s
                     vibration, although the effect was small. </li>
-                  <li style="text-align: left;">Most importantly, it already worked well without the
+                  <li>Most importantly, it already worked well without the
                     magnet using the 5 A power supply.
                   </li>
                 </ul>
               </div>
 
-              <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                <img src="assets/projects/xylophone/permanent-magnet-experiment.webp"
-                  alt="Quick note — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+              <div class="col-sm-12 col-md-6 col-lg-5 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/permanent-magnet-experiment.webp"
+                  alt="Quick note — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
               </div>
 
             </div>
           </section>
         </section>
         <hr id="electronicS" class="rounded">
-        <section class="project-glass-panel" aria-label="Electronic part">
+        <section class="project-glass-panel wg-surface" aria-label="Electronic part">
           <h2>Electronics</h2>
           <div class="row">
             <div class="col">
@@ -409,35 +365,33 @@ https://www.tooplate.com/view/2115-marvel
 
           </div>
 
-
-          <section class="project-glass-subsection" aria-label="BJTs vs MOSFETs">
+          <section class="project-glass-subsection wg-surface" aria-label="BJTs vs MOSFETs">
             <div class="row align-items-center
             ">
               <div class="col-sm-12 col-md-7 col-lg-7">
                 <h3>BJTs vs MOSFETs</h3>
                 <br>
                 <ul>
-                  <li style="text-align: left;">I chose TIP120 NPN transistors. Several Reddit users
+                  <li>I chose TIP120 NPN transistors. Several Reddit users
                     suggested MOSFETs instead to reduce voltage loss &amp; heat, but the MOSFETs I found
                     cost about three times as much, and I did not want to wait for shipping.</li>
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-5 col-lg-5">
-                <img src="assets/projects/xylophone/transistor-driver-comparison.webp"
-                  alt="BJTs vs MOSFETs — project illustration" style="width: 90%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+              <div class="col-sm-12 col-md-5 col-lg-5 u-right">
+                <span class="project-image-spacing w-90"><img src="assets/projects/xylophone/transistor-driver-comparison.webp"
+                  alt="BJTs vs MOSFETs — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
               </div>
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="If it work don't touch it">
+          <section class="project-glass-subsection wg-surface" aria-label="If it work don't touch it">
             <div class="row align-items-center">
 
-
-              <div style="text-align: left;" class="col-sm-12 col-md-7 col-lg-7">
-                <h3 style="text-align: center;">If it works, don’t touch it? </h3>
+              <div class="col-sm-12 col-md-7 col-lg-7 u-left">
+                <h3 class="u-center">If it works, don’t touch it? </h3>
                 <ul>
                   <li>I was used to the approach <i>“if it works, don’t touch it”</i> . I initially
                     ignored the solenoids’ back EMF and left out the protective diodes, since the
@@ -448,23 +402,22 @@ https://www.tooplate.com/view/2115-marvel
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-5 col-lg-5">
-                <img src="assets/projects/xylophone/back-emf-failure-demo-optimized.webp"
-                  alt="If it work don't touch it — project illustration" style=" width: 90%;height: auto; "
-                  class="programmingLA" decoding="async" loading="lazy">
+              <div class="col-sm-12 col-md-5 col-lg-5 u-right">
+                <span class="project-image-spacing w-90"><img src="assets/projects/xylophone/back-emf-failure-demo-optimized.webp"
+                  alt="If it work don't touch it — project illustration"
+                  class="framed project-image-rounded" decoding="async" loading="lazy"></span>
               </div>
-
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Final circuit">
+          <section class="project-glass-subsection wg-surface" aria-label="Final circuit">
             <h3>Final circuit</h3>
             <div class="row">
               <div class="col">
-                <img src="assets/projects/xylophone/driver-circuit-diagram.webp"
-                  alt="Final circuit — project illustration" style=" width: 70%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing w-70"><img src="assets/projects/xylophone/driver-circuit-diagram.webp"
+                  alt="Final circuit — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
                 <figcaption>A simplified wiring illustration made in <a href="https://www.tinkercad.com/">Tinkercad.</a>
                 </figcaption>
               </div>
@@ -472,56 +425,53 @@ https://www.tooplate.com/view/2115-marvel
 
             <div class="row">
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <img src="assets/projects/xylophone/driver-wiring.webp" alt="Final circuit — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
-                <figcaption>We connected <b>one end</b> of each solenoid to this common wire. <br> Idea: <b
-                    style="color:rgb(185, 35, 35) ;">(+) </b> terminal stays <b>connected to the
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/driver-wiring.webp" alt="Final circuit — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
+                <figcaption>We connected <b>one end</b> of each solenoid to this common wire. <br> Idea: <b style="color: rgb(185, 35, 35);">(+) </b> terminal stays <b>connected to the
                     supply</b> , while the
-                  <b style="color:rgb(31, 34, 223)">(-) </b> side is switched by its transistor when the
+                  <b style="color: rgb(31, 34, 223);">(-) </b> side is switched by its transistor when the
                   Arduino sends a signal.
                 </figcaption>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <img src="assets/projects/xylophone/breadboard-electronics.webp"
-                  alt="Final circuit — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/breadboard-electronics.webp"
+                  alt="Final circuit — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
                 <figcaption>
                   Installing the components on breadboards.</figcaption>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <img src="assets/projects/xylophone/coil-connection-layout.webp"
-                  alt="Final circuit — project illustration" style="width: 100%;height: auto;" class="programmingLA"
-                  decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/coil-connection-layout.webp"
+                  alt="Final circuit — project illustration" class="framed project-image-rounded"
+                  decoding="async" loading="lazy"></span>
                 <figcaption>We connected <b>the other end</b> of each solenoid to the breadboard. To
                   simplify the wiring, I placed the connections for the rear solenoids along the front
                   row.</figcaption>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <img src="assets/projects/xylophone/completed-wiring.webp" alt="Final circuit — project illustration"
-                  style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/completed-wiring.webp" alt="Final circuit — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
                 <figcaption><a href="https://www.reddit.com/r/cableporn/">r/Cable Porn</a></figcaption>
               </div>
             </div>
           </section>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Testing">
+        <section class="project-glass-panel wg-surface" aria-label="Testing">
           <h2>Testing</h2>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <video src="assets/projects/xylophone/solenoid-test.mp4" style="width: 100%;height: auto;" controls=""
-                class="programmingLA" preload="none" playsinline=""
+              <span class="project-image-spacing"><video src="assets/projects/xylophone/solenoid-test.mp4" controls=""
+                class="framed project-image-rounded u-h-auto" preload="none" playsinline=""
                 poster="assets/projects/xylophone/solenoid-test-poster.webp" width="806" height="604">
-              </video>
+              </video></span>
               <figcaption>A simple program cycles through all the solenoids.</figcaption>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <video src="assets/projects/xylophone/assembled-instrument-test.mp4" style="width: 100%;height: auto;"
-                controls="" class="programmingLA" preload="none" playsinline=""
+              <span class="project-image-spacing"><video src="assets/projects/xylophone/assembled-instrument-test.mp4"
+                controls="" class="framed project-image-rounded u-h-auto" preload="none" playsinline=""
                 poster="assets/projects/xylophone/assembled-instrument-test-poster.webp" width="954" height="716">
-              </video>
+              </video></span>
               <figcaption>Testing without the xylophone.</figcaption>
             </div>
           </div>
@@ -529,19 +479,17 @@ https://www.tooplate.com/view/2115-marvel
           <br>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/xylophone/strike-noise-damping.webp" alt="Testing — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/strike-noise-damping.webp" alt="Testing — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
               <figcaption>Foam absorbs the nail strikes and reduces their noise.</figcaption>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="assets/projects/xylophone/assembled-instrument.webp" alt="Testing — project illustration"
-                style="width: 100%;height: auto;" class="programmingLA" decoding="async" loading="lazy">
+              <span class="project-image-spacing"><img src="assets/projects/xylophone/assembled-instrument.webp" alt="Testing — project illustration" class="framed project-image-rounded" decoding="async" loading="lazy"></span>
               <figcaption>Looking good :)</figcaption>
             </div>
           </div>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Software">
+        <section class="project-glass-panel wg-surface" aria-label="Software">
           <h2>Software</h2>
           <div class="row">
             <div class="col">
@@ -549,7 +497,6 @@ https://www.tooplate.com/view/2115-marvel
                 &amp; timing to the Arduino. For now, the system uses MIDI files, with the following
                 software pipeline:
               </p>
-              <!-- <img src="images/project/AIroute.png" alt="Paris" style="width:1000px;" id="programingLA"> -->
 
             </div>
 
@@ -557,19 +504,17 @@ https://www.tooplate.com/view/2115-marvel
 
           <div class="row">
             <div class="col">
-              <img src="assets/projects/xylophone/midi-signal-flow.png" alt="Software — project illustration"
-                style="width:100%;" class="programingLA" decoding="async" loading="lazy">
+              <img src="assets/projects/xylophone/midi-signal-flow.png" alt="Software — project illustration" class="programingLA u-w-100" decoding="async" loading="lazy">
 
             </div>
 
           </div>
           <br>
 
-
-          <section class="project-glass-subsection" aria-label="MIDI file">
+          <section class="project-glass-subsection wg-surface" aria-label="MIDI file">
             <div class="row align-items-center">
-              <div style="text-align: left;" class="col">
-                <h5 style="text-align: center;">MIDI file</h5>
+              <div class="col u-left">
+                <h5 class="u-center">MIDI file</h5>
                 <p>You can use this <a href="https://bitmidi.com/">website </a> to find MIDI files, or
                   search online for the piece’s name followed by “.mid”.</p>
 
@@ -578,10 +523,10 @@ https://www.tooplate.com/view/2115-marvel
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Digital audio software">
+          <section class="project-glass-subsection wg-surface" aria-label="Digital audio software">
             <div class="row align-items-center">
-              <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                <h5 style="text-align: center;">Digital audio software</h5>
+              <div class="col-sm-12 col-md-6 col-lg-7 u-left">
+                <h5 class="u-center">Digital audio software</h5>
                 <p><a href="https://lmms.io/lsp/">LMMS </a> is the digital audio software I used to:</p>
                 <ul class="project-point-list">
                   <li>Read MIDI files.</li>
@@ -591,22 +536,20 @@ https://www.tooplate.com/view/2115-marvel
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                <img src="assets/projects/xylophone/lmms-midi-settings.webp"
-                  alt="Digital audio software — project illustration"
-                  style="max-height:300px ; width: 100%;height: auto;" class="programmingLA" decoding="async"
-                  loading="lazy">
-
+              <div class="col-sm-12 col-md-6 col-lg-5 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/lmms-midi-settings.webp"
+                  alt="Digital audio software — project illustration" class="framed project-image-rounded u-maxh-300" decoding="async"
+                  loading="lazy"></span>
 
               </div>
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Virtual MIDI port">
+          <section class="project-glass-subsection wg-surface" aria-label="Virtual MIDI port">
             <div class="row align-items-center">
-              <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                <h5 style="text-align: center;">Virtual MIDI port</h5>
+              <div class="col-sm-12 col-md-6 col-lg-7 u-left">
+                <h5 class="u-center">Virtual MIDI port</h5>
                 <ul>
                   <li>LMMS needs a MIDI output device, so I created a virtual port to pass its output to
                     the next program. The setup may differ on macOS; on Windows, I used <a
@@ -616,22 +559,21 @@ https://www.tooplate.com/view/2115-marvel
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                <img src="assets/projects/xylophone/virtual-midi-port.webp"
-                  alt="Virtual MIDI port — project illustration" style="max-height:300px ;width: 100%;height: auto;"
-                  class="programmingLA" decoding="async" loading="lazy">
-
+              <div class="col-sm-12 col-md-6 col-lg-5 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/virtual-midi-port.webp"
+                  alt="Virtual MIDI port — project illustration"
+                  class="framed project-image-rounded u-maxh-300" decoding="async" loading="lazy"></span>
 
               </div>
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Bridge">
+          <section class="project-glass-subsection wg-surface" aria-label="Bridge">
             <div class="row align-items-center">
 
-              <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                <h5 style="text-align: center;">Bridge</h5>
+              <div class="col-sm-12 col-md-6 col-lg-7 u-left">
+                <h5 class="u-center">Bridge</h5>
                 <ul>
                   <li>I used <a href="https://projectgus.github.io/hairless-midiserial/">Hairless MIDI</a>
                     to forward the MIDI output to the Arduino over serial. The “Note: XX” values are
@@ -639,21 +581,19 @@ https://www.tooplate.com/view/2115-marvel
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                <img src="assets/projects/xylophone/hairless-midi-bridge.webp" alt="Bridge — project illustration"
-                  style="max-height:300px ;width: 100%;height: auto;" class="programmingLA" decoding="async"
-                  loading="lazy">
-
+              <div class="col-sm-12 col-md-6 col-lg-5 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/hairless-midi-bridge.webp" alt="Bridge — project illustration" class="framed project-image-rounded u-maxh-300" decoding="async"
+                  loading="lazy"></span>
 
               </div>
 
             </div>
           </section>
 
-          <section class="project-glass-subsection" aria-label="Arduino + Library setup">
+          <section class="project-glass-subsection wg-surface" aria-label="Arduino + Library setup">
             <div class="row align-items-center">
-              <div style="text-align: left;" class="col-sm-12 col-md-6 col-lg-7">
-                <h5 style="text-align: center;">Arduino and MIDI library</h5>
+              <div class="col-sm-12 col-md-6 col-lg-7 u-left">
+                <h5 class="u-center">Arduino and MIDI library</h5>
                 <ul class="project-point-list">
                   <li>Map each solenoid to an Arduino pin and assign it the corresponding MIDI note
                     number.
@@ -667,24 +607,20 @@ https://www.tooplate.com/view/2115-marvel
                 </ul>
 
               </div>
-              <div style="text-align: right;" class="col-sm-12 col-md-6 col-lg-5">
-                <img src="assets/projects/xylophone/midi-note-mapping.png"
-                  alt="Arduino + Library setup — project illustration"
-                  style="max-height:300px ;width: 100%;height: auto;" class="programmingLA" decoding="async"
-                  loading="lazy">
-
+              <div class="col-sm-12 col-md-6 col-lg-5 u-right">
+                <span class="project-image-spacing"><img src="assets/projects/xylophone/midi-note-mapping.png"
+                  alt="Arduino + Library setup — project illustration" class="framed project-image-rounded u-maxh-300" decoding="async"
+                  loading="lazy"></span>
 
               </div>
             </div>
           </section>
         </section>
         <hr class="rounded">
-        <section class="project-glass-panel" aria-label="Some sounds">
+        <section class="project-glass-panel wg-surface" aria-label="Some sounds">
           <h2>A few tunes</h2>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <!-- <video src="assets/projects/xylophone/christmas-performance.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video> -->
               <iframe width="100%" height="300px" src="https://www.youtube.com/embed/SIKLUYdW164?controls=1"
                 loading="lazy" title="Some sounds video">
               </iframe>
@@ -693,8 +629,6 @@ https://www.tooplate.com/view/2115-marvel
             </div>
             <br>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <!-- <video src="assets/projects/xylophone/fur-elise-performance.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video> -->
               <iframe width="100%" height="300px" src="https://www.youtube.com/embed/kZ-72ajURT8?controls=1"
                 loading="lazy" title="Some sounds video">
               </iframe>
@@ -706,8 +640,6 @@ https://www.tooplate.com/view/2115-marvel
           <br>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <!-- <video src="assets/projects/xylophone/alla-turca-performance.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video> -->
               <iframe width="100%" height="300px" src="https://www.youtube.com/embed/Z-5NPbMOIGo?controls=1"
                 loading="lazy" title="Some sounds video">
               </iframe>
@@ -717,8 +649,6 @@ https://www.tooplate.com/view/2115-marvel
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <!-- <video src="assets/projects/xylophone/stars-and-stripes-performance.mp4" alt="Paris" style="height:300px" id="programmingLA" controls>
-                    </video> -->
               <iframe width="100%" height="300px" src="https://www.youtube.com/embed/urUl9QLz4wA?controls=1"
                 loading="lazy" title="Some sounds video">
               </iframe>
@@ -727,33 +657,14 @@ https://www.tooplate.com/view/2115-marvel
             </div>
           </div>
 
-          <!-- no touch  -->
         </section>
       </div>
     </section>
     <hr class="rounded">
 
-
-    <!-- work experienc ... -->
-
-
-    <!-- Big PROJECTS 1 -->
-
-
-    <!-- Big PROJECTS 2 -->
-
-
-    <!-- other project -->
-
-    <!-- asdgashdhasd -->
-
-
-    <!-- CONTACT -->
-
-    <!-- FOOTER -->
-
+    <!-- include: partials/footer.html -->
     <footer id="contact" class="ce-footer">
-      <div class="container">
+      <div class="container wg-surface">
         <p class="ce-eyebrow">Have a project in mind?</p>
         <div class="ce-footer-main">
           <h2>Let's build something.</h2><a href="mailto:Rachadelmtq@gmail.com">Rachadelmtq@gmail.com ↗</a>
@@ -765,21 +676,12 @@ https://www.tooplate.com/view/2115-marvel
         </div>
       </div>
     </footer>
+    <!-- /include -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js?v=theme-fade-1"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
 
-    <script src="https://kit.fontawesome.com/21c51861f3.js" crossorigin="anonymous"></script>
-
-    <script src="js/navbar-glass.js?v=1"></script>
-    <script src="js/widget-glass.js?v=editorial-1"></script>
-    <script src="js/project-media-corners.js?v=2"></script>
+    <script src="js/navbar-glass.js"></script>
   </body>
 
 </html>
