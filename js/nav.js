@@ -60,31 +60,48 @@
     });
   }
 
-  // ---------- Hide on scroll down, show on scroll up (headroom.js 0.9.4 behaviour) ----------
+  // ---------- Hide after deliberate scrolling; ignore Safari rubber-band bounce ----------
   var classes = nav.classList, lastY = 0, ticking = false;
-  function swap(add, remove) { if (!classes.contains(add)) { classes.add(add); classes.remove(remove); } }
+  var direction = 0, travel = 0;
+  function swap(add, remove) { classes.add(add); classes.remove(remove); }
   function docHeight() {
     var b = document.body, h = document.documentElement;
     return Math.max(b.scrollHeight, h.scrollHeight, b.offsetHeight, h.offsetHeight, b.clientHeight, h.clientHeight);
   }
   function update() {
     ticking = false;
-    var y = window.pageYOffset, view = window.innerHeight || document.documentElement.clientHeight, height = docHeight();
-    if (y < 0 || y + view > height) { lastY = y; return; } // ignore overscroll bounce
-    if (y <= 0) swap('headroom--top', 'headroom--not-top'); else swap('headroom--not-top', 'headroom--top');
-    if (y + view >= height) swap('headroom--bottom', 'headroom--not-bottom'); else swap('headroom--not-bottom', 'headroom--bottom');
-    if (y > lastY && y >= 0) {
-      if (classes.contains('headroom--pinned') || !classes.contains('headroom--unpinned')) { classes.add('headroom--unpinned'); classes.remove('headroom--pinned'); }
-    } else if ((y < lastY) || y <= 0) {
-      if (classes.contains('headroom--unpinned')) { classes.remove('headroom--unpinned'); classes.add('headroom--pinned'); }
-    }
+    var y = window.pageYOffset;
+    var view = document.documentElement.clientHeight || window.innerHeight;
+    var maxY = Math.max(0, docHeight() - view);
+    // Do not feed elastic overscroll into the direction tracker.
+    if (y < 0 || y > maxY) return;
+    swap(y <= 0 ? 'headroom--top' : 'headroom--not-top', y <= 0 ? 'headroom--not-top' : 'headroom--top');
+    swap(y >= maxY ? 'headroom--bottom' : 'headroom--not-bottom', y >= maxY ? 'headroom--not-bottom' : 'headroom--bottom');
+    var delta = y - lastY;
     lastY = y;
+    if (y <= nav.offsetHeight + 24 || nav.contains(document.activeElement) ||
+        (menu && (menu.classList.contains('show') || menu.classList.contains('collapsing')))) {
+      swap('headroom--pinned', 'headroom--unpinned');
+      direction = 0;
+      travel = 0;
+      return;
+    }
+    if (!delta) return;
+    var nextDirection = delta > 0 ? 1 : -1;
+    if (nextDirection !== direction) { direction = nextDirection; travel = 0; }
+    travel += Math.abs(delta);
+    if (travel >= (direction > 0 ? 12 : 6)) {
+      swap(direction > 0 ? 'headroom--unpinned' : 'headroom--pinned',
+           direction > 0 ? 'headroom--pinned' : 'headroom--unpinned');
+      travel = 0;
+    }
   }
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
-  classes.add('headroom');
+  classes.add('headroom', 'headroom--pinned');
+  nav.addEventListener('focusin', function () { swap('headroom--pinned', 'headroom--unpinned'); });
   setTimeout(function () {
-    lastY = window.pageYOffset;
-    window.addEventListener('scroll', onScroll, false);
+    lastY = Math.max(0, Math.min(window.pageYOffset, docHeight() - document.documentElement.clientHeight));
+    window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }, 100);
 

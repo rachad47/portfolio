@@ -1221,10 +1221,6 @@ picture.park-icon-source > source {
     will-change: auto;
   }
 
-  .navbar {
-    transform: none;
-    transition: none !important;
-  }
 }
 
 .journal-photo-canvas {
@@ -1734,7 +1730,7 @@ picture.park-icon-source > source {
     color: var(--field-text);
   }
 
-  /* Every destination link in two rows that scroll sideways */
+  /* Two scrolling rows; each destination keeps its natural width and aligns left. */
   .field-natural-wrap .field-trip-nav {
     order: 3;
     min-width: 0;
@@ -1745,6 +1741,8 @@ picture.park-icon-source > source {
     grid-auto-flow: column;
     grid-template-rows: auto auto;
     grid-auto-columns: max-content;
+    justify-items: start;
+    align-items: center;
     gap: 8px;
     margin-top: 0;
     padding: 2px 0 6px;
@@ -1781,6 +1779,8 @@ picture.park-icon-source > source {
   .field-natural-wrap .field-trip-nav a,
   .field-natural-wrap .field-featured-links > a {
     display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: flex-start;
     align-items: center;
     gap: 6px;
     min-height: 38px;
@@ -1885,5 +1885,30 @@ picture.park-icon-source > source {
 @media (max-width: 575px) {
   .nj-rail-controls {
     display: none;
+  }
+}
+
+/* Phone destination rows flow independently, without shared grid columns. */
+@media (max-width: 575px) {
+  .field-natural-wrap .field-trip-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .field-natural-wrap .field-featured-links,
+  .field-natural-wrap .field-more-rail {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
   }
 }
