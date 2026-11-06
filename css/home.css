@@ -620,16 +620,51 @@ body {
   }
 }
 
+/* Phone: one column with shared edges. The intro's children join the grid so the
+   portrait sits to the right of the eyebrow and heading, and the buttons split the row. */
 @media (max-width: 767px) {
   .he-slim-ribbon .he-top {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) 116px;
+    grid-template-areas:
+      "eyebrow photo"
+      "title   photo"
+      "intro   intro"
+      "role    role";
+    gap: 0 16px;
+  }
+
+  .he-slim-ribbon .he-intro {
+    display: contents;
+  }
+
+  .he-slim-ribbon .ce-eyebrow {
+    grid-area: eyebrow;
+    align-self: end;
+  }
+
+  .he-slim-ribbon h1 {
+    grid-area: title;
+    align-self: start;
+  }
+
+  .he-slim-ribbon .he-introduction {
+    grid-area: intro;
+  }
+
+  .he-slim-ribbon .he-role {
+    grid-area: role;
   }
 
   .he-slim-ribbon .he-portrait {
-    width: 280px;
-    max-width: 100%;
-    justify-self: center;
+    grid-area: photo;
+    align-self: center;
+  }
+
+  .he-slim-ribbon .he-portrait img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 52% 40%;
+    border-radius: 18px;
   }
 
   .he-slim-ribbon .he-bottom {
@@ -640,7 +675,15 @@ body {
   }
 
   .he-slim-ribbon .ce-actions {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .he-slim-ribbon .ce-actions > a {
+    text-align: center;
+    padding-inline: 12px;
+    white-space: nowrap;
   }
 }
 

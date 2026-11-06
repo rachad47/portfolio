@@ -41,20 +41,6 @@
   -webkit-backdrop-filter: url("#navbar-glass-refraction") blur(1px);
 }
 
-@media (max-width: 575px) {
-  .navbar-glass>.container:has(.navbar-collapse.show)::before,
-  .navbar-glass>.container:has(.navbar-collapse.collapsing)::before {
-    background: rgba(245, 249, 254, .97);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
-
-  [data-theme="dark"] .navbar-glass>.container:has(.navbar-collapse.show)::before,
-  [data-theme="dark"] .navbar-glass>.container:has(.navbar-collapse.collapsing)::before {
-    background: rgba(9, 30, 53, .97);
-  }
-}
-
 @media (prefers-reduced-transparency: reduce) {
   .navbar-glass>.container::before {
     background: var(--panel-bg) !important;

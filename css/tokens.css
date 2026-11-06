@@ -167,10 +167,8 @@
   /* Handwriting for the one-line notes beside trip and stop names */
   --journal-note:  'Segoe Print','Kalam', 'DM Sans', Arial, sans-serif;
 
-  /* Places button and list: dark glass so text stays readable over any photo */
-  --places-glass: rgba(28, 52, 43, .7);
-  --places-glass-edge: rgba(255, 255, 255, .22);
-  --places-text: #fbf1e3;
+  /* Glass (navbar and places button): the site's light glass, warmed to ivory */
+  --glass-tint: rgba(255, 249, 240, .75);
 
   --page-bg: var(--field-bg);
   --page-text: var(--field-heading);

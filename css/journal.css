@@ -231,13 +231,6 @@
 
 /* ---------- Journal: field-notes theme, trips, photo viewer ---------- */
 
-.navbar.navbar-glass {
-  --glass-tint: rgba(250, 234, 216, .96);
-  --glass-edge: rgba(152, 112, 73, .28);
-  --glass-shadow: rgba(22, 45, 31, .10);
-  --glass-gloss: rgba(255, 255, 245, .32);
-}
-
 .nj-intro {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -335,11 +328,6 @@
 
   .nj-trip h2 {
     font-size: 24px;
-  }
-
-  .navbar.navbar-glass>.container:has(.navbar-collapse.show)::before,
-  .navbar.navbar-glass>.container:has(.navbar-collapse.collapsing)::before {
-    background: var(--field-control);
   }
 }
 
@@ -1208,11 +1196,12 @@ picture.park-icon-source > source {
 }
 
 @media (hover: none) and (pointer: coarse) {
-  /* Touch devices: drop costly effects everywhere. A universal selector has no
-     specificity, so !important is what makes this switch win. */
-  *,
-  *::before,
-  *::after {
+  /* Touch devices: drop costly effects everywhere except the glass controls (navbar and
+     places button), which keep the same glass as every other page. This selector has almost no
+     specificity, so !important is what makes the switch win. */
+  :not(.navbar, .navbar *, .places-corner, .places-corner *),
+  :not(.navbar, .navbar *, .places-corner, .places-corner *)::before,
+  :not(.navbar, .navbar *, .places-corner, .places-corner *)::after {
     filter: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
@@ -1380,15 +1369,23 @@ picture.park-icon-source > source {
   transform: none;
 }
 
+/* Same glass as the navigation ribbon (nav.css): tint, rim and shadow come from
+   the glass tokens. js/navbar-glass.js adds .glass-optical where the browser can
+   bend the edges. */
 .places-up,
 .places-button,
 .places-list {
-  border: 1px solid var(--places-glass-edge);
-  background: var(--places-glass);
-  color: var(--places-text);
-  box-shadow: 0 12px 30px rgba(20, 30, 25, .28), inset 0 1px 0 rgba(255, 255, 255, .16);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid var(--glass-edge);
+  background: var(--glass-tint);
+  color: var(--field-heading);
+  box-shadow: 0 10px 28px var(--glass-shadow), inset 0 1px 1px #ffffff65, inset 0 -1px 1px #ffffff18;
+  backdrop-filter: blur(3px) saturate(150%);
+  -webkit-backdrop-filter: blur(3px) saturate(150%);
+}
+
+:is(.places-up, .places-button, .places-list).glass-optical {
+  backdrop-filter: var(--glass-bend) blur(1px);
+  -webkit-backdrop-filter: var(--glass-bend) blur(1px);
 }
 
 .places-up {
@@ -1401,7 +1398,7 @@ picture.park-icon-source > source {
 }
 
 .places-up:is(:hover, :focus-visible) {
-  color: var(--places-text);
+  color: var(--field-accent);
 }
 
 .places-button {
@@ -1422,7 +1419,7 @@ picture.park-icon-source > source {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, .14);
+  background: rgba(35, 68, 57, .10);
 }
 
 .places-button-name {
@@ -1453,7 +1450,7 @@ picture.park-icon-source > source {
 
 .places-list-group + .places-list-group {
   padding-top: 8px;
-  border-top: 1px solid var(--places-glass-edge);
+  border-top: 1px solid rgba(35, 68, 57, .14);
 }
 
 .places-list-group p {
@@ -1463,25 +1460,25 @@ picture.park-icon-source > source {
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--places-text);
-  opacity: .7;
+  color: var(--field-text);
 }
 
 .places-list a {
   padding: 7px 10px;
   border-radius: 9px;
   font-size: 14px;
-  color: var(--places-text);
+  color: var(--field-heading);
 }
 
 .places-list a:is(:hover, :focus-visible) {
-  background: rgba(255, 255, 255, .12);
-  color: var(--places-text);
+  background: rgba(35, 68, 57, .08);
+  color: var(--field-heading);
 }
 
+/* The place on screen now: rust, like the handwritten trip notes. */
 .places-list a[aria-current] {
-  background: var(--field-control);
-  color: var(--field-heading);
+  background: rgba(152, 80, 47, .10);
+  color: var(--field-accent);
   font-weight: 600;
 }
 
@@ -1492,10 +1489,9 @@ picture.park-icon-source > source {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .places-up,
-  .places-button,
-  .places-list {
-    background: var(--field-heading);
+  :is(.places-up, .places-button, .places-list),
+  :is(.places-up, .places-button, .places-list).glass-optical {
+    background: var(--field-control);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
