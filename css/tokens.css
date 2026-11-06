@@ -165,7 +165,7 @@
   --field-shadow: rgba(41, 53, 24, .09);
 
   /* Handwriting for the one-line notes beside trip and stop names */
-  --journal-note: 'Caveat', 'Segoe Print', cursive;
+  --journal-note:  'Segoe Print','Kalam', 'DM Sans', Arial, sans-serif;
 
   /* Places button and list: dark glass so text stays readable over any photo */
   --places-glass: rgba(28, 52, 43, .7);
