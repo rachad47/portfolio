@@ -433,7 +433,7 @@
     max-width: var(--column);
   }
 
-  /* Just above a breakpoint (e.g. 992–1010px) the window is narrower than the
+  /* Just above a breakpoint (e.g. 992â1010px) the window is narrower than the
      column plus padding, so the container shrinks; keep these inside it too. */
   @media (min-width: 576px) {
     .navbar>.container,
@@ -601,5 +601,22 @@
     ::view-transition-new(root) {
       animation: none;
     }
+  }
+
+  /* Link arrow: an SVG drawn in the text colour, so it has the same size and
+     weight in every browser (the ↗ character becomes an emoji on iPhone). */
+  .icon-arrow {
+    display: inline-block;
+    width: .75em;
+    height: .75em;
+    vertical-align: -.04em;
+    background-color: currentColor;
+    -webkit-mask: var(--icon-arrow) center / contain no-repeat;
+    mask: var(--icon-arrow) center / contain no-repeat;
+    --icon-arrow: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23000%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M6 18 18 6M8 6h10v10%27/%3E%3C/svg%3E");
+  }
+
+  .icon-arrow--down {
+    transform: rotate(90deg);
   }
 }

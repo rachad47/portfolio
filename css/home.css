@@ -16,10 +16,6 @@
   color: var(--white);
 }
 
-.ce-primary span {
-  margin-left: 12px;
-}
-
 .ce-secondary {
   color: var(--page-text);
 }
@@ -676,7 +672,7 @@ body {
 
   .he-slim-ribbon .ce-actions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 12px;
   }
 
