@@ -499,6 +499,7 @@ html:has(body) {
 }
 
 .field-poster-open {
+  position: relative;
   display: block;
   width: 100%;
   padding: 0;
@@ -513,6 +514,29 @@ html:has(body) {
   outline-offset: 4px;
 }
 
+/* Hovering a destination link lays that trip's first photo over the poster
+   (js/journal-poster-preview.js). The poster keeps the frame's size. */
+.field-intro-postcards .field-poster-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+
+.field-poster-open.is-previewing .field-poster-preview {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field-intro-postcards .field-poster-preview {
+    transition: none;
+  }
+}
+
 body {
   background: var(--field-bg);
   background-attachment: scroll;
@@ -520,9 +544,57 @@ body {
   background-repeat: repeat-y;
 }
 
+/* Trip cards reach past the text column by --section-bleed, so their text
+   lines up with the intro. The navigation ribbon and banner reach just as
+   far, so all three share one width. */
+:root {
+  --section-bleed: 25px;
+}
+
+.navbar>.container,
+.page-banner {
+  max-width: calc(1110px + 2 * var(--section-bleed));
+}
+
+@media (max-width: 1199px) {
+  .navbar>.container,
+  .page-banner {
+    max-width: calc(930px + 2 * var(--section-bleed));
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar>.container,
+  .page-banner {
+    max-width: calc(690px + 2 * var(--section-bleed));
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar>.container,
+  .page-banner {
+    max-width: calc(510px + 2 * var(--section-bleed));
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --section-bleed: 17px;
+  }
+
+  .navbar {
+    padding-inline: calc(var(--page-gutter) - var(--section-bleed));
+  }
+
+  .page-banner {
+    width: calc(100% - 2 * (var(--page-gutter) - var(--section-bleed)));
+    margin: 0 calc(var(--page-gutter) - var(--section-bleed));
+  }
+}
+
 .nj-trip {
   padding: 24px;
-  margin: 0 -25px 24px;
+  margin: 0 calc(-1 * var(--section-bleed)) 24px;
   border: 1px solid var(--field-line);
   border-radius: 18px;
   background: linear-gradient(135deg, #ffffff06, transparent 42%), var(--field-control);
@@ -539,7 +611,7 @@ body {
 @media (max-width: 575px) {
   .nj-trip {
     padding: 16px;
-    margin: 0 -17px 18px;
+    margin: 0 calc(-1 * var(--section-bleed)) 18px;
     border-radius: 14px;
   }
 }

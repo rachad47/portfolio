@@ -55,6 +55,14 @@
   --divider-glass-glow: rgba(187, 19, 62, .32);
 
   --radius-sm: 12px;
+
+  /* Phone side gutter: navbar, banner and page content all start here (used at ≤575px) */
+  --page-gutter: 15px;
+}
+
+.page-home,
+.page-journal {
+  --page-gutter: 22px;
 }
 
 [data-theme="dark"] {
@@ -64,7 +72,7 @@
   --caption-text: #a29e99;
   --link-color: #c5dafa;
   --hover-color: var(--white);
-  --inline-link: #d12844;
+  --inline-link: #f0566f;
   --inline-link-hover: #4082c0;
   --divider: #ffffff30;
   --panel-bg: var(--brand-blue);

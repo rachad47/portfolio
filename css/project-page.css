@@ -70,7 +70,8 @@ hr.rounded {
 }
 
 /* The write-up footer is flat (the homepage one is a glass card). */
-.ce-footer>.container {
+.ce-footer-card {
+  padding-inline: 0;
   border: 0;
   background: transparent;
   box-shadow: none;

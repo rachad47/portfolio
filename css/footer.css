@@ -1,5 +1,5 @@
 /* Shared footer (partials/footer.html): homepage and project write-ups.
-   The page files only add the container's material. */
+   The page files only add the card's material. */
 
 .ce-footer {
   font-family: 'DM Sans', Arial, sans-serif;
@@ -8,7 +8,7 @@
   padding: 25px 0 24px;
 }
 
-.ce-footer>.container {
+.ce-footer-card {
   padding: 30px;
   border-radius: 28px;
 }
@@ -79,10 +79,10 @@
 
 @media (max-width: 575px) {
   .ce-footer {
-    padding: 20px 16px;
+    padding: 20px 0;
   }
 
-  .ce-footer>.container {
+  .ce-footer-card {
     padding: 25px 22px;
   }
 

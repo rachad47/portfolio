@@ -31,6 +31,7 @@ js/
   project-audio.js      hover sounds on the homepage project cards
   orbit-contained-lab.js            zoomable testbed figure (satellite project)
   natural-selected-journal.js, journal-photo-zoom.js, route-map-sizing.js   journal
+  journal-poster-preview.js         journal: hovering a destination shows its first photo on the poster
 ```
 
 Each page loads `vendor/bootstrap.min.css`, `tokens.css`, `base.css`, `nav.css`
@@ -85,6 +86,21 @@ In `index.html`, inside `#project`:
    containing your `<div class="tp-entry">…</div>`.
 
 `tabs.js` picks it up automatically; no positions to update.
+
+## Journal poster previews
+
+Hovering a destination button at the top of `touching-grass.html` shows a photo from that trip in the
+poster frame: the trip's first photo by default. To choose another, add `data-preview` to the button's `<a>`:
+
+```html
+<a href="#selected-trip-18" data-preview="3">…</a>                                    <!-- the trip's 3rd photo -->
+<a href="#trip-france" data-preview="assets/travel/France/Normandy/normandy_01_preview.webp">…</a>  <!-- an exact image -->
+```
+
+Use the `_preview.webp` version of a photo; it is small enough to load instantly on hover.
+
+The photo is cropped to fill the frame, keeping its centre. To keep another part, add
+`data-preview-position` with any CSS `object-position` value, e.g. `data-preview-position="bottom"`.
 
 ## Checking that a change looks the same
 

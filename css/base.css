@@ -143,6 +143,9 @@
     will-change: transform;
     transition: transform 200ms linear;
     font-family: 'DM Sans', Arial, sans-serif;
+    /* Fixed here so the ribbon is the same height whatever the page's body text uses */
+    font-size: 16px;
+    line-height: 1.5;
     background: transparent;
     border: 0;
     padding: 15px 0;
@@ -318,7 +321,7 @@
   /* Phone: the menu opens as a list below the bar */
   @media (max-width: 575px) {
     .navbar {
-      padding: 10px 14px;
+      padding: 10px var(--page-gutter);
     }
 
     .navbar>.container {
@@ -415,10 +418,17 @@
     padding: 30px;
   }
 
+  /* Navigation ribbon, page banner and section dividers share the content
+     column's width (the container minus its side padding) at every breakpoint. */
+  .navbar>.container,
+  .page-banner,
+  hr.ce-divider {
+    max-width: 1110px;
+  }
+
   /* Page banner: the wide photo under the navigation */
   .page-banner {
     width: 100%;
-    max-width: 1110px;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
@@ -439,19 +449,25 @@
   }
 
   @media (max-width: 1199px) {
-    .page-banner {
+    .navbar>.container,
+    .page-banner,
+    hr.ce-divider {
       max-width: 930px;
     }
   }
 
   @media (max-width: 991px) {
-    .page-banner {
+    .navbar>.container,
+    .page-banner,
+    hr.ce-divider {
       max-width: 690px;
     }
   }
 
   @media (max-width: 767px) {
-    .page-banner {
+    .navbar>.container,
+    .page-banner,
+    hr.ce-divider {
       max-width: 510px;
     }
   }
@@ -462,8 +478,8 @@
     }
 
     .page-banner {
-      width: calc(100% - 36px);
-      margin: 0 18px;
+      width: calc(100% - 2 * var(--page-gutter));
+      margin: 0 var(--page-gutter);
       border-radius: 16px;
     }
   }
@@ -490,8 +506,8 @@
 
   @media (max-width: 575px) {
     :is(.page-home,.page-journal) .container:not(.navbar>*) {
-      padding-left: 22px;
-      padding-right: 22px;
+      padding-left: var(--page-gutter);
+      padding-right: var(--page-gutter);
     }
 
     :is(.page-home,.page-journal) .navbar-collapse {
@@ -518,7 +534,6 @@
   .nj-trip::before,
   .cj-footer::before {
     width: calc(100% - 44px);
-    max-width: 1110px;
     height: var(--divider-glass-height);
     box-sizing: border-box;
     border: 0;

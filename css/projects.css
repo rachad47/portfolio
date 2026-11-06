@@ -2,11 +2,6 @@
 
 /* ---------- Project tabs and shared panel layout ---------- */
 
-/* Reaches 15px into the container's side padding on wider screens */
-.tp-layout {
-  margin-inline: -15px;
-}
-
 .tp-heading {
   text-align: left;
 }
@@ -135,10 +130,6 @@
 }
 
 @media (max-width: 575px) {
-  .tp-layout {
-    margin-inline: 0;
-  }
-
   .tp-panels {
     padding: 19px 15px;
     border-radius: 24px;
