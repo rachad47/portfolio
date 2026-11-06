@@ -65,6 +65,53 @@
   --page-gutter: 22px;
 }
 
+/* Content column width at each breakpoint. Containers, the navigation ribbon,
+   page banners and dividers all size from it (base.css). The journal keeps the
+   standard column for its text and lets its trip cards, ribbon and banner reach
+   25px past it on each side (journal.css); the homepage and project pages use
+   that full width for everything. */
+:root {
+  --column: 1110px;
+}
+
+.page-home,
+.page-project {
+  --column: 1160px;
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --column: 930px;
+  }
+
+  .page-home,
+  .page-project {
+    --column: 980px;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --column: 690px;
+  }
+
+  .page-home,
+  .page-project {
+    --column: 740px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --column: 510px;
+  }
+
+  .page-home,
+  .page-project {
+    --column: 560px;
+  }
+}
+
 [data-theme="dark"] {
   --page-bg: #050a16;
   --page-text: #fffaf2;
@@ -72,7 +119,7 @@
   --caption-text: #a29e99;
   --link-color: #c5dafa;
   --hover-color: var(--white);
-  --inline-link: #f0566f;
+  --inline-link: #df3652;
   --inline-link-hover: #4082c0;
   --divider: #ffffff30;
   --panel-bg: var(--brand-blue);
@@ -116,6 +163,14 @@
   --field-text: #3e5849;
   --field-accent: #98502f;
   --field-shadow: rgba(41, 53, 24, .09);
+
+  /* Handwriting for the one-line notes beside trip and stop names */
+  --journal-note: 'Caveat', 'Segoe Print', cursive;
+
+  /* Places button and list: dark glass so text stays readable over any photo */
+  --places-glass: rgba(28, 52, 43, .7);
+  --places-glass-edge: rgba(255, 255, 255, .22);
+  --places-text: #fbf1e3;
 
   --page-bg: var(--field-bg);
   --page-text: var(--field-heading);

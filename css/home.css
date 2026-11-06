@@ -67,7 +67,7 @@
 }
 
 .ce-tags {
-  font: 11px/1.7 'Space Grotesk', Arial, sans-serif;
+  font: 12px/1.7 'Space Grotesk', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: .5px;
   color: var(--body-text);
@@ -120,7 +120,7 @@
   }
 
   .ce-tags {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .project h2 {
@@ -443,7 +443,7 @@ body {
   }
 
   .he-role {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .he-hero .ce-eyebrow {
@@ -789,13 +789,13 @@ body {
 }
 
 .ce-project p {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
   margin: 0 8px;
 }
 
 .ce-project .ce-tags {
-  margin: 10px 8px 0;
+  display: none;
 }
 
 @media (max-width: 991px) {
@@ -892,7 +892,7 @@ body {
 }
 
 .experience-studio .es-role {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
   margin: 10px 0 0;
 }
@@ -925,7 +925,7 @@ body {
 
 .experience-studio .es-card li {
   list-style: disc;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.8;
   color: var(--body-text);
   padding-left: 2px;
@@ -971,7 +971,7 @@ body {
 
 .experience-studio .es-items p {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -1136,7 +1136,7 @@ body {
 }
 
 .ct-toolkit .ct-courses p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.7;
   color: var(--body-text);
   margin: 0;

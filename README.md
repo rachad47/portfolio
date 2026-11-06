@@ -32,6 +32,7 @@ js/
   orbit-contained-lab.js            zoomable testbed figure (satellite project)
   natural-selected-journal.js, journal-photo-zoom.js, route-map-sizing.js   journal
   journal-poster-preview.js         journal: hovering a destination shows its first photo on the poster
+  journal-places.js                 journal: corner button with the current place and a list of all places
 ```
 
 Each page loads `vendor/bootstrap.min.css`, `tokens.css`, `base.css`, `nav.css`

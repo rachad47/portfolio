@@ -418,12 +418,33 @@
     padding: 30px;
   }
 
-  /* Navigation ribbon, page banner and section dividers share the content
-     column's width (the container minus its side padding) at every breakpoint. */
+  /* Containers hold the content column plus their 15px side padding; the
+     navigation ribbon, page banner and section dividers are as wide as the
+     column itself. --column is set per breakpoint in tokens.css. */
+  @media (min-width: 576px) {
+    .container {
+      max-width: calc(var(--column) + 30px);
+    }
+  }
+
   .navbar>.container,
   .page-banner,
   hr.ce-divider {
-    max-width: 1110px;
+    max-width: var(--column);
+  }
+
+  /* Just above a breakpoint (e.g. 992–1010px) the window is narrower than the
+     column plus padding, so the container shrinks; keep these inside it too. */
+  @media (min-width: 576px) {
+    .navbar>.container,
+    .page-banner,
+    body>hr.ce-divider {
+      max-width: min(var(--column), 100% - 30px);
+    }
+
+    body>hr.ce-divider {
+      width: 100%;
+    }
   }
 
   /* Page banner: the wide photo under the navigation */
@@ -446,30 +467,6 @@
     object-position: center;
     padding: 0;
     background: var(--page-bg);
-  }
-
-  @media (max-width: 1199px) {
-    .navbar>.container,
-    .page-banner,
-    hr.ce-divider {
-      max-width: 930px;
-    }
-  }
-
-  @media (max-width: 991px) {
-    .navbar>.container,
-    .page-banner,
-    hr.ce-divider {
-      max-width: 690px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .navbar>.container,
-    .page-banner,
-    hr.ce-divider {
-      max-width: 510px;
-    }
   }
 
   @media (max-width: 575px) {

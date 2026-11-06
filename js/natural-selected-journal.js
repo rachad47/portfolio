@@ -156,6 +156,8 @@
     var galleryHeader = heading && heading.closest('header');
     if (galleryHeader) {
       galleryHeader.classList.add('nj-gallery-heading');
+      // Headings with a one-line note get their own layout on phones (journal.css).
+      if (galleryHeader.querySelector(':scope > p')) galleryHeader.classList.add('nj-gallery-heading--note');
       galleryHeader.appendChild(controls);
     } else {
       gallery.before(controls);
